@@ -35,10 +35,10 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 
 ##### Alembic import dialog
 
-- *Writer*:创建或写出Alembic文件的插件或应用程序的名称
-- *Writer Version*:写出Alembic文件的Alembic sdk的版本
-- *RenderRange*:这将使您了解动画在Alembic文件中的持续时间(以秒为单位)
-- *DetectedSamplingRates*:Fusion检查文件中的帧率并在这里报告它们。这对于确定设置重采样率的值是有用的。
+- *Writer:* 创建或写出Alembic文件的插件或应用程序的名称
+- *Writer Version:* 写出Alembic文件的Alembic sdk的版本
+- *RenderRange:* 这将使您了解动画在Alembic文件中的持续时间(以秒为单位)
+- *DetectedSamplingRates:* Fusion检查文件中的帧率并在这里报告它们。这对于确定设置重采样率的值是有用的。
 
 ##### Hierarchy
 
