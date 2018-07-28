@@ -10,7 +10,7 @@ FBX Exporter提供了一种方法，可以将Fusion的3D场景导出到FBX场景
 
 *FBXExporter.Input*
 
-[橙色,必需的]这个输入需要一个3D场景。
+[橙色，必需的]这个输入需要一个3D场景。
 
 #### Controls
 

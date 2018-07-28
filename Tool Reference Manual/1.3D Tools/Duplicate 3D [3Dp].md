@@ -8,7 +8,7 @@ Duplicate 3D工具可以用来快速复制场景中的任何几何图形，对�
 
 *Duplicate3D.SceneInput*
 
-[橙色, 必需的]这个输入需要一个3D场景。
+[橙色，必需的]这个输入需要一个3D场景。
 
 #### Controls
 
