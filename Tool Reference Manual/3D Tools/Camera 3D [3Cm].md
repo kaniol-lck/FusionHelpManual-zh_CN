@@ -56,7 +56,7 @@ Camera 3D工具生成一个虚拟相机，通过它可以观看3D环境。它紧
 
 ##### Viewing Volume Size
 
-只有当Projection Type设置为Orthographic时，才会出现查Viewing Volume Size的控制。它决定了构成摄像机视场的框的大小。
+只有当Projection Type设置为Orthographic时，才会出现Viewing Volume Size控件。它决定了构成摄像机视场的框的大小。
 
 正投影相机与它看到的物体的Z距离不会影响这些物体的比例，只有观看的尺寸会影响。
 
@@ -80,7 +80,7 @@ Angle of View定义了可以通过摄像机观看的场景区域。一般来说�
 
 ##### Plane of Focus (for Depth of Field)
 
-OpenGL渲染器使用这个值来计算字段的深度。它定义了摄像机前一个虚拟目标的距离。
+OpenGL渲染器使用这个值来计算景深。它定义了摄像机前一个虚拟目标的距离。
 
 #### Stereo Method
 
