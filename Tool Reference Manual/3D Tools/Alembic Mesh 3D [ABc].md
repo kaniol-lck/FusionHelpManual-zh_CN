@@ -32,6 +32,7 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 ##### Dump File
 
 在首选文本编辑器中打开产生的ASCII码。
+
 ![ABc_dlg](images/ABc_dlg.png)
 
 ##### Alembic import dialog

@@ -1,3 +1,5 @@
+![cover](images/cover.jpg)
+
 # Tool Reference Manual
 
 > September 2017
