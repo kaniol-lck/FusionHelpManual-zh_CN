@@ -2,7 +2,7 @@
 
 这是3D几何物体的一个自定义工具,可以用来对顶点操作,例如在一个图像平面上:`(px, py, sin(10 *(px ^ 2 + py ^ 2)+ n1))`。其他顶点属性如法线、顶点颜色、纹理坐标、切线和速度也可以修改。
 
- ![3Cv_tile](images\3Cv_tile.jpg)
+ ![3Cv_tile](images/3Cv_tile.jpg)
 
 > 注意:修改3D对象的X、Y和Z位置不会修改法线/切线。你可以在之后用一个ReplaceNormals工具来重新计算法线/切线。
 
@@ -26,4 +26,4 @@
 
 #### Controls
 
-![3Cv_Controls](images\3Cv_Controls.png)
+![3Cv_Controls](images/3Cv_Controls.png)

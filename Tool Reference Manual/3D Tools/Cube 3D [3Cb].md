@@ -4,7 +4,7 @@ Cube 3D工具是一种基本的原始几何类型，能够生成简单的cube。
 
 #### 外部输入
 
- ![3Cb_tile](images\3Cb_tile.jpg)
+ ![3Cb_tile](images/3Cb_tile.jpg)
 
 *Cube3D.SceneInput*
 
@@ -16,7 +16,7 @@ Cube 3D工具是一种基本的原始几何类型，能够生成简单的cube。
 
 #### Controls
 
-![3Cb_Controls](images\3Cb_Controls.png)![3Cb_Controls2](images\3Cb_Controls2.png)
+![3Cb_Controls](images/3Cb_Controls.png)![3Cb_Controls2](images/3Cb_Controls2.png)
 
 ##### Lock Width/Height/Depth
 
@@ -76,10 +76,10 @@ Blend Mode指定Renderer在将该对象与场景的其余部分组合时将使�
 
 如果外部3D材质连接到工具块的材质输入，那么这个选项卡中的控件将被“使用外部材质”标签所取代。
 
-![3Cb_Material](images\3Cb_Material.png)
+![3Cb_Material](images/3Cb_Material.png)
 
 #### Transform选项卡
 
 出现在此选项卡中的选项决定此工具创建的几何图形的位置。由于这些控件在生成几何图形的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 
-![3Cb_Transform](images\3Cb_Transform.png)
+![3Cb_Transform](images/3Cb_Transform.png)

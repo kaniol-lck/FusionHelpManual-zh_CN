@@ -27,7 +27,7 @@ Camera 3D工具还提供了投影功能，当投影与摄像机匹配时应该�
 
 #### 外部输入
 
- ![3Pj_tile](images\3Pj_tile.jpg)
+ ![3Pj_tile](images/3Pj_tile.jpg)
 
 *Projector3D.SceneInput*
 
@@ -39,7 +39,7 @@ Camera 3D工具还提供了投影功能，当投影与摄像机匹配时应该�
 
 #### Controls
 
-![3Pj_Controls](images\3Pj_Controls.png)![3Pj_Controls2](images\3Pj_Controls2.png)
+![3Pj_Controls](images/3Pj_Controls.png)![3Pj_Controls2](images/3Pj_Controls2.png)
 
 ##### Enabled
 
@@ -158,4 +158,4 @@ Shadow Map Proxy确定用于代理(proxy)和自动代理(auto proxy)计算的阴
 
 出现在此选项卡中的选项决定此工具创建的几何图形的位置。由于这些控件在生成几何图形的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 
-![3Pj_Transform](images\3Pj_Transform.png)
+![3Pj_Transform](images/3Pj_Transform.png)

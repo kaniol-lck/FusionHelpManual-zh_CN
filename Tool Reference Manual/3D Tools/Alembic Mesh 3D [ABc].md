@@ -11,11 +11,11 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 
 这意味着当重新加载comp时，转换是从comp而不是Alembic文件中加载的。mesh的处理方式不同;它们总是从Alembic文件中重新加载。
 
- ![ABc_tile](images\ABc_tile.jpg)
+ ![ABc_tile](images/ABc_tile.jpg)
 
 #### Controls
 
-![ABc_Controls](images\ABc_Controls.png)
+![ABc_Controls](images/ABc_Controls.png)
 
 ##### Filename
 
@@ -32,7 +32,7 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 ##### Dump File
 
 在首选文本编辑器中打开产生的ASCII码。
-![ABc_dlg](images\ABc_dlg.png)
+![ABc_dlg](images/ABc_dlg.png)
 
 ##### Alembic import dialog
 

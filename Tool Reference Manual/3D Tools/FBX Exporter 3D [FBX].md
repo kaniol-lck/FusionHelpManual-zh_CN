@@ -6,7 +6,7 @@ FBX Exporter提供了一种方法，可以将Fusion的3D场景导出到FBX场景
 
 #### External Inputs
 
- ![FBX_tile](images\FBX_tile.jpg)
+ ![FBX_tile](images/FBX_tile.jpg)
 
 *FBXExporter.Input*
 
@@ -14,7 +14,7 @@ FBX Exporter提供了一种方法，可以将Fusion的3D场景导出到FBX场景
 
 #### Controls
 
-![FBX_Controls](images\FBX_Controls.png)
+![FBX_Controls](images/FBX_Controls.png)
 
 ##### Filename
 

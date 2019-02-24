@@ -16,7 +16,7 @@ Camera 3D工具生成一个虚拟相机，通过它可以观看3D环境。它紧
 
 以下输入出现在流程编辑器中的工具块上。
 
- ![3Cm_tile](images\3Cm_tile.jpg)
+ ![3Cm_tile](images/3Cm_tile.jpg)
 
 *Camera3D.SceneInput*
 
@@ -34,7 +34,7 @@ Camera 3D工具生成一个虚拟相机，通过它可以观看3D环境。它紧
 
 该选项卡中的选项用于设置相机的剪切、视场、焦距和立体属性。
 
-![3Cm_Controls](images\3Cm_Controls.png)![3Cm_Controls2](images\3Cm_Controls2.png)
+![3Cm_Controls](images/3Cm_Controls.png)![3Cm_Controls2](images/3Cm_Controls2.png)
 
 ##### Projection Type
 
@@ -90,19 +90,19 @@ OpenGL渲染器使用这个值来计算景深。它定义了摄像机前一个�
 
 两个相机都指向一个焦点。虽然结果是立体的，但是这种方法引入的垂直视差会引起观众的不适。
 
-![3Cm_ToeIn](images\3Cm_ToeIn.png)
+![3Cm_ToeIn](images/3Cm_ToeIn.png)
 
 ##### Off Axis
 
 通常被认为是创建立体相机对的正确方法，这是Fusiom的默认方法。离轴不引入垂直视差，从而产生压力较小的立体图像。
 
-![3Cm_OffAxis](images\3Cm_OffAxis.png)
+![3Cm_OffAxis](images/3Cm_OffAxis.png)
 
 ##### Parallel
 
 摄像机是平行移动的。因为这是一个纯粹的平行位移，所以没有收敛距离控制。并行不引入垂直视差，从而创建压力较小的立体图像。
 
-![3Cm_Parallel](images\3Cm_Parallel.png)
+![3Cm_Parallel](images/3Cm_Parallel.png)
 
 ##### Eye Separation
 
@@ -162,7 +162,7 @@ OpenGL渲染器使用这个值来计算景深。它定义了摄像机前一个�
 
 除了下面列出的控件之外，这个选项卡中显示的选项与Image Plane工具的控制选项卡中显示的选项相同。请参阅工具文档以获得详细的描述。
 
-![3Cm_Image](images\3Cm_Image.jpg)
+![3Cm_Image](images/3Cm_Image.jpg)
 
 ##### Enable Image Plane
 
@@ -184,7 +184,7 @@ OpenGL渲染器使用这个值来计算景深。它定义了摄像机前一个�
 
 有关更多信息，请参阅Projector 3D工具。
 
-![3Cm_Projection](images\3Cm_Projection.png)
+![3Cm_Projection](images/3Cm_Projection.png)
 
 ##### Enable Camera Projection
 

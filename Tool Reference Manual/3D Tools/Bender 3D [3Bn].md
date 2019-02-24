@@ -8,7 +8,7 @@ Bender工具在几何图形中不产生新的顶点;只有存在于几何图形�
 
 以下输入出现在流程编辑器(Flow Editor)中的工具块上。
 
- ![3Bn_tile](images\3Bn_tile.jpg)
+ ![3Bn_tile](images/3Bn_tile.jpg)
 
 *Bender3D.SceneInput*
 
@@ -16,13 +16,13 @@ Bender工具在几何图形中不产生新的顶点;只有存在于几何图形�
 
 #### Controls
 
-![3Bn_Controls](images\3Bn_Controls.png)
+![3Bn_Controls](images/3Bn_Controls.png)
 
 ##### Bender Type
 
 使用Bender Type选择变形类型来应用到几何上。有四种模式可供选择:弯曲(Bend)、变尖 (Taper)、扭转(Twist)和剪切(Shear)。
 
-![3Bn_BenderType](images\3Bn_BenderType.png)
+![3Bn_BenderType](images/3Bn_BenderType.png)
 
 ##### Amount
 

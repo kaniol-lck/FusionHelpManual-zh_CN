@@ -8,7 +8,7 @@ Displace 3D工具用于根据所参考的图像沿物体的法线移动物体的
 
 #### 外部输入
 
- ![3Cv_tile](images\3Cv_tile.jpg)
+ ![3Cv_tile](images/3Cv_tile.jpg)
 
 *Displace3D.SceneInput*
 
@@ -20,7 +20,7 @@ Displace 3D工具用于根据所参考的图像沿物体的法线移动物体的
 
 #### Controls
 
-![3Di_Controls](images\3Di_Controls.png)
+![3Di_Controls](images/3Di_Controls.png)
 
 ##### Channel 
 
