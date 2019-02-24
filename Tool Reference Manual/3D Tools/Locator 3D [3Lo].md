@@ -10,7 +10,7 @@ Locator 3D工具的目的是将3D空间中的一个点转换为2D坐标，其他
 
 #### 外部输入
 
-~~此处有图~~
+ ![3Lo_tile](images\3Lo_tile.jpg)
 
 *Locator3D.SceneInput*
 
@@ -22,7 +22,7 @@ Locator 3D工具的目的是将3D空间中的一个点转换为2D坐标，其他
 
 #### Controls
 
-~~此处有图~~
+![3Lo_Controls](images\3Lo_Controls.png)
 
 ##### Size
 

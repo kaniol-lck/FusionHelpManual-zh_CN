@@ -10,7 +10,7 @@ File > Import > FBX工具可用于导入FBX并为文件中包含的每个摄像�
 
 #### 外部输入
 
-~~此处有图~~
+ ![FBX2_tile](images\FBX2_tile.jpg)
 
 *FBXMesh3D.SceneInput*
 
@@ -22,7 +22,7 @@ File > Import > FBX工具可用于导入FBX并为文件中包含的每个摄像�
 
 #### Controls
 
-~~此处有图~~
+![FBX2_Controls](images\FBX2_Controls.png)![FBX2_Controls2](images\FBX2_Controls2.png)
 
 ##### Size
 
@@ -89,10 +89,10 @@ Blend Mode指定Renderer在将该对象与场景的其余部分组合时将使�
 
 如果外部3D材质连接到工具块的材质输入，那么这个选项卡中的控件将被“使用外部材质”标签所取代。
 
-~~此处有图~~
+![FBX2_Material](images\FBX2_Material.png)
 
 #### Transform选项卡
 
 出现在此选项卡中的选项决定此工具创建的几何图形的位置。由于这些控件在生成几何图形的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 
-~~此处有图~~
+![FBX2_Transform](images\FBX2_Transform.png)

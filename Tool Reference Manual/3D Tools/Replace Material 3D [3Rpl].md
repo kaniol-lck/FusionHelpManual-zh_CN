@@ -6,7 +6,7 @@ Replace Material 3D工具用它自己的材质输入替换应用于输入场景�
 
 #### 外部输入
 
-~~此处有图~~
+ ![3Rpl_tile](images\3Rpl_tile.jpg)
 
 *Replacematerial3D.SceneInput* 
 
@@ -17,6 +17,8 @@ Replace Material 3D工具用它自己的材质输入替换应用于输入场景�
 [绿色的，可选的]该输入将接受2D图像或3D材质。如果提供2D图像，它将被用作工具内置的基础材质的漫反射纹理贴图。如果连接了3D材质，那么基础材质将被禁用。
 
 #### Controls
+
+![3Rpl_Controls](images\3Rpl_Controls.png)
 
 ##### Enable
 
@@ -41,7 +43,7 @@ Replace Material 3D工具用它自己的材质输入替换应用于输入场景�
 
 此选项卡中出现的选项决定此工具创建的几何物体的外观。由于这些控件在所有生成几何物体的工具上都是相同的，因此在本文档的Common 3D Controls部分中对这些控件进行了完整的描述。
 
-~~此处有图~~
+![3Rpl_Material](images\3Rpl_Material.png)
 
 如果一个外部3D材质连接到工具块的材质输入，那么这个选项卡中的控件将被替换为“使用外部材质”标签。
 

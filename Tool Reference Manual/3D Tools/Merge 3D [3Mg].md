@@ -10,7 +10,7 @@ Merge提供了Fusion的3D套件中大多数工具上的标准转换控件。与�
 
 #### 外部输入
 
-~~此处有图~~
+ ![3Mg_tile](images\3Mg_tile.jpg)
 
 *Merge3D.SceneInput[#]*
 
@@ -18,7 +18,7 @@ Merge提供了Fusion的3D套件中大多数工具上的标准转换控件。与�
 
 #### Controls
 
-~~此处有图~~
+![3Mg_Controls](images\3Mg_Controls.png)
 
 ##### Pass Through Lights
 
@@ -28,5 +28,4 @@ Merge提供了Fusion的3D套件中大多数工具上的标准转换控件。与�
 
 出现在此选项卡中的选项决定此工具创建的几何图形的位置。由于这些控件在生成几何图形的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 
-~~此处有图~~
-
+![3Mg_Transform](images\3Mg_Transform.png)

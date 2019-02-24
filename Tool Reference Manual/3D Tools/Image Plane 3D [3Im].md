@@ -4,7 +4,7 @@ Image Plane工具在三维空间中产生二维平面几何图形。该工具最
 
 #### 外部输入
 
-~~此处有图~~
+ ![3Im_tile](images\3Im_tile.jpg)
 
 *Imageplane3D.SceneInput*
 
@@ -16,7 +16,7 @@ Image Plane工具在三维空间中产生二维平面几何图形。该工具最
 
 #### Controls
 
-~~此处有图~~
+![3Im_Controls](images\3Im_Controls.png)
 
 ##### Lock Width/Height
 
@@ -66,10 +66,10 @@ Blend Mode指定Renderer在将该对象与场景的其余部分组合时将使�
 
 如果外部3D材质连接到工具块的材质输入，那么这个选项卡中的控件将被“使用外部材质”标签所取代。
 
-~~此处有图~~
+![3Im_Material](images\3Im_Material.png)
 
 #### Transform选项卡
 
 出现在此选项卡中的选项决定此工具创建的几何图形的位置。由于这些控件在生成几何图形的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 
-~~此处有图~~
+![3Im_Transform](images\3Im_Transform.png)

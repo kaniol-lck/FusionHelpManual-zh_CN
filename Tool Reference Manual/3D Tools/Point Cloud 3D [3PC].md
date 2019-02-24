@@ -4,7 +4,7 @@ Point Cloud通常是由3D跟踪或建模软件创建的大量空位置（点）�
 
 #### 外部输入
 
-~~此处有图~~
+ ![3PC_tilr](images\3PC_tilr.jpg)
 
 *Pointcloud3D.SceneInput* 
 
@@ -12,7 +12,7 @@ Point Cloud通常是由3D跟踪或建模软件创建的大量空位置（点）�
 
 #### Controls
 
-~~此处有图~~
+![3PC_Controls](images\3PC_Controls.png)
 
 ##### Lock X/Y/Z
 
@@ -51,7 +51,7 @@ Import Point Cloud按钮显示一个对话框，用于从另一个应用程序�
 
 #### 屏幕上的上下文菜单
 
-~~此处有图~~
+![3PC_OnscreenContextualMenu](images\3PC_OnscreenContextualMenu.png)
 
 通常，导入的的点云中的一个或多个点会被手动分配，以跟踪特定特性的位置。这些点通常有不同于云中的其他点的名称。要查看一个点的当前名称，请将鼠标指针直接悬停在一个点上，过一会儿会出现一个小的弹出窗口，显示该点的名称。
 
@@ -75,7 +75,7 @@ Import Point Cloud按钮显示一个对话框，用于从另一个应用程序�
 
 #### 额外的工具栏和快捷键
 
-~~此处有图~~
+![3PC_AdditionalToolbarAndShortcuts](images\3PC_AdditionalToolbarAndShortcuts.png)
 
 | 操作                                    | 快捷键  |
 | --------------------------------------- | ------- |
