@@ -16,7 +16,7 @@ OpenGL渲染引擎使用显卡上的GPU处理器来加速2D图像的渲染。根
 
 *Renderer3D.SceneInput*
 
-[橙色，可选的]这个输入需要一个3D场景。
+[橙色，必需的]这个输入需要一个3D场景。
 
 *Renderer3D.EffectMask*
 
