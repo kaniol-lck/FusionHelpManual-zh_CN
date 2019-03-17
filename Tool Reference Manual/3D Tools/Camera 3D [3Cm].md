@@ -20,7 +20,7 @@ Camera 3D工具生成一个虚拟相机，通过它可以观看3D环境。它紧
 
 *Camera3D.SceneInput*
 
-[金色，必需]这个输入需要一个3D场景。
+[金色，必需的]这个输入需要一个3D场景。
 
 *Camera3D.RightStereoCamera*
 

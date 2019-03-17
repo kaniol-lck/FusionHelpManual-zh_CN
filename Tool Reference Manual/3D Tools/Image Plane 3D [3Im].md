@@ -8,7 +8,7 @@ Image Plane工具在三维空间中产生二维平面几何图形。该工具最
 
 *Imageplane3D.SceneInput*
 
-[橙色,可选的]这个输入需要一个3D场景。由于该工具创建了物体，因此它不是必需的。
+[橙色，可选的]这个输入需要一个3D场景。由于该工具创建了物体，因此它不是必需的。
 
 *Imageplane3D.MaterialInput*
 

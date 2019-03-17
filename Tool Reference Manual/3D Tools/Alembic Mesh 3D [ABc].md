@@ -60,7 +60,7 @@ Near/Far/Apertures/Angles of View/Plane of Focus都是导入的。适配分辨�
 
 ##### Points
 
-Alembic支持点类型。这是一组没有方向的3D点。一些3D应用将粒子导出为点，但要记住粒子的方向和方向会丢失;而你只得到了位置。很可能，exocortex Alembic插件可以写出包含方向的额外用户数据。
+Alembic支持点类型。这是一组没有方向的3D点。一些3D应用将粒子导出为点，但要记住粒子的方向和方向会丢失；而你只得到了位置。很可能，exocortex Alembic插件可以写出包含方向的额外用户数据。
 
 ##### Meshes
 
