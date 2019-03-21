@@ -63,5 +63,5 @@ Transformation Widget表示监视器中此选项卡中的大多数控件，具�
 
 大多数3D工具的缩放滑块默认为锁定，这导致三个轴的缩放一致。解锁Lock X/Y/Z Scale复选框，只缩放单个轴上的对象。
 
-![3Xf_OnScreenTransformationWidget ](images/3Xf_OnScreenTransformationWidget .jpg)
+![3Xf_OnScreenTransformationWidget](images/3Xf_OnScreenTransformationWidget.jpg)
 
