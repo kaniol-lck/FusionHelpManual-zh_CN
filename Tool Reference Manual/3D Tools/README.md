@@ -27,9 +27,10 @@
 - **[Transform 3D [3Xf]](./Transform%203D%20[3Xf].md)** ✔
 - **[Triangulate 3D [3Tri]](./Triangulate%203D%20[3Tri].md)** ✔
 - **[UV Map 3D [3UV]](./UV%20Map%203D%20[3UV].md)** ✔
-- **[Weld 3D [3We]](./Weld%203D%20[3We].md)** 📌
-- **[Modifier](./Modifier.md)** 
-- [Coordinate Transform 3D](./Coordinate%20Transform%203D.md) 
+- **[Weld 3D [3We]](./Weld%203D%20[3We].md)** ✔
+- **[Modifier](./Modifier.md)** ✔
+
+  Coordinate Transform 3D
 
 ![index_menu](images/index_menu.png)
 

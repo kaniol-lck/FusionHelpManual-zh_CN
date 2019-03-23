@@ -1,2 +1,4 @@
 *.pdf
 *.template.md
+*.lua
+output.md
