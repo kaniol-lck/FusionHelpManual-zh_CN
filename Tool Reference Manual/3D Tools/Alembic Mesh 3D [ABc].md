@@ -9,7 +9,7 @@
 
 Alembic格式允许在文件中存储任意的用户数据。由于各种原因，Fusion忽略了大多数元数据。对于如何命名元数据以及元数据在不同的ABC出口商之间可能发生的更改，还没有定义任何约定。当通过菜单选项导入Alembic文件时，转换将被读入样条并传入到工具的Input中，并将与comp一起保存。
 
-这意味着当重新加载comp时，转换是从comp而不是Alembic文件中加载的。mesh的处理方式不同;它们总是从Alembic文件中重新加载。
+这意味着当重新加载comp时，转换是从comp而不是Alembic文件中加载的。mesh的处理方式不同；它们总是从Alembic文件中重新加载。
 
  ![ABc_tile](images/ABc_tile.jpg)
 
@@ -48,7 +48,7 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 
 ##### Orphaned transforms
 
-如果不选中此选项，则不会导入不父化mesh或相机。例如，如果您有一个框架和关联的mesh模型，模型将被导入为一个Alembic mesh，而骨架将作为merge3Ds的树型结构导入。禁用此选项将导致无法导入merge3Ds。
+如果不选中此选项，则不会导入不父化mesh或相机。例如，如果您有一个框架和关联的mesh模型，模型将被导入为一个Alembic mesh，而骨架将作为Merge3D的树型结构导入。禁用此选项将导致无法导入Merge3D。
 
 ##### Cameras
 
