@@ -23,7 +23,7 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 
 ##### Object Name
 
-此输入显示正在导入的Alembic文件中的mesh名称。如果此字段为空，则FBX模型的全部内容将作为单个mesh导入。此输入不能被用户编辑;而通过 File > Import > Alembic工具导入Alembic文件时由Fusion设置。
+此输入显示正在导入的Alembic文件中的mesh名称。如果此字段为空，则FBX模型的全部内容将作为单个mesh导入。此输入不能被用户编辑；而通过 File > Import > Alembic工具导入Alembic文件时由Fusion设置。
 
 ##### Sampling Rate
 
@@ -40,7 +40,7 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 - *Writer:* 创建或写出Alembic文件的插件或应用程序的名称
 - *Writer Version:* 写出Alembic文件的Alembic sdk的版本
 - *RenderRange:* 这将使您了解动画在Alembic文件中的持续时间(以秒为单位)
-- *DetectedSamplingRates:* Fusion检查文件中的帧率并在这里报告它们。这对于确定设置重采样率的值是有用的。
+- *DetectedSamplingRates:* Fusion检查文件中的帧率并在这里报告它们。这对于确定设置Resampling Rate的值有用。
 
 ##### Hierarchy
 
@@ -52,7 +52,7 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 
 ##### Cameras
 
-Near/Far/Apertures/Angles of View/Plane of Focus都是导入的。适配分辨率可以被导入;这取决于作者是否正确地标记了与适配分辨率的元数据。如果您的相机没有正确导入，您应该检查Camera3D.ResolutionGateFit是否被正确地设置。立体(stereo)信息不会被导入。
+Near/Far/Apertures/Angles of View/Plane of Focus都是导入的。适配分辨率可以被导入；这取决于作者是否正确地标记了与适配分辨率的元数据。如果您的相机没有正确导入，您应该检查Camera3D.ResolutionGateFit是否被正确地设置。立体(stereo)信息不会被导入。
 
 ##### InverseTransform
 

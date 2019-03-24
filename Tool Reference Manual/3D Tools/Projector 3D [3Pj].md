@@ -11,7 +11,7 @@ Projector 3D工具用于在三维几何物体上投影图像。这在很多方�
 - Enabling Shadows将导致Projector 3D投射阴影。
 - 就像其他光线一样，Projector 3D发出的光线只会影响到第一个Merge 3D的对象，该Merge 3D是在Projector 3D工具流的下游。启用Merge 3D的Pass Through Lights复选框将允许投影到更下游的物体。
 - Projector 3D发出的光由物体上的照明选项设置和材料上的接收照明选项控制。
-- 投影图像中的Alpha值不会在Light或Ambient Light模式下剪切几何图形。使用纹理模式来替代。
+- 投影图像中的Alpha值不会在Light或Ambient Light模式下剪切几何物体。使用纹理模式来替代。
 - 如果两个投影重叠，它们的光线效果就会相加。
 
 若要为非漫反射颜色通道(如Specular Intensity或Bump)投射可重亮的纹理或纹理，请使用Texture投影模式：
@@ -156,6 +156,6 @@ Shadow Map Proxy确定用于代理(proxy)和自动代理(auto proxy)计算的阴
 
 #### Transform选项卡
 
-出现在此选项卡中的选项决定此工具创建的几何图形的位置。由于这些控件在生成几何图形的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
+出现在此选项卡中的选项决定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 
 ![3Pj_Transform](images/3Pj_Transform.png)

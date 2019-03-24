@@ -73,7 +73,7 @@ Shape 3D工具用于生成几种基本的基础三维物体，包括平面、立
 
 ##### Cull Front Face/Back Face
 
-使用这些选项来剔除(消除)几何图形中某些多边形的呈现和显示。如果选择了Cull Back Face，所有背对相机的多边形都不会被渲染，也不会产生阴影。如果选择了Cull Front Face，所有面向摄像机的多边形也将被删除。选择这两个复选框与取消选择Visible复选框的效果相同。
+使用这些选项来剔除(消除)几何物体中某些多边形的渲染和显示。如果选择了Cull Back Face，所有背对相机的多边形都不会被渲染，也不会产生阴影。如果选择了Cull Front Face，所有面向摄像机的多边形也将被删除。选择这两个复选框与取消选择Visible复选框的效果相同。
 
 ##### Ignore Transparent Pixels in Aux Channels
 
@@ -117,11 +117,11 @@ Blend Mode指定渲染器在将此对象与场景的其余部分组合时将使�
 
 ##### OpenGL Blend Mode
 
-使用此菜单选择OpenGL呈现程序处理几何图形时将使用的混合模式。这也是在查看器中查看对象时使用的模式。目前OpenGL渲染器支持三种混合模式。
+使用此菜单选择OpenGL渲染程序处理几何物体时将使用的混合模式。这也是在监视器中查看对象时使用的模式。目前OpenGL渲染器支持三种混合模式。
 
 ##### Software Blend Mode
 
-使用此菜单选择Software渲染器处理几何图形时将使用的混合模式。目前，Software渲染器支持Merge工具文档中描述的所有模式，但Dissolve模式除外。
+使用此菜单选择Software渲染器处理几何物体时将使用的混合模式。目前，Software渲染器支持Merge工具文档中描述的所有模式，但Dissolve模式除外。
 
 #### Material选项卡
 
@@ -140,7 +140,7 @@ Blend Mode指定渲染器在将此对象与场景的其余部分组合时将使�
 #### Sphere Map与直接将纹理连接到Sphere
 
 您可以直接将经纬(球面投影)纹理映射连接到一个球体，而不是首先通过连线将其连接到Sphere Map工具。如果您将起始/结束角和纬度设置为小于360°/180°，则会导致不同的渲染。在第一种情况下，纹理将被压扁。当使用Sphere Map工具时，纹理将被裁剪。
-比较:
+比较：
 
 ![3Sh_Compare](images/3Sh_Compare.jpg)
 

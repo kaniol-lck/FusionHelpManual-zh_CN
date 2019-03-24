@@ -46,11 +46,11 @@ Sub ID滑块可用于选择特定物体的单个子元素，如由Text 3D工具�
 
 ##### Make Renderable
 
-定义OpenGL渲染器是否将Locator呈现为可见对象。Software渲染器目前不能渲染线条，因此会忽略这个选项。
+定义OpenGL渲染器是否将Locator渲染为可见对象。Software渲染器目前不能渲染线条，因此会忽略这个选项。
 
 ##### Unseen by Camera
 
-当选中Make Renderable选项时，将出现这个复选框控件。如果选中了Unseen by Camera复选框，那么Locater将在查看器中可见，但不会被Renderer 3D工具渲染成输出图像。
+当选中Make Renderable选项时，将出现这个复选框控件。如果选中了Unseen by Camera复选框，那么Locater将在监视器中可见，但不会被Renderer 3D工具渲染成输出图像。
 
 ##### Camera Settings
 

@@ -12,7 +12,7 @@ Override工具允许您同时为3D场景中的每个物体更改物体特定的�
 
 #### Controls
 
-在Override工具中找到的控件的哲学非常直白。首先，使用Do[option]复选框选择要覆盖的选项。这将显示可以用来设置选项本身的值的控件。这里没有对单独选项的解释;可以在任何物体创建工具(如Image Plane、Cube或Shape工具)中找到每个工具的完整描述。
+在Override工具中找到的控件的哲学非常直白。首先，使用Do[option]复选框选择要覆盖的选项。这将显示可以用来设置选项本身的值的控件。这里没有对单独选项的解释；可以在任何物体创建工具(如Image Plane、Cube或Shape工具)中找到每个工具的完整描述。
 
 ![3Ov_Controls](images/3Ov_Controls.png)
 
