@@ -46,7 +46,7 @@ Dropoff控制半影角从全强度到0的下降速度。
 
 #### Shadows
 
-本节提供几个用于定义聚光灯创建阴影时使用的阴影映射控件。详情请参阅Lights and Shadows章节。
+本节提供几个用于定义聚光灯创建阴影时使用的阴影贴图控件。详情请参阅Lights and Shadows章节。
 
 ##### Enable Shadows
 
@@ -62,11 +62,11 @@ Dropoff控制半影角从全强度到0的下降速度。
 
 ##### Shadow Map Size
 
-Shadow Map Size控件确定用于创建阴影映射的位图的大小。较大的值将生成更详细的阴影映射，这将牺牲内存和性能。
+Shadow Map Size控件确定用于创建阴影贴图的位图的大小。较大的值将生成更详细的阴影贴图，这将牺牲内存和性能。
 
 ##### Shadow Map Proxy
 
-Shadow Map Proxy确定启用Proxy或Auto Proxy模式时使用的阴影映射的大小。值0.5将生成分辨率为阴影映射大小中定义的一半的阴影映射。
+Shadow Map Proxy确定启用Proxy或Auto Proxy模式时使用的阴影贴图的大小。值0.5将生成分辨率为阴影贴图大小中定义的一半的阴影贴图。
 
 ##### Multiplicative/Additive Bias
 
@@ -76,7 +76,7 @@ Shadow Map Proxy确定启用Proxy或Auto Proxy模式时使用的阴影映射的�
 
 ##### Force All Materials Non-Transmissive
 
-通常，渲染阴影时使用RGBAZ阴影映射。通过启用此选项，你将强制渲染器使用只包含Z的阴影映射。这可以显著加快阴影渲染，同时使用五分之一的内存。缺点是你不能再像投射阴影一样投射“彩色玻璃”。
+通常，渲染阴影时使用RGBAZ阴影贴图。通过启用此选项，你将强制渲染器使用只包含Z的阴影贴图。这可以显著加快阴影渲染，同时使用五分之一的内存。缺点是你不能再像投射阴影一样投射“彩色玻璃”。
 
 ##### Shadow Map Sampling
 
@@ -86,7 +86,7 @@ Shadow Map Proxy确定启用Proxy或Auto Proxy模式时使用的阴影映射的�
 
 阴影中的软边是通过对采样后的阴影图进行滤镜而产生的。在渲染产生不同效果的阴影时，Fusion有三种不同的滤镜方法。
 
-- *None:* 阴影会有一个硬边。完全不做阴影映射的滤镜。这种方法的优点是只需要在阴影映射中采样一个像素，因此速度很快。
+- *None:* 阴影会有一个硬边。完全不做阴影贴图的滤镜。这种方法的优点是只需要在阴影贴图中采样一个像素，因此速度很快。
 - *Constant:* 阴影边缘将有一个恒定的柔和度。当对阴影贴图采样时，使用一个宽度恒定的滤镜。调整Constant Softness滑块控制过滤器的大小。注意滤镜做得越大，渲染阴影的时间就越长。
 - *Variable:* 阴影边缘的柔和度会随着阴影接收器离阴影投射者变远而增加。
   通过改变滤滤镜的尺寸，根据接收者和投射者之间的距离来实现可变的柔和度。选择此选项后，会出现Softness Falloff、Min Softness和Max Softness滑块。
@@ -97,7 +97,7 @@ Shadow Map Proxy确定启用Proxy或Auto Proxy模式时使用的阴影映射的�
 
 ##### Softness Falloff
 
-当Softness设置为Variable时，会出现Softness Falloff滑块。这个滑块控制阴影边缘的柔软度随距离增长的速度。更精确地说，它根据阴影投射者和接收者之间的距离控制阴影映射滤镜的大小增长的速度。它的效果是由Min和Max Softness滑块的值调节的。
+当Softness设置为Variable时，会出现Softness Falloff滑块。这个滑块控制阴影边缘的柔软度随距离增长的速度。更精确地说，它根据阴影投射者和接收者之间的距离控制阴影贴图滤镜的大小增长的速度。它的效果是由Min和Max Softness滑块的值调节的。
 
 ##### Min Softness
 
