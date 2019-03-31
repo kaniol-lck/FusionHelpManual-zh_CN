@@ -5,8 +5,8 @@
 - **[Cook Torrance [3CT]](./Cook%20Torrance%20[3CT].md)** ✔
 - **[Material Merge 3D [3MM]](./Material%20Merge%203D%20[3MM].md)** ✔
 - **[Phong [3Ph]](./Phong%20[3Ph].md)** ✔
-- **[Reflect [3Rr]](./Reflect%20[3Rr].md)** 📌
-- **[Stereo Mix [3SMM]](./Stereo%20Mix%20[3SMM].md)** 
+- **[Reflect [3RR]](./Reflect%20[3RR].md)** ✔
+- **[Stereo Mix [3SMM]](./Stereo%20Mix%20[3SMM].md)** 📌
 - **[Ward [3Wd]](./Ward%20[3Wd].md)** 
 
 ![index_menu](images/index_menu.png)

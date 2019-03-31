@@ -4,6 +4,8 @@ Phong工具是一种基本的照明材质，可应用于3D场景中的几何物�
 
 虽然产生类似于Blinn模型产生的高光，但它更常用于闪亮/抛光的塑料表面。
 
+#### 外部输入
+
  ![3Ph_tile](images/3Ph_tile.jpg)
 
 *Phong.DiffuseTex* 
