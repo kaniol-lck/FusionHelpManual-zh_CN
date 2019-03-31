@@ -1,4 +1,4 @@
-## 3D Material Tools 三维材质工具
+## 第三章 3D Material Tools 三维材质工具
 
 - **[Blinn [3Bi]](./Blinn%20[3Bi].md)** ✔
 - **[Channel Boolean Material [3Bol]](./Channel%20Boolean%20Material%20[3Bol].md)** ✔
