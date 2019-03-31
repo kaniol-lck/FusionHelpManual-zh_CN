@@ -1,30 +1,36 @@
-### Phong [3Ph]
+### Ward [3Wd]
 
-Phong工具是一种基本的照明材质，可应用于3D场景中的几何物体。它描述了对象如何响应光，并提供大量纹理贴图输入，以允许精确控制材质的漫反射，镜面反射和凹凸贴图组件。
+Ward工具是一种基本的照明材质，可以应用于3D场景的几何物体。它描述了物体对光线的反应，并提供了大量的纹理贴图输入，允许对材质的漫反射、高光和凹凸贴图组件进行精细控制。
 
-虽然产生类似于Blinn模型产生的高光，但它更常用于闪亮/抛光的塑料表面。
+特别是，Ward工具是模拟拉丝金属表面的理想工具，因为高光可以沿着映射坐标的U或V方向拉长。这就是所谓的各向异性（Anisotrophic）亮点。
+
+Ward工具输出一个三维材质，可以连接到任何三维几何工具上的材质输入。
 
 #### 外部输入
 
- ![3Ph_tile](images/3Ph_tile.jpg)
+ ![3Wd_tile](images/3Wd_tile.jpg)
 
-*Phong.DiffuseTex* 
+*Ward.DiffuseTex* 
 
 [橙色，可选的]此输入将接受2D图像或3D材质作为漫反射纹理贴图。
 
-*Phong.SpecularColorTex* 
+*Ward.SpecularColorTex* 
 
 [绿色，可选的]此输入将接受2D图像或3D材质作为高光彩色纹理贴图。
 
-*Phong.SpecularIntensityTex* 
+*Ward.SpecularIntensityTex* 
 
 [洋红色，可选的]此输入将接受2D图像或3D材质作为材质高光高光的强度贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。
 
-*Phong.SpecularExponentTex* 
+*Ward.SpreadUTexture* 
 
-[淡蓝色，可选的]此输入将接受2D图像或3D材质作为材质高光的衰减贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。
+[淡蓝色，可选的]该输入将接受2D图像或3D材质。此工具控件中的Spread U选项的值将与材质的alpha通道中的像素值相乘。
 
-*Phong.BumpmapTex* 
+*Ward.SpreadVTexture* 
+
+[淡蓝色，可选的]该输入将接受2D图像或3D材质。此工具控件中的Spread V选项的值将与材质的alpha通道中的像素值相乘。
+
+*Ward.BumpmapTex* 
 
 [白色，可选的]此输入将接受2D图像或3D材质，然后使用RGB信息作为纹理空间法线。
 
@@ -34,13 +40,11 @@ Phong工具是一种基本的照明材质，可应用于3D场景中的几何物�
 
 #### Controls
 
-![3Ph_Controls](images/3Ph_Controls.png)
+![3Wd_Controls](images/3Wd_Controls.png)
 
 #### Diffuse
 
-Diffuse描述基本表面特征，没有任何额外的效果，如反射或高光。除了定义对象的基本颜色外，漫反射颜色还定义对象的透明度。
-
-漫反射纹理贴图中的alpha可以用来使任何物体表面的部分透明。
+Diffuse描述基本表面特征，没有任何额外的效果，如反射或高光。除了定义对象的基本颜色外，漫反射颜色还定义对象的透明度。漫反射纹理贴图中的alpha可以用来使任何物体表面的部分透明。
 
 ##### Diffuse Color
 
@@ -65,6 +69,14 @@ Specular Color决定了从光亮表面反射的光的颜色。一种材料的高
 ##### Specular Intensity
 
 Specular Intensity控制高光的强度。如果提供高光强度纹理，则此值乘以纹理的alpha值。
+
+##### Spread U
+
+Spread U控制物体UV-Map中高光高光沿U轴的衰减。值越小，衰减越明显，在这个方向上材质出现的越光滑和光泽。如果提供了Spread U纹理，那么这个值乘以纹理的alpha值。
+
+##### Spread V
+
+Spread V控制物体UV-Map中高光高光沿V轴的衰减。值越小，衰减越明显，在这个方向上材质出现的越光滑和光泽。如果提供了Spread U纹理，那么这个值乘以纹理的alpha值。
 
 #### Transmittance
 

@@ -7,7 +7,7 @@
 - **[Phong [3Ph]](./Phong%20[3Ph].md)** ✔
 - **[Reflect [3RR]](./Reflect%20[3RR].md)** ✔
 - **[Stereo Mix [3SMM]](./Stereo%20Mix%20[3SMM].md)** ✔
-- **[Ward [3Wd]](./Ward%20[3Wd].md)** 📌
+- **[Ward [3Wd]](./Ward%20[3Wd].md)** ✔
 
 ![index_menu](images/index_menu.png)
 
