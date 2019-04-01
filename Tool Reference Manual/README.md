@@ -2,9 +2,11 @@
 
 # Tool Reference Manual
 
-# Fusion 9
+# 工具参考手册
 
-> September 2017
+# *Fusion 9*
+
+# *September 2017*
 
 ## 目录
 
