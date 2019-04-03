@@ -12,11 +12,11 @@ Locator 3D工具的目的是将3D空间中的一个点转换为2D坐标，其他
 
  ![3Lo_tile](images/3Lo_tile.jpg)
 
-*Locator3D.SceneInput*
+**Locator3D.SceneInput**
 
 [橙色，必需的]这个输入需要一个3D场景。
 
-*Locator3D.Target*
+**Locator3D.Target**
 
 [绿色，可选的]这个输入需要一个3D场景。当提供时，场景的转换中心用于设置定位器的位置。定位器的Transform控件从这个位置变为偏移量。
 
@@ -36,9 +36,9 @@ size滑块用于设置Locater在屏幕上的十字准线的大小。
 
 启用Is Matte选项将对该对象应用一个特殊的纹理，使该对象不仅对摄像机不可见，而且还使直接出现在摄像机后面的所有东西也不可见。此选项将覆盖所有纹理。有关更多信息，请参见3D章节的Matte Objects部分。
 
-- *Is Matte:* 当被激活时，像素在Z中的后于matte对象像素的对象不会被渲染。
-- *Opaque Alpha:* 将matte对象的alpha值设置为1。此复选框仅在启用is Matte选项时可见。
-- *Infinite Z:* 将Z通道中的值设置为无穷大。此复选框仅在启用is Matte选项时可见。
+- **Is Matte:** 当被激活时，像素在Z中的后于matte对象像素的对象不会被渲染。
+- **Opaque Alpha:** 将matte对象的alpha值设置为1。此复选框仅在启用is Matte选项时可见。
+- **Infinite Z:** 将Z通道中的值设置为无穷大。此复选框仅在启用is Matte选项时可见。
 
 ##### Sub ID
 
@@ -54,7 +54,7 @@ Sub ID滑块可用于选择特定物体的单个子元素，如由Text 3D工具�
 
 ##### Camera Settings
 
-- *Camera:* 这个下拉控件用于在场景中选择相机，该场景定义用于3D到2D坐标转换的屏幕空间。
-- *Use Frame Format Settings:* 选择这个复选框，以覆盖宽度、高度和像素纵横比的控件，并强制它们使用composition的Frame Format首选项中定义的值替代。
-- *Width, Height and Pixel Aspect:* 为了让Locater生成正确的2D转换，它必须知道图像的尺寸和比例。这些控件应该设置为与上面指定的相机关联的渲染器生成的图像相同的尺寸。右键单击这些控件将显示包含在composition首选项中配置的Frame Format的上下文菜单。
+- **Camera:** 这个下拉控件用于在场景中选择相机，该场景定义用于3D到2D坐标转换的屏幕空间。
+- **Use Frame Format Settings:** 选择这个复选框，以覆盖宽度、高度和像素纵横比的控件，并强制它们使用composition的Frame Format首选项中定义的值替代。
+- **Width, Height and Pixel Aspect:** 为了让Locater生成正确的2D转换，它必须知道图像的尺寸和比例。这些控件应该设置为与上面指定的相机关联的渲染器生成的图像相同的尺寸。右键单击这些控件将显示包含在composition首选项中配置的Frame Format的上下文菜单。
 

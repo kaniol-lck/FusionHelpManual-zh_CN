@@ -1,11 +1,10 @@
 ### Alembic Mesh 3D [ABc]
 
-**有两种方法导入Alembic文件：**
+- 有两种方法导入Alembic文件：
+  - 使用 File > Import > Alembic 菜单选项
+  - 手动将AlembicMesh3D 工具添加到流程
 
-- 使用 File > Import > Alembic 菜单选项
-- 手动将AlembicMesh3D 工具添加到流程
-
-*推荐使用第一种方法*
+**推荐使用第一种方法。**
 
 Alembic格式允许在文件中存储任意的用户数据。由于各种原因，Fusion忽略了大多数元数据。对于如何命名元数据以及元数据在不同的ABC出口商之间可能发生的更改，还没有定义任何约定。当通过菜单选项导入Alembic文件时，转换将被读入样条并传入到工具的Input中，并将与comp一起保存。
 
@@ -37,10 +36,10 @@ Alembic格式允许在文件中存储任意的用户数据。由于各种原因�
 
 ##### Alembic import dialog
 
-- *Writer:* 创建或写出Alembic文件的插件或应用程序的名称
-- *Writer Version:* 写出Alembic文件的Alembic sdk的版本
-- *RenderRange:* 这将使您了解动画在Alembic文件中的持续时间(以秒为单位)
-- *DetectedSamplingRates:* Fusion检查文件中的帧率并在这里报告它们。这对于确定设置Resampling Rate的值有用。
+- **Writer:** 创建或写出Alembic文件的插件或应用程序的名称
+- **Writer Version:** 写出Alembic文件的Alembic sdk的版本
+- **RenderRange:** 这将使您了解动画在Alembic文件中的持续时间(以秒为单位)
+- **DetectedSamplingRates:** Fusion检查文件中的帧率并在这里报告它们。这对于确定设置Resampling Rate的值有用。
 
 ##### Hierarchy
 

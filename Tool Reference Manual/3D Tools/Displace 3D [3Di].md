@@ -10,11 +10,11 @@ Displace 3D工具用于根据所参考的图像沿物体的法线置换物体的
 
  ![3Cv_tile](images/3Cv_tile.jpg)
 
-*Displace3D.SceneInput*
+**Displace3D.SceneInput**
 
 [橙色，必需的]这个输入需要一个3D场景。
 
-*Displace3D.Input*
+**Displace3D.Input**
 
 [绿色，可选的] 这个输入需要一个2D图像被用作置换贴图。如果没有提供图像，这个工具其实会将场景直接传递到它的输出。
 

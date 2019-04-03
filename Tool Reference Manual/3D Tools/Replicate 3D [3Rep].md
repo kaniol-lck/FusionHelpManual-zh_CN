@@ -6,11 +6,11 @@ Replicate 3D工具在目标顶点的位置复制输入几何物体。这包括me
 
  ![3Rep_tile](images/3Rep_tile.jpg)
 
-*Replicate3d.Destination* 
+**Replicate3d.Destination** 
 
 [橙色，必需的]这个输入需要一个有顶点位置的3D场景，无论是mesh还是3D粒子动画。
 
-*Replicate3d.Input[#]* 
+**Replicate3d.Input[#]** 
 
 [任意，必需的]这个输入需要一个将被复制的3D场景。一旦连接，一个为了交替三维场景的新的输入将创建。
 
@@ -49,15 +49,15 @@ Random将根据Jitter选项卡中的种子为每个位置使用一个确定但�
 
 Alignment指定如何根据目标mesh的法线或粒子旋转对副本进行对齐。
 
-- *Not Aligned:* 不对齐副本。它保持在与输入mesh相同的方向上旋转。
+- **Not Aligned:** 不对齐副本。它保持在与输入mesh相同的方向上旋转。
 
   ![3Rep_Alignment1](images/3Rep_Alignment1.jpg)
 
-- *Aligned:* 这种模式使用点的法线，并试图重建一个上矢量。它最适合有非焊接顶点的有机mesh，比如导入的FBX mesh，因为它对相同位置的顶点具有相同的旋转。在平面几何mesh上，旋转方向的逐渐变化是显而易见的。为了获得最佳结果，建议在任何转换之前在原点使用此方法。
+- **Aligned:** 这种模式使用点的法线，并试图重建一个上矢量。它最适合有非焊接顶点的有机mesh，比如导入的FBX mesh，因为它对相同位置的顶点具有相同的旋转。在平面几何mesh上，旋转方向的逐渐变化是显而易见的。为了获得最佳结果，建议在任何转换之前在原点使用此方法。
 
   ![3Rep_Alignment2](images/3Rep_Alignment2.jpg)
 
-- *Aligned TBN:* 结果在目标点的切线、副法线和法线的基础上得到更精确、更稳定的对齐。适用于粒子和几何物体。在非焊接mesh上，同一位置的多个非焊接点的两个副本由于各自的法线可能导致不同的对齐。
+- **Aligned TBN:** 结果在目标点的切线、副法线和法线的基础上得到更精确、更稳定的对齐。适用于粒子和几何物体。在非焊接mesh上，同一位置的多个非焊接点的两个副本由于各自的法线可能导致不同的对齐。
 
   ![3Rep_Alignment2](images/3Rep_Alignment3.jpg)
 
@@ -65,9 +65,9 @@ Alignment指定如何根据目标mesh的法线或粒子旋转对副本进行对�
 
 根据输入的粒子颜色影响每个副本的漫反射颜色或着色器。
 
-- *Use Object Color:* 不使用目标粒子的颜色。
-- *Combine Particle Color:* 使用任何输入mesh的着色器，并修改漫反射颜色以匹配目标粒子的颜色。
-- *Use Particle Color:* 用默认着色器替换所有输入mesh的完整着色器。
+- **Use Object Color:** 不使用目标粒子的颜色。
+- **Combine Particle Color:** 使用任何输入mesh的着色器，并修改漫反射颜色以匹配目标粒子的颜色。
+- **Use Particle Color:** 用默认着色器替换所有输入mesh的完整着色器。
   它的漫反射颜色取自目标粒子。
 
 ![3Rep_Color](images/3Rep_Color.jpg)

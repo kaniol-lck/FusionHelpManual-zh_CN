@@ -6,11 +6,11 @@ Cube 3D工具是一种基本的原始几何类型，能够生成简单的cube。
 
  ![3Cb_tile](images/3Cb_tile.jpg)
 
-*Cube3D.SceneInput*
+**Cube3D.SceneInput**
 
 [橙色，可选的]这个输入需要一个3D工具输出的场景。
 
-*Cube3D.NameMaterialInput*
+**Cube3D.NameMaterialInput**
 
 这6个输入用于定义应用于立方体的6个面的材质。他们将接受有效的二维图像或三维材质。
 
@@ -42,24 +42,24 @@ Cube 3D工具是一种基本的原始几何类型，能够生成简单的cube。
 
 ##### Visibility
 
-- *Visible:* 如果Visibility复选框没有被选中，那么该对象在监视器中将不可见，也不会被Renderer 3D工具渲染到输出图像中。不可见的物体不会投射阴影。
-- *Unseen by Cameras:* 如果选择了Unseen by Cameras复选框，则对象将在监视器中可见(除非Visible复选框被关闭)，而通过相机查看时不可见。对象不会被Renderer 3D工具渲染到输出图像中。当Software渲染器渲染时，未被看到的物体所投射的阴影仍然是可见的，而OpenGL渲染器不能。
-- *Cull Front Face/Back Face:* 使用这些选项在几何物体中剔除(消除)某些多边形的渲染和显示。如果选中了Cull Back Face，那么所有远离相机的多边形将不会被渲染，也不会投射阴影。如果选中了Cull Front Face，所有朝向相机的多边形都将同样被删除。选中两个复选框与取消选中Visible复选框具有相同的效果。
-- *Ignore Transparent Pixels in Aux Channels:* 在以前的Fusion版本中，透明像素被Software/GL渲染器拒绝。更具体地说，软件渲染器拒绝了带有R=G=B=A=0的像素，而GL渲染器拒绝了带有=0的像素。这是可选的。您可能希望这样做的原因是为透明区域获取aux通道(例如，Normals, Z, UVs)。例如，假设在后期，您想要替换一个3D元素上的纹理，该元素在某些区域是透明的，纹理在不同的区域是透明的，那么有透明区域设置辅助通道(特别是UVs)是很有用的。作为另一个例子，假设您正在做后期的DoF。您可能不希望Z通道设置在透明区域上，因为这会给您一个错误的深度。此外，请记住，这种拒绝是基于最终的像素颜色，包括灯光，如果它是开着的。如果你在透明的玻璃材料上有高光，这个复选框不会影响到它。
+- **Visible:** 如果Visibility复选框没有被选中，那么该对象在监视器中将不可见，也不会被Renderer 3D工具渲染到输出图像中。不可见的物体不会投射阴影。
+- **Unseen by Cameras:** 如果选择了Unseen by Cameras复选框，则对象将在监视器中可见(除非Visible复选框被关闭)，而通过相机查看时不可见。对象不会被Renderer 3D工具渲染到输出图像中。当Software渲染器渲染时，未被看到的物体所投射的阴影仍然是可见的，而OpenGL渲染器不能。
+- **Cull Front Face/Back Face:** 使用这些选项在几何物体中剔除(消除)某些多边形的渲染和显示。如果选中了Cull Back Face，那么所有远离相机的多边形将不会被渲染，也不会投射阴影。如果选中了Cull Front Face，所有朝向相机的多边形都将同样被删除。选中两个复选框与取消选中Visible复选框具有相同的效果。
+- **Ignore Transparent Pixels in Aux Channels:** 在以前的Fusion版本中，透明像素被Software/GL渲染器拒绝。更具体地说，软件渲染器拒绝了带有R=G=B=A=0的像素，而GL渲染器拒绝了带有=0的像素。这是可选的。您可能希望这样做的原因是为透明区域获取aux通道(例如，Normals, Z, UVs)。例如，假设在后期，您想要替换一个3D元素上的纹理，该元素在某些区域是透明的，纹理在不同的区域是透明的，那么有透明区域设置辅助通道(特别是UVs)是很有用的。作为另一个例子，假设您正在做后期的DoF。您可能不希望Z通道设置在透明区域上，因为这会给您一个错误的深度。此外，请记住，这种拒绝是基于最终的像素颜色，包括灯光，如果它是开着的。如果你在透明的玻璃材料上有高光，这个复选框不会影响到它。
 
 ##### Lighting
 
-- *Affected by Lights:* 如果这个复选框没有被选中，场景中的灯光将不会影响到对象，它将不会接收或投射阴影，它将显示在其颜色、纹理或材质的全亮度。
-- *Shadow Caster:* 如果这个复选框未被启用，该对象将不会在场景中的其他对象上投射阴影。
-- *Shadow Receiver:* 如果此复选框未启用，则该对象将不会接收场景中其他对象投射的阴影。
+- **Affected by Lights:** 如果这个复选框没有被选中，场景中的灯光将不会影响到对象，它将不会接收或投射阴影，它将显示在其颜色、纹理或材质的全亮度。
+- **Shadow Caster:** 如果这个复选框未被启用，该对象将不会在场景中的其他对象上投射阴影。
+- **Shadow Receiver:** 如果此复选框未启用，则该对象将不会接收场景中其他对象投射的阴影。
 
 ##### Matte
 
 启用Is Matte选项将对该对象应用一个特殊的纹理，使该对象不仅对摄像机不可见，而且还使直接出现在摄像机后面的所有东西也不可见。此选项将覆盖所有纹理。有关更多信息，请参见3D章节的Matte Objects部分。
 
-- *Is Matte:* 当被激活时，像素在Z中的后于matte对象像素的对象不会被渲染。
-- *Opaque Alpha:* 将matte对象的alpha值设置为1。此复选框仅在启用is Matte选项时可见。
-- *Infinite Z:* 将Z通道中的值设置为无穷大。此复选框仅在启用is Matte选项时可见。
+- **Is Matte:** 当被激活时，像素在Z中的后于matte对象像素的对象不会被渲染。
+- **Opaque Alpha:** 将matte对象的alpha值设置为1。此复选框仅在启用is Matte选项时可见。
+- **Infinite Z:** 将Z通道中的值设置为无穷大。此复选框仅在启用is Matte选项时可见。
 
 ##### Blend Mode
 
@@ -67,8 +67,8 @@ Blend Mode指定Renderer在将该对象与场景的其余部分组合时将使�
 
 混合模式最初设计用于2D图像。在光照的3D环境中使用它们会产生不希望的结果。为了获得最佳效果，请在软件中渲染的无光照3D场景中使用Apply模式。
 
-- *OpenGL Blend Mode:* 使用此菜单来选择将在OpenGL渲染器处理几何物体时使用的混合模式。这也是在监视器中查看对象时使用的模式。目前OpenGL渲染器支持三种混合模式。
-- *Software Blend Mode:* 使用此菜单选择在Software渲染器处理几何物体时使用的混合模式。目前，Software渲染器支持Merge工具文档中描述的所有模式，除了Dissolve模式。
+- **OpenGL Blend Mode:** 使用此菜单来选择将在OpenGL渲染器处理几何物体时使用的混合模式。这也是在监视器中查看对象时使用的模式。目前OpenGL渲染器支持三种混合模式。
+- **Software Blend Mode:** 使用此菜单选择在Software渲染器处理几何物体时使用的混合模式。目前，Software渲染器支持Merge工具文档中描述的所有模式，除了Dissolve模式。
 
 #### Material选项卡
 

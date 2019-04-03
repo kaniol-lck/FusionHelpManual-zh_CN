@@ -6,7 +6,7 @@ Duplicate 3D工具可以用来快速复制场景中的任何几何物体，对�
 
  ![3Di_tile](images/3Di_tile.jpg)
 
-*Duplicate3D.SceneInput*
+**Duplicate3D.SceneInput**
 
 [橙色，必需的]这个输入需要一个3D场景。
 

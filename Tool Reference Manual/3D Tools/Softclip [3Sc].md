@@ -8,7 +8,7 @@ Softclip工具通常放在渲染器之前，以确保下游的灯光和纹理调
 
  ![3Sc_tile](images/3Sc_tile.jpg)
 
-*Softclip.SceneInput* 
+**Softclip.SceneInput** 
 
 [橙色，必需的]这个输入需要一个3D场景。
 

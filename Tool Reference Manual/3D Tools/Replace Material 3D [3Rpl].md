@@ -8,11 +8,11 @@ Replace Material 3D工具用它自己的材质输入替换应用于输入场景�
 
  ![3Rpl_tile](images/3Rpl_tile.jpg)
 
-*Replacematerial3D.SceneInput* 
+**Replacematerial3D.SceneInput** 
 
 [橙色，必需的]这个输入需要一个3D场景。
 
-*Replacematerial3D.MaterialInput* 
+**Replacematerial3D.MaterialInput** 
 
 [绿色，可选的]该输入将接受2D图像或3D材质。如果提供2D图像，它将被用作工具内置的基础材质的漫反射纹理贴图。如果连接了3D材质，那么基础材质将被禁用。
 
@@ -30,10 +30,10 @@ Replace Material 3D工具用它自己的材质输入替换应用于输入场景�
 
 为每个rgba通道提供几种替换模式：
 
-- *Keep*: 防止通道被输入材质所替代。
-- *Replace:* 替换相应颜色通道的材质。
-- *Blend:* 把这些材质混合在一起。
-- *Multiply:* 乘以两个输入的相应通道。
+- **Keep**: 防止通道被输入材质所替代。
+- **Replace:** 替换相应颜色通道的材质。
+- **Blend:** 把这些材质混合在一起。
+- **Multiply:** 乘以两个输入的相应通道。
 
 ##### Limit by Object id/Material id
 

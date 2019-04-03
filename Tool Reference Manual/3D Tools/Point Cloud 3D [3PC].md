@@ -6,7 +6,7 @@ Point Cloud通常是由3D跟踪或建模软件创建的大量空位置（点）�
 
  ![3PC_tilr](images/3PC_tilr.jpg)
 
-*Pointcloud3D.SceneInput* 
+**Pointcloud3D.SceneInput** 
 
 [橙色，必需的]这个输入需要一个3D场景。
 
@@ -34,12 +34,12 @@ Point Cloud通常是由3D跟踪或建模软件创建的大量空位置（点）�
 
 Import Point Cloud按钮显示一个对话框，用于从另一个应用程序导入点云。支持的文件有：
 
-| 文件类型                   | 后缀 |
-| -------------------------- | ---- |
-| Alias's Maya               | .ma  |
-| 3DS Max ASCII Scene Export | .ase |
-| NewTek's LightWave         | .lws |
-| Softimage XSI's            | .xsi |
+| 文件类型                    | 后缀 |
+| --------------------------- | ---- |
+| *Alias's Maya               | .ma  |
+| *3DS Max ASCII Scene Export | .ase |
+| *NewTek's LightWave         | .lws |
+| *Softimage XSI's            | .xsi |
 
 ##### Make Renderable
 

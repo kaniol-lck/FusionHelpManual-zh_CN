@@ -10,19 +10,19 @@ Text 3D工具基于一个早于Fusion 3D环境工具。因此，在此工具的�
 
  ![3Txt_tile](images/3Txt_tile.jpg)
 
-*Text3d.SceneInput* 
+**Text3d.SceneInput** 
 
 [橙色，必需的]这个输入需要一个3D场景。
 
-*Text3d.ColorImage* 
+**Text3d.ColorImage** 
 
 [橙色，必需的]这个输入需要一个2D图像。只有在Material选项卡的Shading部分启用Image模式时，它才可见。
 
-*Text3d.BevelTexture* 
+**Text3d.BevelTexture** 
 
 [橙色，必需的]这个输入需要一个2D图像。只有在Material选项卡的Shading部分启用Image模式时，它才可见。
 
-（译注：*Text3d.ColorImage* 和*Text3d.BevelTexture* 的颜色为绿色或粉色，以开启Image模式先后为准。）
+（译注：**Text3d.ColorImage** 和**Text3d.BevelTexture** 的颜色为绿色或粉色，以开启Image模式先后为准。）
 
 #### Text Extrusion
 
@@ -52,9 +52,9 @@ Text 3D工具基于一个早于Fusion 3D环境工具。因此，在此工具的�
 
 在Custom模式下，Smoothing Angle控制文本字符边缘法线的平滑。样条本身控制沿挤压轮廓线的平滑。如果样条线段被平滑，例如使用快捷键Shift-S，法线也会被平滑。如果关键点是线性的，将会有一个锐利的阴影边缘。样条上的第一个和最后一个关键点定义了文本的范围。
 
-*Custom Extrusion Subdivisions:* 控制挤压侧面的光滑部分内细分的数量。
+**Custom Extrusion Subdivisions:** 控制挤压侧面的光滑部分内细分的数量。
 
-> 提示：记住样条也可以在Spline Editor选项卡中编辑，您不必使用 Text3D. ExtrusionProfile曲线控件有限的功能和大小。不要尝试将正面/背面的尺寸调到零。这将导致自交面产生的Z冲突。为了避免这个问题，请确保第一个和最后一个点的侧面设置为0。
+> **提示：** 记住样条也可以在Spline Editor选项卡中编辑，您不必使用 Text3D. ExtrusionProfile曲线控件有限的功能和大小。不要尝试将正面/背面的尺寸调到零。这将导致自交面产生的Z冲突。为了避免这个问题，请确保第一个和最后一个点的侧面设置为0。
 
 #### Shading
 

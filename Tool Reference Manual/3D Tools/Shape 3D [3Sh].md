@@ -6,11 +6,11 @@ Shape 3D工具用于生成几种基本的基础三维物体，包括平面、立
 
  ![3Sh_tile](images/3Sh_tile.jpg)
 
-*Shape3d.SceneInput* 
+**Shape3d.SceneInput** 
 
 [橙色，必需的]这个输入需要一个3D场景。
 
-*Shape3d.MaterialInput* 
+**Shape3d.MaterialInput** 
 
 [绿色，可选的]此输入将接受2D图像或3D材质。如果提供2D图像，它将作为一个漫反射(diffuse)纹理映射，用于工具内建的基本材质。如果连接了3D材质，则基本材质将被禁用。
 
@@ -22,8 +22,8 @@ Shape 3D工具用于生成几种基本的基础三维物体，包括平面、立
 
 选择这些选项之一，以确定形状3D工具将生成哪些几何基础物体。下面的控件将更改为匹配所选形状。
 
-- *Lock Width/Height/Depth:*  [plane, cube]如果选中此复选框，宽度、高度和深度控件将作为一个单一大小的滑块锁定在一起。否则，将提供沿每个轴对形状大小的单独控制。
-- *Size Width/Height/Depth:*  [plane, cube]用于控制形状的大小。
+- **Lock Width/Height/Depth:**  [plane, cube]如果选中此复选框，宽度、高度和深度控件将作为一个单一大小的滑块锁定在一起。否则，将提供沿每个轴对形状大小的单独控制。
+- **Size Width/Height/Depth:**  [plane, cube]用于控制形状的大小。
 
 ##### Cube Mapping
 
@@ -144,5 +144,5 @@ Blend Mode指定渲染器在将此对象与场景的其余部分组合时将使�
 
 ![3Sh_Compare](images/3Sh_Compare.jpg)
 
-> 注意：如果你直接将纹理导入球体，它也会被水平镜像。您可以首先使用Transform工具来“修复”这个问题。
+> **注意：** 如果你直接将纹理导入球体，它也会被水平镜像。您可以首先使用Transform工具来“修复”这个问题。
 
