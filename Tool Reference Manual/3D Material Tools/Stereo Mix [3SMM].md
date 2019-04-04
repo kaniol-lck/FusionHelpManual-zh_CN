@@ -4,11 +4,11 @@
 
  ![3SMM_tile](images/3SMM_tile.png)
 
-*StereoMix.LeftMaterial* 
+**StereoMix.LeftMaterial** 
 
 [橙色，必需的]此输入将接受2D图像或3D材质，以用作左眼渲染的材质。如果使用2D图像，则使用基本材质类型将其转换为漫反射纹理贴图。
 
-*StereoMix.RightMaterial* 
+**StereoMix.RightMaterial** 
 
 [橙色，必需的]此输入将接受2D图像或3D材质，以用作右眼渲染的材质。如果使用2D图像，则使用基本材质类型将其转换为漫反射纹理贴图。
 

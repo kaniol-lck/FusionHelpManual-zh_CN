@@ -6,7 +6,7 @@ Ambient Light是一种无方向的光照，它在全局范围内照亮一个场�
 
  ![3Am_tile](images/3Am_tile.jpg)
 
-*AmbientLight.SceneInput* 
+**AmbientLight.SceneInput** 
 
 [橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。
 

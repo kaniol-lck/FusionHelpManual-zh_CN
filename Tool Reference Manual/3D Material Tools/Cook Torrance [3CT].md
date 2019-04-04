@@ -8,27 +8,27 @@ Cook Torrance工具输出一个可连接到任何3D几何物体工具上的材�
 
  ![3CT_tile](images/3CT_tile.jpg)
 
-*CookTorrance.DiffuseTex* 
+**CookTorrance.DiffuseTex** 
 
 [橙色，可选的]此输入将接受2D图像或3D材质作为漫反射纹理贴图。
 
-*CookTorrance.SpecularColorTex* 
+**CookTorrance.SpecularColorTex** 
 
 [绿色，可选的]此输入将接受2D图像或3D材质作为高光彩色纹理贴图。
 
-*CookTorrance.SpecularIntensityTex* 
+**CookTorrance.SpecularIntensityTex** 
 
 [洋红色，可选的]此输入将接受2D图像或3D材质作为材质高光高光的强度贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。
 
-*CookTorrance.SpecularExponentTex* 
+**CookTorrance.SpecularExponentTex** 
 
 [淡蓝色，可选的]此输入将接受2D图像或3D材质作为材质高光的衰减贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。
 
-*CookTorrance.SpecularRefractiveIndexTex* 
+**CookTorrance.SpecularRefractiveIndexTex** 
 
 [白色，可选]此输入将接受2D图像或3D材质，以用作修改镜面折射率粗糙度的贴图。  纹理贴图的alpha乘以折射率的值。
 
-*CookTorrance.BumpmapTex* 
+**CookTorrance.BumpmapTex** 
 
 [白色，可选的]此输入将接受2D图像或3D材质，然后使用RGB信息作为纹理空间法线。
 

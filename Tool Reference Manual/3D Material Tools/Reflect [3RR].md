@@ -12,24 +12,24 @@ Reflect工具用于向材质添加环境贴图反射和折射。提供反射和�
 
  ![3RR_tile](images/3RR_tile.jpg)
 
-*Reflect.BackgroundMaterial* 
+**Reflect.BackgroundMaterial** 
 
 [橙色，可选的]此输入需要2D图像或3D材质。
   如果提供了2D图像，该工具会将其视为应用于基本材质的漫反射纹理贴图。
 
-*Reflect.Reflection.ReflectionTex* 
+**Reflect.Reflection.ReflectionTex** 
 
 [绿色，可选的]此输入需要2D图像或3D材质。RGB通道用作反射纹理，并忽略alpha。
 
-*Reflect.Reflection.ReflectionIntensityTex* 
+**Reflect.Reflection.ReflectionIntensityTex** 
 
 [洋红色，可选的]此输入需要2D图像或3D材质。纹理的alpha通道乘以反射的强度。
 
-*Reflect.Refraction.RefractionTex* 
+**Reflect.Refraction.RefractionTex** 
 
 [淡蓝色，可选的]此输入需要2D图像或3D材质。RGB通道用作折射纹理。
 
-*Reflect.BumpmapTex* 
+**Reflect.BumpmapTex** 
 
 [白色，可选的]此输入将接受2D图像或3D材质，然后将RGB信息用作纹理空间法线。
 

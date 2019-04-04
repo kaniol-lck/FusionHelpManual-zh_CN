@@ -8,7 +8,7 @@ Point Light是一种在空间中位置清晰的光源，它向四面八方发光
 
  ![3PL_tile](images/3PL_tile.jpg)
 
-*PointLight.SceneInput* 
+**PointLight.SceneInput** 
 
 [橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。
 

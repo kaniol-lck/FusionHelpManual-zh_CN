@@ -10,27 +10,27 @@ Ward工具输出一个三维材质，可以连接到任何三维几何工具上�
 
  ![3Wd_tile](images/3Wd_tile.jpg)
 
-*Ward.DiffuseTex* 
+**Ward.DiffuseTex** 
 
 [橙色，可选的]此输入将接受2D图像或3D材质作为漫反射纹理贴图。
 
-*Ward.SpecularColorTex* 
+**Ward.SpecularColorTex** 
 
 [绿色，可选的]此输入将接受2D图像或3D材质作为高光彩色纹理贴图。
 
-*Ward.SpecularIntensityTex* 
+**Ward.SpecularIntensityTex** 
 
 [洋红色，可选的]此输入将接受2D图像或3D材质作为材质高光高光的强度贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。
 
-*Ward.SpreadUTexture* 
+**Ward.SpreadUTexture** 
 
 [淡蓝色，可选的]该输入将接受2D图像或3D材质。此工具控件中的Spread U选项的值将与材质的alpha通道中的像素值相乘。
 
-*Ward.SpreadVTexture* 
+**Ward.SpreadVTexture** 
 
 [淡蓝色，可选的]该输入将接受2D图像或3D材质。此工具控件中的Spread V选项的值将与材质的alpha通道中的像素值相乘。
 
-*Ward.BumpmapTex* 
+**Ward.BumpmapTex** 
 
 [白色，可选的]此输入将接受2D图像或3D材质，然后使用RGB信息作为纹理空间法线。
 
