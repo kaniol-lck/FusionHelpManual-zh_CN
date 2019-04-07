@@ -21,7 +21,7 @@
   - [需求](#需求)
   - [约定](#约定)
 
-1. 脚本指南
+1. [Scripting Guide 脚本指南](Scripting Guide/README.md)
    - 引言
      - 快速入门教程
    - 脚本语言
