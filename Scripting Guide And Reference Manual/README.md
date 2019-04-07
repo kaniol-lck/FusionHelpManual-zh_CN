@@ -22,8 +22,8 @@
   - [约定](#约定)
 
 1. [Scripting Guide 脚本指南](Scripting Guide/README.md)
-   - 引言
-     - 快速入门教程
+   - [Introduction 引言](Scripting%20Guide/Introduction.md)
+     - [Quick Start Tutorial 快速入门教程](Scripting%20Guide/Introduction.md#quick-start-tutorial-快速入门教程)
    - 脚本语言
      - Lua
      - Python
@@ -42,7 +42,7 @@
      - 属性
      - 对象数据
      - 元数据
-   - 图形用户界面
+   - Graphical User Interfaces 图形用户界面
 2. 脚本参考
    - 类继承关系
    - 参考

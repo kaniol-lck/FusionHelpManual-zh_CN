@@ -5,7 +5,7 @@
 ### 目录
 
 - [Introduction 引言](Introduction.md)
-  - [Quick Start Tutorial 快速入门教程](Introduction.md#Quick%20Start%20Tutorial%20快速入门教程)
+  - [Quick Start Tutorial 快速入门教程](Introduction.md#quick-start-tutorial-快速入门教程)
 - 脚本语言
   - Lua
   - Python

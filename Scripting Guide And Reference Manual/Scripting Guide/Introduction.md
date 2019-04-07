@@ -80,7 +80,7 @@ print("Hello World from Fusion!")
 comp:GetToolList(bool selected, string type = nil)
 ```
 
-返回了该合成中的所有工具，而如果参数设置为`true`则只返回选中的。类型参数是可选的，它可以用于筛选特定类型的工具。
+返回该合成中的所有工具，而如果参数设置为`true`则只返回选中的。类型参数是可选的，它可以用于筛选特定类型的工具。
 
 该工具本身是类型`Tool`或`Operator`的一个对象。如你所见，Fusion的对象模型遵循面向对象（OOP）的概念，这将在下章深究。
 
