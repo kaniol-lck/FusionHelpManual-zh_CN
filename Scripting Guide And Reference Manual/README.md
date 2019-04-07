@@ -21,7 +21,7 @@
   - [需求](#需求)
   - [约定](#约定)
 
-1. [Scripting Guide 脚本指南](Scripting Guide/README.md)
+1. [Scripting Guide 脚本指南](Scripting%20Guide/README.md)
    - [Introduction 引言](Scripting%20Guide/Introduction.md)
      - [Quick Start Tutorial 快速入门教程](Scripting%20Guide/Introduction.md#quick-start-tutorial-快速入门教程)
    - 脚本语言
