@@ -5,13 +5,24 @@
 - **[Point Light [3PL]](./Point%20Light%20[3PL].md)** ✔
 - **[Spot Light [3SL]](./Spot%20Light%20[3SL].md)** ✔
 
-![index_menu](images/index_menu.png)
-
-![index_AmbientLight](images/index_AmbientLight.jpg)
-
-![index_DirectionalLight](images/index_DirectionalLight.jpg)
-
-![index_PointLight](images/index_PointLight.jpg)
-
-![index_SpotLight](images/index_SpotLight.jpg)
-
+<table id="img">
+  <tr>
+    <td><img src="images/index_menu.png" alt="index_menu"></td>
+    <td>
+      <table id="img">
+        <tr>
+          <td><img src="images/index_AmbientLight.jpg" alt="index_AmbientLight"></td>
+        </tr>
+        <tr>
+          <td><img src="images/index_DirectionalLight.jpg" alt="index_DirectionalLight"></td>
+        </tr>
+        <tr>
+          <td><img src="images/index_PointLight.jpg" alt="index_PointLight"></td>
+        </tr>
+        <tr>
+          <td><img src="images/index_SpotLight.jpg" alt="index_SpotLight"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

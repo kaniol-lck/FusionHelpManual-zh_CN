@@ -9,13 +9,28 @@
 - **[Stereo Mix [3SMM]](./Stereo%20Mix%20[3SMM].md)** ✔
 - **[Ward [3Wd]](./Ward%20[3Wd].md)** ✔
 
-![index_menu](images/index_menu.png)
-
-![index_Blinn](images/index_Blinn.jpg)![index_Phong](images/index_Phong.jpg)
-
-![index_ChannelBooleanMaterial](images/index_ChannelBooleanMaterial.jpg)![index_Reflect](images/index_Reflect.jpg)
-
-![index_CookTorrance](images/index_CookTorrance.jpg)![index_StereoMix](images/index_StereoMix.jpg)
-
-![index_Ward](images/index_Ward.jpg)![index_MaterialMerge](images/index_MaterialMerge.jpg)
-
+<table id="img">
+  <tr>
+    <td><img src="images/index_menu.png" alt="index_menu"></td>
+    <td>
+      <table id="img">
+        <tr>
+          <td><img src="images/index_Blinn.jpg" alt="index_Blinn"></td>
+          <td><img src="images/index_Phong.jpg" alt="index_Phong"></td>
+        </tr>
+        <tr>
+          <td><img src="images/index_ChannelBooleanMaterial.jpg" alt="index_ChannelBooleanMaterial"></td>
+          <td><img src="images/index_Reflect.jpg" alt="index_Reflect"></td>
+        </tr>
+        <tr>
+          <td><img src="images/index_CookTorrance.jpg" alt="index_CookTorrance"></td>
+          <td><img src="images/index_StereoMix.jpg" alt="index_StereoMix"></td>
+        </tr>
+        <tr>
+          <td><img src="images/index_Ward.jpg" alt="index_Ward"></td>
+          <td><img src="images/index_MaterialMerge.jpg" alt="index_MaterialMerge"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
