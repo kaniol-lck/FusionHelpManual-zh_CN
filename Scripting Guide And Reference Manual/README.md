@@ -24,9 +24,9 @@
 1. [Scripting Guide 脚本指南](Scripting%20Guide/README.md)
    - [Introduction 引言](Scripting%20Guide/Introduction.md)
      - [Quick Start Tutorial 快速入门教程](Scripting%20Guide/Introduction.md#quick-start-tutorial-快速入门教程)
-   - 脚本语言
-     - Lua
-     - Python
+   - [Scripting Languages 脚本语言](Scripting%20Guide/Scripting%20Languages.md)
+     - [Lua](Scripting%20Guide/Scripting%20Languages.md/#lua)
+     - [Python](Scripting%20Guide/Scripting%20Languages.md/#python)
    - 脚本与调试
      - 控制台
    - 脚本类型

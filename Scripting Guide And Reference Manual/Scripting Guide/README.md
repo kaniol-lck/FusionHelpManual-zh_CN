@@ -6,9 +6,9 @@
 
 - [Introduction 引言](Introduction.md)
   - [Quick Start Tutorial 快速入门教程](Introduction.md#quick-start-tutorial-快速入门教程)
-- 脚本语言
-  - Lua
-  - Python
+- [Scripting Languages 脚本语言](Scripting%20Languages.md)
+  - [Lua](Scripting%20Languages.md/#lua)
+  - [Python](Scripting%20Languages.md/#python)
 - 脚本与调试
   - 控制台
 - 脚本类型
