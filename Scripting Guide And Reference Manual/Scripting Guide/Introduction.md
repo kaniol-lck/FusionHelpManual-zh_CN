@@ -50,7 +50,7 @@ print("Hello World from Fusion!")
 
 > **注意** 
 >
-> 请留意是通过*Script->Edit->子菜单*来编辑脚本，而*Script->Name of your script*来直接执行。
+> 请留意是通过*Script->Edit->子菜单*来编辑脚本，而*Script->脚本名*来直接执行。
 >
 > 所有合成文件夹中的脚本都会在这里列出，包括子文件夹。
 
@@ -90,7 +90,7 @@ comp:GetToolList(bool selected, string type = nil)
 >
 > 大多数脚本API中的对象都有一个叫做`Object`的基类。`Object`有共同属性，其中一个存储Attribute。Attribute表示了一个工具在输出之外的序列化状态。
 
-用于读写PassThrough状态的Attribute是叫做TOOLB_PassThrough的布尔量。
+用于读写PassThrough状态的Attribute是叫做`TOOLB_PassThrough`的布尔量。
 
 因为此时我们只设置它，我们只需：
 

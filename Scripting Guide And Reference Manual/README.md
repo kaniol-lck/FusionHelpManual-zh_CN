@@ -27,8 +27,8 @@
    - [Scripting Languages 脚本语言](Scripting%20Guide/Scripting%20Languages.md)
      - [Lua](Scripting%20Guide/Scripting%20Languages.md/#lua)
      - [Python](Scripting%20Guide/Scripting%20Languages.md/#python)
-   - 脚本与调试
-     - 控制台
+   - [Scripting and Debugging 脚本与调试](Scripting%20Guide/Scripting%20and%20Debugging.md)
+     - [Console 控制台](Scripting%20Guide/Scripting%20and%20Debugging.md#console)
    - 脚本类型
      - 交互式脚本
      - 外部脚本

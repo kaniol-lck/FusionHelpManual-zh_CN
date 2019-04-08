@@ -184,7 +184,7 @@ l = [item[1] for item in sorted(d.items())]
 
 下面的列表汇总了使用其中一门或另一门语言的原因。
 
-Pro Lua：
+使用Lua：
 
 - 内置二进制 - 免安装
 - 从此共享脚本可以确保在Fusion中工作而无需安装
@@ -193,7 +193,7 @@ Pro Lua：
 - 更轻量，更快
 - Fusion搭载了很多Lua脚本而可以作为示例
 
-Pro Python：
+使用Python：
 
 - 在“管道”中使用其他Python脚本/应用。
 - 大多数VFX应用使用Python
