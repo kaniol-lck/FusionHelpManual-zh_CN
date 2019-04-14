@@ -21,7 +21,7 @@
 鉴于Fusion 16 Studio的测试版出了（虽然Fusion 16内置的仍是旧版手册），同时更新了Davinci Resolve 15.3的帮助手册，该翻译计划也做出一些调整：
 
 - **《Tool Reference Manual 工具参考手册》**：内容与Davinci Resolve 15.3手册无明显区别，主要是替换了一些截图，修改了一些术语（如Tool->Node），以及一些小的编辑错误。将继续以Fusion 9手册为基准翻译，如有需要，届时再加入新版图片。
-- **《Scripting Guide And Reference Manual 脚本指南与参考手册》**Davinci Resolve 15.3手册未包含该内容，修改内容未知，目测无大改动，暂时搁置。
+- **《Scripting Guide And Reference Manual 脚本指南与参考手册》**：Davinci Resolve 15.3手册未包含该内容，修改内容未知，目测无大改动，暂时搁置。
 - **《User Manual 用户手册》**：因Fusion 16更新了UI，完全采用Davinci内Fusion界面的布局，Davinci Resolve 15.3手册内Fusion手册几乎完全不同，便不列入翻译计划。
 
 ## 加入翻译
