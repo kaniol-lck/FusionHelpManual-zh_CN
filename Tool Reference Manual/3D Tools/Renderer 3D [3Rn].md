@@ -142,7 +142,7 @@ GL渲染器可以直接在GPU上执行图像的缩放，其速度远远快于CPU
 | Gaussian             | 这在速度和质量上与Quadratic非常相似。                        |
 | Mitchell             | 这类似于Catmull-Rom，但使用精细的图像可以产生更好的效果。它比Catmull-Rom慢。 |
 | Lanczos              | 这与Mitchell和Catmull-Rom非常相似，但是更清晰，也更慢。      |
-| Sinc                 | 这是一个先进的滤镜，可以产生非常清晰，详细的结果，然而，它可能会在某些情况下产生可见的“铃声”。 |
+| Sinc                 | 这是一个先进的滤镜，可以产生非常清晰，详细的结果，然而，它可能会在某些情况下产生可见的振铃。 |
 | Bessel               | 这类似于Sinc滤镜，但可能更快一些。                           |
 
 ##### Window Method
