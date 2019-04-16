@@ -12,29 +12,23 @@
 
 <table id="img">
   <tr>
-    <td><img src="images/index_menu.png" alt="index_menu"></td>
-    <td>
-      <table id="img">
-        <tr>
-          <td><img src="images/index_Blur.jpg" alt="index_Blur"></td>
-          <td><img src="images/index_SoftGlow.jpg" alt="index_SoftGlow"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_Defocus.jpg" alt="index_Defocus"></td>
-          <td><img src="images/index_UnsharpenMask.jpg" alt="index_UnsharpenMask"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_DirectionalBlur.jpg" alt="index_DirectionalBlur"></td>
-          <td><img src="images/index_VariBlur.jpg" alt="index_VariBlur"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_Glow.jpg" alt="index_Glow"></td>
-          <td><img src="images/index_VerctorMotionBlur.jpg" alt="index_VerctorMotionBlur"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_Sharpen.jpg" alt="index_Sharpen"></td>
-        </tr>
-      </table>
-    </td>
+	<td rowspan="5"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td><img src="images/index_Blur.jpg" alt="index_Blur"></td>
+    <td><img src="images/index_SoftGlow.jpg" alt="index_SoftGlow"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_Defocus.jpg" alt="index_Defocus"></td>
+    <td><img src="images/index_UnsharpenMask.jpg" alt="index_UnsharpenMask"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_DirectionalBlur.jpg" alt="index_DirectionalBlur"></td>
+    <td><img src="images/index_VariBlur.jpg" alt="index_VariBlur"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_Glow.jpg" alt="index_Glow"></td>
+    <td><img src="images/index_VerctorMotionBlur.jpg" alt="index_VerctorMotionBlur"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_Sharpen.jpg" alt="index_Sharpen"></td>
   </tr>
 </table>

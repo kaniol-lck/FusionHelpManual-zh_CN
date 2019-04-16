@@ -7,22 +7,16 @@
 
 <table id="img">
   <tr>
-    <td><img src="images/index_menu.png" alt="index_menu"></td>
-    <td>
-      <table id="img">
-        <tr>
-          <td><img src="images/index_AmbientLight.jpg" alt="index_AmbientLight"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_DirectionalLight.jpg" alt="index_DirectionalLight"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_PointLight.jpg" alt="index_PointLight"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_SpotLight.jpg" alt="index_SpotLight"></td>
-        </tr>
-      </table>
-    </td>
+    <td rowspan="4"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td><img src="images/index_AmbientLight.jpg" alt="index_AmbientLight"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_DirectionalLight.jpg" alt="index_DirectionalLight"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_PointLight.jpg" alt="index_PointLight"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_SpotLight.jpg" alt="index_SpotLight"></td>
   </tr>
 </table>

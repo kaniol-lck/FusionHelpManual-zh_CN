@@ -12,30 +12,25 @@
 
 <table id="img">
   <tr>
-    <td><img src="images/index_menu.png" alt="index_menu"></td>
-    <td>
-      <table id="img">
-        <tr>
-          <td><img src="images/index_BumpMap.jpg" alt="index_BumpMap"></td>
-          <td><img src="images/index_Gradient.jpg" alt="index_Gradient"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_Catcher.jpg" alt="index_Catcher"></td>
-          <td><img src="images/index_SphereMap.jpg" alt="index_SphereMap"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_CubeMap.jpg" alt="index_CubeMap"></td>
-          <td><img src="images/index_Texture.jpg" alt="index_Texture"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_Falloff.jpg" alt="index_Falloff"></td>
-          <td><img src="images/index_TextureTransform.jpg" alt="index_TextureTransform"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_FastNoiseTexture.jpg" alt="index_FastNoiseTexture"></td>
-        </tr>
-      </table>
-    </td>
+    <td rowspan="5"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td><img src="images/index_BumpMap.jpg" alt="index_BumpMap"></td>
+    <td><img src="images/index_Gradient.jpg" alt="index_Gradient"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_Catcher.jpg" alt="index_Catcher"></td>
+    <td><img src="images/index_SphereMap.jpg" alt="index_SphereMap"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_CubeMap.jpg" alt="index_CubeMap"></td>
+    <td><img src="images/index_Texture.jpg" alt="index_Texture"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_Falloff.jpg" alt="index_Falloff"></td>
+    <td><img src="images/index_TextureTransform.jpg" alt="index_TextureTransform"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_FastNoiseTexture.jpg" alt="index_FastNoiseTexture"></td>
   </tr>
 </table>
+
 

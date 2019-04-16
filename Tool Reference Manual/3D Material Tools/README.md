@@ -11,26 +11,20 @@
 
 <table id="img">
   <tr>
-    <td><img src="images/index_menu.png" alt="index_menu"></td>
-    <td>
-      <table id="img">
-        <tr>
-          <td><img src="images/index_Blinn.jpg" alt="index_Blinn"></td>
-          <td><img src="images/index_Phong.jpg" alt="index_Phong"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_ChannelBooleanMaterial.jpg" alt="index_ChannelBooleanMaterial"></td>
-          <td><img src="images/index_Reflect.jpg" alt="index_Reflect"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_CookTorrance.jpg" alt="index_CookTorrance"></td>
-          <td><img src="images/index_StereoMix.jpg" alt="index_StereoMix"></td>
-        </tr>
-        <tr>
-          <td><img src="images/index_Ward.jpg" alt="index_Ward"></td>
-          <td><img src="images/index_MaterialMerge.jpg" alt="index_MaterialMerge"></td>
-        </tr>
-      </table>
-    </td>
+    <td rowspan="4"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td><img src="images/index_Blinn.jpg" alt="index_Blinn"></td>
+    <td><img src="images/index_Phong.jpg" alt="index_Phong"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_ChannelBooleanMaterial.jpg" alt="index_ChannelBooleanMaterial"></td>
+    <td><img src="images/index_Reflect.jpg" alt="index_Reflect"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_CookTorrance.jpg" alt="index_CookTorrance"></td>
+    <td><img src="images/index_StereoMix.jpg" alt="index_StereoMix"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_Ward.jpg" alt="index_Ward"></td>
+    <td><img src="images/index_MaterialMerge.jpg" alt="index_MaterialMerge"></td>
   </tr>
 </table>
