@@ -16,8 +16,8 @@
 2. [第二章 3D Light Tools 三维灯光工具](3D%20Light%20Tools/README.md) ✔
 3. [第三章 3D Material Tools 三维材质工具](3D%20Material%20Tools/README.md) ✔
 4. [第四章 3D Texture Tools 三维纹理工具 ](3D%20Texture%20Tools/README.md) ✔
-5. [第五章 Blur Tools 模糊工具](Blur%20Tools/README.md) 📌
-6. [第六章 Color Tools 色彩工具](Color%20Tools/README.md) 
+5. [第五章 Blur Tools 模糊工具](Blur%20Tools/README.md) ✔
+6. [第六章 Color Tools 色彩工具](Color%20Tools/README.md) 📌
 7. [第七章 Composite Tools 合成工具](Composite%20Tools/README.md) 
 8. [第八章 Creator Tools 生成器工具](Creator%20Tools/README.md) 
 9. [第九章 DeepPixel Tools 深度像素工具](DeepPixel%20Tools/README.md) 
