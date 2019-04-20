@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" /> 
+  <title>第二章 3D Light Tools 三维灯光工具</title>
+  <style type="text/css">html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+@media screen and (max-width: 800px) {
+  html { font-size: 14px; }
+  #write { padding-left: 30px; padding-right: 30px; font-size: 14px; }
+}
+@media screen and (min-width: 1100px) {
+  body, #footer-word-count-info { background: rgb(245, 245, 245); }
+  body.pin-outline, .pin-outline #footer-word-count-info, .pin-outline footer { background: rgb(255, 255, 255); }
+  #write { max-width: 1000px; padding: 40px 60px; background: rgb(255, 255, 255); margin: 3em auto; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial; border-width: 0px 1px; box-shadow: rgb(206, 205, 205) 0px 0px 8px; }
+  .pin-outline #write { max-width: 1000px; background: rgb(255, 255, 255); margin: 0px; border: 0px; padding-left: 60px; padding-right: 60px; }
+  footer { background-color: transparent; }
+}
+@media screen and (min-width: 1300px) {
+  body.pin-outline, .pin-outline #footer-word-count-info, .pin-outline footer { background: rgb(240, 240, 240); }
+  .pin-outline #write { max-width: 1000px; padding: 40px 60px; background: rgb(255, 255, 255); margin: 3em auto; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial; border-width: 0px 1px; }
+  .pin-outline footer { background-color: transparent; }
+  #footer-word-count-info { background: rgb(245, 245, 245); }
+}
+::selection { background: rgb(221, 221, 221); color: rgb(93, 93, 93); }
+:root { --side-bar-bg-color: #e5e5e5; --text-color: #839496; --item-hover-bg-color: #ffffff; --window-border: 1px solid #93a1a1; --active-file-bg-color: #fbfbfb; --active-file-text-color: #93a1a1; --item-hover-text-color: #93a1a1; --anchor-color:#0077bb; --title-color:#59e9a2; }
+html { font-size: 17px; }
+body { font-family: Roboto, "Segoe UI", Arial, "Microsoft Yahei", sans-serif; color: rgb(59, 69, 73); background-color: rgb(255, 255, 255); line-height: 1.6; letter-spacing: 1px; text-rendering: optimizeLegibility; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1, h2, h3 { padding-bottom: 0.3em; }
+h1 { font-size: 3em; line-height: 1.2; }
+h2 { font-size: 2.5em; line-height: 1.225; color: rgb(222, 109, 54); }
+h3 { font-size: 2em; line-height: 1.43; color: rgb(222, 109, 54); font-weight: bold; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+img { border: 1px solid rgb(147, 149, 152); border-radius: 4px; }
+blockquote { color: rgb(0, 0, 0); position: relative; padding: 30px; background: rgb(252, 240, 235); border-radius: 20px; transition: 0.2s 0.1s; }
+blockquote:hover { color: rgb(63, 63, 63); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; background-color: rgb(241, 241, 242); }
+table tr { border-top: 2px solid rgb(255, 255, 255); margin: 0px; padding: 0px; }
+table tr th { font-weight: bold; border: 2px solid rgb(255, 255, 255); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 2px solid rgb(255, 255, 255); text-align: left; margin: 0px; padding: 6px 13px; }
+table#img { background-color: rgb(255, 255, 255); }
+table#img tr td { border: none; padding: 5px; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
+.md-fences, code, tt { color: rgb(203, 75, 22); border-radius: 3px; font-family: "Fira Code Retina", Consolas, "Roboto Mono", "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
+.task-list { padding-left: 0px; }
+.task-list-item { padding-left: 32px; }
+.task-list-item input { top: 3px; left: 8px; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(238, 232, 213); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write { max-width: 950px; margin: 0px auto; padding: 20px 30px 40px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+#write h1 { color: rgb(85, 85, 85); text-align: center; text-shadow: rgb(191, 190, 190) 0px 0px 2px; letter-spacing: 10px; font-size: 28px; border-bottom: none; padding-bottom: 10px; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Roboto Mono", "Liberation Mono", Courier, monospace; padding: 8px 16px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 10px; padding-bottom: 10px; }
+.md-toc-inner { color: rgb(147, 161, 161) !important; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { background-color: rgb(238, 238, 238); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); }
+#md-notification::before { top: 10px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: Calibri, Consolas, "Roboto Mono", "Liberation Mono", monospace; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+#typora-sidebar { background-color: var(--side-bar-bg-color); transition: all 0.3s; color: rgb(153, 153, 153); box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px !important; }
+#typora-sidebar:hover { box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 15px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px !important; }
+.outline-label { text-decoration: none; }
+.outline-label:hover { text-decoration: none; }
+#write mark, #write strong { color: rgb(250, 166, 52); background-color: inherit; font-weight: bold; }
+#write a:not(.md-toc-inner) { color: var(--anchor-color); position: relative; border-bottom-style: dotted; border-bottom-color: var(--anchor-color); padding-bottom: 3px; border-bottom-width: 0.02rem; background: transparent; text-decoration: none; white-space: normal; }
+#write a:not(.md-toc-inner)::after { position: absolute; bottom: -0.02rem; left: 100%; width: 0px; border-bottom: 0.0325rem solid var(--anchor-color); content: ""; transition: width 350ms, left 350ms; }
+#write a:not(.md-toc-inner):hover::after { left: 0px; width: 100%; outline: 0px; text-decoration: underline; transition: width 350ms; }
+#write em { border-bottom: 1px dashed rgb(204, 204, 204); }
+.ty-table-edit { background-color: var(--active-file-bg-color); margin: 0px; width: 90%; min-width: 90%; }
+.right-th-button { transform: translateX(-5px); }
+tr, th { transition: 0.3s; }
+#write u { padding-bottom: 1px; text-decoration: none; border-bottom: 2px dashed rgb(204, 204, 204); }
+.md-fences { box-shadow: rgb(226, 216, 216) 0px 3px 5px 0px; background-color: rgb(238, 238, 238); border-radius: 5px; font-family: "Fira Code Retina", Consolas, "Courier New", Courier, FreeMono, monospace; }
+#write code { color: var(--text-color) ; }
+#typora-sidebar { overflow: hidden !important; }
+
+
+
+
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style> 
+ </head> 
+ <body class="typora-export os-windows"> 
+  <div id="write" class="is-node">
+   <h2><a name="header-n0" class="md-header-anchor "></a>第二章 3D Light Tools 三维灯光工具</h2>
+   <ul>
+    <li><a href="#header-n13">Ambient Light [3Am]</a> </li>
+    <li><a href="#header-n31">Directional Light [3DL]</a> </li>
+    <li><a href="#header-n50">Point Light [3PL]</a> </li>
+    <li><a href="#header-n71">Spot Light [3SL]</a> </li>
+   </ul>
+   <table id="img"> 
+    <tbody>
+     <tr> 
+      <td rowspan="4"><img src="images/3DLight_index.png" alt="3DLight_index" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_AmbientLight.jpg" alt="index_AmbientLight" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_DirectionalLight.jpg" alt="index_DirectionalLight" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_PointLight.jpg" alt="index_PointLight" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_SpotLight.jpg" alt="index_SpotLight" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+    </tbody>
+   </table> 
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n13" class="md-header-anchor "></a>Ambient Light [3Am]</h3>
+   <p>Ambient Light是一种无方向的光照，它在全局范围内照亮一个场景。它没有实际的位置或旋转，尽管屏幕上的小部件将出现在视图中，以表明场景中有光照。提供了小部件的位置控件，以便在必要时将小部件移出其他几何图形。</p>
+   <h4><a name="header-n15" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Am_tile.jpg" alt="3Am_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>AmbientLight.SceneInput</strong> </p>
+   <p>[橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。</p>
+   <h4><a name="header-n19" class="md-header-anchor "></a>Controls选项卡</h4>
+   <p><img src="images/3Am_Controls.png" alt="3Am_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n21" class="md-header-anchor "></a>Enabled</h5>
+   <p>当选中Enabled复选框时，环境光会影响场景。清除复选框以关闭光照。</p>
+   <h5><a name="header-n23" class="md-header-anchor "></a>Color</h5>
+   <p>使用此标准Color控件设置灯光的颜色。</p>
+   <h5><a name="header-n25" class="md-header-anchor "></a>Intensity</h5>
+   <p>使用此滑块设置环境光的强度。值为.2表示光的20%。一个完美的白色纹理只有在0.2环境光下才会渲染为20%的灰色<code>（.2, .2, .2）</code>。</p>
+   <h4><a name="header-n27" class="md-header-anchor "></a>Transform选项卡</h4>
+   <p>此选项卡中出现的选项将确定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件部分中对这些控件进行了全面描述。</p>
+   <p><img src="images/3Am_Transform.png" alt="3Am_Transform" referrerpolicy="no-referrer" /></p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n31" class="md-header-anchor "></a>Directional Light [3DL]</h3>
+   <p>Directional Light是一种有明确方向但没有明确光源的光。此光照显示屏幕上的小部件，但小部件的位置没有任何意义。</p>
+   <h4><a name="header-n33" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3DL_tile.jpg" alt="3DL_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>DirectionalLight.SceneInput</strong> </p>
+   <p>[橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。</p>
+   <h4><a name="header-n37" class="md-header-anchor "></a>Controls选项卡</h4>
+   <p>此选项卡包含该工具的所有参数。</p>
+   <p><img src="images/3DL_Controls.png" alt="3DL_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n40" class="md-header-anchor "></a>Enabled</h5>
+   <p>当选中Enabled复选框时，定向光会影响场景。清除复选框以关闭光照。</p>
+   <h5><a name="header-n42" class="md-header-anchor "></a>Color</h5>
+   <p>使用此标准Color控件设置灯光的颜色。</p>
+   <h5><a name="header-n44" class="md-header-anchor "></a>Intensity</h5>
+   <p>使用此滑块设置定向光的强度。值为.2表示光的20%。</p>
+   <h4><a name="header-n46" class="md-header-anchor "></a>Transform选项卡</h4>
+   <p>此选项卡中出现的选项将确定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件部分中对这些控件进行了全面描述。</p>
+   <p><img src="images/3DL_Transform.png" alt="3DL_Transform" referrerpolicy="no-referrer" /></p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n50" class="md-header-anchor "></a>Point Light [3PL]</h3>
+   <p>Point Light是一种在空间中位置清晰的光源，它向四面八方发光。灯泡是一种点光源，就像太阳一样，尽管来自太阳的光可能由于从大气散射而显得是环境光。</p>
+   <p>此灯显示屏幕上的小部件，但只影响小部件的位置。由于光线是360度光源，所以小部件的旋转没有任何意义。与环境光和方向光不同，点光源可能会随着距离而衰减。</p>
+   <h4><a name="header-n53" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3PL_tile.jpg" alt="3PL_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>PointLight.SceneInput</strong> </p>
+   <p>[橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。</p>
+   <p>Controls选项卡</p>
+   <p><img src="images/3PL_Controls.png" alt="3PL_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n59" class="md-header-anchor "></a>Enabled</h5>
+   <p>当选中Enabled复选框时，点光源会影响场景。清除复选框以关闭光照。</p>
+   <h5><a name="header-n61" class="md-header-anchor "></a>Color</h5>
+   <p>使用此标准Color控件设置灯光的颜色。</p>
+   <h5><a name="header-n63" class="md-header-anchor "></a>Intensity</h5>
+   <p>使用此滑块设置定向光的强度。值为.2表示光的20%。</p>
+   <h5><a name="header-n65" class="md-header-anchor "></a>Decay Type</h5>
+   <p>点光源默认No Decay，这意味着它的光在场景中的所有点都具有相同的强度。若要使强度随距离衰减，可将Decay Type设置为Linear或Quadratic模式。</p>
+   <h4><a name="header-n67" class="md-header-anchor "></a>Transform选项卡</h4>
+   <p>此选项卡中出现的选项将确定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件部分中对这些控件进行了全面描述。</p>
+   <p><img src="images/3PL_Transform.png" alt="3PL_Transform" referrerpolicy="no-referrer" /></p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n71" class="md-header-anchor "></a>Spot Light [3SL]</h3>
+   <p>Spot Light 是从一个特定的点发出的光，它有一个清晰的锥形，光线会向边缘衰减。经验丰富的舞台和剧院灯光技术人员将把聚光灯当作是非常类似用于现场制作的标准灯具。这是唯一一种能够投射阴影的光。</p>
+   <h4><a name="header-n73" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3SL_tile.jpg" alt="3SL_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>SpotLight.SceneInput</strong> </p>
+   <p> [橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。</p>
+   <h4><a name="header-n77" class="md-header-anchor "></a>Controls选项卡</h4>
+   <p>此选项卡包含该工具的所有参数。</p>
+   <p><img src="images/3SL_Controls2.png" alt="3SL_Controls2" referrerpolicy="no-referrer" /><img src="images/3SL_Controls1.png" alt="3SL_Controls1" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n80" class="md-header-anchor "></a>Enabled</h5>
+   <p>当选中Enabled复选框时，点光源会影响场景。清除复选框以关闭光照。</p>
+   <h5><a name="header-n82" class="md-header-anchor "></a>Color</h5>
+   <p>使用此标准Color控件设置灯光的颜色。</p>
+   <h5><a name="header-n84" class="md-header-anchor "></a>Intensity</h5>
+   <p>使用此滑块设置定向光的强度。值为.2表示光的20%。</p>
+   <h5><a name="header-n86" class="md-header-anchor "></a>Decay Type</h5>
+   <p>聚光灯默认No Decay，这意味着它的光在几何物体上具有相同的强度，而与从光到几何图形的距离无关。若要使强度随距离衰减，可将Decay Type设置为Linear或Quadratic模式。</p>
+   <h5><a name="header-n88" class="md-header-anchor "></a>Cone Angle</h5>
+   <p>光的锥角是指光发出其全部强度的锥的宽度。角越大，锥角越宽，达到90度的极限。</p>
+   <h5><a name="header-n90" class="md-header-anchor "></a>Penumbra Angle</h5>
+   <p>Penumbra Angle决定了光强下降到0的锥角以外的面积。较大的半影角定义较大的衰减，而值0生成硬边光。</p>
+   <h5><a name="header-n92" class="md-header-anchor "></a>Dropoff</h5>
+   <p>Dropoff控制半影角从全强度到0的下降速度。</p>
+   <h4><a name="header-n94" class="md-header-anchor "></a>Shadows</h4>
+   <p>本节提供几个用于定义聚光灯创建阴影时使用的阴影贴图控件。详情请参阅Lights and Shadows章节。</p>
+   <h5><a name="header-n96" class="md-header-anchor "></a>Enable Shadows</h5>
+   <p>如果要生成阴影，应选中Enable Shadows复选框。默认为选中。</p>
+   <h5><a name="header-n98" class="md-header-anchor "></a>Shadow Color</h5>
+   <p>使用此标准Color控件设置阴影的颜色。默认为黑色<code>(0, 0, 0)</code>。</p>
+   <h5><a name="header-n100" class="md-header-anchor "></a>Density</h5>
+   <p>阴影的Density决定了阴影的不透明程度。密度1.0将产生一个完全（译注：不）透明的阴影，而较低的值使阴影透明。</p>
+   <h5><a name="header-n102" class="md-header-anchor "></a>Shadow Map Size</h5>
+   <p>Shadow Map Size控件确定用于创建阴影贴图的位图的大小。较大的值将生成更详细的阴影贴图，这将牺牲内存和性能。</p>
+   <h5><a name="header-n104" class="md-header-anchor "></a>Shadow Map Proxy</h5>
+   <p>Shadow Map Proxy确定启用Proxy或Auto Proxy模式时使用的阴影贴图的大小。值0.5将生成分辨率为阴影贴图大小中定义的一半的阴影贴图。</p>
+   <h5><a name="header-n106" class="md-header-anchor "></a>Multiplicative/Additive Bias</h5>
+   <p>阴影本质上是应用于场景中的物体的纹理，所以偶尔会有Z轴冲突，也就是物体的一部分应该接收阴影的部分在阴影之上渲染。Bias的工作原理是添加一个小的深度偏移量，将阴影从阴影表面移开，消除Z轴冲突。Bias过小，物体就会自我遮蔽。过多的Bias会使阴影与表面分离。首先对Multiplicative Bias进行调整，然后利用Additive Bias控件对结果进行微调。</p>
+   <p>有关示例和更多信息，请参见3D章节的Multiplicative and Additive Bias部分。</p>
+   <h5><a name="header-n109" class="md-header-anchor "></a>Force All Materials Non-Transmissive</h5>
+   <p>通常，渲染阴影时使用RGBAZ阴影贴图。通过启用此选项，你将强制渲染器使用只包含Z的阴影贴图。这可以显著加快阴影渲染，同时使用五分之一的内存。缺点是你不能再像投射阴影一样投射“彩色玻璃”。</p>
+   <h5><a name="header-n111" class="md-header-anchor "></a>Shadow Map Sampling</h5>
+   <p>设置阴影贴图采样的质量。</p>
+   <h5><a name="header-n113" class="md-header-anchor "></a>Softness</h5>
+   <p>阴影中的软边是通过对采样后的阴影图进行滤镜而产生的。在渲染产生不同效果的阴影时，Fusion有三种不同的滤镜方法。</p>
+   <ul>
+    <li><strong>None:</strong> 阴影会有一个硬边。完全不做阴影贴图的滤镜。这种方法的优点是只需要在阴影贴图中采样一个像素，因此速度很快。</li>
+    <li><strong>Constant:</strong> 阴影边缘将有一个恒定的柔和度。当对阴影贴图采样时，使用一个宽度恒定的滤镜。调整Constant Softness滑块控制过滤器的大小。注意滤镜做得越大，渲染阴影的时间就越长。</li>
+    <li><strong>Variable:</strong> 阴影边缘的柔和度会随着阴影接收器离阴影投射者变远而增加。 通过改变滤滤镜的尺寸，根据接收者和投射者之间的距离来实现可变的柔和度。选择此选项后，会出现Softness Falloff、Min Softness和Max Softness滑块。</li>
+   </ul>
+   <h5><a name="header-n122" class="md-header-anchor "></a>Constant Softness</h5>
+   <p>如果Softness设置为Constant时，则会出现此滑块。它可以用来设置阴影的整体柔和度。</p>
+   <h5><a name="header-n124" class="md-header-anchor "></a>Softness Falloff</h5>
+   <p>当Softness设置为Variable时，会出现Softness Falloff滑块。这个滑块控制阴影边缘的柔软度随距离增长的速度。更精确地说，它根据阴影投射者和接收者之间的距离控制阴影贴图滤镜的大小增长的速度。它的效果是由Min和Max Softness滑块的值调节的。</p>
+   <h5><a name="header-n126" class="md-header-anchor "></a>Min Softness</h5>
+   <p>当Softness设置为Variable时，会出现Min Softness滑块。这个滑块控制阴影的最小柔和度。阴影离投射阴影的物体越近，它就会越尖锐，直至这个滑块设置的极限。</p>
+   <h5><a name="header-n128" class="md-header-anchor "></a>Max Softness</h5>
+   <p>当Softness设置为Variable时，会出现Max Softness滑块。这个滑块控制阴影的最大柔和度。阴影离投射阴影的物体越远，它就会越柔和，直至这个滑块设置的极限。</p>
+   <h4><a name="header-n130" class="md-header-anchor "></a>Transform选项卡</h4>
+   <p>此选项卡中出现的选项将确定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件部分中对这些控件进行了全面描述。</p>
+   <p><img src="images/3SL_Transform.png" alt="3SL_Transform" referrerpolicy="no-referrer" /></p>
+   <div style="page-break-after: always;"></div>
+  </div>  
+ </body>
+</html>

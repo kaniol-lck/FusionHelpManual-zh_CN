@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" /> 
+  <title>第三章 3D Material Tools 三维材质工具</title> 
+  <link rel="stylesheet" type="text/css" href="../stylesheets/tool-reference.css" /> 
+ </head> 
+ <body class="typora-export os-windows"> 
+  <div id="write" class="is-node">
+   <h2><a name="header-n0" class="md-header-anchor "></a>第三章 3D Material Tools 三维材质工具</h2>
+   <ul>
+    <li><a href="#header-n21">Blinn [3Bi]</a> </li>
+    <li><a href="#header-n81">Channel Boolean Material [3Bol]</a> </li>
+    <li><a href="#header-n155">Cook Torrance [3CT]</a> </li>
+    <li><a href="#header-n217">Material Merge 3D [3MM]</a> </li>
+    <li><a href="#header-n234">Phong [3Ph]</a> </li>
+    <li><a href="#header-n290">Reflect [3RR]</a> </li>
+    <li><a href="#header-n329">Stereo Mix [3SMM]</a> </li>
+    <li><a href="#header-n344">Ward [3Wd]</a> </li>
+   </ul>
+   <table id="img"> 
+    <tbody>
+     <tr> 
+      <td rowspan="4"><img src="images/3DMaterial_index.png" alt="3DMaterial_index" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_Blinn.jpg" alt="index_Blinn" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_Phong.jpg" alt="index_Phong" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_ChannelBooleanMaterial.jpg" alt="index_ChannelBooleanMaterial" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_Reflect.jpg" alt="index_Reflect" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_CookTorrance.jpg" alt="index_CookTorrance" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_StereoMix.jpg" alt="index_StereoMix" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_Ward.jpg" alt="index_Ward" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_MaterialMerge.jpg" alt="index_MaterialMerge" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+    </tbody>
+   </table> 
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n21" class="md-header-anchor "></a>Blinn [3Bi]</h3>
+   <p>Blinn工具是一种基本的照明材质，可以应用于三维场景的几何物体。它描述了物体对光线的反应，并提供了大量的纹理贴图输入，允许对材质的漫反射、高光和凹凸贴图组件进行精细控制。</p>
+   <p>大多数几何物体工具的Material选项卡中提供的标准基本材质是Blinn工具的简化版本。主要的区别是Blinn工具提供了额外的纹理映射输入，而不仅仅是漫反射。</p>
+   <p>Blinn工具输出一个可以连接到任何3D几何物体工具材质输入的3D材质。</p>
+   <p>Fusion实现的Blinn模型计算高光为光源与观测者之间的表面法线与半角向量的点积(<code>dot(N, H)</code>)。这可能并不总是匹配其他3D应用程序使用的Blinn模型照明模型。</p>
+   <h4><a name="header-n26" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Bi_tile.jpg" alt="3Bi_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>Blinn.DiffuseTex</strong> </p>
+   <p>[橙色，可选的]此输入将接受2D图像或3D材质作为漫反射纹理贴图。</p>
+   <p><strong>Blinn.SpecularColorTex</strong> </p>
+   <p>[绿色，可选的]此输入将接受2D图像或3D材质作为高光彩色纹理贴图。</p>
+   <p><strong>Blinn.SpecularIntensityTex</strong> </p>
+   <p>[洋红色，可选的]此输入将接受2D图像或3D材质作为材质高光高光的强度贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。</p>
+   <p><strong>Blinn.SpecularExponentTex</strong> </p>
+   <p>[淡蓝色，可选的]此输入将接受2D图像或3D材质作为材质高光的衰减贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。</p>
+   <p><strong>Blinn.BumpmapTex</strong> </p>
+   <p>[白色，可选的]此输入将接受2D图像或3D材质，然后使用RGB信息作为纹理空间法线。</p>
+   <p>这些输入中的每一个都将纹理贴图中的像素乘以工具本身中相应命名的参数。这为材质的缩放部分提供了一种有效的方法。</p>
+   <p>当工具有像这个一样多的输入时，通常很难精确地进行连接。按住Option(Mac OS X)或Alt(Windows)键，同时将另一个工具的输出拖动到工具块上，并在释放鼠标左键时按住Option或Alt键。将出现一个小菜单，其中列出该工具提供的所有输入。单击所需的输入完成连接。</p>
+   <p>或者，您可以使用鼠标右键从工具中拖动输出，以激活相同的菜单。</p>
+   <h4><a name="header-n41" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Bi_Controls.png" alt="3Bi_Controls" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n43" class="md-header-anchor "></a>Diffuse</h4>
+   <p>Diffuse描述基本表面特征，没有任何额外的效果，如反射或高光。除了定义对象的基本颜色外，漫反射颜色还定义对象的透明度。漫反射纹理贴图中的alpha可以用来使任何物体表面的部分透明。</p>
+   <h5><a name="header-n45" class="md-header-anchor "></a>Diffuse Color</h5>
+   <p>材质的Diffuse Color描述了材质在间接或环境光照射下呈现的基色。如果提供了漫反射纹理贴图，那么这里提供的颜色值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n47" class="md-header-anchor "></a>Alpha</h5>
+   <p>这个滑块设置材质的Alpha通道值。这同样影响漫反射和高光颜色，并影响渲染输出中材质的alpha值。如果提供了漫反射纹理贴图，那么这里的alpha值集将乘以纹理贴图中的alpha值。</p>
+   <h5><a name="header-n49" class="md-header-anchor "></a>Opacity</h5>
+   <p>降低材质的不透明度会同样降低高光和漫反射颜色的颜色和alpha值，使材质透明。</p>
+   <h4><a name="header-n51" class="md-header-anchor "></a>Specular</h4>
+   <p>Specular部分的参数描述了表面高光的外观。对于每个光照模型，这些值的计算方法不同。</p>
+   <h5><a name="header-n53" class="md-header-anchor "></a>Specular Color</h5>
+   <p>Specular Color决定了从光亮表面反射的光的颜色。一种材料的高光越高，它看起来就越有光泽。像塑料和玻璃这样的表面往往有白色高光，而金属表面则有像黄金这样的高光，这些高光从材质的颜色中继承了它们的颜色。如果提供了高光纹理映射，那么这里提供的值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n55" class="md-header-anchor "></a>Specular Intensity</h5>
+   <p>Specular Intensity控制高光的强度。如果提供高光强度纹理，则此值乘以纹理的alpha值。</p>
+   <h5><a name="header-n57" class="md-header-anchor "></a>Specular Exponent</h5>
+   <p>Specular Exponent控制高光的衰减。值越大，衰减越明显，材质就显得越光滑和有光泽。如果提供了高光指数纹理，则该值乘以纹理贴图的alpha值。</p>
+   <h4><a name="header-n59" class="md-header-anchor "></a>Transmittance</h4>
+   <p>Transmittance控制着光通过材质的方式。例如，一个实心的蓝色球体会投射出一个黑色的阴影，但是一个半透明的蓝色塑料球体会投射出一个密度低得多的蓝色阴影。</p>
+   <p>还有一个单独的Opacity选项。不透明度决定了渲染时实际表面的透明度。Fusion允许分别调整不透明度和透射率。对于那些刚开始不熟悉3D软件的人来说，这可能有点违反直觉。有可能存在一个表面是完全不透明的，但会100%地透射到达它的光，有效地使它成为一个发光/发射表面。</p>
+   <h5><a name="header-n62" class="md-header-anchor "></a>Attenuation</h5>
+   <p>Attenuation决定了有多少颜色通过物体。对于具有透射阴影的对象，将衰减设置为<code>(1,1,1)</code>，这意味着100%的绿色、蓝色和红色光线通过该对象。将此颜色设置为<code>RGB(1,0,0)</code>意味着材质将传输100%到达表面的红色，但没有绿色或蓝色的光。这允许了“彩色玻璃”阴影。</p>
+   <h5><a name="header-n64" class="md-header-anchor "></a>Alpha Detail</h5>
+   <p>当Alpha Detail滑块设置为0时，对象的Alpha通道将被忽略，整个对象将投射阴影。如果将其设置为1，alpha通道将确定对象投射阴影的部分。</p>
+   <h5><a name="header-n66" class="md-header-anchor "></a>Color Detail</h5>
+   <p>Color Detail滑块通过漫反射颜色+纹理颜色调节通过表面的光线。使用此方法可以投射阴影，其中包含应用于对象的纹理的颜色细节。将滑块从0增加到1会给阴影带来更多的漫反射颜色和纹理颜色。注意，当传输颜色时忽略了对象的alpha值和不透明度，允许具有实alpha值的对象仍然将其颜色透射到阴影。</p>
+   <h5><a name="header-n68" class="md-header-anchor "></a>Saturation</h5>
+   <p>Saturation滑块控制透射到阴影的颜色部分的饱和度。将此设置为<code>0.0</code>将导致单色阴影。</p>
+   <h5><a name="header-n70" class="md-header-anchor "></a>Receives Lighting/Shadows</h5>
+   <p>这些复选框控制材质是否受到场景中光照和阴影的影响。如果关闭，该对象将始终是完全点亮和/或无阴影。</p>
+   <h5><a name="header-n72" class="md-header-anchor "></a>Two Sided Lighting</h5>
+   <p>通过在表面的背面添加一组面向相反方向的法线，从而使曲面实际上是双面的。这通常是关闭的，以提高渲染速度，但可以为2D表面或不完全封闭的对象打开，以允许反向或内部表面也可见。</p>
+   <p>通常，在3D应用程序中，只有一个表面的正面是可见的，而背面是经过筛选的，因此，如果相机在3D应用程序中围绕一个平面旋转，当它到达背面时，这个平面将变得不可见。在3D应用程序中，让一个平面双面化相当于在第一个平面上添加另一个平面，但旋转180度，因此法线在背面朝相反的方向。因此，当你绕着背面旋转时，你会看到第二个像平面，它的法线朝相反的方向。</p>
+   <p>当你制作一个双面的曲面时，Fusion和3D应用做的是一样的事情。由于Fusion在缺省情况下不会剔除背面的多边形，所以出现了关于双面的混淆。如果你在Fusion中绕着一个单面旋转，你仍然会从背面看到它（但你看到的是正面复制到背面，就像它是透明的一样）。让平面两面化实际上增加了第二套法线到平面的背面。</p>
+   <blockquote>
+    <p>注意：一旦您使表面透明，这将变得相当混乱，因为同样的规则仍然适用并产生结果，这是违反直觉的。如果你从正面看一个从背面照亮的透明双面表面，它看起来就不亮。</p>
+   </blockquote>
+   <h4><a name="header-n78" class="md-header-anchor "></a>Material ID</h4>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n81" class="md-header-anchor "></a>Channel Boolean Material [3Bol]</h3>
+   <p>Channel Boolean Material可用于通过数学运算重新映射和修改3D材质的通道。 例如，如果要使用材质的红色通道来控制使用alpha通道的照明模型的标量输入（例如，Blinn.SpecularExponent），则可以在此处重新映射通道。 此外，它允许使用几何物体特定的信息，如纹理空间坐标和法线。</p>
+   <h4><a name="header-n83" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Bol_tile.jpg" alt="3Bol_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>ChannelBooleanMaterial.BackgroundMaterial</strong> </p>
+   <p>[橙色，可选的]此输入将接受2D图像或3D材质。</p>
+   <p><strong>ChannelBooleanMaterial.ForegroundMaterial</strong> </p>
+   <p>[绿色，可选的]此输入将接受2D图像或3D材质。</p>
+   <h4><a name="header-n89" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Bol_Controls.png" alt="3Bol_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n91" class="md-header-anchor "></a>Operand A/B</h5>
+   <p>每个输出RGBA通道一个的Operand菜单允许用户为相应的通道设置所需的输入信息。</p>
+   <ul>
+    <li><p><strong>Red/Green/Blue/Alpha FG</strong> </p><p>读取前景材质的颜色信息。</p></li>
+    <li><p><strong>Red/Green/Blue/Alpha BG</strong> </p><p>读取背景材质的颜色信息。</p></li>
+    <li><p><strong>Black/White/Mid Gray</strong> </p><p>将通道的值设置为0.1或0.5。</p></li>
+    <li><p><strong>Hue/Lightness/Saturation FG</strong> </p><p>读取前景材质的颜色信息，将其转换为HLS色彩空间，并将所选信息放入相应的通道中。</p></li>
+    <li><p><strong>Hue/Lightness/Saturation BG</strong> </p><p>读取背景材质的颜色信息，将其转换为HLS色彩空间，并将所选信息放入相应的通道中。</p></li>
+    <li><p><strong>Luminance FG</strong> </p><p>读取前景材质的颜色信息，并计算通道的亮度值。</p></li>
+    <li><p><strong>Luminance BG</strong> </p><p>读取背景材质的颜色信息，并计算通道的亮度值。</p></li>
+    <li><p><strong>X/Y/Z Position FG</strong></p><p>将通道的值设置为三维空间中像素的位置。向量信息在眼空间中返回。</p></li>
+    <li><p><strong>U/V/W Texture FG</strong> </p><p>将前景材质的纹理空间坐标应用于通道。</p></li>
+    <li><p><strong>U/V/W EnvCoords FG</strong> </p><p>将环境纹理空间坐标应用于通道。在修改环境纹理坐标的工具上游使用它，如Reflect 3D工具。</p></li>
+    <li><p><strong>X/Y/Z Normal</strong> </p><p>将通道的值设置为法向量的选定轴。向量在眼空间中返回。</p></li>
+   </ul>
+   <h5><a name="header-n127" class="md-header-anchor "></a>Operation</h5>
+   <p>确定如何组合操作数的Operation。</p>
+   <ul>
+    <li><strong>A:</strong> 仅对输出通道使用Operand A。</li>
+    <li><strong>B:</strong> 仅对输出通道使用Operand B。</li>
+    <li><strong>1-A:</strong> 从1中减去Operand A的值。</li>
+    <li><strong>1-B:</strong> 从1中减去Operand B的值。</li>
+    <li><strong>A+B:</strong> 相加Operand A和B的值。</li>
+    <li><strong>A-B:</strong> 从Operand A中减去B的值。</li>
+    <li><strong>A*B:</strong> 将两个Operand的值相乘。</li>
+    <li><strong>A/B:</strong> 将Operand B的值除以A。</li>
+    <li><strong>min(A,B):</strong> 比较Operand A和B的值并返回较小的值。</li>
+    <li><strong>max(A,B):</strong> 比较Operand A和B的值并返回较大的值。</li>
+    <li><strong>avg(A,B):</strong> 返回两个Operand的平均值。</li>
+   </ul>
+   <h5><a name="header-n152" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n155" class="md-header-anchor "></a>Cook Torrance [3CT]</h3>
+   <p>Cook Torrance工具是一种基本的照明材质，可应用于3D场景中的几何物体。 此工具的漫反射计算类似于基本材质和Blinn工具中使用的漫反射计算，但使用优化的Fresnel/Beckmann方程评估镜面反射高光。 该照明模型主要用于遮蔽金属或其他有光泽和高反射的表面。</p>
+   <p>Cook Torrance工具输出一个可连接到任何3D几何物体工具上的材质输入的3D Material。</p>
+   <h4><a name="header-n158" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3CT_tile.jpg" alt="3CT_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>CookTorrance.DiffuseTex</strong> </p>
+   <p>[橙色，可选的]此输入将接受2D图像或3D材质作为漫反射纹理贴图。</p>
+   <p><strong>CookTorrance.SpecularColorTex</strong> </p>
+   <p>[绿色，可选的]此输入将接受2D图像或3D材质作为高光彩色纹理贴图。</p>
+   <p><strong>CookTorrance.SpecularIntensityTex</strong> </p>
+   <p>[洋红色，可选的]此输入将接受2D图像或3D材质作为材质高光高光的强度贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。</p>
+   <p><strong>CookTorrance.SpecularExponentTex</strong> </p>
+   <p>[淡蓝色，可选的]此输入将接受2D图像或3D材质作为材质高光的衰减贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。</p>
+   <p><strong>CookTorrance.SpecularRefractiveIndexTex</strong> </p>
+   <p>[白色，可选]此输入将接受2D图像或3D材质，以用作修改镜面折射率粗糙度的贴图。 纹理贴图的alpha乘以折射率的值。</p>
+   <p><strong>CookTorrance.BumpmapTex</strong> </p>
+   <p>[白色，可选的]此输入将接受2D图像或3D材质，然后使用RGB信息作为纹理空间法线。</p>
+   <p>这些输入中的每一个都将纹理贴图中的像素乘以工具本身中等效命名的参数。这提供了用于缩放部分材质的有效方法。</p>
+   <p>当工具有像这个一样多的输入时，通常很难精确地进行连接。按住Option(Mac OS X)或Alt(Windows)键，同时将另一个工具的输出拖动到工具块上，并在释放鼠标左键时按住Option或Alt键。将出现一个小菜单，其中列出该工具提供的所有输入。单击所需的输入完成连接。</p>
+   <h4><a name="header-n174" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3CT_Controls.png" alt="3CT_Controls" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n176" class="md-header-anchor "></a>Diffuse</h4>
+   <p>Diffuse描述基本表面特征，没有任何额外的效果，如反射或高光。除了定义对象的基本颜色外，漫反射颜色还定义对象的透明度。漫反射纹理贴图中的alpha可以用来使任何物体表面的部分透明。</p>
+   <h5><a name="header-n178" class="md-header-anchor "></a>Diffuse Color</h5>
+   <p>材质的Diffuse Color描述了材质在间接或环境光照射下呈现的基色。如果提供了漫反射纹理贴图，那么这里提供的颜色值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n180" class="md-header-anchor "></a>Alpha</h5>
+   <p>这个滑块设置材质的Alpha通道值。这同样影响漫反射和高光颜色，并影响渲染输出中材质的alpha值。如果提供了漫反射纹理贴图，那么这里的alpha值集将乘以纹理贴图中的alpha值。</p>
+   <h5><a name="header-n182" class="md-header-anchor "></a>Opacity</h5>
+   <p>降低材质的不透明度会同样降低高光和漫反射颜色的颜色和alpha值，使材质透明。</p>
+   <h4><a name="header-n184" class="md-header-anchor "></a>Specular</h4>
+   <p>Specular部分的参数描述了表面高光的外观。对于每个光照模型，这些值的计算方法不同。</p>
+   <h5><a name="header-n186" class="md-header-anchor "></a>Specular Color</h5>
+   <p>Specular Color决定了从光亮表面反射的光的颜色。一种材料的高光越高，它看起来就越有光泽。像塑料和玻璃这样的表面往往有白色高光，而金属表面则有像黄金这样的高光，这些高光从材质的颜色中继承了它们的颜色。如果提供了高光纹理映射，那么这里提供的值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n188" class="md-header-anchor "></a>Specular Intensity</h5>
+   <p>Specular Intensity控制高光的强度。如果提供高光强度纹理，则此值乘以纹理的alpha值。</p>
+   <h5><a name="header-n190" class="md-header-anchor "></a>Roughness</h5>
+   <p>镜面高光的Roughness描述了镜面高光在表面上的扩散。值越大，衰减越宽，表面出现的拉丝和金属越多。如果提供粗糙度纹理贴图，则将该值乘以纹理的alpha值。</p>
+   <h5><a name="header-n192" class="md-header-anchor "></a>Do Fresnel</h5>
+   <p>选中此复选框将为材料照明模型添加Fresnel计算。通过考虑材料的折射率，这将提供更逼真的金属表面。</p>
+   <h5><a name="header-n194" class="md-header-anchor "></a>Refractive Index</h5>
+   <p>选中Do Fresnel复选框时，将显示此滑块。Refractive Index仅适用于高光的计算； 它不会通过透明表面进行实际的光折射。如果提供折射率纹理贴图，则将该值乘以输入的alpha值。</p>
+   <h4><a name="header-n196" class="md-header-anchor "></a>Transmittance</h4>
+   <p>Transmittance控制着光通过材质的方式。例如，一个实心的蓝色球体会投射出一个黑色的阴影，但是一个半透明的蓝色塑料球体会投射出一个密度低得多的蓝色阴影。</p>
+   <p>还有一个单独的Opacity选项。不透明度决定了渲染时实际表面的透明度。Fusion允许分别调整不透明度和透射率。对于那些刚开始不熟悉3D软件的人来说，这可能有点违反直觉。有可能存在一个表面是完全不透明的，但会100%地透射到达它的光，有效地使它成为一个发光/发射表面。</p>
+   <h5><a name="header-n199" class="md-header-anchor "></a>Attenuation</h5>
+   <p>Attenuation决定了有多少颜色通过物体。对于具有透射阴影的对象，将衰减设置为<code>(1,1,1)</code>，这意味着100%的绿色、蓝色和红色光线通过该对象。将此颜色设置为<code>RGB(1,0,0)</code>意味着材质将传输100%到达表面的红色，但没有绿色或蓝色的光。这允许了“彩色玻璃”阴影。</p>
+   <h5><a name="header-n201" class="md-header-anchor "></a>Alpha Detail</h5>
+   <p>当Alpha Detail滑块设置为0时，对象的Alpha通道将被忽略，整个对象将投射阴影。如果将其设置为1，alpha通道将确定对象投射阴影的部分。</p>
+   <h5><a name="header-n203" class="md-header-anchor "></a>Color Detail</h5>
+   <p>Color Detail滑块通过漫反射颜色+纹理颜色调节通过表面的光线。使用此方法可以投射阴影，其中包含应用于对象的纹理的颜色细节。将滑块从0增加到1会给阴影带来更多的漫反射颜色和纹理颜色。注意，当传输颜色时忽略了对象的alpha值和不透明度，允许具有实alpha值的对象仍然将其颜色透射到阴影。</p>
+   <h5><a name="header-n205" class="md-header-anchor "></a>Saturation</h5>
+   <p>Saturation滑块控制透射到阴影的颜色部分的饱和度。将此设置为<code>0.0</code>将导致单色阴影。</p>
+   <h5><a name="header-n207" class="md-header-anchor "></a>Receives Lighting/Shadows</h5>
+   <p>这些复选框控制材质是否受到场景中光照和阴影的影响。如果关闭，该对象将始终是完全点亮和/或无阴影。</p>
+   <h5><a name="header-n209" class="md-header-anchor "></a>Two Sided Lighting</h5>
+   <p>通过在表面的背面添加一组面向相反方向的法线，从而使曲面实际上是双面的。这通常是关闭的，以提高渲染速度，但可以为2D表面或不完全封闭的对象打开，以允许反向或内部表面也可见。</p>
+   <p>通常，在3D应用程序中，只有一个表面的正面是可见的，而背面是经过筛选的，因此，如果相机在3D应用程序中围绕一个平面旋转，当它到达背面时，这个平面将变得不可见。在3D应用程序中，让一个平面双面化相当于在第一个平面上添加另一个平面，但旋转180度，因此法线在背面朝相反的方向。因此，当你绕着背面旋转时，你会看到第二个像平面，它的法线朝相反的方向。</p>
+   <blockquote>
+    <p>注意：一旦您使表面透明，这将变得相当混乱，因为同样的规则仍然适用并产生结果，这是违反直觉的。如果你从正面看一个从背面照亮的透明双面表面，它看起来就不亮。</p>
+   </blockquote>
+   <h4><a name="header-n214" class="md-header-anchor "></a>Material ID</h4>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n217" class="md-header-anchor "></a>Material Merge 3D [3MM]</h3>
+   <p>Material Merge工具可用于将两个单独的材质组合在一起。 此工具可用于复合材质工具，将多个照明材质（Blinn，Cook Torrance）与纹理工具（Bumpmap，Reflection）组合在一起，以创建复杂的着色器网络。</p>
+   <p>该工具还提供了一种为组合材质指定新材质标识符的机制。</p>
+   <h4><a name="header-n220" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3MM_tile.jpg" alt="3MM_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>MtlMerge3D.BackgroundMaterial</strong> </p>
+   <p>[橙色，必需的]此输入将接受2D图像或3D材质以用作背景材质。在基本着色模型中，2D图像将被视为漫反射纹理贴图。</p>
+   <p><strong>MtlMerge3D.ForegroundMaterial</strong> </p>
+   <p>[绿色，可选的]此输入将接受2D图像或3D材质以用作前景材质。</p>
+   <p>在基本着色模型中，2D图像将被视为漫反射纹理贴图。</p>
+   <h4><a name="header-n227" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3MM_Controls.png" alt="3MM_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n229" class="md-header-anchor "></a>Blend</h5>
+   <p>Material Merge的Blend行为类似于图像的Dissolve(DX)工具。使用滑块的值将两种材质/纹理混合在一起，以确定每个输入所贡献的百分比。虽然背景和前景输入可以是2D图像而不是材质，但此工具的输出始终是材质。</p>
+   <h5><a name="header-n231" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n234" class="md-header-anchor "></a>Phong [3Ph]</h3>
+   <p>Phong工具是一种基本的照明材质，可应用于3D场景中的几何物体。它描述了对象如何响应光，并提供大量纹理贴图输入，以允许精确控制材质的漫反射，镜面反射和凹凸贴图组件。</p>
+   <p>虽然产生类似于Blinn模型产生的高光，但它更常用于闪亮/抛光的塑料表面。</p>
+   <h4><a name="header-n237" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Ph_tile.jpg" alt="3Ph_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>Phong.DiffuseTex</strong> </p>
+   <p>[橙色，可选的]此输入将接受2D图像或3D材质作为漫反射纹理贴图。</p>
+   <p><strong>Phong.SpecularColorTex</strong> </p>
+   <p>[绿色，可选的]此输入将接受2D图像或3D材质作为高光彩色纹理贴图。</p>
+   <p><strong>Phong.SpecularIntensityTex</strong> </p>
+   <p>[洋红色，可选的]此输入将接受2D图像或3D材质作为材质高光高光的强度贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。</p>
+   <p><strong>Phong.SpecularExponentTex</strong> </p>
+   <p>[淡蓝色，可选的]此输入将接受2D图像或3D材质作为材质高光的衰减贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。</p>
+   <p><strong>Phong.BumpmapTex</strong> </p>
+   <p>[白色，可选的]此输入将接受2D图像或3D材质，然后使用RGB信息作为纹理空间法线。</p>
+   <p>这些输入中的每一个都将纹理贴图中的像素乘以工具本身中等效命名的参数。这提供了用于缩放部分材质的有效方法。</p>
+   <p>当工具有像这个一样多的输入时，通常很难精确地进行连接。按住Option(Mac OS X)或Alt(Windows)键，同时将另一个工具的输出拖动到工具块上，并在释放鼠标左键时按住Option或Alt键。将出现一个小菜单，其中列出该工具提供的所有输入。单击所需的输入完成连接。</p>
+   <h4><a name="header-n251" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Ph_Controls.png" alt="3Ph_Controls" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n253" class="md-header-anchor "></a>Diffuse</h4>
+   <p>Diffuse描述基本表面特征，没有任何额外的效果，如反射或高光。除了定义对象的基本颜色外，漫反射颜色还定义对象的透明度。</p>
+   <p>漫反射纹理贴图中的alpha可以用来使任何物体表面的部分透明。</p>
+   <h5><a name="header-n256" class="md-header-anchor "></a>Diffuse Color</h5>
+   <p>材质的Diffuse Color描述了材质在间接或环境光照射下呈现的基色。如果提供了漫反射纹理贴图，那么这里提供的颜色值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n258" class="md-header-anchor "></a>Alpha</h5>
+   <p>这个滑块设置材质的Alpha通道值。这同样影响漫反射和高光颜色，并影响渲染输出中材质的alpha值。如果提供了漫反射纹理贴图，那么这里的alpha值集将乘以纹理贴图中的alpha值。</p>
+   <h5><a name="header-n260" class="md-header-anchor "></a>Opacity</h5>
+   <p>降低材质的不透明度会同样降低高光和漫反射颜色的颜色和alpha值，使材质透明。</p>
+   <h4><a name="header-n262" class="md-header-anchor "></a>Specular</h4>
+   <p>Specular部分的参数描述了表面高光的外观。对于每个光照模型，这些值的计算方法不同。</p>
+   <h5><a name="header-n264" class="md-header-anchor "></a>Specular Color</h5>
+   <p>Specular Color决定了从光亮表面反射的光的颜色。一种材料的高光越高，它看起来就越有光泽。像塑料和玻璃这样的表面往往有白色高光，而金属表面则有像黄金这样的高光，这些高光从材质的颜色中继承了它们的颜色。如果提供了高光纹理映射，那么这里提供的值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n266" class="md-header-anchor "></a>Specular Intensity</h5>
+   <p>Specular Intensity控制高光的强度。如果提供高光强度纹理，则此值乘以纹理的alpha值。</p>
+   <h4><a name="header-n268" class="md-header-anchor "></a>Transmittance</h4>
+   <p>Transmittance控制着光通过材质的方式。例如，一个实心的蓝色球体会投射出一个黑色的阴影，但是一个半透明的蓝色塑料球体会投射出一个密度低得多的蓝色阴影。</p>
+   <p>还有一个单独的Opacity选项。不透明度决定了渲染时实际表面的透明度。Fusion允许分别调整不透明度和透射率。对于那些刚开始不熟悉3D软件的人来说，这可能有点违反直觉。有可能存在一个表面是完全不透明的，但会100%地透射到达它的光，有效地使它成为一个发光/发射表面。</p>
+   <h5><a name="header-n271" class="md-header-anchor "></a>Attenuation</h5>
+   <p>Attenuation决定了有多少颜色通过物体。对于具有透射阴影的对象，将衰减设置为<code>(1,1,1)</code>，这意味着100%的绿色、蓝色和红色光线通过该对象。将此颜色设置为<code>RGB(1,0,0)</code>意味着材质将传输100%到达表面的红色，但没有绿色或蓝色的光。这允许了“彩色玻璃”阴影。</p>
+   <h5><a name="header-n273" class="md-header-anchor "></a>Alpha Detail</h5>
+   <p>当Alpha Detail滑块设置为0时，对象的Alpha通道将被忽略，整个对象将投射阴影。如果将其设置为1，alpha通道将确定对象投射阴影的部分。</p>
+   <h5><a name="header-n275" class="md-header-anchor "></a>Color Detail</h5>
+   <p>Color Detail滑块通过漫反射颜色+纹理颜色调节通过表面的光线。使用此方法可以投射阴影，其中包含应用于对象的纹理的颜色细节。将滑块从0增加到1会给阴影带来更多的漫反射颜色和纹理颜色。注意，当传输颜色时忽略了对象的alpha值和不透明度，允许具有实alpha值的对象仍然将其颜色透射到阴影。</p>
+   <h5><a name="header-n277" class="md-header-anchor "></a>Saturation</h5>
+   <p>Saturation滑块控制透射到阴影的颜色部分的饱和度。将此设置为<code>0.0</code>将导致单色阴影。</p>
+   <h5><a name="header-n279" class="md-header-anchor "></a>Receives Lighting/Shadows</h5>
+   <p>这些复选框控制材质是否受到场景中光照和阴影的影响。如果关闭，该对象将始终是完全点亮和/或无阴影。</p>
+   <h5><a name="header-n281" class="md-header-anchor "></a>Two Sided Lighting</h5>
+   <p>通过在表面的背面添加一组面向相反方向的法线，从而使曲面实际上是双面的。这通常是关闭的，以提高渲染速度，但可以为2D表面或不完全封闭的对象打开，以允许反向或内部表面也可见。</p>
+   <p>通常，在3D应用程序中，只有一个表面的正面是可见的，而背面是经过筛选的，因此，如果相机在3D应用程序中围绕一个平面旋转，当它到达背面时，这个平面将变得不可见。在3D应用程序中，让一个平面双面化相当于在第一个平面上添加另一个平面，但旋转180度，因此法线在背面朝相反的方向。因此，当你绕着背面旋转时，你会看到第二个像平面，它的法线朝相反的方向。</p>
+   <p>当你制作一个双面的曲面时，Fusion和3D应用做的是一样的事情。由于Fusion在缺省情况下不会剔除背面的多边形，所以出现了关于双面的混淆。如果你在Fusion中绕着一个单面旋转，你仍然会从背面看到它（但你看到的是正面复制到背面，就像它是透明的一样）。让平面两面化实际上增加了第二套法线到平面的背面。</p>
+   <blockquote>
+    <p>注意：一旦您使表面透明，这将变得相当混乱，因为同样的规则仍然适用并产生结果，这是违反直觉的。如果你从正面看一个从背面照亮的透明双面表面，它看起来就不亮。</p>
+   </blockquote>
+   <h4><a name="header-n287" class="md-header-anchor "></a>Material ID</h4>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n290" class="md-header-anchor "></a>Reflect [3RR]</h3>
+   <p>Reflect工具用于向材质添加环境贴图反射和折射。提供反射和掠射强度、衰减、各通道折射率和染色。多个纹理贴图输入可以修改每个参数的行为。</p>
+   <p>反射工具通常与标准照明材质（如Blinn、Cook Torrance、Phong或Ward）组合，将该工具的输出连接到反射工具的背景材质输入。然后将反射纹理连接到反射纹理输入。这可以是2D图像，但更常见的是由Sphere Map或Cube Map工具创建的环境贴图。</p>
+   <p>环境贴图是一种假定对象的环境与对象无限远的近似。最好将其描绘为以物体为中心的立方体或球体。特别地，这种无限距离假定意味着物体不能与它们自身相互作用（例如，茶壶手柄上的反射不会显示茶壶的主体而是显示无限的环境贴图）。这也意味着如果在场景中的多个对象上使用相同的立方体贴图，那些对象将不会相互反射（例如，两个相邻对象不会彼此反射）。如果希望对象相互反射，则需要为每个对象渲染立方体贴图。</p>
+   <p>有关详细信息，请参阅本手册中的Reflections and Refractions。</p>
+   <h4><a name="header-n295" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3RR_tile.jpg" alt="3RR_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>Reflect.BackgroundMaterial</strong> </p>
+   <p>[橙色，可选的]此输入需要2D图像或3D材质。 如果提供了2D图像，该工具会将其视为应用于基本材质的漫反射纹理贴图。</p>
+   <p><strong>Reflect.Reflection.ReflectionTex</strong> </p>
+   <p>[绿色，可选的]此输入需要2D图像或3D材质。RGB通道用作反射纹理，并忽略alpha。</p>
+   <p><strong>Reflect.Reflection.ReflectionIntensityTex</strong> </p>
+   <p>[洋红色，可选的]此输入需要2D图像或3D材质。纹理的alpha通道乘以反射的强度。</p>
+   <p><strong>Reflect.Refraction.RefractionTex</strong> </p>
+   <p>[淡蓝色，可选的]此输入需要2D图像或3D材质。RGB通道用作折射纹理。</p>
+   <p><strong>Reflect.BumpmapTex</strong> </p>
+   <p>[白色，可选的]此输入将接受2D图像或3D材质，然后将RGB信息用作纹理空间法线。</p>
+   <h4><a name="header-n307" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3RR_Controls.png" alt="3RR_Controls" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n309" class="md-header-anchor "></a>Reflection</h4>
+   <h5><a name="header-n310" class="md-header-anchor "></a>Reflection Strength Variability</h5>
+   <p>这个多按钮控件可以设置为Constant或By Angle来改变反射强度，根据相对于观察者的表面方向。以下三个控件只有在此控件设置为By Angle时才可见。</p>
+   <h5><a name="header-n312" class="md-header-anchor "></a>Glancing Strength</h5>
+   <p>[By Angle]Glancing Strength控制着反射面远离相机的几何物体区域的反射强度。</p>
+   <h5><a name="header-n314" class="md-header-anchor "></a>Face On Strength</h5>
+   <p>[By Angle]Face On Strength控制反射的强度，为那些部分的几何形状直接反射回相机。</p>
+   <h5><a name="header-n316" class="md-header-anchor "></a>Falloff</h5>
+   <p>[By Angle]Falloff在强度区域上的扫瞄和脸部之间转换的锐度。它可以被认为是类似于将伽玛校正应用于Face On和Glancing值之间的梯度。</p>
+   <h5><a name="header-n318" class="md-header-anchor "></a>Constant Strength</h5>
+   <p>[Constant Angle]这种控制只有在Reflection Strength Variability设置为Constant时才可见。在这种情况下，反射的强度是恒定的，与反射的入射角无关。</p>
+   <h4><a name="header-n320" class="md-header-anchor "></a>Refraction</h4>
+   <p>如果进入的背景材质的不透明度低于1，则可以使用环境贴图作为折射纹理，也可以在透明物体中模拟折射效果。</p>
+   <h5><a name="header-n322" class="md-header-anchor "></a>Separate RGB Refraction Indices</h5>
+   <p>启用此复选框后，将隐藏Refraction Index滑块，并在其位置出现三个调节红、绿、蓝通道折射率的滑块。例如，这允许模拟在厚而不完美的玻璃中常见的光谱折射效应。</p>
+   <h5><a name="header-n324" class="md-header-anchor "></a>Refraction Index</h5>
+   <p>这个滑块控制了通过一个表面查看环境贴图的变形程度。整体变形是基于入射角。由于这是一个近似，而不是模拟，结果并不打算准确地模拟真实折射。</p>
+   <h5><a name="header-n326" class="md-header-anchor "></a>Refraction Tint</h5>
+   <p>折射纹理与色调颜色相乘，用于模拟滤过颜色的折射。它可以用来模拟在有色玻璃中的着色类型，例如在许多品牌的啤酒瓶中可以看到。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n329" class="md-header-anchor "></a>Stereo Mix [3SMM]</h3>
+   <h4><a name="header-n330" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3SMM_tile.png" alt="3SMM_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>StereoMix.LeftMaterial</strong> </p>
+   <p>[橙色，必需的]此输入将接受2D图像或3D材质，以用作左眼渲染的材质。如果使用2D图像，则使用基本材质类型将其转换为漫反射纹理贴图。</p>
+   <p><strong>StereoMix.RightMaterial</strong> </p>
+   <p>[橙色，必需的]此输入将接受2D图像或3D材质，以用作右眼渲染的材质。如果使用2D图像，则使用基本材质类型将其转换为漫反射纹理贴图。</p>
+   <p>虽然输入可以是2D图像或3D材质，但输出总是材质。</p>
+   <h4><a name="header-n337" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3SMM_Controls.png" alt="3SMM_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n339" class="md-header-anchor "></a>Swap</h5>
+   <p>这个选项将交换工具的两个输入。</p>
+   <h5><a name="header-n341" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n344" class="md-header-anchor "></a>Ward [3Wd]</h3>
+   <p>Ward工具是一种基本的照明材质，可以应用于3D场景的几何物体。它描述了物体对光线的反应，并提供了大量的纹理贴图输入，允许对材质的漫反射、高光和凹凸贴图组件进行精细控制。</p>
+   <p>特别是，Ward工具是模拟拉丝金属表面的理想工具，因为高光可以沿着映射坐标的U或V方向拉长。这就是所谓的各向异性（Anisotrophic）亮点。</p>
+   <p>Ward工具输出一个三维材质，可以连接到任何三维几何工具上的材质输入。</p>
+   <h4><a name="header-n348" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Wd_tile.jpg" alt="3Wd_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>Ward.DiffuseTex</strong> </p>
+   <p>[橙色，可选的]此输入将接受2D图像或3D材质作为漫反射纹理贴图。</p>
+   <p><strong>Ward.SpecularColorTex</strong> </p>
+   <p>[绿色，可选的]此输入将接受2D图像或3D材质作为高光彩色纹理贴图。</p>
+   <p><strong>Ward.SpecularIntensityTex</strong> </p>
+   <p>[洋红色，可选的]此输入将接受2D图像或3D材质作为材质高光高光的强度贴图。当输入为2D图像时，alpha通道用于创建贴图，而颜色通道则被丢弃。</p>
+   <p><strong>Ward.SpreadUTexture</strong> </p>
+   <p>[淡蓝色，可选的]该输入将接受2D图像或3D材质。此工具控件中的Spread U选项的值将与材质的alpha通道中的像素值相乘。</p>
+   <p><strong>Ward.SpreadVTexture</strong> </p>
+   <p>[淡蓝色，可选的]该输入将接受2D图像或3D材质。此工具控件中的Spread V选项的值将与材质的alpha通道中的像素值相乘。</p>
+   <p><strong>Ward.BumpmapTex</strong> </p>
+   <p>[白色，可选的]此输入将接受2D图像或3D材质，然后使用RGB信息作为纹理空间法线。</p>
+   <p>这些输入中的每一个都将纹理贴图中的像素乘以工具本身中等效命名的参数。这提供了用于缩放部分材质的有效方法。</p>
+   <p>当工具有像这个一样多的输入时，通常很难精确地进行连接。按住Option(Mac OS X)或Alt(Windows)键，同时将另一个工具的输出拖动到工具块上，并在释放鼠标左键时按住Option或Alt键。将出现一个小菜单，其中列出该工具提供的所有输入。单击所需的输入完成连接。</p>
+   <h4><a name="header-n364" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Wd_Controls.png" alt="3Wd_Controls" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n366" class="md-header-anchor "></a>Diffuse</h4>
+   <p>Diffuse描述基本表面特征，没有任何额外的效果，如反射或高光。除了定义对象的基本颜色外，漫反射颜色还定义对象的透明度。漫反射纹理贴图中的alpha可以用来使任何物体表面的部分透明。</p>
+   <h5><a name="header-n368" class="md-header-anchor "></a>Diffuse Color</h5>
+   <p>材质的Diffuse Color描述了材质在间接或环境光照射下呈现的基色。如果提供了漫反射纹理贴图，那么这里提供的颜色值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n370" class="md-header-anchor "></a>Alpha</h5>
+   <p>这个滑块设置材质的Alpha通道值。这同样影响漫反射和高光颜色，并影响渲染输出中材质的alpha值。如果提供了漫反射纹理贴图，那么这里的alpha值集将乘以纹理贴图中的alpha值。</p>
+   <h5><a name="header-n372" class="md-header-anchor "></a>Opacity</h5>
+   <p>降低材质的不透明度会同样降低高光和漫反射颜色的颜色和alpha值，使材质透明。</p>
+   <h4><a name="header-n374" class="md-header-anchor "></a>Specular</h4>
+   <p>Specular部分的参数描述了表面高光的外观。对于每个光照模型，这些值的计算方法不同。</p>
+   <h5><a name="header-n376" class="md-header-anchor "></a>Specular Color</h5>
+   <p>Specular Color决定了从光亮表面反射的光的颜色。一种材料的高光越高，它看起来就越有光泽。像塑料和玻璃这样的表面往往有白色高光，而金属表面则有像黄金这样的高光，这些高光从材质的颜色中继承了它们的颜色。如果提供了高光纹理映射，那么这里提供的值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n378" class="md-header-anchor "></a>Specular Intensity</h5>
+   <p>Specular Intensity控制高光的强度。如果提供高光强度纹理，则此值乘以纹理的alpha值。</p>
+   <h5><a name="header-n380" class="md-header-anchor "></a>Spread U</h5>
+   <p>Spread U控制物体UV-Map中高光高光沿U轴的衰减。值越小，衰减越明显，在这个方向上材质出现的越光滑和光泽。如果提供了Spread U纹理，那么这个值乘以纹理的alpha值。</p>
+   <h5><a name="header-n382" class="md-header-anchor "></a>Spread V</h5>
+   <p>Spread V控制物体UV-Map中高光高光沿V轴的衰减。值越小，衰减越明显，在这个方向上材质出现的越光滑和光泽。如果提供了Spread U纹理，那么这个值乘以纹理的alpha值。</p>
+   <h4><a name="header-n384" class="md-header-anchor "></a>Transmittance</h4>
+   <p>Transmittance控制着光通过材质的方式。例如，一个实心的蓝色球体会投射出一个黑色的阴影，但是一个半透明的蓝色塑料球体会投射出一个密度低得多的蓝色阴影。</p>
+   <p>还有一个单独的Opacity选项。不透明度决定了渲染时实际表面的透明度。Fusion允许分别调整不透明度和透射率。对于那些刚开始不熟悉3D软件的人来说，这可能有点违反直觉。有可能存在一个表面是完全不透明的，但会100%地透射到达它的光，有效地使它成为一个发光/发射表面。</p>
+   <h5><a name="header-n387" class="md-header-anchor "></a>Attenuation</h5>
+   <p>Attenuation决定了有多少颜色通过物体。对于具有透射阴影的对象，将衰减设置为<code>(1,1,1)</code>，这意味着100%的绿色、蓝色和红色光线通过该对象。将此颜色设置为<code>RGB(1,0,0)</code>意味着材质将传输100%到达表面的红色，但没有绿色或蓝色的光。这允许了“彩色玻璃”阴影。</p>
+   <h5><a name="header-n389" class="md-header-anchor "></a>Alpha Detail</h5>
+   <p>当Alpha Detail滑块设置为0时，对象的Alpha通道将被忽略，整个对象将投射阴影。如果将其设置为1，alpha通道将确定对象投射阴影的部分。</p>
+   <h5><a name="header-n391" class="md-header-anchor "></a>Color Detail</h5>
+   <p>Color Detail滑块通过漫反射颜色+纹理颜色调节通过表面的光线。使用此方法可以投射阴影，其中包含应用于对象的纹理的颜色细节。将滑块从0增加到1会给阴影带来更多的漫反射颜色和纹理颜色。注意，当传输颜色时忽略了对象的alpha值和不透明度，允许具有实alpha值的对象仍然将其颜色透射到阴影。</p>
+   <h5><a name="header-n393" class="md-header-anchor "></a>Saturation</h5>
+   <p>Saturation滑块控制透射到阴影的颜色部分的饱和度。将此设置为<code>0.0</code>将导致单色阴影。</p>
+   <h5><a name="header-n395" class="md-header-anchor "></a>Receives Lighting/Shadows</h5>
+   <p>这些复选框控制材质是否受到场景中光照和阴影的影响。如果关闭，该对象将始终是完全点亮和/或无阴影。</p>
+   <h5><a name="header-n397" class="md-header-anchor "></a>Two Sided Lighting</h5>
+   <p>通过在表面的背面添加一组面向相反方向的法线，从而使曲面实际上是双面的。这通常是关闭的，以提高渲染速度，但可以为2D表面或不完全封闭的对象打开，以允许反向或内部表面也可见。</p>
+   <p>通常，在3D应用程序中，只有一个表面的正面是可见的，而背面是经过筛选的，因此，如果相机在3D应用程序中围绕一个平面旋转，当它到达背面时，这个平面将变得不可见。在3D应用程序中，让一个平面双面化相当于在第一个平面上添加另一个平面，但旋转180度，因此法线在背面朝相反的方向。因此，当你绕着背面旋转时，你会看到第二个像平面，它的法线朝相反的方向。</p>
+   <p>当你制作一个双面的曲面时，Fusion和3D应用做的是一样的事情。由于Fusion在缺省情况下不会剔除背面的多边形，所以出现了关于双面的混淆。如果你在Fusion中绕着一个单面旋转，你仍然会从背面看到它（但你看到的是正面复制到背面，就像它是透明的一样）。让平面两面化实际上增加了第二套法线到平面的背面。</p>
+   <blockquote>
+    <p>注意：一旦您使表面透明，这将变得相当混乱，因为同样的规则仍然适用并产生结果，这是违反直觉的。如果你从正面看一个从背面照亮的透明双面表面，它看起来就不亮。</p>
+   </blockquote>
+   <h4><a name="header-n403" class="md-header-anchor "></a>Material ID</h4>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+  </div>  
+ </body>
+</html>

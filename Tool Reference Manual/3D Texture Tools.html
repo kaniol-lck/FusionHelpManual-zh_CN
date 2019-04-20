@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" /> 
+  <title>第四章 3D Texture Tools 三维纹理工具</title> 
+  <link rel="stylesheet" type="text/css" href="../stylesheets/tool-reference.css" /> 
+ </head> 
+ <body class="typora-export os-windows"> 
+  <div id="write" class="is-node">
+   <h2><a name="header-n0" class="md-header-anchor "></a>第四章 3D Texture Tools 三维纹理工具</h2>
+   <ul>
+    <li><a href="#header-n25">BumpMap [3Bu]</a> </li>
+    <li><a href="#header-n60">Catcher [3Ca]</a> </li>
+    <li><a href="#header-n86">CubeMap [3Cu]</a> </li>
+    <li><a href="#header-n122">Falloff [3Fa]</a> </li>
+    <li><a href="#header-n154">Fast Noise Texture [3FN]</a> </li>
+    <li><a href="#header-n189">Gradient 3D [3Gd]</a> </li>
+    <li><a href="#header-n238">Sphere Map [3SpM]</a> </li>
+    <li><a href="#header-n266">Texture [Txr]</a> </li>
+    <li><a href="#header-n293">Texture Transform [3Tx]</a> </li>
+   </ul>
+   <table id="img"> 
+    <tbody>
+     <tr> 
+      <td rowspan="5"><img src="images/3DTexture_index.png" alt="3DTexture_index" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_BumpMap.jpg" alt="index_BumpMap" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_Gradient.jpg" alt="index_Gradient" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_Catcher.jpg" alt="index_Catcher" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_SphereMap.jpg" alt="index_SphereMap" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_CubeMap.jpg" alt="index_CubeMap" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_Texture.jpg" alt="index_Texture" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_Falloff.jpg" alt="index_Falloff" onerror="this.style.display = 'none';" /></td> 
+      <td><img src="images/index_TextureTransform.jpg" alt="index_TextureTransform" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+     <tr> 
+      <td><img src="images/index_FastNoiseTexture.jpg" alt="index_FastNoiseTexture" onerror="this.style.display = 'none';" /></td> 
+     </tr> 
+    </tbody>
+   </table>
+   <p>&nbsp;</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n25" class="md-header-anchor "></a>BumpMap [3Bu]</h3>
+   <p>Bumpmap工具可以将灰阶（高度贴图）图像转换成凹凸贴图，也可以直接使用Create Bumpmap工具创建的凹凸贴图。本工具输出一种材质。</p>
+   <h4><a name="header-n27" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Bu_tile.jpg" alt="3Bu_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>Bumpmap.ImageInput (white)</strong></p>
+   <p>从图像中接收RGBA通道，用于凹凸计算或现有凹凸贴图。</p>
+   <h4><a name="header-n31" class="md-header-anchor "></a>Controls</h4>
+   <p>此选项卡包含该工具的所有参数。</p>
+   <p><img src="images/3Bu_Controls.png" alt="3Bu_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n34" class="md-header-anchor "></a>The Source Image is a...</h5>
+   <p>在Heightmap和Bumpmap之间切换，前者将创建一个类似于CreateBumpmap工具的凹凸贴图，后者期望由CreateBumpmap工具创建一个凹凸贴图。</p>
+   <h5><a name="header-n36" class="md-header-anchor "></a>Filter Size</h5>
+   <p>生成凹凸信息的过程基本上是一个自定义滤镜。这个多按钮控件设置过滤器的大小。</p>
+   <h5><a name="header-n38" class="md-header-anchor "></a>Extract height information from...</h5>
+   <p>设置从何处提取灰阶信息的通道。</p>
+   <h5><a name="header-n40" class="md-header-anchor "></a>Clamp Normal.Z</h5>
+   <p>在生成的凹凸纹理中剪切蓝色通道的较低值。</p>
+   <h5><a name="header-n42" class="md-header-anchor "></a>Filter Wrap Mode</h5>
+   <p>基本上将图像“包裹”在边框处，因此在使用无缝可平铺纹理时，滤镜会产生正确的结果。</p>
+   <h5><a name="header-n44" class="md-header-anchor "></a>Height Scale</h5>
+   <p>更改凹凸贴图中结果值的对比度。增加此值会产生更明显的凹凸贴图。</p>
+   <h5><a name="header-n46" class="md-header-anchor "></a>Bumpmap Texture Depth</h5>
+   <p>可选地将产生的凹凸纹理转换为所需的位深。</p>
+   <h4><a name="header-n48" class="md-header-anchor "></a>关于Bumpmap的注释</h4>
+   <p>Bumpmap在术语上有一些混乱，这取决于你正在阅读的论文/书籍/和你交谈的人。以下是Fusion的约定:</p>
+   <h5><a name="header-n50" class="md-header-anchor "></a>Heightmap</h5>
+   <p><img src="images/3Bu_Heightmap.png" alt="3Bu_Heightmap" referrerpolicy="no-referrer" /></p>
+   <p>包含每个像素高度值的灰度图像</p>
+   <h5><a name="header-n53" class="md-header-anchor "></a>Bumpmap</h5>
+   <p><img src="images/3Bu_Bumpmap.jpg" alt="3Bu_Bumpmap" referrerpolicy="no-referrer" /></p>
+   <p>包含存储在RGB通道中的法线的图像，用于修改现有法线（通常在切线空间中给出）</p>
+   <h5><a name="header-n56" class="md-header-anchor "></a>Normalmap</h5>
+   <p><img src="images/Normalmap.jpg" alt="Normalmap" referrerpolicy="no-referrer" /></p>
+   <p>包含存储在RGB通道中的法线的图像，用于替换现有法线（通常在切线或对象空间中给出）</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n60" class="md-header-anchor "></a>Catcher [3Ca]</h3>
+   <p>Catcher材质是用来“捕捉”从Projector 3D和Camera 3D工具投射的纹理模式投影。截取的投影被转换成纹理贴图，并由Catcher材质应用于其连接的几何物体。</p>
+   <p>理解基于光的投影和基于纹理的投影之间的区别有助于了解Catcher工具的用途。基于光的投影简单地将投影图像中的RGB通道的值添加到位于投影锥内的任何几何的漫反射纹理。这使得在使用光模式投影时无法基于图像的alpha通道剪切几何体。</p>
+   <p>想象一下，您希望将建筑物的图像投影到图像平面上作为设置扩展镜头的一部分。您首先roto图像以matte窗口。这样就可以在最终合成中看到墙后面房间的几何物体。当此图像投影为光时，将忽略Alpha通道，因此被matte的窗口保持不透明。</p>
+   <p>通过将Catcher连接到应用于图像平面的材质的漫反射纹理贴图，然后将投影从Light or Ambient Light模式切换到Texture模式，Fusion知道将投影图像应用为纹理贴图。使用此技术时，窗口将变为透明，并且可以看到窗口后面的几何物体。</p>
+   <p>这种方法相对于光投影的主要优点是可以使用Catcher将alpha通道投影到对象上，并且不需要启用照明。另一个优点是Catcher不仅限于材质的漫反射输入，因此可以投射高光强度贴图，甚至是反射和折射贴图。</p>
+   <blockquote>
+    <p><strong>注意：</strong>Catcher材质需要场景中的 Projector 3D或Camera 3D工具，设置为在Catcher所连接的对象上以Texture模式投影图像。如果没有投影，或者投影未设置为Texture模式，Catcher将简单地使对象透明且不可见。</p>
+   </blockquote>
+   <h4><a name="header-n68" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Ca_tile.jpg" alt="3Ca_tile" referrerpolicy="no-referrer" /></p>
+   <p>此材质工具没有任何外部输入。</p>
+   <h4><a name="header-n71" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Ca_Controls.png" alt="3Ca_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n73" class="md-header-anchor "></a>Enable</h5>
+   <p>使用此复选框可启用或禁用该工具。</p>
+   <h5><a name="header-n75" class="md-header-anchor "></a>Color Accumulation Mode</h5>
+   <p>Color Accumulation Mode用于控制Catcher如何组合来自多台投影机的灯光。当场景中只有一台投影机时，它对结果没有影响。此控件旨在与Software渲染器一起使用，并且在使用OpenGL渲染器时不会产生任何影响。</p>
+   <h5><a name="header-n77" class="md-header-anchor "></a>Alpha Accumulation Mode</h5>
+   <p>Alpha Accumulation Mode用于控制Catcher如何组合来自多台投影机的Alpha通道。当场景中只有一台投影机时，它对结果没有影响。此控件旨在与Software渲染器一起使用，并且在使用OpenGL渲染器时不会产生任何影响。</p>
+   <h5><a name="header-n79" class="md-header-anchor "></a>Accumulation Threshold</h5>
+   <p>Accumulation Threshold可用于从累积计算中排除某些低值。例如，当使用Median Accumulation累积模式时，阈值0.01将从中值计算中排除任何值小于0.01的像素。</p>
+   <h5><a name="header-n81" class="md-header-anchor "></a>Restrict by Projector ID</h5>
+   <p>激活时，Catcher只会从具有匹配ID的Projector接收光线。具有不同ID的Projector将被忽略。</p>
+   <h5><a name="header-n83" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n86" class="md-header-anchor "></a>CubeMap [3Cu]</h3>
+   <p>CubeMap工具使用单独的图像为立方体的每个面创建纹理贴图。它还可以从包含垂直或水平十字布局中的展开立方体的单个图像中提取立方体的各个面。</p>
+   <p>通过以90度视角安装6个摄像机以指向上，下，左，右，前和后来产生立方体贴图。</p>
+   <p>该工具提供了为生成的纹理贴图设置参考坐标系和旋转的选项。CubeMap工具通常用于为远距离区域（如天空或视野）或反射和折射贴图生成环境贴图。</p>
+   <p><img src="images/3Cu_CubeMap.jpg" alt="3Cu_CubeMap" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n91" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Cu_tile.jpg" alt="3Cu_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>CubeMap.CrossImage</strong></p>
+   <p>[白色，必需的]此输入仅在工具设置为Vertical Cross或Horizontal Cross方向时可见。 它需要一个2D图像。</p>
+   <p><strong>CubeMap.[DIRECTION]</strong></p>
+   <p>[白色，必需的]仅当工具设置为Separate Images方向模式时，才会显示这六个输入。每个输入都需要对齐图像以匹配左，右，上，下，前和后面。</p>
+   <h4><a name="header-n97" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Cu_Controls.jpg" alt="3Cu_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n99" class="md-header-anchor "></a>Orientation</h5>
+   <p>这个多按钮控件告诉工具对立方体贴图纹理要求哪种输入。有效选项包括：</p>
+   <ul>
+    <li><strong>Separate Images:</strong> 此选项在工具图块上显示六个输入，一个用于立方体的每个面。如果单独的图像不是正方形或不是相同大小，它们将被重新缩放为可包含所有图像的最大1:1图像。</li>
+    <li><strong>Vertical Cross:</strong> 此选项显示工具磁贴上的单个输入。图像应该是立方体的展开纹理，其中包含组织成垂直交叉形式的所有面，其中高度大于宽度。如果交叉图像的图像方面不是3:4，则Cubemap工具会将其裁剪下来，以匹配适当的宽高比。</li>
+    <li><strong>Horizontal Cross:</strong> 此选项显示工具磁贴上的单个输入。图像应该是立方体的展开纹理，其中包含组织成水平交叉形式的所有面，其中宽度大于高度。如果交叉图像的图像方面不是3:4，则Cubemap工具会将其裁剪下来，以匹配适当的宽高比。</li>
+   </ul>
+   <h5><a name="header-n108" class="md-header-anchor "></a>Coordinate System</h5>
+   <p>此多按钮控件设置将图像转换为纹理时使用的坐标系。</p>
+   <ul>
+    <li><strong>Model:</strong> 此选项沿着对象局部坐标系定向纹理。</li>
+    <li><strong>World:</strong> 此选项使用全局或世界坐标系定向生成的纹理。</li>
+    <li><strong>Eye:</strong> 此选项将纹理贴图与相机或查看器的坐标系对齐。</li>
+   </ul>
+   <h5><a name="header-n117" class="md-header-anchor "></a>Warn about bad dimensions</h5>
+   <p>如果提供的图像尺寸不符合所选方向模式的要求，则选中此复选框将在控制台中显示警告消息。</p>
+   <h5><a name="header-n119" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n122" class="md-header-anchor "></a>Falloff [3Fa]</h3>
+   <p>Falloff工具根据材质所应用的物体与相机之间的入射角将两种材质混合在一起。 当您希望将一种材质用于将光直接反射回相机的几何物体部分而另一种不同的材质用于将光反射回场景的部件时，这非常有用。</p>
+   <p><img src="images/3Fa_Falloff.jpg" alt="3Fa_Falloff" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n125" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Fa_tile.jpg" alt="3Fa_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>Falloff.FaceOnMaterial</strong></p>
+   <p>[橙色，可选的]此输入需要2D图像或3D材质。如果提供了2D图像，则将使用基本材质着色器将其转换为漫反射纹理贴图。</p>
+   <p><strong>Falloff.GlancingMaterial</strong></p>
+   <p>[绿色，可选的]此输入需要2D图像或3D材质。如果提供了2D图像，则将使用基本材质着色器将其转换为漫反射纹理贴图。</p>
+   <p>虽然此工具的输入可以是图像，但输出始终是一种材质。</p>
+   <h4><a name="header-n132" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Fa_Controls.png" alt="3Fa_Controls" referrerpolicy="no-referrer" /><img src="images/3Fa_Controls2.png" alt="3Fa_Controls2" referrerpolicy="no-referrer" /></p>
+   <h4><a name="header-n134" class="md-header-anchor "></a>Color Variation</h4>
+   <h5><a name="header-n135" class="md-header-anchor "></a>Two Tone</h5>
+   <p>两个常规颜色控件定义了Glancing和Face On的颜色。</p>
+   <h5><a name="header-n137" class="md-header-anchor "></a>Gradient</h5>
+   <p>渐变控件定义了Glancing和Face On的颜色。这可以用于多种效果，例如创建Toon着色器。</p>
+   <h4><a name="header-n139" class="md-header-anchor "></a>Face On Color</h4>
+   <h5><a name="header-n140" class="md-header-anchor "></a>Face On Color</h5>
+   <p>Face On Color定义了面向相机的表面部件的颜色。如果提供了Face On纹理贴图，则此处提供的颜色值将乘以纹理中的颜色值。</p>
+   <h5><a name="header-n142" class="md-header-anchor "></a>Face On Opacity</h5>
+   <p>降低材质的不透明度将降低面部材质的颜色和Alpha值，使材质透明。</p>
+   <h4><a name="header-n144" class="md-header-anchor "></a>Glancing Color</h4>
+   <h5><a name="header-n145" class="md-header-anchor "></a>Glancing Color</h5>
+   <p>Glancing Color定义了更垂直于相机的表面部分的颜色。如果Glancing材质端口具有有效输入，则此输入将乘以此颜色。</p>
+   <h5><a name="header-n147" class="md-header-anchor "></a>Glancing Opacity</h5>
+   <p>降低材质的不透明度将降低Glancing材质的颜色和alpha值，使材质透明。</p>
+   <h5><a name="header-n149" class="md-header-anchor "></a>Falloff</h5>
+   <p>此值控制Glancing和Face On强度之间的过渡。它非常类似于应用于将一个值混合到另一个值的渐变的伽玛操作。</p>
+   <h5><a name="header-n151" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n154" class="md-header-anchor "></a>Fast Noise Texture [3FN]</h3>
+   <p>Fast Noise Texture工具是2DFast Noise工具的与程序分辨率无关的版本。它直接创建噪声纹理作为3D工具使用的材质。它提供了一个3D体积模式，可以与提供UVW纹理坐标的工具（如设置为XYZtoUVW或相机的UV Map工具）一起创建无缝纹理。</p>
+   <h4><a name="header-n156" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3FN_tile.jpg" alt="3FN_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>FastNoiseTexture.SourceMaterial</strong></p>
+   <p>[橙色，必需的]此输入将接受2D图像或3D材质。这由噪声模式调制。</p>
+   <h4><a name="header-n160" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3FN_Controls.png" alt="3FN_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n162" class="md-header-anchor "></a>Output Mode</h5>
+   <ul>
+    <li><strong>2D:</strong> 根据2D纹理坐标（UV）计算噪声纹理。该模式允许平滑地改变噪声模式。</li>
+    <li><strong>3D:</strong> 根据3D纹理坐标（UVW）计算噪声纹理。像Shape 3D这样的工具会自动提供第三个纹理坐标，否则可以使用UV Map工具创建3D纹理空间。不支持噪声模式的动画。</li>
+   </ul>
+   <h5><a name="header-n168" class="md-header-anchor "></a>Discontinuous</h5>
+   <p>或者，噪声函数在值之间进行插值以创建平滑连续的结果梯度。启用此复选框可沿某些噪声等值线创建硬间断线。结果将产生截然不同的效果。</p>
+   <h5><a name="header-n170" class="md-header-anchor "></a>Invert</h5>
+   <p>选中此复选框以反转噪声，创建原始图案的负像。当启用Discontinuous时，这是最有效的。</p>
+   <h5><a name="header-n172" class="md-header-anchor "></a>Detail</h5>
+   <p>增加此滑块的值可在噪声结果中生成更高级别的细节。较大的值会增加更多层次的增进详细的噪音，而不会影响整体模式。较高的值会使渲染需要更长时间，但可以产生更自然的结果（并非所有图形卡都支持更高的硬件细节级别）。</p>
+   <h5><a name="header-n174" class="md-header-anchor "></a>Brightness</h5>
+   <p>此控件可调整噪声贴图的整体亮度。</p>
+   <h5><a name="header-n176" class="md-header-anchor "></a>Contrast</h5>
+   <p>此控件增加或减少噪声图的整体对比度。它可以加大噪声的影响。</p>
+   <h5><a name="header-n178" class="md-header-anchor "></a>Scale</h5>
+   <p>可以使用Scale滑块调整噪声贴图的特征比例，将其从整个图像的温和变化更改为更紧密的整体纹理效果。该值表示沿UV轴的刻度。</p>
+   <h5><a name="header-n180" class="md-header-anchor "></a>Scale Z</h5>
+   <p>（仅限3D）Scale Z的值在纹理空间中沿W轴缩放噪声纹理。</p>
+   <h5><a name="header-n182" class="md-header-anchor "></a>Seethe</h5>
+   <p>（仅限2D）Seethe控件可平滑地改变2D噪声模式。</p>
+   <h5><a name="header-n184" class="md-header-anchor "></a>Seethe Rate</h5>
+   <p>（仅限2D）与上面的Seethe控件一样，Seethe Rate也会使噪声贴图发生变化。Seethe Rate定义噪声每帧改变的速率，自动引起噪声的动画漂移，而不需要样条动画。</p>
+   <h5><a name="header-n186" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n189" class="md-header-anchor "></a>Gradient 3D [3Gd]</h3>
+   <p>使用渐变3D工具，可以使用各种渐变类型对对象进行纹理化。它提供了Background工具的许多控件。</p>
+   <p>虽然无法直接在3D空间中变换渐变，但可以使用以下工具进行定向：</p>
+   <ul>
+    <li><p><strong>Texture Transform工具</strong></p><p>Texture Transform工具可用于调整每个像素的映射。</p></li>
+    <li><p><strong>UVMap工具</strong></p><p>UV Map工具可用于调整每个顶点的映射（使用XYZtoUVW模式）。这有屏幕控制，因此您可以看到渐变正在做什么。建议使用此工具，因为评估速度更快。</p></li>
+   </ul>
+   <p> <img src="images/3Gd_tile.jpg" alt="3Gd_tile" referrerpolicy="no-referrer" /></p>
+   <p>Controls</p>
+   <p><img src="images/3Gd_Controls.jpg" alt="3Gd_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n202" class="md-header-anchor "></a>Gradient Type</h5>
+   <p>确定用于渐变的类型或模式。</p>
+   <ul>
+    <li><strong>Linear:</strong> 简单的线性渐变。</li>
+    <li><strong>Reflect:</strong> 基于线性模式，此渐变将在纹理范围的中间进行镜像。</li>
+    <li><strong>Square:</strong> 使用方形模式应用渐变。</li>
+    <li><strong>Cross:</strong> 与Reflect模式类似，但它将使用两个轴来应用渐变。</li>
+    <li><strong>Radial:</strong> Radial模式使用圆形模式来应用渐变。</li>
+   </ul>
+   <p><img src="images/3Gd_GradientType.png" alt="3Gd_GradientType" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n216" class="md-header-anchor "></a>Gradient</h5>
+   <p>Gradient控件由一个条形图组成，可以在其中添加，修改和删除渐变的点。每个点都有自己的颜色。可以设置颜色的动画以及点的位置。此外，可以将From Image修改器应用于渐变以从图像中评估它。</p>
+   <h5><a name="header-n218" class="md-header-anchor "></a>Gradient Interpolation Method</h5>
+   <p>默认情况下，梯度在RGB颜色空间中从一点到另一点进行线性插值。这有时会导致不需要的颜色。选择另一个颜色空间可以提供更好的结果。</p>
+   <h5><a name="header-n220" class="md-header-anchor "></a>Offset</h5>
+   <p>允许平移渐变。</p>
+   <h5><a name="header-n222" class="md-header-anchor "></a>Repeat</h5>
+   <p>定义如何处理渐变的左右边框。</p>
+   <p><img src="images/3Gd_Repeat.png" alt="3Gd_Repeat" referrerpolicy="no-referrer" /></p>
+   <p>将渐变设置为Once，Repeat和Ping Pong从顶部到底部分别向左移动渐变。</p>
+   <ul>
+    <li><strong>Once:</strong> 使用Gradient Offset控件移动渐变时，边框颜色将保持其值。将默认渐变向左移动将导致左侧出现白色边框，向右移动将导致右侧出现黑色边框。</li>
+    <li><strong>Repeat:</strong> 使用Gradient Offset控件移动渐变时，边框颜色将被包围。将默认渐变向左移动将导致从白色到黑色的急剧跳跃，向右移动将导致从黑色到白色的急剧跳跃。</li>
+    <li><strong>Ping Pong:</strong> 使用Gradient Offset控件移动渐变时，边框颜色来回“打乒乓”。将默认渐变向左移动将导致边缘从白色变回黑色，向右移动将导致边缘从黑色渐变回白色。</li>
+   </ul>
+   <h5><a name="header-n233" class="md-header-anchor "></a>Sub Pixel</h5>
+   <p>确定创建渐变的精度。</p>
+   <h5><a name="header-n235" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n238" class="md-header-anchor "></a>Sphere Map [3SpM]</h3>
+   <p>Sphere Map工具允许从图像创建球形纹理贴图。输入图像应表示经度/纬度格式的纹理信息，其中X轴表示经度0-360度，Y轴表示纬度-90到+90度。</p>
+   <h4><a name="header-n240" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3SpM_tile.jpg" alt="3SpM_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>SphereMap.ImageImage</strong></p>
+   <p>[白色，必需的]从图像输出接收RGBA通道。</p>
+   <h4><a name="header-n244" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3SpM_Controls.jpg" alt="3SpM_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n246" class="md-header-anchor "></a>Angular Mapping</h5>
+   <p>调整纹理坐标映射，使极点较少被压扁，纹理中的区域映射到球体上的相等区域。换句话说，它将纬度线的映射从半球形鱼眼转变为角鱼眼。此映射尝试保留区域并使绘制或修改球体贴图更容易，因为图像不是在极点处压缩。</p>
+   <h5><a name="header-n248" class="md-header-anchor "></a>Rotation</h5>
+   <p>提供旋转纹理贴图的控件。</p>
+   <h5><a name="header-n250" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <p>该工具需要宽高比为2:1的图像。否则，将根据以下规则钳制图像：</p>
+   <ul>
+    <li><p><strong>2 * width &gt; height</strong></p><p>宽度适合球体，杆将显示夹紧边缘。</p></li>
+    <li><p><strong>2 * width &lt; height</strong></p><p>高度适合球体，并且将围绕0度经度线进行夹紧。</p></li>
+   </ul>
+   <h4><a name="header-n260" class="md-header-anchor "></a>Sphere Map与直接将纹理连接到Sphere</h4>
+   <p>您可以直接将经纬(球面投影)纹理映射连接到一个球体，而不是首先通过连线将其连接到Sphere Map工具。如果您将起始/结束角和纬度设置为小于360&deg;/180&deg;，则会导致不同的渲染。在第一种情况下，纹理将被压扁。当使用Sphere Map工具时，纹理将被裁剪。 比较：</p>
+   <p><img src="images/3SpM_Compare.jpg" alt="3SpM_Compare" referrerpolicy="no-referrer" /></p>
+   <blockquote>
+    <p><strong>注意：</strong>如果你直接将纹理导入球体，它也会被水平镜像。您可以首先使用Transform工具来“修复”这个问题。</p>
+   </blockquote>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n266" class="md-header-anchor "></a>Texture [Txr]</h3>
+   <p>Texture工具可以控制渲染图像中元素的纹理映射。纹理贴图图像（连接到绿色输入）可以包裹在对象周围以替换当前纹理。Texture工具依赖于3D渲染图像中U和V贴图通道的存在。如果这些通道不存在，则此工具无效。</p>
+   <blockquote>
+    <p><strong>注意：</strong>背景像素的U和V值可能为0.0，这会将这些像素设置为纹理角点像素的颜色。要将纹理限制为特定对象，请使用基于物体的alpha或基于Object或Material ID通道效果遮罩。</p>
+   </blockquote>
+   <p>有关更多信息，请参阅“辅助通道Auxiliary Channels”章节。</p>
+   <h4><a name="header-n271" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/Txr_tile.jpg" alt="Txr_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>CreateTexture.ImageInput</strong></p>
+   <p>[橙色，必需的]此输入需要一个2D图像。</p>
+   <h4><a name="header-n275" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/Txr_Controls.png" alt="Txr_Controls" referrerpolicy="no-referrer" /></p>
+   <h5><a name="header-n277" class="md-header-anchor "></a>Wrap Mode</h5>
+   <p>如果在纹理空间中转换纹理（使用下面的控件或UV Map工具），则可能会在图像边框之外的区域映射到对象上。Wrap Mode确定图像在这些区域中的应用方式。</p>
+   <ul>
+    <li><strong>Wrap:</strong> 这会围绕图像的边框包裹图像的边缘。</li>
+    <li><strong>Clamp:</strong> 图像边缘的颜色用于纹理化。此模式类似于“变换”工具中的“复制”模式。</li>
+    <li><strong>Black:</strong> 图像沿其边缘被剪裁。使用alpha=0的黑色代替。</li>
+    <li><strong>Mirror:</strong> 图像在X和Y中都被镜像。</li>
+   </ul>
+   <h5><a name="header-n288" class="md-header-anchor "></a>U/V Offset</h5>
+   <p>这些滑块可用于沿U和V坐标偏移纹理。</p>
+   <h5><a name="header-n290" class="md-header-anchor "></a>U/V Scale</h5>
+   <p>这些滑块可用于沿U和V坐标缩放纹理。</p>
+   <div style="page-break-after: always;"></div>
+   <h3><a name="header-n293" class="md-header-anchor "></a>Texture Transform [3Tx]</h3>
+   <p>Texture Transform工具可用于平移，旋转和缩放输入材质上的图像纹理。虽然输入也可以是图像，但始终输出材质。</p>
+   <h4><a name="header-n295" class="md-header-anchor "></a>外部输入</h4>
+   <p> <img src="images/3Tx_tile.jpg" alt="3Tx_tile" referrerpolicy="no-referrer" /></p>
+   <p><strong>TextureTransform.MaterialInput</strong></p>
+   <p>[橙色，可选的]此输入需要2D图像或3D材质。</p>
+   <h4><a name="header-n299" class="md-header-anchor "></a>Controls</h4>
+   <p><img src="images/3Tx_Controls.jpg" alt="3Tx_Controls" referrerpolicy="no-referrer" /><img src="images/3Tx_Controls2.png" alt="3Tx_Controls2" referrerpolicy="no-referrer" /></p>
+   <blockquote>
+    <p><strong>注意：</strong>并非所有图形卡都支持所有Wrap模式。</p>
+   </blockquote>
+   <h4><a name="header-n303" class="md-header-anchor "></a>Translation</h4>
+   <h5><a name="header-n304" class="md-header-anchor "></a>U, V, W Translation</h5>
+   <p>这些滑块将沿U，V和W轴移动纹理。</p>
+   <h4><a name="header-n306" class="md-header-anchor "></a>Rotation</h4>
+   <h5><a name="header-n307" class="md-header-anchor "></a>Rotation Order</h5>
+   <p>使用这些按钮设置应用旋转的顺序。</p>
+   <h5><a name="header-n309" class="md-header-anchor "></a>U, V, W Rotation</h5>
+   <p>与旋转顺序一起，这些设置定义围绕UVW轴的旋转。</p>
+   <h4><a name="header-n311" class="md-header-anchor "></a>Scale</h4>
+   <h5><a name="header-n312" class="md-header-anchor "></a>U, V, W Scale</h5>
+   <p>沿相应的UVW轴缩放纹理。</p>
+   <h4><a name="header-n314" class="md-header-anchor "></a>Pivot</h4>
+   <h5><a name="header-n315" class="md-header-anchor "></a>U, V, W Pivot</h5>
+   <p>设置旋转和缩放的参考点。</p>
+   <h5><a name="header-n317" class="md-header-anchor "></a>Material ID</h5>
+   <p>此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。</p>
+   <div style="page-break-after: always;"></div>
+  </div>  
+ </body>
+</html>
