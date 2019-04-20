@@ -8,11 +8,11 @@
 - [Soft Glow [SGl]](./Soft%20Glow%20[SGl].md) 
 - [Unsharp Mask [Us]](./Unsharp%20Mask%20[Us].md) 
 - [VariBlur [VBl]](./VariBlur%20[VBl].md) 
-- [Vector Motion Blur [VBl]](./Vector%Motion%20Blur%20[VBl].md) 
+- [Vector Motion Blur [VBl]](./Vector%20Motion%20Blur%20[VBl].md) 
 
 <table id="img">
   <tr>
-	<td rowspan="5"><img src="images/index_menu.png" alt="index_menu"></td>
+	<td rowspan="5"><img src="images/Blur_index.png" alt="Blur_index"></td>
     <td><img src="images/index_Blur.jpg" alt="index_Blur"></td>
     <td><img src="images/index_SoftGlow.jpg" alt="index_SoftGlow"></td>
   </tr>

@@ -12,7 +12,7 @@
 
 <table id="img">
   <tr>
-    <td rowspan="5"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td rowspan="5"><img src="images/3DTexture_index.png" alt="3DTexture_index"></td>
     <td><img src="images/index_BumpMap.jpg" alt="index_BumpMap"></td>
     <td><img src="images/index_Gradient.jpg" alt="index_Gradient"></td>
   </tr>
@@ -32,5 +32,6 @@
     <td><img src="images/index_FastNoiseTexture.jpg" alt="index_FastNoiseTexture"></td>
   </tr>
 </table>
+
 
 

@@ -33,7 +33,7 @@
 
 <table id="img">
   <tr>
-    <td rowspan="10"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td rowspan="10"><img src="images/3D_index.png" alt="3D_index"></td>
     <td><img src="images/index_AlembicMesh3D.jpg" alt="index_AlembicMesh3D"></td>
     <td><img src="images/index_Bender3D.jpg" alt="index_Bender3D"></td>
     <td><img src="images/index_Camera3D.jpg" alt="index_Camera3D"></td>

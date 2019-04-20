@@ -11,7 +11,7 @@
 
 <table id="img">
   <tr>
-    <td rowspan="4"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td rowspan="4"><img src="images/3DMaterial_index.png" alt="3DMaterial_index"></td>
     <td><img src="images/index_Blinn.jpg" alt="index_Blinn"></td>
     <td><img src="images/index_Phong.jpg" alt="index_Phong"></td>
   </tr>

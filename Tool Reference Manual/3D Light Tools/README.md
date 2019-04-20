@@ -7,7 +7,7 @@
 
 <table id="img">
   <tr>
-    <td rowspan="4"><img src="images/index_menu.png" alt="index_menu"></td>
+    <td rowspan="4"><img src="images/3DLight_index.png" alt="3DLight_index"></td>
     <td><img src="images/index_AmbientLight.jpg" alt="index_AmbientLight"></td>
   </tr>
   <tr>
