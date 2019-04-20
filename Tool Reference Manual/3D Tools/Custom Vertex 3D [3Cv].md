@@ -10,20 +10,20 @@
 
 目前没有任何几何物体有环境坐标。只有粒子的速度。如果一个流不存在于输入几何物体中，则假定它具有一个默认值。
 
-##### 这些默认值为：
+- 这些默认值为：
 
-| 顶点属性                         | 默认值    |
-| -------------------------------- | --------- |
-| Tangentu (tux, tuy, tuz)         | (1,0,0)   |
-| Tangentv (tvx, tvy, tvz)         | (0,1,0)   |
-| Normals (nx, ny, nz)             | (0,0,1)   |
-| Vertexcolor (vcr, vcg, vcb, vca) | (1,1,1,1) |
-| Velocity (vx, vy, vz)            | (0,0,0)   |
-| Envcoord (eu, ev, ew)            | (0,0,0)   |
-| Texcoord (tu, tv, tw)            | (0,0,0)   |
+| 顶点属性                           | 默认值      |
+| ---------------------------------- | ----------- |
+| `Tangentu (tux, tuy, tuz)`         | `(1,0,0)`   |
+| `Tangentv (tvx, tvy, tvz)`         | `(0,1,0)`   |
+| `Normals (nx, ny, nz)`             | `(0,0,1)`   |
+| `Vertexcolor (vcr, vcg, vcb, vca)` | `(1,1,1,1)` |
+| `Velocity (vx, vy, vz)`            | `(0,0,0)`   |
+| `Envcoord (eu, ev, ew)`            | `(0,0,0)`   |
+| `Texcoord (tu, tv, tw)`            | `(0,0,0)`   |
 
 > **注意：** 如果流的表达式不是无关紧要的，那么就会创建输入几何上缺少的流。流的值将如上面所示。例如，如果输入的几何物体没有法线，那么(nx, ny, nz)的值总是(0,0,1)。要改变它，您可以使用ReplaceNormals工具预先生成它们。
 
-#### Controls
+#### Controls 控件
 
 ![3Cv_Controls](images/3Cv_Controls.png)
