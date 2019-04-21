@@ -4,15 +4,15 @@ ReplaceNormals用于替换传入几何物体的法线/切线。输入场景中�
 
  ![3Rn2_tile](images/3Rn2_tile.jpg)
 
-#### Controls
+#### Controls 控件
 
 ![3Rn2_Controls](images/3Rn2_Controls.png)
 
-##### Pre-Weld Position Vertices
+##### Pre-Weld Position Vertices 预焊位置顶点
 
 预焊位置顶点。有时位置顶点在几何物体中重复出现，即使它们的位置相同，也会导致法线/切线计算错误。预焊结果被丢弃；它们不影响输出几何物体的位置顶点。
 
-##### Recompute
+##### Recompute 重计算
 
 控制何时重新计算法线/切线。
 
@@ -20,15 +20,15 @@ ReplaceNormals用于替换传入几何物体的法线/切线。输入场景中�
 - **If Not Present:** mesh上的法线只有在不存在时才会重新计算。
 - **Never:** 法线永远不会被计算出来。这个选项在动画制作时很有用。
 
-##### Smoothing Angle
+##### Smoothing Angle 平滑角度
 
 角小于这个角的相邻面，其邻接边将被平滑。平滑角的一个典型值可能在20到60度之间。对于0.0f和360.0f有特殊的情况代码。当设置为0.0f时，将生成分面法线；这对艺术效果很有用。
 
-##### Ignore Smooth Groups
+##### Ignore Smooth Groups 忽略平滑组
 
 如果设置为False，具有不同光滑组的两个面将不会被平滑(例如，立方体的面或圆柱的顶部表面具有不同的光滑组)。如果你检查这个，并设置足够大的平滑角，立方体的表面将被平滑。目前还没有办法在Fusion中可视化平滑的组。
 
-##### Flip Normals
+##### Flip Normals 翻转法线
 
 翻转切线有时会令人困惑。如果mesh有切向量，翻转将产生效果。然而，大多数Fusion的mesh在到达Renderer3D之前都没有切向量。另外，在监视器中查看切向量时，如果切向量不存在，就会创建切向量。令人困惑的是，如果你查看一个没有切向量的Cube3D，然后按下FlipU/FlipV按钮，什么都不会发生。这是因为没有要创建的切向量，但是后来GL渲染器创建了一些(未翻转的)切向量。
 

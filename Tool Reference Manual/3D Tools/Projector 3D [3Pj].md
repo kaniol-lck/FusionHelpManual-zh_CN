@@ -25,96 +25,96 @@ Camera 3D工具还提供了投影功能，当投影与摄像机匹配时应该�
 
 当在OpenGL view或OpenGL renderer中使用Projectors时，为了查看主视图中投影的结果，照明必须设置为Per-pixel(默认)。Per-pixel照明模式需要从你的显卡上获得一定级别的着色器支持。即使显卡不支持像素着色，在使用Software renderer时投影仍然是可见的。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3Pj_tile](images/3Pj_tile.jpg)
 
-**Projector3D.SceneInput**
+**Projector3D.SceneInput 场景输入**
 
 [橙色，可选的]这个输入需要一个3D场景。如果一个场景连接到这个输入，那么应用到聚光灯上的变换也会影响场景的其余部分。
 
-**Projector3D.ProjectiveImage**
+**Projector3D.ProjectiveImage 投影图像**
 
 [白色，可选的]这个输入需要一个2D图像用于投影。
 
-#### Controls
+#### Controls 控件
 
 ![3Pj_Controls](images/3Pj_Controls.png)![3Pj_Controls2](images/3Pj_Controls2.png)
 
-##### Enabled
+##### Enabled 启用
 
 当选中这个复选框时，Projector就会影响场景。清除复选框以关闭它。
 
-##### Color
+##### Color 颜色
 
 在投影到场景之前，输入图像乘以这个颜色。
 
-##### Intensity
+##### Intensity 强度
 
 当使用Light和Ambient Light投影模式时，使用此滑块设置投影的强度。在Texture模式下，这个选项将缩放乘以颜色的纹理Color值。
 
-##### Decay Type
+##### Decay Type 衰减类型
 
 Projector默认No Falloff，这意味着无论投影仪到几何物体的距离有多远，它的光线在几何物体上的强度都是相等的。若要使强度随距离下降，请将Decay Type设置为Linear模式或Quadratic模式。
 
-##### Angle
+##### Angle 角度
 
 工具的Cone Angle是指Projector发出其全部强度的锥形的宽度。角度越大，锥角越宽，最高可达90度。
 
-##### Fit Method
+##### Fit Method 适配方法
 
-Fit Method确定投影在投影锥中如何拟合。
+Fit Method确定投影在投影锥中如何适配。
 
-首先要知道的是，虽然这个文档可能称之为“圆锥(cone)”，但Projector3D工具和Camera3D工具并不投射实际的锥；它更像是一个金字塔形的光线，它的顶点在照相机/投影仪上。Projector3D工具总是投射一个正方形金字塔形的光线，即它的X角和Y角是相等的。由Camera3D工具投射的金字塔形的光线可以是非方形的，这取决于在相机中设置的Film Back。与Projector3D/Camera3D相连接的图像的方面不会影响金字塔的X/Y角度，而是根据拟合选项缩放图像来适合金字塔形。
+首先要知道的是，虽然这个文档可能称之为“圆锥(cone)”，但Projector3D工具和Camera3D工具并不投射实际的锥；它更像是一个金字塔形的光线，它的顶点在照相机/投影仪上。Projector3D工具总是投射一个正方形金字塔形的光线，即它的X角和Y角是相等的。由Camera3D工具投射的金字塔形的光线可以是非方形的，这取决于在相机中设置的Film Back。与Projector3D/Camera3D相连接的图像的方面不会影响金字塔的X/Y角度，而是根据适配选项缩放图像来适合金字塔形。
 
-当金字塔的比例`(AovY/AovX)`和图像的比例`(height ** pixelAspectY)/(width ** pixelAspectX)`都相同时，就不需要拟合选项，在这种情况下，所有拟合选项都做同样的事情。然而，当图像和金字塔的比例(由Camera3D中的Film Back设置决定)不同时，拟合选项就变得重要了。
+当金字塔的比例`(AovY/AovX)`和图像的比例`(height ** pixelAspectY)/(width ** pixelAspectX)`都相同时，就不需要适配选项，在这种情况下，所有适配选项都做同样的事情。然而，当图像和金字塔的比例(由Camera3D中的Film Back设置决定)不同时，适配选项就变得重要了。
 
 例如，‘Fit by Width’将与Camera3D金字塔的宽度相匹配。在这种情况下，如果图像的长宽比大于金字塔的长宽比，一些投影会垂直地延伸到金字塔之外。
 
 有五个选项：
 
-- **Inside:** 图像是均匀缩放的，以使其最大尺寸适合于锥内。另一种考虑方法是，它将图像缩放到尽可能大的程度，使图像完全被覆盖在金字塔形的光线中。这意味着如金字塔形的光线以外的任何东西都不会接收到任何投射的光。
-- **Width:** 图像是均匀缩放的，以便其宽度适合于锥内。注意，图像仍然可以在锥外的高度方向上延伸。
-- **Height:** 图像是均匀缩放的，以便其宽度适合于锥内。注意，图像仍然可以在锥外的高度方向上延伸。
-- **Outside:** 图像是均匀缩放的，以使其最小尺寸适合于锥内。另一种考虑方法是，它将图像缩放到尽可能小的程度，使图像覆盖整个金字塔形的光线(即金字塔完全被覆盖在图像中)。这意味着光金字塔内任何物体的任何像素都会被照亮。
-- **Stretch:** 图像是不均匀缩放的，所以它正好覆盖了投影仪的锥形。
+- **Inside 内部：**图像是均匀缩放的，以使其最大尺寸适合于锥内。另一种考虑方法是，它将图像缩放到尽可能大的程度，使图像完全被覆盖在金字塔形的光线中。这意味着如金字塔形的光线以外的任何东西都不会接收到任何投射的光。
+- **Width 宽度：**图像是均匀缩放的，以便其宽度适合于锥内。注意，图像仍然可以在锥外的高度方向上延伸。
+- **Height 高度：**图像是均匀缩放的，以便其宽度适合于锥内。注意，图像仍然可以在锥外的高度方向上延伸。
+- **Outside 外部：**图像是均匀缩放的，以使其最小尺寸适合于锥内。另一种考虑方法是，它将图像缩放到尽可能小的程度，使图像覆盖整个金字塔形的光线(即金字塔完全被覆盖在图像中)。这意味着光金字塔内任何物体的任何像素都会被照亮。
+- **Stretch 拉伸：**图像是不均匀缩放的，所以它正好覆盖了投影仪的锥形。
 
-##### Projection Mode
+##### Projection Mode 投影模式
 
-- **Light:** 将纹理投影为漫反射/高光。
-- **Ambient Light:** 使用环境光进行投影。
+- **Light 光：**将纹理投影为漫反射/高光。
+- **Ambient Light 环境光：**使用环境光进行投影。
 
-##### Texture
+##### Texture 纹理
 
 当与Catcher工具一起使用时，这种模式允许可重新照明材质的投影。投影将只作用于使用Catcher材质作为材质着色器的一部分的对象。
 
 一个有用的窍门是将Catcher工具连接到3D Material工具(比如Blinn)上的Specular Texture输入。这将导致使用Blinn材质的任何对象接收作为高光部分的投影。这种技术可以用于任何使用纹理贴图的材质输入，例如Specular贴图和Reflection贴图。
 
-#### Shadows
+#### Shadows 阴影
 
 由于Projector是基于Spotlight的，它也可以使用阴影贴图投射阴影。这个揭示的下面的控件用于定义阴影映射的大小和行为。
 
-##### Enable Shadows
+##### Enable Shadows 启用阴影
 
 若光线要产生阴影就应该选中Enable Shadows复选框。这个默认被选中。
 
-##### Shadow Color
+##### Shadow Color 阴影颜色
 
 使用这个标准Color控件来设置阴影的颜色。默认为黑色(0,0,0)。
 
-##### Density
+##### Density 密度
 
 Shadow Density决定了阴影的不透明程度。密度为1.0会产生完全不透明的阴影，而较低的值会使阴影透明。
 
-##### Shadow Map Size
+##### Shadow Map Size 阴影贴图大小
 
 Shadow Map Size控件确定用于创建阴影贴图的位图的大小。较大的值将以牺牲内存和性能为代价生成更精细的阴影贴图。
 
-##### Shadow Map Proxy
+##### Shadow Map Proxy 阴影贴图代理
 
 Shadow Map Proxy确定用于代理(proxy)和自动代理(auto proxy)计算的阴影贴图的大小。0.5的值将使用50%的阴影映射。
 
-##### Multiplicative/Additive Bias
+##### Multiplicative/Additive Bias 乘法/加法偏置
 
 阴影本质上是应用于场景中的对象的纹理，所以偶尔会有Z-fighting，在这里，应该接收阴影的对象的部分会渲染到阴影的顶部来代替。
 
@@ -122,39 +122,39 @@ Shadow Map Proxy确定用于代理(proxy)和自动代理(auto proxy)计算的阴
 
 首先对乘法偏置(multiplicative bias)进行调整，然后利用加法偏置(additive bias )控件对结果进行微调。
 
-##### Force All Materials Non-Transmissive
+##### Force All Materials Non-Transmissive 强制所有材质不投射
 
 通常，渲染阴影时使用RGBAZ阴影贴图。通过启用此选项，您将迫使渲染器使用只有Z通道的阴影贴图。这可能导致显著更快的阴影渲染，同时使用五分之一的内存。缺点是你不能再投射“彩色玻璃”那样的阴影。
 
-##### Shadow Map Sampling
+##### Shadow Map Sampling 阴影贴图采样
 
 设置阴影贴图的采样质量。
 
-##### Softness
+##### Softness 柔度
 
 阴影中的柔边是在采样时通过对阴影图进行过滤而产生的。当渲染产生不同效果的阴影时，Fusion有三种单独的过滤方法。
 
-- **None:** 阴影的边缘会很生硬。阴影贴图完全没有过滤。这种方法的优点是你只需要在阴影贴图中采样一个像素，所以速度很快。
-- **Constant:** 阴影边缘会有一个恒定的柔软度。当采样阴影贴图时会使用一个恒定宽度的滤镜。调整Constant Softness滑块控制滤镜的大小。注意，滤镜越大，渲染阴影的时间就越长。
-- **Variable:** 阴影边缘的柔软度会随着阴影接收器离阴影投射物的远离而增加。根据接收物与投射物之间的距离，改变滤镜的大小，可实现不同的柔软度。当选中此选项时，Softness Falloff、Min Softness和Max Softness滑块出现。
+- **None 无：**阴影的边缘会很生硬。阴影贴图完全没有过滤。这种方法的优点是你只需要在阴影贴图中采样一个像素，所以速度很快。
+- **Constant 恒定：**阴影边缘会有一个恒定的柔软度。当采样阴影贴图时会使用一个恒定宽度的滤镜。调整Constant Softness滑块控制滤镜的大小。注意，滤镜越大，渲染阴影的时间就越长。
+- **Variable 可变：**阴影边缘的柔软度会随着阴影接收器离阴影投射物的远离而增加。根据接收物与投射物之间的距离，改变滤镜的大小，可实现不同的柔软度。当选中此选项时，Softness Falloff、Min Softness和Max Softness滑块出现。
 
-##### Constant Softness
+##### Constant Softness 恒定柔度
 
 如果Softness设置为Constant，则会出现此滑块。它可以用来设置阴影的整体柔软度。
 
-##### Softness Falloff
+##### Softness Falloff 柔度衰减
 
 当将Softness设置为Variable时，会出现Softness Falloff滑块。这个滑块控制阴影边缘的柔软度随距离增长的速度。更精确地说，它可以根据阴影投射物和接收物之间的距离来控制阴影贴图滤镜尺寸的增长速度。它的影响是由Min和Max Softness滑块的值来调节的。
 
-##### Min Softness
+##### Min Softness 最小柔度
 
 当Softness设置为Variable时，Min Softness滑块就会出现。这个滑块控制阴影的最小柔软度。阴影越接近投射阴影的物体，它就越尖锐，达到这个滑块设定的极限。
 
-##### Max Softness
+##### Max Softness 最大柔度
 
 当Softness设置为Variable时，Max Softness滑块就会出现。这个滑块控制阴影的最大柔软度。阴影离投射阴影的物体越远，它就越柔和，达到这个滑块设定的极限。
 
-#### Transform选项卡
+#### Transform Tab Transform选项卡
 
 出现在此选项卡中的选项决定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 

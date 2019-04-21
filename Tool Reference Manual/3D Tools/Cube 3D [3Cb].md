@@ -70,15 +70,15 @@ Blend Mode指定Renderer在将该对象与场景的其余部分组合时将使�
 - **OpenGL Blend Mode OpenGL混合模式：**使用此菜单来选择将在OpenGL渲染器处理几何物体时使用的混合模式。这也是在监视器中查看对象时使用的模式。目前OpenGL渲染器支持三种混合模式。
 - **Software Blend Mode Software 混合模式：**使用此菜单选择在Software渲染器处理几何物体时使用的混合模式。目前，Software渲染器支持Merge工具文档中描述的所有模式，除了Dissolve模式。
 
-#### Material Tab Material选项卡
+#### Material Tab 材质选项卡
 
 出现在此选项卡中的选项决定此工具创建的几何物体的外观。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 
-如果外部3D材质连接到工具块的材质输入，那么这个选项卡中的控件将被“使用外部材质”标签所取代。
+如果外部3D材质连接到工具块的材质输入，那么这个选项卡中的控件将被Using External Material（使用外部材质）标签所取代。
 
 ![3Cb_Material](images/3Cb_Material.png)
 
-#### Transform Tab Transform选项卡
+#### Transform Tab 变换选项卡
 
 出现在此选项卡中的选项决定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 

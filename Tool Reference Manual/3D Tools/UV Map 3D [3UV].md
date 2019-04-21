@@ -5,19 +5,19 @@ UV map 3D工具替换了场景中几何物体上的UV纹理坐标。这些坐标
 虽然可以调整所选映射模式的全局属性，但不能直接从Fusion中操作单个顶点的UV坐标。
 在监视器中绘制的屏幕控件仅供参考，不能操纵。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3UV_tile](images/3UV_tile.jpg)
 
-**UVMap3d.SceneInput** 
+**UVMap3d.SceneInput 场景输入** 
 
 [橙色，必需的]这个输入需要一个3D场景。
 
-**UVMap3d.CameraInput** 
+**UVMap3d.CameraInput 摄像机输入** 
 
 [绿色，可选的]这个输入需要一个Camera 3D工具的输出。它只在使用Camera Map模式时可见。
 
-##### Camera Projections with UV Map 3D 
+##### Camera Projections with UV Map 3D 使用UV Map 3D的摄像机投影
 
 Camera Mapping模式使得通过相机将纹理坐标投射到几何物体上成为可能。在UV Map 3D工具上启用Camera Mapping模式。直接将用于创建UV坐标的相机连接到流中UV Map 3D工具块上出现的新的“Camera”输入。
 
@@ -29,62 +29,62 @@ Camera Mapping模式使得通过相机将纹理坐标投射到几何物体上成
 
 > **注意：** UV Map 3D工具不把纹理或材质放到mesh上，它只修改材质将使用的纹理坐标。这可能令人困惑，因为材质通常位于上游。例如，一个工程这样包含包含工具：Loader > Blinn > Shape 3D (cube) > UV Map 3D > Renderer 3D。
 
-#### Controls
+#### Controls 控件
 
 ![3UV_Controls](images/3UV_Controls.png)
 
-##### Map Mode
+##### Map Mode 映射模式
 
 定义如何创建纹理坐标。把它想象成一个虚拟的几何体，将UV空间投射到物体上。
 
-- **Planar:** 使用平面创建UV坐标。
-- **Cylindrical:** 使用圆柱形对象创建UV坐标。
-- **Spherical:** 使用球体创建UV坐标。
-- **XYZ to UVW:** 将顶点的位置坐标直接转换为uvw坐标。这用于处理过程纹理。
-- **CubeMap:** 使用立方体创建UV坐标。
-- **Camera:** 启用工具的Camera Input端口。将相机与之连接后，基于相机投影创建纹理坐标。
+- **Planar 平面：**使用平面创建UV坐标。
+- **Cylindrical 圆柱体：**使用圆柱形对象创建UV坐标。
+- **Spherical 球体：**使用球体创建UV坐标。
+- **XYZ to UVW XYZ转UVW：**将顶点的位置坐标直接转换为uvw坐标。这用于处理过程纹理。
+- **CubeMap 立方体映射：**使用立方体创建UV坐标。
+- **Camera 摄像机：**启用工具的Camera Input端口。将相机与之连接后，基于相机投影创建纹理坐标。
 
-##### Orientation X/Y/Z
+##### Orientation X/Y/Z 取向X/Y/Z
 
 定义用于对齐Map Mode的参考轴。
 
-##### Fit
+##### Fit 适配
 
 单击此按钮将使Map Mode适合于输入场景的边框。
 
-##### Center
+##### Center 中心
 
 单击此按钮将Map Mode的中心移动到输入场景的边框中心。
 
-##### Lock UVs on Animated Objects
+##### Lock UVs on Animated Objects 在运动物体上锁定UV
 
 如果对象是动画的，uv可以锁定到它。启用此选项将完成此操作，并显示Ref Time滑块，在那里可以为UV映射选择一个参考帧。使用这个特性，不需要对uv映射参数进行动画。在参考时间设置UV贴图就足够了。
 
-##### Size X/Y/Z
+##### Size X/Y/Z 大小X/Y/Z
 
 定义投影对象的大小。
 
-##### Center X/Y/Z
+##### Center X/Y/Z 中心X/Y/Z
 
 定义投影对象的位置。
 
-##### Rotation/Rotation Order
+##### Rotation Order 旋转顺序
 
 使用这些按钮来选择用于沿着对象的每个轴应用旋转的顺序。例如，XYZ首先对X轴进行旋转，然后是Y轴，然后是Z轴。
 
-##### Rotation X/Y/Z
+##### Rotation X/Y/Z 旋转X/Y/Z
 
 根据旋转顺序为每个轴设置投影对象的方向。
 
-##### Tile u/v/w
+##### Tile u/v/w 平铺u/v/w
 
 定义纹理在对应轴上与投影UV空间的匹配频率。注意，UVW坐标被转换，而不是纹理。当与Create Texture工具一起使用时效果最好。
 
-##### Flip u/v/w
+##### Flip u/v/w 翻转u/v/w
 
 镜像翻转纹理坐标周围的参考轴。
 
-##### Flip Faces (CubeMap mode only)
+##### Flip Faces (CubeMap mode only) 翻转面（仅CubeMap模式）
 
 将纹理坐标映射到立方体的各个面上。
 

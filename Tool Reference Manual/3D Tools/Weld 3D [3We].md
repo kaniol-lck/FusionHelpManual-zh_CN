@@ -13,15 +13,15 @@ Weld3D工具允许您在Fusion中完成这一操作，而不是返回到您的3D
 
  ![3We_tile](images/3We_tile.jpg)
 
-#### Controls
+#### Controls 控件
 
 ![3We_Controls](images/3We_Controls.png)
 
-##### Fracture
+##### Fracture 断裂
 
 断裂是焊接的对立面，所以所有的顶点都是不焊接的。这意味着所有的多边形邻接信息都丢失了。例如，Imageplane3D通常由共享顶点的连接四边形组成。破碎的图像平面使它成为一堆不相连的四边形。
 
-##### Tolerance
+##### Tolerance 容差
 
 在自动模式下，将自动检测到Tolerance。这在大多数情况下都是可行的。如果需要，还可以手动调整。
 
