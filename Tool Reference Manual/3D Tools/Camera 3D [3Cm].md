@@ -143,7 +143,7 @@ Aperture Width/Height滑块控制着摄像机的光圈大小，或者说摄像�
 - **Plane of Focus 聚焦面**Plane of Focus根据上面解释的相应滑块。这个平面可以细分以提高可见度。
 - **Convergence Distance:** 使用Stereo模式时的收敛点。这个平面可以细分以提高能见度。
 
-##### Import Camera 导入相机
+##### Import Camera 导入摄像机
 
 导入摄像机按钮显示一个对话框，用于从另一个应用程序导入摄像机。
 

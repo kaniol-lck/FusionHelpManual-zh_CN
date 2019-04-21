@@ -2,7 +2,7 @@
 
 Locator 3D工具的目的是将3D空间中的一个点转换为2D坐标，其他工具可以将其用作表达式或修饰器的一部分。
 
-当Locator带有相机和输出图像的尺寸时，它将把3D控件的坐标转换为2D屏幕空间。2D位置成为一个数字输出，可以连接到或从其他工具。例如，要将椭圆的中心连接到Locator的2D位置，请右键单击Mask center控件，并选择Connect To > Locator 3D > Position。
+当Locator带有摄像机和输出图像的尺寸时，它将把3D控件的坐标转换为2D屏幕空间。2D位置成为一个数字输出，可以连接到或从其他工具。例如，要将椭圆的中心连接到Locator的2D位置，请右键单击Mask center控件，并选择Connect To > Locator 3D > Position。
 
 提供给Locator输入的场景必须包含投影坐标的摄像机。因此，最佳的实现是在将摄像机引入场景的merge之后放置Locater。
 
@@ -54,7 +54,7 @@ Sub ID滑块可用于选择特定物体的单个子元素，如由Text 3D工具�
 
 ##### Camera Settings 摄像机设置
 
-- **Camera 摄像机：**这个下拉控件用于在场景中选择相机，该场景定义用于3D到2D坐标转换的屏幕空间。
+- **Camera 摄像机：**这个下拉控件用于在场景中选择摄像机，该场景定义用于3D到2D坐标转换的屏幕空间。
 - **Use Frame Format Settings 使用帧格式设置：**选择这个复选框，以覆盖宽度、高度和像素纵横比的控件，并强制它们使用composition的Frame Format首选项中定义的值替代。
-- **Width, Height and Pixel Aspect 宽度、高度及帧比例：**为了让Locater生成正确的2D转换，它必须知道图像的尺寸和比例。这些控件应该设置为与上面指定的相机关联的渲染器生成的图像相同的尺寸。右键单击这些控件将显示包含在composition首选项中配置的Frame Format的上下文菜单。
+- **Width, Height and Pixel Aspect 宽度、高度及帧比例：**为了让Locater生成正确的2D转换，它必须知道图像的尺寸和比例。这些控件应该设置为与上面指定的摄像机关联的渲染器生成的图像相同的尺寸。右键单击这些控件将显示包含在composition首选项中配置的Frame Format的上下文菜单。
 

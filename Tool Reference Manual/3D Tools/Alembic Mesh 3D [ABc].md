@@ -47,15 +47,15 @@ Alembic格式允许将任意用户数据存储在文件中。由于各种原因�
 
 ##### Orphaned transforms 孤立变换
 
-如果不选中此选项，则不会导入不父化mesh或相机。例如，如果您有一个框架和关联的mesh模型，模型将被导入为一个Alembic mesh，而骨架将作为Merge3D的树型结构导入。禁用此选项将导致无法导入Merge3D。
+如果不选中此选项，则不会导入不父化mesh或摄像机。例如，如果您有一个框架和关联的mesh模型，模型将被导入为一个Alembic mesh，而骨架将作为Merge3D的树型结构导入。禁用此选项将导致无法导入Merge3D。
 
 ##### Cameras 摄像机
 
-Near/Far/Apertures/Angles of View/Plane of Focus都被导入。分辨率门适配（resolution Gate Fit）可以被导入；这取决于作者是否正确地标记了与适配分辨率的元数据。如果您的相机没有正确导入，您应该检查Camera3D.ResolutionGateFit是否被正确地设置。立体(stereo)信息不会被导入。
+Near/Far/Apertures/Angles of View/Plane of Focus都被导入。分辨率门适配（resolution Gate Fit）可以被导入；这取决于作者是否正确地标记了与适配分辨率的元数据。如果您的摄像机没有正确导入，您应该检查Camera3D.ResolutionGateFit是否被正确地设置。立体(stereo)信息不会被导入。
 
 ##### InverseTransform 逆变换
 
-导入相机的Inverse Transform(World to Model)。
+导入摄像机的Inverse Transform(World to Model)。
 
 ##### Points 点
 
@@ -91,4 +91,4 @@ Alembic支持点类型。这是一组没有方向的3D点。一些3D应用将粒
 
 ##### Cyclic/Acyclic sampling Cyclic/Acyclic采样
 
-目前没有实现。均匀（Uniform）采样是最常见的抽样方式，它工作得很好。我们建议FBX仅用于照明/摄像机/材质，而Alembic仅用于mesh。如果相机和Alembic适合你，那就去做吧。原因是我们的Alembic插件不支持光照/材质，但是对FBX有很好的支持。相机的Alembic导入存在适配分辨率的问题，并且不导入立体(stereo)选项。
+目前没有实现。均匀（Uniform）采样是最常见的抽样方式，它工作得很好。我们建议FBX仅用于照明/摄像机/材质，而Alembic仅用于mesh。如果摄像机和Alembic适合你，那就去做吧。原因是我们的Alembic插件不支持光照/材质，但是对FBX有很好的支持。摄像机的Alembic导入存在适配分辨率的问题，并且不导入立体(stereo)选项。
