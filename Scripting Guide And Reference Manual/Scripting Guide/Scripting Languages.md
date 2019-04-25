@@ -100,7 +100,7 @@ https://www.python.org/downloads/release/python-2710/
 
 为.py文件和默认控制台设置默认版本：
 
-- File Preferences...->Global and Default Settings->Script->Default Python Version
+- *File Preferences...->Global and Default Settings->Script->Default Python Version*
 
 ![PythonSettings](images/PythonSettings.jpg)
 
