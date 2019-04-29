@@ -36,12 +36,12 @@
      - [InTool Scripts 工具内脚本](Scripting%20Guide/Types%20of%20Scripts.md#inTool-scripts-工具内脚本)
      - [Simple Expressions 简单表达式](Scripting%20Guide/Types%20of%20Scripts.md#simple-expressions-简单表达式)
      - [Fuses](Scripting%20Guide/Types%20of%20Scripts.md#fuses)
-   - Fusion的对象模型
-     - 概览
-     - 通用对象依赖
-     - 属性
-     - 对象数据
-     - 元数据
+   - [Fusion’s Object Model Fusion的对象模型](Scripting%20Guide/Fusion's%20Object%20Model.md)
+     - [Overview 概览](Scripting%20Guide/Fusion's%20Object%20Model.md#overview-概览)
+     - [Common Object Dependencies 通用对象依赖](Scripting%20Guide/Fusion's%20Object%20Model.md#common-object-dependencies-通用对象依赖)
+     - [Attributes 属性](Scripting%20Guide/Fusion's%20Object%20Model.md#attributes-属性)
+     - [Object Data 对象数据](Scripting%20Guide/Fusion's%20Object%20Model.md#object-Data-对象数据)
+     - [Metadata 元数据](Scripting%20Guide/Fusion's%20Object%20Model.md#metadata-元数据)
    - Graphical User Interfaces 图形用户界面
 2. 脚本参考
    - 类继承关系

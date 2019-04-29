@@ -210,7 +210,7 @@ l = [item[1] for item in sorted(d.items())]
 
 无论如何，Fusion及其FusionScript API都会尊重你的选择。
 
-##### 跨语言评估
+##### 跨语言核算
 
 有时从一门语言调用另一门来访问某些特性是必要的或有用的，例如，您可能希望在Python中访问Lua函数转储。
 
@@ -239,7 +239,7 @@ composition:RunScript(filePath)
 > **注意**
 >
 > 所示脚本执行于当前打开合成的上下文中。
-> 因此，所有的评估方法都是`composition`对象的成员。
+> 因此，所有的核算方法都是`composition`对象的成员。
 >
 > ```Lua
 > composition:Execute(command)

@@ -103,7 +103,7 @@ tools:SetAttrs( { TOOLB_PassThrough = True } )
 使用这两个命令，我们就能完成该脚本所需的所有任务了。
 
 ```Lua
---Source File: 01 Disable Unselected Savers
+--源文件: 01 禁用未选中的保存器（Saver）
 comp:Lock()
 local selectedSavers = comp:GetToolList(true, “Saver”)
 local allSavers = comp:GetToolList(false, “Saver”)

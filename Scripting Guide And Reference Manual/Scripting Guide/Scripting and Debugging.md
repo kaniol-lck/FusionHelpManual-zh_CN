@@ -34,7 +34,7 @@ Fusion有内建的控制台来输出脚本中的print语句。这有助于没有
   > 如果在控制台中使用FusionScript，可以使用`dump`为Lua和Python的缩写版本：
   >
   > ```Lua
-  > ==comp:GetAttrs() -- Same as the command above
+  > ==comp:GetAttrs() -- 与上面的命令相同
   > ```
 
 同样也可以在Python中通过一个叫做`“Data pretty printer”(pprint)`的模块完成。
@@ -42,7 +42,7 @@ Fusion有内建的控制台来输出脚本中的print语句。这有助于没有
 - Python
 
   ```Python
-  from pprint import pprint # Needs to be loaded once
+  from pprint import pprint # 需要加载一次
   pprint(comp.GetAttrs())
   ```
 

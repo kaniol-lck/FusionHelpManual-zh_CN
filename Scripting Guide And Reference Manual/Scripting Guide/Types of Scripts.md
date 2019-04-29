@@ -175,13 +175,13 @@ UserControls = ordered() {
 
 工具内脚本（InTool Scripts）是一种特殊的可以在每帧核算期间（渲染开始或结束时）运行在工具上的脚本。它们直接定义于工具内并拥有有限的读取访问，通过输入的名称——`self`、`composition`或`comp`，以及`fusion`和`fu`。该限制是为了防止死循环、竞态条件以及性能问题。
 
-比如，你不能调用或改变输入。如果你想在逻辑上改变输入，使用修饰器（Modifiers）、表达式（Expression）或简单表达式。同时注意改变工具内大多数输入会触发重渲染且工具内帧渲染脚本（InTool Frame Render Script）会被重新核算。
+比如，你不能调用或改变输入。如果你想在逻辑上改变输入，使用修改器（Modifiers）、表达式（Expression）或简单表达式。同时注意改变工具内大多数输入会触发重渲染且工具内帧渲染脚本（InTool Frame Render Script）会被重新核算。
 
 ![InToolScript](images/InToolScript.jpg)
 
 #### Simple Expressions 简单表达式
 
-简单表达式（Simple Expressions）是工具内输入的直接的有限脚本环境的子集。它们可以被用作取代表达式（Expression）修饰器，来直接连接并基于运算改变输入。
+简单表达式（Simple Expressions）是工具内输入的直接的有限脚本环境的子集。它们可以被用作取代表达式（Expression）修改器，来直接连接并基于运算改变输入。
 
 #### Fuses
 

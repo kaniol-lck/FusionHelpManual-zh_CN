@@ -136,13 +136,16 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #f15a22;
+  font-weight: 450;
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: 1.4em;
   color: #58595b;
+  font-weight: 450;
+  letter-spacing: 0px;
 }
 
 h6 {
@@ -197,6 +200,7 @@ table {
   padding: 0;
   word-break: initial;
   background-color: #f1f1f2;
+  border: 2px solid #ffffff;
 }
 
 table tr {
@@ -205,29 +209,30 @@ table tr {
   padding: 0;
 }
 
+table tr:nth-child(2n) {
+  background-color: #ffffff;
+}
+
 table tr th {
   font-weight: bold;
   border: 2px solid #ffffff;
+  background-color: #ffffff;
   text-align: left;
-  margin: 0;
   padding: 6px 13px;
 }
 
 table tr td {
-  border: 2px solid #ffffff;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
 
-/* table-ailgned images */
-table#img {
-  background-color: #ffffff;
+table tr th:nth-child(n+2) {
+  border-left: 1px solid #9d9fa2;
 }
 
-table#img tr td {
-  border: none;
-  padding: 5px 5px;
+table tr td:nth-child(n+2) {
+  border-left: 1px solid #9d9fa2;
 }
 
 .CodeMirror-gutters {
