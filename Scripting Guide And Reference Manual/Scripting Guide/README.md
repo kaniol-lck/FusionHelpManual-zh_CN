@@ -24,4 +24,4 @@
   - [Attributes 属性](Fusion's%20Object%20Model.md#attributes-属性)
   - [Object Data 对象数据](Fusion's%20Object%20Model.md#object-Data-对象数据)
   - [Metadata 元数据](Fusion's%20Object%20Model.md#metadata-元数据)
-- Graphical User Interfaces 图形用户界面
+- [Graphical User Interfaces 图形用户界面](Graphical%20User%20Interfaces.md)

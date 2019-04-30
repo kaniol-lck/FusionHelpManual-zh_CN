@@ -217,14 +217,12 @@ table tr th {
   font-weight: bold;
   border: 2px solid #ffffff;
   background-color: #ffffff;
-  text-align: left;
-  padding: 6px 13px;
 }
 
-table tr td {
-  text-align: left;
-  margin: 0;
+table tr th, table tr td{
+  align: left;
   padding: 6px 13px;
+  vertical-align: top;
 }
 
 table tr th:nth-child(n+2) {

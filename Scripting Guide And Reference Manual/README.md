@@ -42,7 +42,7 @@
      - [Attributes 属性](Scripting%20Guide/Fusion's%20Object%20Model.md#attributes-属性)
      - [Object Data 对象数据](Scripting%20Guide/Fusion's%20Object%20Model.md#object-Data-对象数据)
      - [Metadata 元数据](Scripting%20Guide/Fusion's%20Object%20Model.md#metadata-元数据)
-   - Graphical User Interfaces 图形用户界面
+   - [Graphical User Interfaces 图形用户界面](Scripting%20Guide/Graphical%20User%20Interfaces.md)
 2. 脚本参考
    - 类继承关系
    - 参考
