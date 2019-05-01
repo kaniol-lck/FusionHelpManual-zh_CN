@@ -1,4 +1,4 @@
-### Fusion's Object Model
+### Fusion's Object Model Fusion的对象模型
 
 为了更好地理解FusionScript，值得去揭开Fusion对象模型的面纱看一看。尽管FusionScript及其概览是真实应用的极大简化，它还是会帮助我们用脚本API在应用中漫游。
 

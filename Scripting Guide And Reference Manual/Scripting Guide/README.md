@@ -1,4 +1,13 @@
-
+<div style="text-align:center;"> 
+    <div style="position: absolute;width:100%;top:920px" margin-left="auto" margin-right="auto"> 
+     <font color="#ffffff" size="6">Scripting Guide 脚本指南</font> 
+    </div>
+    <div style="position: absolute;width:100%;top:970px;" margin-left="auto" margin-right="auto"> 
+     <p style="color:#f15a22;font-size:200px;">1</p> 
+    </div> 
+    <img src="images/chapter_cover.jpg"> 
+   </div>
+<div STYLE="page-break-after: always;"></div>
 
 ## Scripting Guide 脚本指南
 

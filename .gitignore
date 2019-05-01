@@ -1,3 +1,4 @@
 *.pdf
 *.template.md
 output.md
+*.html
