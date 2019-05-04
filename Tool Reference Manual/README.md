@@ -1,12 +1,4 @@
-![cover](images/cover.jpg)
-
-# Tool Reference Manual
-
-# 工具参考手册
-
-# *Fusion 9*
-
-# *September 2017*
+![cover](images/cover.png)
 
 <div STYLE="page-break-after: always;"></div>
 

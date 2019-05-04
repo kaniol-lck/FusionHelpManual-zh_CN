@@ -1,16 +1,4 @@
-![cover](images/cover.jpg)
-
-# *FUSION 8*
-
-# SCRIPTING GUIDE
-
-# AND REFERENCE MANUAL
-
-# Fusion 8 脚本指南与参考手册
-
-# ![icon](images/icon.jpg)
-
-# *February 2016*
+![cover](images/cover.png)
 
 <div STYLE="page-break-after: always;"></div>
 
