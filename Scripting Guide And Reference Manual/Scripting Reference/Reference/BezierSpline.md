@@ -1,6 +1,6 @@
 #### BezierSpline
 
-##### 类 BezierSpline
+<b>类 BezierSpline</b>
 
 父类：`Spline`
 
@@ -112,7 +112,7 @@
   end
   ```
 
-- <b>返回</b>：关键帧
+- <b>返回</b>：keyframes 关键帧
 - <b>返回类型</b>：表
 
 <b>`BezierSpline.SetKeyFrames(keyframes[, replace])`</b>
