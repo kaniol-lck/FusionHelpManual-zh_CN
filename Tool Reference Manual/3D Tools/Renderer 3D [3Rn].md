@@ -134,16 +134,16 @@ GL渲染器可以直接在GPU上执行图像的缩放，其速度远远快于CPU
 
 | 滤镜                 | 效果                                                         |
 | -------------------- | ------------------------------------------------------------ |
-| Box                  | 这是一个简单的插值比例的图像。                               |
-| Bi-Linear (Triangle) | 这使用了一个简单的滤镜，它产生相对干净和快速的结果。         |
-| Bi-Cubic (Quadratic) | 这个滤镜产生一个标称的结果。它在速度和质量之间提供了一个很好的折中方案。 |
-| Bi-Spline (Cubic)    | 这在连续色调图像中产生了更好的效果，但比Quadratic慢。如果图像中有精细的细节，结果可能比预期的更模糊。 |
-| Catmul-Rom           | 这产生了良好的结果与连续色调图像缩小，产生了清晰的结果与精细的图像。 |
-| Gaussian             | 这在速度和质量上与Quadratic非常相似。                        |
-| Mitchell             | 这类似于Catmull-Rom，但使用精细的图像可以产生更好的效果。它比Catmull-Rom慢。 |
-| Lanczos              | 这与Mitchell和Catmull-Rom非常相似，但是更清晰，也更慢。      |
-| Sinc                 | 这是一个先进的滤镜，可以产生非常清晰，详细的结果，然而，它可能会在某些情况下产生可见的振铃。 |
-| Bessel               | 这类似于Sinc滤镜，但可能更快一些。                           |
+| Box                  | 这是一个简单的插值比例的图像。                              |
+| Bi-Linear (Triangle) | 这使用了一个简单的滤镜，它产生相对干净和快速的结果。        |
+| Bi-Cubic (Quadratic) | 这个滤镜产生一个标称的结果。它在速度和质量之间提供了一个很好的折中方案。|
+| Bi-Spline (Cubic)    | 这在连续色调图像中产生了更好的效果，但比Quadratic慢。如果图像中有精细的细节，结果可能比预期的更模糊。|
+| Catmul-Rom           | 这产生了良好的结果与连续色调图像缩小，产生了清晰的结果与精细的图像。|
+| Gaussian             | 这在速度和质量上与Quadratic非常相似。                       |
+| Mitchell             | 这类似于Catmull-Rom，但使用精细的图像可以产生更好的效果。它比Catmull-Rom慢。|
+| Lanczos              | 这与Mitchell和Catmull-Rom非常相似，但是更清晰，也更慢。     |
+| Sinc                 | 这是一个先进的滤镜，可以产生非常清晰，详细的结果，然而，它可能会在某些情况下产生可见的振铃。|
+| Bessel               | 这类似于Sinc滤镜，但可能更快一些。                          |
 
 ##### Window Method 窗口方法
 
@@ -151,9 +151,9 @@ Window Method菜单只在重构滤镜设置为Sinc或Bessel时显示。
 
 | 名称     | 描述                                   |
 | -------- | -------------------------------------- |
-| Hanning  | 这是一个简单的锥形窗口。               |
-| Hamming  | Hamming是Hanning的一个稍作改动的版本。 |
-| Blackman | 一个下降幅度更大的窗口。               |
+| Hanning  | 这是一个简单的锥形窗口。              |
+| Hamming  | Hamming是Hanning的一个稍作改动的版本。|
+| Blackman | 一个下降幅度更大的窗口。              |
 
 ##### Lock Tweak Filter Width/Height 锁定调整滤镜宽度/高度
 

@@ -14,7 +14,7 @@ CubeMap工具使用单独的图像为立方体的每个面创建纹理贴图。�
 
 **CubeMap.CrossImage**
 
-[白色，必需的]此输入仅在工具设置为Vertical Cross或Horizontal Cross方向时可见。 它需要一个2D图像。
+[白色，必需的]此输入仅在工具设置为Vertical Cross或Horizontal Cross方向时可见。它需要一个2D图像。
 
 **CubeMap.[DIRECTION]**
 

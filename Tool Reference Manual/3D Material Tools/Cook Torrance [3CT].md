@@ -1,6 +1,6 @@
 ### Cook Torrance [3CT]
 
-Cook Torrance工具是一种基本的照明材质，可应用于3D场景中的几何物体。  此工具的漫反射计算类似于基本材质和Blinn工具中使用的漫反射计算，但使用优化的Fresnel/Beckmann方程评估镜面反射高光。  该照明模型主要用于遮蔽金属或其他有光泽和高反射的表面。
+Cook Torrance工具是一种基本的照明材质，可应用于3D场景中的几何物体。 此工具的漫反射计算类似于基本材质和Blinn工具中使用的漫反射计算，但使用优化的Fresnel/Beckmann方程评估镜面反射高光。 该照明模型主要用于遮蔽金属或其他有光泽和高反射的表面。
 
 Cook Torrance工具输出一个可连接到任何3D几何物体工具上的材质输入的3D Material。
 
@@ -26,7 +26,7 @@ Cook Torrance工具输出一个可连接到任何3D几何物体工具上的材�
 
 **CookTorrance.SpecularRefractiveIndexTex** 
 
-[白色，可选]此输入将接受2D图像或3D材质，以用作修改镜面折射率粗糙度的贴图。  纹理贴图的alpha乘以折射率的值。
+[白色，可选]此输入将接受2D图像或3D材质，以用作修改镜面折射率粗糙度的贴图。 纹理贴图的alpha乘以折射率的值。
 
 **CookTorrance.BumpmapTex** 
 

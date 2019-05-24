@@ -17,7 +17,7 @@ Soft Glow工具类似于Glow工具，但对图像执行额外处理以创建更�
 
 - **Box:** 一个简单但非常快速的Box滤镜。
 - **Bartlett:** Bartlett增加了更柔和、更精细的发光和更平滑的下降，但渲染时间可能比Box更长。
-- **Multi-box:** Multi-box使用多个过程中分层的Box滤镜来近似Gaussian形状。 利用适度的通过次数（例如，4次），可以获得高质量的模糊，通常比Gaussian滤镜更快，并且没有任何振铃。
+- **Multi-box:** Multi-box使用多个过程中分层的Box滤镜来近似Gaussian形状。利用适度的通过次数（例如，4次），可以获得高质量的模糊，通常比Gaussian滤镜更快，并且没有任何振铃。
 - **Gaussian:** Gaussian增加了柔和的光晕，由Gaussian算法模糊。这是默认方法。
 
 ##### Color Channels (RGBA)
@@ -28,7 +28,7 @@ Soft Glow工具类似于Glow工具，但对图像执行额外处理以创建更�
 
 ##### Threshold
 
-该控件用于限制柔和发光的影响。 阈值越高，像素在受到发光影响之前必须越亮。
+该控件用于限制柔和发光的影响。阈值越高，像素在受到发光影响之前必须越亮。
 
 ##### Gain
 

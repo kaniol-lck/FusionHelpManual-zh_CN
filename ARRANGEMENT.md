@@ -56,25 +56,25 @@
 
 #### Scripting Reference 脚本参考
 
- - [ ] ##### Class Hierarchy 类继承关系
+ - [x] ##### Class Hierarchy 类继承关系
 
 ##### Reference 参考
 
- - [ ] BezierSpline
+ - [x] BezierSpline
 
- - [ ] BinClip
+ - [x] BinClip
 
- - [ ] BinItem
+ - [x] BinItem
 
- - [ ] BinManager
+ - [x] BinManager
 
- - [ ] BinStill
+ - [x] BinStill
 
- - [ ] ChildFrame
+ - [x] ChildFrame
 
- - [ ] ChildGroup
+ - [x] ChildGroup
 
- - [ ] Composition
+ - [x] Composition
 
  - [ ] FloatViewFrame
 

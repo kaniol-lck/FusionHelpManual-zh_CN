@@ -1,6 +1,6 @@
 ### Graphical User Interfaces 图形用户界面
 
-虽然脚本可以在后台运行并输出文本到控制台，但总还是需要一个图形用户界面。这样，脚本的逻辑可以根据用户设置的选项更改。这有两种选择。对于更复杂的用户界面，Lua搭载了iup GUI库。 请参阅该库文档，因为它的用法超出了本文档的范围：
+虽然脚本可以在后台运行并输出文本到控制台，但总还是需要一个图形用户界面。这样，脚本的逻辑可以根据用户设置的选项更改。这有两种选择。对于更复杂的用户界面，Lua搭载了iup GUI库。请参阅该库文档，因为它的用法超出了本文档的范围：
 
 http://webserver2.tecgraf.puc-rio.br/iup/
 
@@ -18,11 +18,11 @@ http://webserver2.tecgraf.puc-rio.br/iup/
 
 ###### Input Name (string, required) 输入名称（字符串，必需的）
 
-此名称是用户设置控件值的索引值（即`dialog.Control`或`dialog [“Control Name”]`）。 它也是对话框中显示于控件旁边的标签，除非还为控件提供了Name选项。
+此名称是用户设置控件值的索引值（即`dialog.Control`或`dialog [“Control Name”]`）。它也是对话框中显示于控件旁边的标签，除非还为控件提供了Name选项。
 
 ###### Input Type (string, required) 输入类型（字符串，必需的）
 
-用于描述要显示的控件类型的字符串值。 有效的字符串为`"FileBrowse"`、`"PathBrowse"`、`"Position"`、`"Slider"`、`"Screw"`、`"Checkbox"`、`"Dropdown"`和`ext`。 每种输入类型都有自己的属性和可选值。
+用于描述要显示的控件类型的字符串值。有效的字符串为`"FileBrowse"`、`"PathBrowse"`、`"Position"`、`"Slider"`、`"Screw"`、`"Checkbox"`、`"Dropdown"`和`ext`。每种输入类型都有自己的属性和可选值。
 
 ###### Options (misc) 选项（杂项）
 
@@ -43,7 +43,7 @@ ret = composition:AskUser(“A Sample Dialog”, { {“Select a Directory”, �
 dump(ret)
 ```
 
-一些选项对于多个控件是通用的。 比如，Name选项可以与任何类型的控件一起使用，DisplayedPrecision选项可以与任何显示并返回数值的控件一起使用。 常用的控件选项为：
+一些选项对于多个控件是通用的。比如，Name选项可以与任何类型的控件一起使用，DisplayedPrecision选项可以与任何显示并返回数值的控件一起使用。常用的控件选项为：
 
 - **Name (string) 名称（字符串）**
 
@@ -63,11 +63,11 @@ dump(ret)
 
 - **DisplayedPrecision (numeric) 显示精度（数值）**
 
-  使用此选项可设置数字控件（如滑块、螺旋和位置控件）的精度。 值为2将允许两位小数的精度 - 即，2.10而非2.105。
+  使用此选项可设置数字控件（如滑块、螺旋和位置控件）的精度。值为2将允许两位小数的精度 - 即，2.10而非2.105。
 
 - **Integer (boolean) 整数（布尔）**
 
-  如果为true，则滑块或螺旋控件将仅允许整数（非十进制）值，否则滑块将提供完全精度。 如果未指定，则默认为false。
+  如果为true，则滑块或螺旋控件将仅允许整数（非十进制）值，否则滑块将提供完全精度。如果未指定，则默认为false。
 
 ##### Control Types 控件类型
 
@@ -75,14 +75,14 @@ dump(ret)
 
 | 控件类型                                        | 用途                                                         | 选项                                                         |
 | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <b>Text</b>                                     | 显示Fusion文本编辑控件，用于向输入大量文本。                 | **Linear (integer) 线性（整型）**<br/>用于指定显示在控件上的文本行数<br/>**Wrap (boolean) 折行（布尔）**<br/>一个`true`或`false`值，用于确定输入控件的文本是否会在到达行尾时换至下一行。<br/>**ReadOnly (boolean) 只读（布尔）**<br/>如果此选项设置为`true`，则控件将不允许对控件中的文本进行任何编辑。用于显示不可编辑的信息。<br/>**FontName (string) 字体名称（字符串）**<br/>在此控件中显示文本时要使用的truetype字体的名称。<br/>**FontSize (numeric) 字体大小（数值）**<br/>用于指定显示在该控件上显示文本字体大小的数值。 |
-| <b>FileBrowse<br/>PathBrowse<br/>ClipBrowse</b> | FileBrowse输入允许你浏览以选择磁盘中的文件，而PathBrowse允许你选择一个路径。ClipBrowse用于以它们合适的过滤器获取序列。 | **Save (boolean) 保存（布尔）**<br/>将这个选项设置为`true`，如果该对话框用于选择不存在的路径或文件（即当选择要保存的文件时）。 |
-| <b>Slider</b>                                   | 显示标准Fusion滑块控件。可使用后面的选项来设置滑块的高低两端的标签。 | **LowName (string) 低值名称（字符串）**<br/>该文本标签用于滑块低（左）端。<br/>**HighName (string) 高值名称（字符串）**<br/>该文本标签用于滑块高（右）端。 |
-| <b>Checkbox</b>                                 | 显示标准Fusion复选框控件。您可以使用NumAcross选项显示其中几个控件使之彼此相邻。 | **Default (numeric)**<br/>复选框的默认状态，使用0表示复选框未选中，或1启用复选框。若未指定则默认为0。<br/>**NumAcross (numeric) 横跨数量（数值）**<br/>如果设置了NumAcross值，则对话框将保留空格以显示彼此相邻的两个或多个复选框。若要为在同一行上显示的所有复选框就必须设置NumAcross值。请参阅下面的示例获取详细信息。 |
-| <b>Position</b>                                 | 显示一对编辑框来输入用于中心控件或其他位置值的X&Y坐标。该控件的默认值是拥有两值的表，一个是X值另一个是Y。该控件返回值的表。 | **Default (table `{x,y}`) 默认（表`{x, y}`）**<br/>拥有两个数值条目的表，用于指定x和y坐标的值。 |
-| <b>Screw</b>                                    | 显示标准Fusion缩略图或螺旋控件。此控件几乎与滑块全方面相同，只是它的范围是无限的，因此它非常适合角度控制和其他没有实际限制的值。 |                                                              |
-| <b>Dropdown</b>                                 | 显示标准Fusion用于从列表中选择选项的下拉菜单。此控件展示和选项使用一个包含下拉菜单值的表来调用选项（Options）。 请注意，选项（Options）的表索引从`0`开始，而不是像大多数FusionScript表中常见的那样从`1`开始。 因此，如果您希望为列表中的第一个条目设置默认值，则使用`Default=0`，让第二个`Default=0`，依此类推。 | **Default (numeric) 默认（数值）**<br/>用于指定选项表（见下）中值的索引的数值，来作为创建时下拉框的默认值。<br/>**Default (table `{string, string, string…}`) 默认（表 `{string, string, string…}`）**<br/>用于描述描述显示在下拉框内值的字符串表。 |
-| <b>Multibutton</b>                              | 显示多按钮，其中每个选项都作为按钮绘制。 <br/>相同的选项也被用于如下拉列表中。 | **Default (numeric) 默认（数值）**<br/>用于指定选项表（见下）中值的索引的数值，来作为创建时下拉框的默认值。<br/>**Default (table `{string, string, string…}`) 默认（表 `{string, string, string…}`）**<br/>用于描述描述显示在下拉框内值的字符串表。 |
+| <b>Text</b>                                     | 显示Fusion文本编辑控件，用于向输入大量文本。                | **Linear (integer) 线性（整型）**<br/>用于指定显示在控件上的文本行数<br/>**Wrap (boolean) 折行（布尔）**<br/>一个`true`或`false`值，用于确定输入控件的文本是否会在到达行尾时换至下一行。<br/>**ReadOnly (boolean) 只读（布尔）**<br/>如果此选项设置为`true`，则控件将不允许对控件中的文本进行任何编辑。用于显示不可编辑的信息。<br/>**FontName (string) 字体名称（字符串）**<br/>在此控件中显示文本时要使用的truetype字体的名称。<br/>**FontSize (numeric) 字体大小（数值）**<br/>用于指定显示在该控件上显示文本字体大小的数值。|
+| <b>FileBrowse<br/>PathBrowse<br/>ClipBrowse</b> | FileBrowse输入允许你浏览以选择磁盘中的文件，而PathBrowse允许你选择一个路径。ClipBrowse用于以它们合适的过滤器获取序列。| **Save (boolean) 保存（布尔）**<br/>将这个选项设置为`true`，如果该对话框用于选择不存在的路径或文件（即当选择要保存的文件时）。|
+| <b>Slider</b>                                   | 显示标准Fusion滑块控件。可使用后面的选项来设置滑块的高低两端的标签。| **LowName (string) 低值名称（字符串）**<br/>该文本标签用于滑块低（左）端。<br/>**HighName (string) 高值名称（字符串）**<br/>该文本标签用于滑块高（右）端。|
+| <b>Checkbox</b>                                 | 显示标准Fusion复选框控件。您可以使用NumAcross选项显示其中几个控件使之彼此相邻。| **Default (numeric)**<br/>复选框的默认状态，使用0表示复选框未选中，或1启用复选框。若未指定则默认为0。<br/>**NumAcross (numeric) 横跨数量（数值）**<br/>如果设置了NumAcross值，则对话框将保留空格以显示彼此相邻的两个或多个复选框。若要为在同一行上显示的所有复选框就必须设置NumAcross值。请参阅下面的示例获取详细信息。|
+| <b>Position</b>                                 | 显示一对编辑框来输入用于中心控件或其他位置值的X&Y坐标。该控件的默认值是拥有两值的表，一个是X值另一个是Y。该控件返回值的表。| **Default (table `{x,y}`) 默认（表`{x, y}`）**<br/>拥有两个数值条目的表，用于指定x和y坐标的值。|
+| <b>Screw</b>                                    | 显示标准Fusion缩略图或螺旋控件。此控件几乎与滑块全方面相同，只是它的范围是无限的，因此它非常适合角度控制和其他没有实际限制的值。|                                                              |
+| <b>Dropdown</b>                                 | 显示标准Fusion用于从列表中选择选项的下拉菜单。此控件展示和选项使用一个包含下拉菜单值的表来调用选项（Options）。请注意，选项（Options）的表索引从`0`开始，而不是像大多数FusionScript表中常见的那样从`1`开始。因此，如果您希望为列表中的第一个条目设置默认值，则使用`Default=0`，让第二个`Default=0`，依此类推。| **Default (numeric) 默认（数值）**<br/>用于指定选项表（见下）中值的索引的数值，来作为创建时下拉框的默认值。<br/>**Default (table `{string, string, string…}`) 默认（表 `{string, string, string…}`）**<br/>用于描述描述显示在下拉框内值的字符串表。|
+| <b>Multibutton</b>                              | 显示多按钮，其中每个选项都作为按钮绘制。<br/>相同的选项也被用于如下拉列表中。| **Default (numeric) 默认（数值）**<br/>用于指定选项表（见下）中值的索引的数值，来作为创建时下拉框的默认值。<br/>**Default (table `{string, string, string…}`) 默认（表 `{string, string, string…}`）**<br/>用于描述描述显示在下拉框内值的字符串表。|
 
 本例展示了包含大多数各种控件类型的对话框：
 
