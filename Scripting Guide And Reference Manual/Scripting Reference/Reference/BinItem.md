@@ -1,18 +1,18 @@
 #### BinItem
 
-<b>类 BinItem</b>
+###### 类 BinItem
 
 ##### 方法
 
-<b>`BinItem.Delete()`</b>
+###### BinItem.Delete()
 
 删除`BinItem`。
 
-<b>`BinItem.GetData([name])`</b>
+###### BinItem.GetData(*\[name]*)
 
 获取自定义持久数据。
 
-<b>见`Composition:GetData()`。</b>
+###### 见Composition:GetData()。
 
 - 参数：
 
@@ -22,7 +22,7 @@
 
 - 返回类型：（数值|字符串|布尔|表）
 
-<b>`BinItem.SetData(name, value)`</b>
+###### BinItem.SetData(*name, value*)
 
 设置自定义持久数据。
 

@@ -1,11 +1,11 @@
 #### BinStill
 
-<b>类 BinStill</b>
+###### 类 BinStill
 
 父类：`BinItem`
 
 ##### 方法
 
-<b>`BinStill.Defragment()`</b>
+###### BinStill.Defragment()
 
 对此剪辑进行碎片整理。

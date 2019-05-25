@@ -1,16 +1,16 @@
 #### ChildGroup
 
-<b>类 ChildGroup</b>
+###### 类 ChildGroup
 
 父类：`Object`
 
 ##### 方法
 
-<b>`ChildGroup.GetID()`</b>
+###### ChildGroup.GetID()
 
 获取ID。
 
-<b>`ChildGroup.GetOwner()`</b>
+###### ChildGroup.GetOwner()
 
 获取所有者。
 

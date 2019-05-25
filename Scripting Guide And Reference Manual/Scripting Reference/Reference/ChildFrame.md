@@ -1,6 +1,6 @@
 #### ChildFrame
 
-<b>类 ChildFrame</b>
+###### 类 ChildFrame
 
 父类：`FuFrame`
 
@@ -9,19 +9,19 @@
 
 ##### 方法
 
-<b>`ChildFrame.ActivateFrame()`</b>
+###### ChildFrame.ActivateFrame()
 
 激活此框架窗口。
 
-<b>`ChildFrame.ActivateNextFrame()`</b>
+###### ChildFrame.ActivateNextFrame()
 
 激活下一个帧窗口。
 
-<b>`ChildFrame.ActivatePrevFrame()`</b>
+###### ChildFrame.ActivatePrevFrame()
 
 激活上一帧窗口。
 
-<b>`ChildFrame.GetControlViewList()`</b>
+###### ChildFrame.GetControlViewList()
 
 从Controls选项卡返回视图列表。
 
@@ -41,21 +41,21 @@
 
 - 返回类型：表
 
-<b>`ChildFrame.GetControlViewList()`</b>
+###### ChildFrame.GetControlViewList()
 
 从Main选项卡返回视图列表。
 
 - 返回：views 视图
 - 返回类型：表
 
-<b>`ChildFrame.GetViewLayout()`</b>
+###### ChildFrame.GetViewLayout()
 
 检索当前视图布局。
 
 - 返回：views 视图
 - 返回类型：表
 
-<b>`ChildFrame.SetViewLayout(layout)`</b>
+###### ChildFrame.SetViewLayout(*layout*)
 
 从表中设置当前视图布局。
 
@@ -67,7 +67,7 @@
 
 - 返回类型：布尔
 
-<b>`ChildFrame.SwitchControlView(id)`</b>
+###### ChildFrame.SwitchControlView(*id*)
 
 从Controls选项卡显示给定视图。
 
@@ -75,7 +75,7 @@
 
   `id` （***string***） – id
 
-<b>`ChildFrame.SwitchMainView(id)`</b>
+###### ChildFrame.SwitchMainView(*id*)
 
 从Main选项卡显示给定视图。
 

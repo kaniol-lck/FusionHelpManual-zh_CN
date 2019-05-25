@@ -1,6 +1,6 @@
 #### BezierSpline
 
-<b>类 BezierSpline</b>
+###### 类 BezierSpline
 
 父类：`Spline`
 
@@ -28,7 +28,7 @@
 
 ##### 方法
 
-<b>`BezierSpline.AdjustKeyFrames (start, end, x, y, operation[, pivotx][, pivoty])`</b>
+###### BezierSpline.AdjustKeyFrames (*start, end, x, y, operation\[, pivotx]\[, pivoty]*)
 
 设置、偏移或缩放关键帧的范围。
 
@@ -51,7 +51,7 @@
   `pivotx` （*数值*） – pivotx
   `pivoty` （*数值*） – pivoty
 
-<b>`BezierSpline.DeleteKeyFrames(start[, end])`</b>
+###### BezierSpline.DeleteKeyFrames(*start\[, end]*)
 
 删除关键帧。
 
@@ -60,7 +60,7 @@
   `start` （*数值*） – start
   `end` （*数值*） – end
 
-<b>`BezierSpline.GetKeyFrames()`</b>
+###### BezierSpline.GetKeyFrames()
 
 获取关键帧的表。
 
@@ -115,7 +115,7 @@
 - <b>返回</b>：keyframes 关键帧
 - <b>返回类型</b>：表
 
-<b>`BezierSpline.SetKeyFrames(keyframes[, replace])`</b>
+###### BezierSpline.SetKeyFrames(*keyframes\[, replace]*)
 
 设置关键帧表。
 此功能允许你设置样条曲线的关键帧及其曲率。该表应包含一个子表，每个关键帧一个，每个都有一个关键帧时间的键值。子表应包含关键帧值的条目，并且可以选择包含左和/或右手柄的子表，键入`"LH"`和`"RH"`。句柄子表应包含两个条目，用于句柄的X和Y位置。

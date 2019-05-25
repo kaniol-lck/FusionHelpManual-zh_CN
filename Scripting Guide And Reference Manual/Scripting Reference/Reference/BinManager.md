@@ -1,68 +1,68 @@
 #### BinManager
 
-<b>类 BinManager</b>
+###### 类 BinManager
 
 父类：`Object`
 
 ##### 方法
 
-<b>`BinManager.Close()`</b>
+###### BinManager.Close()
 
 关闭。
 
-<b>`BinManager.DeleteSelected()`</b>
+###### BinManager.DeleteSelected()
 
 删除所选。
 
-<b>`BinManager.GetRootID()`</b>
+###### BinManager.GetRootID()
 
 获取根ID。
 
-<b>`BinManager.GetRootLibraryInfo()`</b>
+###### BinManager.GetRootLibraryInfo()
 
 获取根库信息。
 
-<b>`BinManager.GetSelectedIDs()`</b>
+###### BinManager.GetSelectedIDs()
 
 获取选中的ID。
 
-<b>`BinManager.IsOpen()`</b>
+###### BinManager.IsOpen()
 
 是否打开。
 
-<b>`BinManager.Open()`</b>
+###### BinManager.Open()
 
 打开。
 
-<b>`BinManager.PlaySelected()`</b>
+###### BinManager.PlaySelected()
 
 播放所选。
 
-<b>`BinManager.Refresh()`</b>
+###### BinManager.Refresh()
 
 刷新。
 
-<b>`BinManager.RenameSelected()`</b>
+###### BinManager.RenameSelected()
 
 重命名所选。
 
-<b>`BinManager.SetLibraryRoot()`</b>
+###### BinManager.SetLibraryRoot()
 
 设置库根。
 
-<b>`BinManager._Library_AddItem()`</b>
+###### BinManager._Library_AddItem()
 
 _Library_AddItem
 
-<b>`BinManager._Library_DeleteItem()`</b>
+###### BinManager._Library_DeleteItem()
 
 _Library_DeleteItem
 
-<b>`BinManager._Library_Reload()`</b>
+###### BinManager._Library_Reload()
 
 _Library_Reload
 
-<b>`BinManager._Library_UpdateItem()`</b>
+###### BinManager._Library_UpdateItem()
 
 _Library_UpdateItem
 

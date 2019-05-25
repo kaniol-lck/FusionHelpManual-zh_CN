@@ -1,6 +1,6 @@
 #### Composition
 
-<b>类 ChildGroup</b>
+###### 类 ChildGroup
 
 父类：`Object`
 
@@ -32,7 +32,7 @@
 
 ##### 成员
 
-<b>`Composition.ActiveTool`</b>
+###### Composition.ActiveTool
 
 表示此comp上当前活动的工具（只读）。
 
@@ -40,7 +40,7 @@
 
   `tool = Composition.ActiveTool` – (`Tool`)
 
-<b>`Composition.AutoPos`</b>
+###### Composition.AutoPos
 
 添加工具时启用X坐标/Y坐标的自动更新。
 
@@ -52,7 +52,7 @@
 
   `Composition.AutoPos = val` – (布尔)
 
-<b>`Composition.CurrentFrame`</b>
+###### Composition.CurrentFrame
 
 表示此合成的当前活动帧（只读）。
 
@@ -62,7 +62,7 @@
 
   `frame = Composition.CurrentFrame` – (`FuFrame`)
 
-<b>`Composition.CurrentTime`</b>
+###### Composition.CurrentTime
 
 该合成的当前时间位置。
 
@@ -74,13 +74,13 @@
 
   `Composition.CurrentTime = val` – (数值)
 
-<b>`Composition.UpdateMode()`</b>
+###### Composition.UpdateMode()
 
 添加工具时启用X坐标/Y坐标的自动更新。
 
 表示Some/All/None模式。
 
-<b>`Composition.XPos`</b>
+###### Composition.XPos
 
 下一个添加工具的流程上的X坐标。
 
@@ -92,7 +92,7 @@
 
   `Composition.XPos = val` – (数值)
 
-<b>`Composition.YPos`</b>
+###### Composition.YPos
 
 下一个添加工具的流程上的Y坐标。
 
@@ -106,15 +106,15 @@
 
 ##### 方法
 
-<b>`Composition.AbortRender()`</b>
+###### Composition.AbortRender()
 
 停止任何当前渲染。
 
-<b>`Composition.AbortRenderUI()`</b>
+###### Composition.AbortRenderUI()
 
 在中止渲染之前询问用户。
 
-<b>`Composition.AddTool(`</b>*`id[, defsettings][, xpos][, ypos]`*<b>`)`</b>
+###### Composition.AddTool(*id\[, defsettings]\[, xpos]\[, ypos]*)
 
 在指定位置添加工具类型。
 
@@ -158,7 +158,8 @@
 
 - 返回类型：`Tool`
 
-<b>`Composition.AddToolAction(`</b>*`id[, xpos][, ypos]`*<b>`)`</b>
+
+###### Composition.AddToolAction(*id\[, xpos]\[, ypos]*)
 
 在合成中添加工具。
 
@@ -176,11 +177,11 @@
 
 - 返回类型：`Tool`
 
-<b>`Composition.AskRenderSettings()`</b>
+###### Composition.AskRenderSettings()
 
 显示Render Settings对话框。
 
-<b>`Composition.AskUser(`</b>*`title, controls`*<b>`)`</b>
+###### Composition.AskUser(*title, controls*)
 
 向用户显示自定义对话框，并返回所选值。
 
@@ -266,7 +267,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：表
 
-<b>`Composition.ChooseTool(`</b>*`path`*<b>`)`</b>
+###### Composition.ChooseTool(*path*)
 
 显示包含可选工具列表的对话框。
 
@@ -280,11 +281,11 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：字符串
 
-<b>`Composition.ClearUndo()`</b>
+###### Composition.ClearUndo()
 
 清除合成的撤消/重做历史记录。
 
-<b>`Composition.Close()`</b>
+###### Composition.Close()
 
 `Close`函数用于关闭合成。然后，调用该函数的`Fusion Composition`对象将被设置为`nil`。
 
@@ -294,7 +295,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 如果合成成功关闭返回`true`，如果合成未能关闭，则返回`nil`。
 
-<b>`Composition.Copy()`</b>
+###### Composition.Copy()
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -304,7 +305,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 如果成功则返回`true`，否则返回`false`。
 
-<b>`Composition.Copy(`</b>*`tool`*<b>`)`</b>
+###### Composition.Copy(*tool*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -322,7 +323,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：布尔
 
-<b>`Composition.Copy(`</b>*`toollist`*<b>`)`</b>
+###### Composition.Copy(*toollist*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -340,7 +341,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：布尔
 
-<b>`Composition.CopySettings()`</b>
+###### Composition.CopySettings()
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -353,7 +354,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 - 返回：settings 设置
 - 返回类型：表
 
-<b>`Composition.CopySettings(`</b>*`tool`*<b>`)`</b>
+###### Composition.CopySettings(*tool*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -371,7 +372,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：表
 
-<b>`Composition.CopySettings(`</b>*`toollist`*<b>`)`</b>
+###### Composition.CopySettings(*toollist*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -389,11 +390,11 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：表
 
-<b>`Composition.DisableSelectedTools()`</b>
+###### Composition.DisableSelectedTools()
 
 透过（Pass-through）所选工具。
 
-<b>`Composition.EndUndo(`</b>*`keep`*<b>`)`</b>
+###### Composition.EndUndo(*keep*)
 
 `StartUndo()`函数始终与`EndUndo()`函数配对。通过`StartUndo()`和`EndUndo()`之间的脚本行对组合所做的任何更改都存储为单个撤消事件。
 
@@ -425,7 +426,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
   `keep` （*布尔*） – keep
 
-<b>`Composition.Execute()`</b>
+###### Composition.Execute()
 
 执行合成的脚本字符串。要在融合使用融合的上下文中执行脚本：执行（...）。
 
@@ -451,7 +452,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   comp:Execute(“!Py3: print (‘Hello from Python 3!’)”)
   ```
 
-<b>`Composition.FindTool(`</b>*`name`*<b>`)`</b>
+###### Composition.FindTool(*name*)
 
 根据名称查找第一个工具。
 
@@ -465,7 +466,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：`Tool`
 
-<b>`Composition.FindToolByID(`</b>*`id[, prev]`*<b>`)`</b>
+###### Composition.FindToolByID(*id\[, prev]*)
 
 查找给定类型的第一个工具。
 仅返回找到的第一个工具。
@@ -511,7 +512,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：`Tool`
 
-<b>`Composition.GetCompPathMap(`</b>*`[built_ins][, defaults]`*<b>`)`</b>
+###### Composition.GetCompPathMap(*\[built_ins]\[, defaults]*)
 
 返回所有`Composition`的路径映射表。
 
@@ -549,7 +550,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：表
 
-<b>`Composition.GetConsoleHistory()`</b>
+###### Composition.GetConsoleHistory()
 
 此函数对于在控制台中显示两点之间的所有信息非常有用。可用于搜索先前脚本生成的警告或错误。
 
@@ -569,7 +570,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   dump(composition:GetConsoleHistory(1, 2))
   ```
 
-<b>`Composition.GetData(`</b>*`[name]`*<b>`)`</b>
+###### Composition.GetData(*\[name]*)
 
 获取自定义持久数据。
 
@@ -616,7 +617,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：(数值|字符串|布尔|表)
 
-<b>`Composition.GetFrameList()`</b>
+###### Composition.GetFrameList()
 
 检索合成的`ChildFrames`表。
 
@@ -642,7 +643,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   end
   ```
 
-<b>`Composition.GetNextKeyTime(`</b>*`[time][, tool]`*<b>`)`</b>
+###### Composition.GetNextKeyTime(*\[time]\[, tool]*)
 
 返回下一个关键帧的关键帧时间。
 
@@ -662,7 +663,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：数值
 
-<b>`Composition.GetPrefs(`</b>*`[prefname][, exclude-defaults]`*<b>`)`</b>
+###### Composition.GetPrefs(*\[prefname]\[, exclude-defaults]*)
 
 检索特定于合成的偏好设置或单个值的表。
 
@@ -710,7 +711,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：表
 
-<b>`Composition.GetPrevKeyTime(`</b>*`[time][, tool]`*<b>`)`</b>
+###### Composition.GetPrevKeyTime(*\[time]\[, tool]*)
 
 返回上一个关键帧的关键帧时间。
 
@@ -730,7 +731,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：数值
 
-<b>`Composition.GetPreviewList(`</b>*`[include_globals]`*<b>`)`</b>
+###### Composition.GetPreviewList(*\[include_globals]*)
 
 检索预览表。
 
@@ -746,7 +747,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：表
 
-<b>`Composition.GetToolList(`</b>*`[selected][, regid]`*<b>`)`</b>
+###### Composition.GetToolList(*\[selected]\[, regid]*)
 
 返回所有工具或所选工具的表。
 
@@ -792,15 +793,15 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - 返回类型：表
 
-<b>`Composition.GetViewList()`</b>
+###### Composition.GetViewList()
 
 返回合成中的所有视图。
 
-<b>`Composition.Heartbeat()`</b>
+###### Composition.Heartbeat()
 
 Heartbeat。
 
-<b>`Composition.IsLocked()`</b>
+###### Composition.IsLocked()
 
 如果禁用弹出窗口和更新，则返回`true`。
 
@@ -811,14 +812,14 @@ Heartbeat。
 - 返回：locked 锁定
 - 返回类型：布尔
 
-<b>`Composition.IsPlaying()`</b>
+###### Composition.IsPlaying()
 
 如果正在播放合成，则返回`true`。
 
 - 返回：playing 正在播放
 - 返回类型：布尔
 
-<b>`Composition.IsRendering()`</b>
+###### Composition.IsRendering()
 
 如果合成忙于渲染，则返回`true`。
 
@@ -829,7 +830,7 @@ Heartbeat。
 - 返回：rendering 正在渲染
 - 返回类型：布尔
 
-<b>`Composition.Lock()`</b>
+###### Composition.Lock()
 
 锁定合成以免更新。
 
@@ -856,7 +857,7 @@ Heartbeat。
   comp:Unlock()
   ```
 
-<b>`Composition.Loop(`</b>*`enable`*<b>`)`</b>
+###### Composition.Loop(*enable*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -868,7 +869,7 @@ Heartbeat。
 
   `enable` （*布尔*） – enable
 
-<b>`Composition.Loop(`</b>*`mode`*<b>`)`</b>
+###### Composition.Loop(*mode*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -880,7 +881,7 @@ Heartbeat。
 
   `mode` （***字符串***） – mode
 
-<b>`Composition.MapPath(`</b>*`path`*<b>`)`</b>
+###### Composition.MapPath(*path*)
 
 扩展路径字符串中的路径映射。
 
@@ -914,7 +915,7 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
 
 - 返回类型：字符串
 
-<b>`Composition.MapPathSegments(`</b>*`path`*<b>`)`</b>
+###### Composition.MapPathSegments(*path*)
 
 扩展多路径中的所有路径映射。
 `MapPathSegments`类似于`MapPath`，但适用于包含多个目录的字符串。返回值是包含所有扩展路径的表，而`MapPath`仅扩展第一个段并丢弃其余段。
@@ -949,23 +950,23 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
 
 - 返回类型：字符串
 
-<b>`Composition.NetRenderAbort()`</b>
+###### Composition.NetRenderAbort()
 
 NetRenderAbort
 
-<b>`Composition.NetRenderEnd()`</b>
+###### Composition.NetRenderEnd()
 
 NetRenderEnd
 
-<b>`Composition.NetRenderStart()`</b>
+###### Composition.NetRenderStart()
 
 NetRenderStart
 
-<b>`Composition.NetRenderTime()`</b>
+###### Composition.NetRenderTime()
 
 NetRenderTime
 
-<b>`Composition.MapPathSegments(`</b>*`[settings]`*<b>`)`</b>
+###### Composition.MapPathSegments(*\[settings]*)
 
 从`Clipboard`或设置表中粘贴工具。
 
@@ -979,7 +980,7 @@ NetRenderTime
 
 - 返回类型：布尔
 
-<b>`Composition.Play(`</b>*`[reverse]`*<b>`)`</b>
+###### Composition.Play(*\[reverse]*)
 
 开始交互式播放。
 
@@ -991,7 +992,7 @@ NetRenderTime
 
   `reverse` （*布尔*） – reverse
 
-<b>`Composition.Print()`</b>
+###### Composition.Print()
 
 在合成的上下文中打印。
 
@@ -1011,7 +1012,7 @@ NetRenderTime
   new_comp:Print(“Hello World”)
   ```
 
-<b>`Composition.Redo(`</b>*`count`*<b>`)`</b>
+###### Composition.Redo(*count*)
 
 重做合成的一个或多个更改。
 
@@ -1025,7 +1026,7 @@ NetRenderTime
 
   `count` （*数值*） – count
 
-<b>`Composition.Render(`</b>*`[wait][, start][, end][, proxy][, hiq][, motionblur]`*<b>`)`</b>
+###### Composition.Render(*\[wait]\[, start]\[, end]\[, proxy]\[, hiq]\[, motionblur]*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -1140,7 +1141,7 @@ NetRenderTime
 
 - 返回类型：布尔
 
-<b>`Composition.Render(`</b>*`settings`*<b>`)`</b>
+###### Composition.Render(*settings*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -1245,7 +1246,7 @@ NetRenderTime
 
 - 返回类型：布尔
 
-<b>`Composition.ReverseMapPath(`</b>*`mapped`*<b>`)`</b>
+###### Composition.ReverseMapPath(*mapped*)
 
 将路径折叠为最佳匹配的路径映射。
 
@@ -1265,7 +1266,7 @@ NetRenderTime
 
 - 返回类型：字符串
 
-<b>`Composition.RunScript(`</b>*`filename`*<b>`)`</b>
+###### Composition.RunScript(*filename*)
 
 在合成的脚本上下文中运行脚本。
 
@@ -1279,7 +1280,7 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
 
   `filename` （***字符串***） – filename
 
-<b>`Composition.Save(`</b>*`filename`*<b>`)`</b>
+###### Composition.Save(*filename*)
 
 保存合成。
 
@@ -1295,15 +1296,15 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
 
 - 返回类型：布尔
 
-<b>`Composition.SaveAs()`</b>
+###### Composition.SaveAs()
 
 使用Save As对话框提示用户以保存合成。
 
-<b>`Composition.SaveCopyAs()`</b>
+###### Composition.SaveCopyAs()
 
 使用Save As对话框提示用户将合成保存为副本。
 
-<b>`Composition.SetActiveTool(`</b>*`tool`*<b>`)`</b>
+###### Composition.SetActiveTool(*tool*)
 
 设置当前活动的工具。
 
@@ -1313,7 +1314,7 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
 
 请注意，`ActiveTool`还表示选中了该工具，而选中的工具不会自动激活。一次只能有一个工具处于活动状态。要选中工具，请使用`FlowView:Select()`。
 
-<b>`Composition.SetData(`</b>*`name, value`*<b>`)`</b>
+###### Composition.SetData(*name, value*)
 
 `name` 数据名称。此名称可以是`table.subtable`格式，以允许持久数据存储在子表中。
 
@@ -1348,7 +1349,7 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
   
   `value` （*(数值|字符串|布尔|表)*） – value
 
-<b>`Composition.SetPrefs(`</b>*`prefname, val`*<b>`)`</b>
+###### Composition.SetPrefs(*prefname, val*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -1382,7 +1383,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
   `val` （*(数值|字符串|布尔|表)*） – val
 
-<b>`Composition.SetPrefs(`</b>*`prefs`*<b>`)`</b>
+###### Composition.SetPrefs(*prefs*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -1414,7 +1415,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
   `prefs` （*表*） – prefs
 
-<b>`Composition.StartUndo(`</b>*`name`*<b>`)`</b>
+###### Composition.StartUndo(*name*)
 
 开始撤消事件。
 
@@ -1452,13 +1453,13 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
   `name` （***字符串***） – name
 
-<b>`Composition.Stop()`</b>
+###### Composition.Stop()
 
 停止交互式播放。
 
 使用此函数的方法与在合成的回放控件中使用停止按钮的方式相同。
 
-<b>`Composition.Undo(`</b>*`name`*<b>`)`</b>
+###### Composition.Undo(*name*)
 
 撤销合成的一个或多个更改。
 
@@ -1472,7 +1473,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
   `count` （*数值*） – count
 
-<b>`Composition.Unlock()`</b>
+###### Composition.Unlock()
 
 解锁合成。
 
@@ -1498,6 +1499,6 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
   comp:Unlock()
   ```
 
-<b>`Composition.UpdateViews()`</b>
+###### Composition.UpdateViews()
 
 UpdateViews
