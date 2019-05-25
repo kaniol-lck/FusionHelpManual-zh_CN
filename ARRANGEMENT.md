@@ -60,25 +60,25 @@
 
 ##### Reference 参考
 
- - [x] BezierSpline
+ - [x] BezierSpline @kaniol-lck 
 
- - [x] BinClip
+ - [x] BinClip @kaniol-lck 
 
- - [x] BinItem
+ - [x] BinItem @kaniol-lck 
 
- - [x] BinManager
+ - [x] BinManager @kaniol-lck 
 
- - [x] BinStill
+ - [x] BinStill @kaniol-lck 
 
- - [x] ChildFrame
+ - [x] ChildFrame @kaniol-lck 
 
- - [x] ChildGroup
+ - [x] ChildGroup @kaniol-lck 
 
- - [x] Composition
+ - [x] Composition @kaniol-lck 
 
- - [ ] FloatViewFrame
+ - [x] FloatViewFrame @kaniol-lck 
 
- - [ ] FlowView
+ - [x] FlowView @kaniol-lck 
 
  - [ ] FontList
 
