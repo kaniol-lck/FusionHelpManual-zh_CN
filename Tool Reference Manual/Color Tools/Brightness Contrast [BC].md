@@ -52,5 +52,4 @@ Clip Black和Clip White复选框用于剪切在浮点颜色深度处理时可能
 
 ##### Pre-Divide/Post-Multiply 预除/后乘
 
-选择Pre-Divide/Post-Multiply复选框将使图像像素值除以颜色校正之前的alpha值，然后在校正后重新乘以alpha值。
-这有助于防止创建非法添加图像，特别是蓝/绿键的边缘或在使用3D渲染对象时。
+选择Pre-Divide/Post-Multiply复选框将使图像像素值除以颜色校正之前的alpha值，然后在校正后重新乘以alpha值。这有助于防止创建非法加性图像，特别是蓝/绿键的边缘或在使用3D渲染对象时。
