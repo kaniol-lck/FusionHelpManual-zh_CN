@@ -102,7 +102,7 @@ Specular Exponent控制高光的衰减。值越大，衰减越明显，材质就
 
 ##### Character Level Styling 字符级别样式定义
 
-Text 3D工具不直接支持Character Level Styling。您必须首先创建一个Text+工具，并使用Character Level Styling修改器修改其文本字段。然后，将Text 3D的文本字段连接到现在可用的修饰符，或复制Text+工具并将其设置粘贴到Text 3D工具(右键单击>Paste Settings)。
+Text 3D工具不直接支持Character Level Styling。您必须首先创建一个Text+工具，并使用Character Level Styling修改器修改其文本字段。然后，将Text 3D的文本字段连接到现在可用的修改器，或复制Text+工具并将其设置粘贴到Text 3D工具(右键单击>Paste Settings)。
 
 ##### Uncapped 3D Text 不封皮3D文字
 
