@@ -9,7 +9,7 @@
 <table id="img">
   <tr>
     <td rowspan="6"><img src="images/DeepPixel_index.png" alt="DeepPixel_index"></td>
-    <td><img src="images/index_AmbientOcclusion.png" alt="index_AmbientOcclusion"></td>
+    <td><img src="images/index_AmbientOcclusion.jpg" alt="index_AmbientOcclusion"></td>
   </tr>
   <tr>
     <td><img src="images/index_DepthBlur.jpg" alt="index_DepthBlur"></td>
