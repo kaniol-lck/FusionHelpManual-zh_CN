@@ -7,12 +7,12 @@
 - [Plasma [PLAS]](./Plasma%20[PLAS].md)
 - [Text Plus [TXT+]](./Text%20Plus%20[TXT+].md)
 - [Modifiers](./Modifiers.md)
-  - Character Level Styling
-  - Comp Name
-  - Follower
-  - Text Scramble
-  - Text Timer
-  - Time Code
+  - [Character Level Styling](./Modifiers.md#Character%20Level%20Styling)
+  - [Comp Name](./Modifiers.md#Comp%20Name)
+  - [Follower](./Modifiers.md#Follower)
+  - [Text Scramble](./Modifiers.md#Text%20Scramble)
+  - [Text Timer](./Modifiers.md#Text%20Timer)
+  - [Time Code](./Modifiers.md#Time%20Code)
 
 <table id="img">
   <tr>
