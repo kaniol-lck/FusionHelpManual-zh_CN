@@ -11,8 +11,8 @@
  - [x] 第五章 Blur Tools 模糊工具 @kaniol-lck 
  - [x] 第六章 Color Tools 色彩工具 @kaniol-lck 
  - [x] 第七章 Composite Tools 合成工具 @kaniol-lck
- - [x] 第八章 Creator Tools 生成器工具 @kaniol-lck（翻译中）
- - [ ] 第九章 DeepPixel Tools 深度像素工具
+ - [x] 第八章 Creator Tools 生成器工具 @kaniol-lck
+ - [x] 第九章 DeepPixel Tools 深度像素工具 @kaniol-lck（翻译中）
  - [ ] 第十章 Effect Tools 效果工具
  - [ ] 第十一章 Film Tools 电影工具 
  - [ ] 第十二章 Filter Tools 滤镜工具 
