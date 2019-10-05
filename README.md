@@ -4,15 +4,25 @@
 
 ## 阅读帮助手册
 
+### 本地阅读
+
 该帮助手册使用markdown文档格式，建议使用Typora或其他Markdown编辑器/阅读器在本地查看。
 
 [如何在本地阅读？](HELP.md)
+
+### GitHub阅读
 
 **点击手册名开始阅读：**
 
 - [**《Tool Reference Manual 工具参考手册》**](Tool%20Reference%20Manual/README.md)（翻译中）
 - [**《Scripting Guide And Reference Manual 脚本指南与参考手册》**](Scripting%20Guide%20And%20Reference%20Manual/README.md)（翻译中）
 - **《User Manual 用户手册》**（不在翻译计划内）
+
+#### GitPages在线阅读
+
+Git Pages正在逐渐完善中：
+
+https://kaniol-lck.github.io/FusionHelpManual-zh_CN
 
 ## 计划
 
@@ -33,9 +43,3 @@
 文档结构与官方pdf文档保持一致，修正部分原手册编辑错误。
 
 专业术语、官方文档首字母开头大写的词及在软件界面上找得到的词尽量不翻译，避免意思曲解。阅读还是需要一定的英语水平，毕竟目前软件本体就是英文的。
-
-## 在线浏览
-
-Git Pages正在逐渐完善中：
-
-https://kaniol-lck.github.io/FusionHelpManual-zh_CN

@@ -56,7 +56,7 @@ Apply Modes设置确定混合或组合前景像素和背景像素时使用的数
 
 ![Mrg_OperatorMode](images\Mrg_OperatorMode.jpg)
 
-此菜单用于选择Merge的运算模式。更改操作模式会更改前景和背景的组合方式以产生结果。仅当Merge工具的Apply模式设置为Normal时，才会显示该菜单。
+此菜单用于选择Merge的运算器模式。更改运算器模式会更改前景和背景的组合方式以产生结果。菜单仅在Merge工具的Apply模式设置为Normal时才会显示。
 
 有关Operation模式的基础数学的精彩描述，请参阅《合成数字图像》（*Compositing Digital Images*），Porter, T和T. Duff，SIGGRAPH 84 proceedings，第253-259页。 基本上，数学上会如下所述。请注意，通过交换前景和背景输入（使用Command-T或Ctrl-T）并选择相应的模式，可以轻松获得运算器下拉列表中未列出的某些模式（Under、In、Held In、Below）。 
 
@@ -74,7 +74,7 @@ Apply Modes设置确定混合或组合前景像素和背景像素时使用的数
 
   `x = [background alpha], y = 1-[foreground alpha] `
 
-- **XOr：**当FG或BG有蒙版时，XOr将FG与BG结合在一起，但不会两者都没有蒙版。
+- **XOr：**当FG或BG有遮罩时，XOr将FG与BG结合在一起，但不会两者都没有遮罩。
 
   `x = 1-[background alpha], y = 1-[foreground alpha]`
 
@@ -96,7 +96,7 @@ Fusion大多数操作默认为加性合并，并假设图像是预乘的。在�
 
 Alpha Gain线性缩放前景alpha通道的值。在减性合并中，它控制合成的密度，类似于Blend。在加性合并中，这有效地减少了背景被遮挡的数量，从而使整体结果更加明亮。在Alpha Gain设置为0.0的加性合并中，前景像素将简单地添加到背景中。
 
-##### Burn In 烧入 
+##### Burn In 烧入
 
 Burn In控件调整用于使背景变暗的alpha值，而不会影响添加的前景量。在0.0时，合并的行为类似于直线alpha混合，而在1.0时，前景有效地添加到背景上（之后）在减法模式下的alpha乘法）。
 
