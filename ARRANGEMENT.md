@@ -14,8 +14,8 @@
  - [x] 第八章 Creator Tools 生成器工具 @kaniol-lck
  - [x] 第九章 DeepPixel Tools 深度像素工具 @kaniol-lck
  - [x] 第十章 Effect Tools 效果工具 @kaniol-lck
- - [x] 第十一章 Film Tools 电影工具 @kaniol-lck（翻译中）
- - [ ] 第十二章 Filter Tools 滤镜工具 
+ - [x] 第十一章 Film Tools 胶片工具 @kaniol-lck
+ - [x] 第十二章 Filter Tools 滤镜工具 @kaniol-lck（翻译中）
  - [ ] 第十三章 Flow Tools 流程工具 
  - [ ] 第十四章 FlowOrg Tools 流程组织工具 
  - [x] 第十五章 Fuses Fuse插件 @JUNE3546 （待整理）
