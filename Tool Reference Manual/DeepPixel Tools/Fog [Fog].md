@@ -6,7 +6,7 @@ Fog工具上输入的第二个图像可用于提供用作雾源的图像。如�
 
 #### Controls 控件
 
-![Fog_Controls](images\Fog_Controls.png)
+![Fog_Controls](images/Fog_Controls.png)
 
 ##### Z-Buffer Near Plane and Far Plane Z缓冲区近平面和远平面
 

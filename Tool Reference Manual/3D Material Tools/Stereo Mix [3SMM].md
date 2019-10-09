@@ -1,6 +1,6 @@
 ### Stereo Mix [3SMM]
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3SMM_tile](images/3SMM_tile.png)
 

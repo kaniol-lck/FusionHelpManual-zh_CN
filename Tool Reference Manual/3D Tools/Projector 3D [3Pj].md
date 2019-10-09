@@ -154,7 +154,7 @@ Shadow Map Proxy确定用于代理(proxy)和自动代理(auto proxy)计算的阴
 
 当Softness设置为Variable时，Max Softness滑块就会出现。这个滑块控制阴影的最大柔软度。阴影离投射阴影的物体越远，它就越柔和，达到这个滑块设定的极限。
 
-#### Transform Tab Transform选项卡
+#### Transform Tab 变换选项卡
 
 出现在此选项卡中的选项决定此工具创建的几何物体的位置。由于这些控件在生成几何物体的所有工具上都是相同的，因此在本文档的Common 3D控件一节中对这些控件进行了充分的描述。
 

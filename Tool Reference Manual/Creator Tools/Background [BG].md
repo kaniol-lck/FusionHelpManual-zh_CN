@@ -4,7 +4,7 @@ Background工具可用于生成从简单的彩色背景到复杂的可循环渐�
 
 #### Color Tab 色彩选项卡
 
-![BG_ColorTab](images\BG_ColorTab.jpg)
+![BG_ColorTab](images/BG_ColorTab.jpg)
 
 ##### Mode 模式
 
@@ -19,7 +19,7 @@ Background工具可用于生成从简单的彩色背景到复杂的可循环渐�
 
 这将从自定义渐变创建背景。
 
-![BG_Gradient](images\BG_Gradient.jpg)
+![BG_Gradient](images/BG_Gradient.jpg)
 
 ##### Color 颜色
 
@@ -33,7 +33,7 @@ Background工具可用于生成从简单的彩色背景到复杂的可循环渐�
 
 此选项卡中的控件用于设置工具生成的图像的分辨率，颜色深度和像素宽高比。
 
-![BG_ImageTab](images\BG_ImageTab.png)
+![BG_ImageTab](images/BG_ImageTab.png)
 
 ##### Process Mode 处理模式
 

@@ -4,7 +4,7 @@ Macro可用于组合多个工具显露用户可定义的控件集。它们是构
 
 #### Usage 使用
 
-![Macro_Usage](images\Macro_Usage.png)
+![Macro_Usage](images/Macro_Usage.png)
 
 ##### Creating a Macro 创建一个宏
 
@@ -18,13 +18,13 @@ Macro可用于组合多个工具显露用户可定义的控件集。它们是构
 
 在按自己的喜好设置宏之后，在Macro Name字段中输入名称，然后选择File > Save。
 
-![Macro_MacroEditer](images\Macro_MacroEditer.png)
+![Macro_MacroEditer](images/Macro_MacroEditer.png)
 
 要将宏添加到流中，请右键单击流上的任意位置，然后从上下文菜单中选择Macro > [Macro的名称]。
 
 #### The Final Macro 最终的宏
 
-![Macro_TheFinalMacro](images\Macro_TheFinalMacro.jpg)
+![Macro_TheFinalMacro](images/Macro_TheFinalMacro.jpg)
 
 最终的宏外观和行为与Fusion中的其他任何工具一样。
 

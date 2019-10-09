@@ -4,7 +4,7 @@ Trails工具用于创建图像中重影般的尾迹。当它应用在带有alpha
 
 #### Controls 控件
 
-![Trls_Controls](images\Trls_Controls.png)
+![Trls_Controls](images/Trls_Controls.png)
 
 ##### Restart 重新开始
 

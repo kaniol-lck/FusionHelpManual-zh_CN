@@ -2,7 +2,7 @@
 
 Texture Transform工具可用于平移，旋转和缩放输入材质上的图像纹理。虽然输入也可以是图像，但始终输出材质。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3Tx_tile](images/3Tx_tile.jpg)
 

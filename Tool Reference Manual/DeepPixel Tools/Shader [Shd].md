@@ -8,7 +8,7 @@ Shader工具依赖于3D渲染图像中X、Y和Z法线贴图通道的存在。如
 
 #### Light Tab 光照选项卡
 
-![Shd_LightTab](images\Shd_LightTab.png)
+![Shd_LightTab](images/Shd_LightTab.png)
 
 ##### Ambient 环境
 
@@ -44,7 +44,7 @@ Polar Height控制由Shader工具为场景或选定对象生成和映射的光�
 
 #### Shader Tab 着色器选项卡
 
-![Shd_ShaderTab](images\Shd_ShaderTab.png)
+![Shd_ShaderTab](images/Shd_ShaderTab.png)
 
 ##### Edit Diffuse and Specular 编辑漫反射和高光
 

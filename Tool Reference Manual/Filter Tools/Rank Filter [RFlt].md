@@ -19,7 +19,7 @@ Rank Filter是一个非常简单的工具。该滤镜检查附近的像素，按
 
 #### Controls 控件
 
-![RFlt_Controls](images\RFlt_Controls.png)
+![RFlt_Controls](images/RFlt_Controls.png)
 
 ##### Size 尺寸
 

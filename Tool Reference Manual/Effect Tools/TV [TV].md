@@ -4,7 +4,7 @@ TV工具是设计来模仿模拟电视广播和屏幕中出现的一些典型缺
 
 #### Controls 控件
 
-![TV_Controls](images\TV_Controls.jpg)
+![TV_Controls](images/TV_Controls.jpg)
 
 ##### Scan Lines 扫描线
 
@@ -36,7 +36,7 @@ Frequency滑块在Amplitude控件大于1时设置沿图像边缘产生失真的�
 
 #### Noise Tab 噪声选项卡
 
-![TV_NoiseTab](images\TV_NoiseTab.jpg)
+![TV_NoiseTab](images/TV_NoiseTab.jpg)
 
 ##### Power 强度
 
@@ -52,7 +52,7 @@ Frequency滑块在Amplitude控件大于1时设置沿图像边缘产生失真的�
 
 #### Roll Bar Tab 滚动条形选项卡
 
-![TV_RollBarTab](images\TV_RollBarTab.png)
+![TV_RollBarTab](images/TV_RollBarTab.png)
 
 ##### Bar Strength 条形强度
 

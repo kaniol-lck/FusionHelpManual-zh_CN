@@ -4,7 +4,7 @@ Highlight滤镜在图像的明亮区域中创建星形高光，类似于镜头�
 
 #### Settings Tab 设置选项卡
 
-![Hil_SettingsTab](images\Hil_SettingsTab.png)
+![Hil_SettingsTab](images/Hil_SettingsTab.png)
 
 ##### Low and High 低和高
 
@@ -32,7 +32,7 @@ Highlight滤镜在图像的明亮区域中创建星形高光，类似于镜头�
 
 #### Color Scale Tab 颜色缩放选项卡
 
-![Hil_ColorScaleTab](images\Hil_ColorScaleTab.png)
+![Hil_ColorScaleTab](images/Hil_ColorScaleTab.png)
 
 ##### Red, Green and Blue Scale Red、Green和Blue缩放
 

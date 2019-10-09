@@ -6,7 +6,7 @@ DaySky发生器是Preetham、Shirley和Smits的研究论文《日光实用分析
 
 #### Controls Tab 控件选项卡
 
-![DS_ControlsTab](images\DS_ControlsTab.png)
+![DS_ControlsTab](images/DS_ControlsTab.png)
 
 ##### Latitude, Longitude 纬度、经度
 
@@ -32,7 +32,7 @@ Turbidity使光散射和吸收，而不是通过模拟以直线传输。增加�
 
 #### Advanced Tab 高级选项卡
 
-![DS_AdvancedTab](images\DS_AdvancedTab.png)
+![DS_AdvancedTab](images/DS_AdvancedTab.png)
 
 ##### Horizon Brightness 地平线亮度
 
@@ -58,7 +58,7 @@ Turbidity使光散射和吸收，而不是通过模拟以直线传输。增加�
 
 此选项卡中的控件用于设置工具生成的图像的分辨率、颜色深度和宽高比。
 
-![DS_ImageTab](images\DS_ImageTab.png)
+![DS_ImageTab](images/DS_ImageTab.png)
 
 ##### Process Mode 处理模式
 

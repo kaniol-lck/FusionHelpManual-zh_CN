@@ -8,7 +8,7 @@ CubeMap工具使用单独的图像为立方体的每个面创建纹理贴图。�
 
 ![3Cu_CubeMap](images/3Cu_CubeMap.jpg)
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3Cu_tile](images/3Cu_tile.jpg)
 

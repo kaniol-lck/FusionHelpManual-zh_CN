@@ -8,7 +8,7 @@ Fusion的文字工具是一类高级的字符生成器，能够使用3D变换、
 
 #### Text Tab 文本选项卡
 
-![TXT+_TextTab](images\TXT+_TextTab.png)
+![TXT+_TextTab](images/TXT+_TextTab.png)
 
 ##### Size 尺寸
 
@@ -100,7 +100,7 @@ Comp Name将合成的名称放在编辑框中，通常用于创建slate。
 
 用于放置文本的控件位于Layout选项卡中。可以使用按钮组选择四种布局类型之一。
 
-![TXT+_LayoutTab](images\TXT+_LayoutTab.jpg)
+![TXT+_LayoutTab](images/TXT+_LayoutTab.jpg)
 
 - **Point 点：**Point布局是最简单的布局模式。文本围绕着可调整的中心点排列。
 - **Frame 框架：**Frame布局允许您定义用于对齐文本的矩形框架。对齐控件用于在框架边界内垂直和水平对齐文本。
@@ -155,9 +155,9 @@ Position On Path控件用于控制文本在路径上的位置。小于0或大于
 
 用于控制文本的垂直和水平对齐的两组相同的控件。使用第一个按钮组选择文本的对齐方式。下面的滑块控制对齐方式。
 
-#### Transform Tab 变换选项卡
+#### 变换选项卡
 
-![TXT+_TransformTab](images\TXT+_TransformTab.jpg)
+![TXT+_TransformTab](images/TXT+_TransformTab.jpg)
 
 ##### Select Transform 选择变换
 
@@ -173,7 +173,7 @@ Spacing滑块用于调整每行、单词或字符之间的间距。小于1的值
 
 ##### Pivot X, Y and Z 中心X、Y和Z
 
-这提供了轴精确位置的控制。默认情况下，该轴位于所计算的线条、单词或字符的中心。Axis控件用作偏移量，因此该控件中的`0.1, 0.1`值将导致每个文本元素的轴向下和向右移动。Z轴滑块中的正值将使该轴沿该轴进一步移动（远离监视器）。负值将使旋转轴更近。
+这提供了轴精确位置的控制。默认情况下，该轴位于所计算的线条、单词或字符的中心。Axis控件用作偏移量，因此该控件中的`0.1, 0.1`值将导致每个文本元素的轴向下和向右移动。Z轴滑块中的正值将使该轴沿该轴进一步移动（远离查看器）。负值将使旋转轴更近。
 
 ##### Rotation Order 旋转顺序
 
@@ -195,7 +195,7 @@ Spacing滑块用于调整每行、单词或字符之间的间距。小于1的值
 
 Shading选项卡提供控件来调整文本的着色、纹理和柔度。也可以从此选项卡控制变换，将额外的变换独立地应用于多达八个单独的文本着色元素。Number菜单用于选择受此选项卡中控件调整影响的元素。
 
-![TXT+_ShadingTab1](images\TXT+_ShadingTab1.jpg)![TXT+_ShadingTab2](images\TXT+_ShadingTab2.png)
+![TXT+_ShadingTab1](images/TXT+_ShadingTab1.jpg)![TXT+_ShadingTab2](images/TXT+_ShadingTab2.png)
 
 ##### Name 名称
 
@@ -334,7 +334,7 @@ Overlap用于确定当同一着色元素的部分重叠时如何处理着色。�
 
 Tabs区域中的控件用于配置8个单独的制表符的水平屏幕位置。文本中的所有制表符都将符合这些位置。
 
-![TXT+_TabsTab](images\TXT+_TabsTab.png)
+![TXT+_TabsTab](images/TXT+_TabsTab.png)
 
 由于Fusion使用Tab键前进到下一个控件，因此无法直接在样式文本输入中输入标签。使用以下方法输入选项卡。
 
@@ -354,7 +354,7 @@ Tabs区域中的控件用于配置8个单独的制表符的水平屏幕位置。
 
 #### Rendering Tab 渲染选项卡
 
-![TXT+_RenderingTab](images\TXT+_RenderingTab.png)
+![TXT+_RenderingTab](images/TXT+_RenderingTab.png)
 
 ##### Image Shading Sampling 图像着色采样
 
@@ -386,7 +386,7 @@ Tabs区域中的控件用于配置8个单独的制表符的水平屏幕位置。
 
 选择Text工具后，查看器中将出现一个工具栏。
 
-![TXT_Toolbar](images\TXT_Toolbar.jpg)
+![TXT_Toolbar](images/TXT_Toolbar.jpg)
 
 ##### Allow Typing In Preview Window 允许在预览窗口中键入
 

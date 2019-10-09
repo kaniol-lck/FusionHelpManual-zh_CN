@@ -4,7 +4,7 @@ Underlay是在合成中可视化地组织区域的便捷方法。与Group一样�
 
 #### Usage 用途
 
-![Und_Usage](images\Und_Usage.jpg)
+![Und_Usage](images/Und_Usage.jpg)
 
 与常规工具一样，可以从Tools菜单的Flow类别中，或从流程编辑器（Flow Editor）的 Add Tool上下文菜单中选择Sticky Note，来将它添加到合成中。创建新的Sticky Note时，其标题栏位于最后单击位置的中心。
 

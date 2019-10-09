@@ -8,7 +8,7 @@ Blinn工具输出一个可以连接到任何3D几何物体工具材质输入的3
 
 Fusion实现的Blinn模型计算高光为光源与观测者之间的表面法线与半角向量的点积(`dot(N, H)`)。这可能并不总是匹配其他3D应用程序使用的Blinn模型照明模型。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3Bi_tile](images/3Bi_tile.jpg)
 

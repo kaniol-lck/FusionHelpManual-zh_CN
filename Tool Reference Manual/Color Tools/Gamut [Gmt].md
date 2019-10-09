@@ -8,9 +8,9 @@ Gamut工具将颜色从不同的色域转换为其他色域，并移除或添加
 
 ##### Source Space 源空间
 
-Source Space确定图像的输入颜色空间。如果您只想使用Output Space控件添加Gamma，请将其保留为“No Change”。
+Source Space确定图像的输入颜色空间。如果您只想使用Output Space控件添加Gamma，请将其保留为No Change。
 
-- **DCI-P3：**DCI-P3色彩空间最常用于DLP投影仪，通常作为2K DLP投影仪可用的色彩空间提供，并作为10位LCD显示器（如HP Dreamcolor）的仿真模式提供。该色彩空间在SMPTE-431-2标准中定义。
+- **DCI-P3：**DCI-P3色彩空间最常用于DLP投影仪，通常作为2K DLP投影仪可用的色彩空间提供，并作为10位LCD监视器（如HP Dreamcolor）的仿真模式提供。该色彩空间在SMPTE-431-2标准中定义。
 
 - **Custom 自定义：**自定义色域允许您根据CIE 1931原色和白点描述颜色空间，这些颜色空间表示为XY坐标，以及伽马，极限和斜率。 例如，如果使用Custom色彩空间来描述的话，则上面提到的DCI-P3色域将具有以下值：
 

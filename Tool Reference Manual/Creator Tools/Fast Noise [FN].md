@@ -4,7 +4,7 @@ Fast Noise工具是一种非常快速和灵活的柏林噪声（Perlin Noise）�
 
 #### Noise Tab 噪声选项卡
 
-![FN_NoiseTab](images\FN_NoiseTab.png)
+![FN_NoiseTab](images/FN_NoiseTab.png)
 
 ##### Discontinuous 不连续
 
@@ -48,7 +48,7 @@ Fast Noise工具是一种非常快速和灵活的柏林噪声（Perlin Noise）�
 
 #### Color Tab 颜色选项卡
 
-![FN_NoiseTab](images\FN_NoiseTab.png)
+![FN_NoiseTab](images/FN_NoiseTab.png)
 
 ##### Two Color 双色
 
@@ -62,7 +62,7 @@ Fusion中的Advanced Gradient控件用于更好地控制与噪声贴图一起使
 
 此选项卡中的控件用于设置工具生成的图像的分辨率、色彩深度和像素宽高比。
 
-![FN_ImageTab](images\FN_ImageTab.png)
+![FN_ImageTab](images/FN_ImageTab.png)
 
 ##### Process Mode 处理模式
 

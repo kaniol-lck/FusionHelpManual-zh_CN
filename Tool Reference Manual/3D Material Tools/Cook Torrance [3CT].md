@@ -4,7 +4,7 @@ Cook Torrance工具是一种基本的照明材质，可应用于3D场景中的�
 
 Cook Torrance工具输出一个可连接到任何3D几何物体工具上的材质输入的3D Material。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3CT_tile](images/3CT_tile.jpg)
 

@@ -6,7 +6,7 @@ Hot Spot工具用于创建各种类型的镜头光晕、聚光灯和燃烧/减�
 
 #### Hot Spot Tab 热点选项卡
 
-![Hot_HotSpotTab](images\Hot_HotSpotTab.png)
+![Hot_HotSpotTab](images/Hot_HotSpotTab.png)
 
 ##### Primary Center X and Y 基础中心X和Y
 
@@ -82,7 +82,7 @@ Aberration滑块控制镜头像差效果的整体强度。
 
 #### Color Tab 色彩选项卡
 
-![Hot_ColorTab](images\Hot_ColorTab.png)
+![Hot_ColorTab](images/Hot_ColorTab.png)
 
 ##### Color Channel and Mix 色彩通道和混合
 
@@ -106,7 +106,7 @@ LUT编辑器控件和选项的完整说明可在本手册的工具控件（Tool 
 
 #### Radial Tab 径向选项卡
 
-![Hot_RadialTab](images\Hot_RadialTab.png)
+![Hot_RadialTab](images/Hot_RadialTab.png)
 
 ##### Radial On 径向开
 
@@ -134,9 +134,9 @@ LUT编辑器控件和选项的完整说明可在本手册的工具控件（Tool 
 
 #### L1, L2 and L3 Tab L1、L2和L3选项卡
 
-![Hot_L1Tab](D:\FusionHelpManual-zh_CN\Tool Reference Manual\Effect Tools\images\Hot_L1Tab.png)![Hot_L2Tab](D:\FusionHelpManual-zh_CN\Tool Reference Manual\Effect Tools\images\Hot_L2Tab.jpg)
+![Hot_L1Tab](D:\FusionHelpManual-zh_CN\Tool Reference Manual\Effect Tools\images/Hot_L1Tab.png)![Hot_L2Tab](D:\FusionHelpManual-zh_CN\Tool Reference Manual\Effect Tools\images/Hot_L2Tab.jpg)
 
-![Hot_L3Tab](D:\FusionHelpManual-zh_CN\Tool Reference Manual\Effect Tools\images\Hot_L3Tab.png)
+![Hot_L3Tab](D:\FusionHelpManual-zh_CN\Tool Reference Manual\Effect Tools\images/Hot_L3Tab.png)
 
 ##### Lens Reflect 1-3 镜头光晕1-3
 

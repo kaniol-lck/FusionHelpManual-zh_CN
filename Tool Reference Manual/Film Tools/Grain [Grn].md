@@ -4,7 +4,7 @@ Grain工具提供了全面的胶片颗粒仿真功能。这对于将模拟颗粒
 
 #### Grain Tab 颗粒选项卡
 
-![Grn_GrainTab](images\Grn_GrainTab.png)
+![Grn_GrainTab](images/Grn_GrainTab.png)
 
 ##### Power 力度
 
@@ -36,7 +36,7 @@ Grain工具提供了全面的胶片颗粒仿真功能。这对于将模拟颗粒
 
 #### Spread Tab 分布选项卡
 
-![Grn_SpreadTab](images\Grn_SpreadTab.png)
+![Grn_SpreadTab](images/Grn_SpreadTab.png)
 
 ##### Edit RGB Checkboxes 编辑RGB复选框
 
@@ -50,13 +50,13 @@ Grain工具提供了全面的胶片颗粒仿真功能。这对于将模拟颗粒
 
 ##### Default Spread 默认散布
 
-![Grn_DefaultSpread](images\Grn_DefaultSpread.jpg)
+![Grn_DefaultSpread](images/Grn_DefaultSpread.jpg)
 
 在默认设置下，如此处所示，Grain被均匀地应用于整个图像。但是，胶卷通常会在黑、中和白中显示出不同数量的颗粒。
 
 ##### Bell-Shaped Spread 钟形散布
 
-![Grn_BellShapedSpread](images\Grn_BellShapedSpread.jpg)
+![Grn_BellShapedSpread](images/Grn_BellShapedSpread.jpg)
 
 设置钟形通常更有利于创建更逼真的外观。此处我们在Red、Green和Blue通道中也具有不均匀的分布，具有不同数量的颗粒。
 

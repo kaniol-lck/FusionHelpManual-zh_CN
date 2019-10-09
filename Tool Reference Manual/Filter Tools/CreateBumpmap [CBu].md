@@ -10,7 +10,7 @@ Create Bumpmap工具可将灰阶（高度图）图像转换为凹凸贴图。查
 
 #### Controls 控件
 
-![CBu_Controls](images\CBu_Controls.png)
+![CBu_Controls](images/CBu_Controls.png)
 
 ##### Filter Size 滤镜尺寸
 

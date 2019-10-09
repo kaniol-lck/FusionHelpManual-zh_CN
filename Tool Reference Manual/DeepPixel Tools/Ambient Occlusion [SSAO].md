@@ -19,7 +19,7 @@ KernelRadius取决于场景的自然“比例”。最初看起来根本没有AO
 
 #### Controls 控件
 
-![SSAO_Controls](images\SSAO_Controls.png)
+![SSAO_Controls](images/SSAO_Controls.png)
 
 ##### Output Mode 输出模式
 
@@ -55,9 +55,9 @@ Kernel Radius控制3D空间中滤镜内核的大小。对于每个像素，它�
 
 ##### Use OpenCL 使用OpenCL
 
-![SSAO_UseOpenCL1](images\SSAO_UseOpenCL1.png)
+![SSAO_UseOpenCL1](images/SSAO_UseOpenCL1.png)
 
-![SSAO_UseOpenCL2](images\SSAO_UseOpenCL2.png)
+![SSAO_UseOpenCL2](images/SSAO_UseOpenCL2.png)
 
 > **提示** 将多个AO通道与不同的内核半径相结合可以产生更好的效果。
 

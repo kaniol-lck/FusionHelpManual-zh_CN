@@ -4,7 +4,7 @@ Depth Blur工具主要用于创建焦距或景深效果。它基于所包含的Z
 
 #### Controls 控件
 
-![DBl_Controls](images\DBl_Controls.png)
+![DBl_Controls](images/DBl_Controls.png)
 
 ##### Filter 滤镜
 

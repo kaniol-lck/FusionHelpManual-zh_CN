@@ -4,7 +4,7 @@ Cineon Log工具用于将图像数据从对数转换为线性。该工具用于�
 
 #### Controls 控件
 
-![Log_Controls](images\Log_Controls.jpg)
+![Log_Controls](images/Log_Controls.jpg)
 
 ##### Mode 模式
 
@@ -46,10 +46,10 @@ Soft Clip控件用于将超出范围的值重新绘制到图像中。这可以�
 
 ##### Falloff Comparison 衰减比较
 
-![Log_FalloffComparison1](images\Log_FalloffComparison1.jpg)
+![Log_FalloffComparison1](images/Log_FalloffComparison1.jpg)
 
 本地Fusion处理的衰减
 
-![Log_FalloffComparison2](images\Log_FalloffComparison2.jpg)
+![Log_FalloffComparison2](images/Log_FalloffComparison2.jpg)
 
 削波处理的衰减

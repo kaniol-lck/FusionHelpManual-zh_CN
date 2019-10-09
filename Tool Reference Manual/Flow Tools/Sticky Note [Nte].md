@@ -4,7 +4,7 @@ Sticky Note是为合成的特定区域提供便笺、注释和历史记录的一
 
 #### Usage 用途
 
-![Nte_Usage1](images\Nte_Usage1.png)
+![Nte_Usage1](images/Nte_Usage1.png)
 
 与常规工具一样，可以从Tools菜单的Flow类别中，或从流程编辑器（Flow Editor）的 Add Tool上下文菜单中选择Sticky Note，来将它添加到合成中。创建新的Sticky Note时，其标题栏位于最后单击位置的中心。
 
@@ -12,6 +12,6 @@ Sticky Note是为合成的特定区域提供便笺、注释和历史记录的一
 
 像其他工具一样，可以使用流程编辑器的上下文菜单重命名、删除、复制和粘贴Sticky Note，并更改其块颜色和文本颜色。也可以锁定它们来防止编辑。
 
-![Nte_Usage2](images\Nte_Usage2.png)
+![Nte_Usage2](images/Nte_Usage2.png)
 
 要编辑Sticky Note中的文本，请先在便笺上的任意位置双击双击以展开文本，然后在其标题栏下方单击。如果便签未锁定，则文本将变为可编辑的。

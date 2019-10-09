@@ -6,7 +6,7 @@ Shadow工具被设计来投射简单的2D阴影。使用Spotlight工具和Image 
 
 #### Controls 控件
 
-![SH_Controls](images\SH_Controls.png)
+![SH_Controls](images/SH_Controls.png)
 
 ##### Shadow Offset 阴影偏移
 

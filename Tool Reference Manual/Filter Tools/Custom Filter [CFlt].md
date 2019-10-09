@@ -42,7 +42,7 @@ Custom Filter工具用于将自定义卷积滤镜应用于图像。自定义卷�
 
 #### Controls 控件
 
-![CFlt_Controls](images\CFlt_Controls.png)
+![CFlt_Controls](images/CFlt_Controls.png)
 
 ##### Color Channels (RGBA) 色彩通道（RGBA）
 

@@ -10,7 +10,7 @@ Character Level Styling修改器仅在Text+工具上生效。您可以直接在�
 
 #### Text Tab 文本选项卡
 
-![CharacterLevelStyling_TextTab](images\CharacterLevelStyling_TextTab.png)
+![CharacterLevelStyling_TextTab](images/CharacterLevelStyling_TextTab.png)
 
 ##### Text Controls, Alignment, Transform and Shading Tab 文本控件、对齐、变换和着色选项卡
 
@@ -42,7 +42,7 @@ Follower仅适用于Text+和Text3D工具。该工具可实现多种炫酷的图�
 
 #### Timing Tab 计时选项卡
 
-![Follower_TimingTab](images\Follower_TimingTab.jpg)
+![Follower_TimingTab](images/Follower_TimingTab.jpg)
 
 ##### Range 范围
 
@@ -84,7 +84,7 @@ Text Scramble仅适用于Text+工具。它拼凑文本，用用户自定义的�
 
 #### Controls 控件
 
-![TextScramble_Controls](images\TextScramble_Controls.png)
+![TextScramble_Controls](images/TextScramble_Controls.png)
 
 ##### Randomness 随机度
 
@@ -119,7 +119,7 @@ Text Timer仅适用于Text+工具。它使Text+工具成为倒数计时器、计
 
 #### Controls 控件
 
-![TextTimer_Controls](images\TextTimer_Controls.png)
+![TextTimer_Controls](images/TextTimer_Controls.png)
 
 ##### Mode 模式
 
@@ -149,7 +149,7 @@ Time Code仅适用于Text+工具。它将Styled Text设置为基于当前框架�
 
 #### Controls 控件
 
-![TimeCode_Controls](images\TimeCode_Controls.jpg)
+![TimeCode_Controls](images/TimeCode_Controls.jpg)
 
 ##### Hrs, Mins, Secs, Frms, Flds 时、分、秒、帧、字段
 

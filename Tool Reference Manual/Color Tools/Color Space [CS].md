@@ -2,7 +2,7 @@
 
 Color Space工具提供了以各种其他色彩空间格式处理图像的功能。默认情况下，Fusion使用RGB色彩空间，大多数工具和显示器将图像的主要通道解释为Red、Green和Blue。
 
-从RGB更改色彩空间将导致大多数图像看起来很奇怪，因为Fusion的监视器仍将主要通道解释为Red、Green和Blue。例如，在其中一个监视器中查看转换为YUV的图像将显示Y通道为Red，U通道显示为Green，V通道显示为Blue。
+从RGB更改色彩空间将导致大多数图像看起来很奇怪，因为Fusion的查看器仍将主要通道解释为Red、Green和Blue。例如，在其中一个查看器中查看转换为YUV的图像将显示Y通道为Red，U通道显示为Green，V通道显示为Blue。
 
 Fusion接口的不少元素直接引用RGB通道。用于将工具的效果限制为单个色彩通道的四个复选框便是一个例子。将转换应用于图像时，这些元素的标签保留为R、G和B，但它们表示的值来自当前色彩空间。（对于RGB到HLS转换来说，Red是Hue，Green是Luminance，Blue是Saturation。色彩空间转换不会改变Alpha值。）
 

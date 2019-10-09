@@ -4,7 +4,7 @@ Material Merge工具可用于将两个单独的材质组合在一起。 此工�
 
 该工具还提供了一种为组合材质指定新材质标识符的机制。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3MM_tile](images/3MM_tile.jpg)
 

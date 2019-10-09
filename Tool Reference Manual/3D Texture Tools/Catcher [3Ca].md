@@ -12,7 +12,7 @@ Catcher材质是用来“捕捉”从Projector 3D和Camera 3D工具投射的纹�
 
 > **注意：**Catcher材质需要场景中的 Projector 3D或Camera 3D工具，设置为在Catcher所连接的对象上以Texture模式投影图像。如果没有投影，或者投影未设置为Texture模式，Catcher将简单地使对象透明且不可见。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3Ca_tile](images/3Ca_tile.jpg)
 

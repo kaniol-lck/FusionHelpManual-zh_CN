@@ -6,7 +6,7 @@ Texture工具可以控制渲染图像中元素的纹理映射。纹理贴图图�
 
 有关更多信息，请参阅“辅助通道Auxiliary Channels”章节。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![Txr_tile](images/Txr_tile.jpg)
 

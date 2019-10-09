@@ -4,7 +4,7 @@ Filter工具包含多个预设滤镜，可实现从根本上改变图像的外�
 
 #### Controls 控件
 
-![Flter_Controls](images\Flter_Controls.png)
+![Flter_Controls](images/Flter_Controls.png)
 
 ##### Filter Type 滤镜类型
 

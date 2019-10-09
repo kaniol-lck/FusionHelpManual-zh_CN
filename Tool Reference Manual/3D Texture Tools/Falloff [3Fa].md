@@ -5,7 +5,7 @@ Falloff工具根据材质所应用的物体与相机之间的入射角将两种�
 
 ![3Fa_Falloff](images/3Fa_Falloff.jpg)
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3Fa_tile](images/3Fa_tile.jpg)
 

@@ -2,7 +2,7 @@
 
 Sphere Map工具允许从图像创建球形纹理贴图。输入图像应表示经度/纬度格式的纹理信息，其中X轴表示经度0-360度，Y轴表示纬度-90到+90度。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3SpM_tile](images/3SpM_tile.jpg)
 

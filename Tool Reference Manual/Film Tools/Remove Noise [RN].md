@@ -6,7 +6,7 @@ Remove Noise工具提供了简单的噪声管理。其操作的基本原理是�
 
 #### Controls / Color 控件/色彩
 
-![RN_ControlsColor](images\RN_ControlsColor.png)
+![RN_ControlsColor](images/RN_ControlsColor.png)
 
 ##### Method 方法
 
@@ -26,7 +26,7 @@ Sharpness滑块确定在柔化每个通道后将多少细节重新引入每个�
 
 #### Controls / Chroma 控件/色度
 
-![RN_Chroma](images\RN_Chroma.png)
+![RN_Chroma](images/RN_Chroma.png)
 
 ##### Method 方法
 

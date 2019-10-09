@@ -6,7 +6,7 @@ Film Grain工具采用了一种新的颗粒处理方法，这种方法应与现�
 
 #### Controls 控件
 
-![FGr_Controls](images\FGr_Controls.png)
+![FGr_Controls](images/FGr_Controls.png)
 
 ##### Complexity 复杂度
 
@@ -62,10 +62,10 @@ Offset控件通过在计算颗粒的强度之前对值进行补偿来帮助匹�
 
 ##### Log Processing On 对数处理开启
 
-![FGr_LogProcessingOn](images\FGr_LogProcessingOn.jpg)
+![FGr_LogProcessingOn](images/FGr_LogProcessingOn.jpg)
 
 在默认设置中，将不同量的Grain应用于图像的黑色和白色。
 
 ##### Log Processing Off 对数处理关闭
 
-![FGr_LogProcessingOff](images\FGr_LogProcessingOff.jpg)
+![FGr_LogProcessingOff](images/FGr_LogProcessingOff.jpg)

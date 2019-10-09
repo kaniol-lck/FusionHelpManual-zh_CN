@@ -4,7 +4,7 @@ Pseudo Color工具提供了根据该工具的控件生成的波形产生颜色�
 
 #### R/G/B/A Tabs R/G/B/A选项卡
 
-![PsCl_RGBATabs](images\PsCl_RGBATabs.png)
+![PsCl_RGBATabs](images/PsCl_RGBATabs.png)
 
 ##### Color Check Box 色彩复选框
 

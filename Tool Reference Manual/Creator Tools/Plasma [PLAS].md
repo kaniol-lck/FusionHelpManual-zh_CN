@@ -4,7 +4,7 @@
 
 #### Circles Tab 圆圈选项卡
 
-![PLAS_CirclesTab](images\PLAS_CirclesTab.png)
+![PLAS_CirclesTab](images/PLAS_CirclesTab.png)
 
 ##### Scale 缩放
 
@@ -28,7 +28,7 @@ Scale控件用于调整创建的模式的大小。
 
 #### Color Tab 色彩选项卡
 
-![PLAS_ColorTab](images\PLAS_ColorTab.png)
+![PLAS_ColorTab](images/PLAS_ColorTab.png)
 
 ##### Phase 相位
 

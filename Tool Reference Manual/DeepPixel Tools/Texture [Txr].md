@@ -6,7 +6,7 @@ Texture工具可以控制渲染图像中元素的纹理贴图。纹理贴图图�
 
 #### Texture Tab 纹理选项卡
 
-![Txr_TextureTab](images\Txr_TextureTab.png)
+![Txr_TextureTab](images/Txr_TextureTab.png)
 
 ##### Swap UV 交换UV
 

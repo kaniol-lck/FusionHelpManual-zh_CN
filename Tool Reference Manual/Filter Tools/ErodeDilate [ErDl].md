@@ -4,7 +4,7 @@
 
 #### Controls 控件
 
-![ErDl_Controls](images\ErDl_Controls.png)
+![ErDl_Controls](images/ErDl_Controls.png)
 
 ##### Color Channels (RGBA) 色彩通道（RGBA）
 

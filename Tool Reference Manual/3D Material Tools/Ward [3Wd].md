@@ -6,7 +6,7 @@ Ward工具是一种基本的照明材质，可以应用于3D场景的几何物�
 
 Ward工具输出一个三维材质，可以连接到任何三维几何工具上的材质输入。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3Wd_tile](images/3Wd_tile.jpg)
 

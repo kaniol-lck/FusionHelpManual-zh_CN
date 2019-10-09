@@ -4,7 +4,7 @@
 
 #### Generation Tab 生成选项卡
 
-![MAN_GenerationTab](images\MAN_GenerationTab.png)
+![MAN_GenerationTab](images/MAN_GenerationTab.png)
 
 ##### Position X and Y X和Y位置
 
@@ -28,7 +28,7 @@
 
 #### Color Tab 色彩选项卡
 
-![MAN_ColorTab](images\MAN_ColorTab.jpg)
+![MAN_ColorTab](images/MAN_ColorTab.jpg)
 
 ##### Grad Method 渐变方法
 

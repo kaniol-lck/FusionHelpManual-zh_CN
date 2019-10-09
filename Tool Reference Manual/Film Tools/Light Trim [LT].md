@@ -4,7 +4,7 @@
 
 #### Controls 控件
 
-![LT_Controls](images\LT_Controls.png)
+![LT_Controls](images/LT_Controls.png)
 
 ##### Lock RGBA 锁定RGBA
 

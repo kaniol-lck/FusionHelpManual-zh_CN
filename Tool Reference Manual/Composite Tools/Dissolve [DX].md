@@ -12,7 +12,7 @@ Dissolve工具的一个有用属性是，不同于Fusion中的所有其他工具
 
 #### Controls 控件
 
-![DX_Controls](images\DX_Controls.png)
+![DX_Controls](images/DX_Controls.png)
 
 ##### Operation 运算
 
@@ -34,7 +34,7 @@ Operation下拉菜单包含七种不同的混合前景和背景输入的方法�
 
 仅当选择Gradient Wipe或SMPTE Wipe时，才会显示以下控件。
 
-![DX_GradientSMPTEwipecontrols](images\DX_GradientSMPTEwipecontrols.png)
+![DX_GradientSMPTEwipecontrols](images/DX_GradientSMPTEwipecontrols.png)
 
 ##### Wipe Style 擦除类型
 

@@ -8,7 +8,7 @@ Reflect工具用于向材质添加环境贴图反射和折射。提供反射和�
 
 有关详细信息，请参阅本手册中的Reflections and Refractions。
 
-#### 外部输入
+#### External Inputs 外部输入
 
  ![3RR_tile](images/3RR_tile.jpg)
 
