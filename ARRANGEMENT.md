@@ -16,8 +16,8 @@
  - [x] 第十章 Effect Tools 效果工具 @kaniol-lck
  - [x] 第十一章 Film Tools 胶片工具 @kaniol-lck
  - [x] 第十二章 Filter Tools 滤镜工具 @kaniol-lck
- - [x] 第十三章 Flow Tools 流程工具 @kaniol-lck（翻译中）
- - [ ] 第十四章 FlowOrg Tools 流程组织工具 
+ - [x] 第十三章 Flow Tools 流程工具 @kaniol-lck
+ - [x] 第十四章 FlowOrg Tools 流程组织工具 @kaniol-lck（翻译中）
  - [x] 第十五章 Fuses Fuse插件 @JUNE3546 （待整理）
  - [x] 第十六章 I/O Tools 输入输出工具 @JUNE3546 （待整理）
  - [x] 第十七章 LUT Tools LUT工具 @JUNE3546 （待整理）
