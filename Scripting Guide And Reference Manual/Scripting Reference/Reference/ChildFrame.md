@@ -25,53 +25,53 @@
 
 从Controls选项卡返回视图列表。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   list = comp.CurrentFrame.GetControlViewList()
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   list = comp.CurrentFrame:GetControlViewList()
   ```
 
-- 返回：views 视图
+- <b>返回</b>：views 视图
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### ChildFrame.GetControlViewList()
 
 从Main选项卡返回视图列表。
 
-- 返回：views 视图
-- 返回类型：表
+- <b>返回</b>：views 视图
+- <b>返回类型</b>：表
 
 ###### ChildFrame.GetViewLayout()
 
 检索当前视图布局。
 
-- 返回：views 视图
-- 返回类型：表
+- <b>返回</b>：views 视图
+- <b>返回类型</b>：表
 
 ###### ChildFrame.SetViewLayout(*layout*)
 
 从表中设置当前视图布局。
 
-- 参数：
+- <b>参数</b>：
 
   `layout` （*表*） – layout
 
-- 返回：success 成功
+- <b>返回</b>：success 成功
 
-- 返回类型：布尔
+- <b>返回类型</b>：布尔
 
 ###### ChildFrame.SwitchControlView(*id*)
 
 从Controls选项卡显示给定视图。
 
-- 参数：
+- <b>参数</b>：
 
   `id` （***string***） – id
 
@@ -79,6 +79,6 @@
 
 从Main选项卡显示给定视图。
 
-- 参数：
+- <b>参数</b>：
 
   `id` （***string***） – id

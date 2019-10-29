@@ -4,7 +4,7 @@ DaySky发生器是Preetham、Shirley和Smits的研究论文《日光实用分析
 
 该工具的目的是生成在地球上特定时间和位置产生的日光的模拟，并生成表示该光的映射的高动态范围图像。它不是天空发生器，尽管它可以与云发生器或噪声工具结合产生一个。
 
-#### Controls Tab 控件选项卡
+#### Controls 控件
 
 ![DS_ControlsTab](images/DS_ControlsTab.png)
 

@@ -6,7 +6,7 @@ Spot Light 是从一个特定的点发出的光，它有一个清晰的锥形，
 
  ![3SL_tile](images/3SL_tile.jpg)
 
-**SpotLight.SceneInput** 
+**SpotLight.SceneInput 场景输入** 
 
  [橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。
 

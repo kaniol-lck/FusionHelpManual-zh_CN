@@ -1,8 +1,9 @@
 ### Alembic Mesh 3D [ABc]
 
-- 有两种方法导入Alembic文件：
-  - 使用 File > Import > Alembic 菜单选项
-  - 手动将AlembicMesh3D 工具添加到流程
+<b>有两种方法导入Alembic文件：</b>
+
+- 使用 File > Import > Alembic 菜单选项
+- 手动将AlembicMesh3D 工具添加到流程
 
 **推荐使用第一种方法。**
 
