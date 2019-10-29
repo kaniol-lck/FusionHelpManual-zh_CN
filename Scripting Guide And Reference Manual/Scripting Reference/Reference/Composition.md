@@ -36,7 +36,7 @@
 
 表示此comp上当前活动的工具（只读）。
 
-- 获取：
+- <b>获取</b>：
 
   `tool = Composition.ActiveTool` – (`Tool`)
 
@@ -44,7 +44,7 @@
 
 添加工具时启用X坐标/Y坐标的自动更新。
 
-- 获取：
+- <b>获取</b>：
 
   `val = Composition.AutoPos` – (布尔)
 
@@ -58,7 +58,7 @@
 
 不要与`CurrentTime`混淆。
 
-- 获取：
+- <b>获取</b>：
 
   `frame = Composition.CurrentFrame` – (`FuFrame`)
 
@@ -66,7 +66,7 @@
 
 该合成的当前时间位置。
 
-- 获取：
+- <b>获取</b>：
 
   `val = Composition.CurrentTime` – (数值)
 
@@ -84,7 +84,7 @@
 
 下一个添加工具的流程上的X坐标。
 
-- 获取：
+- <b>获取</b>：
 
   `val = Composition.XPos` – (数值)
 
@@ -96,7 +96,7 @@
 
 下一个添加工具的流程上的Y坐标。
 
-- 获取：
+- <b>获取</b>：
 
   `val = Composition.YPos` – (数值)
 
@@ -130,21 +130,21 @@
 
 返回一个可用于控制新添加工具的工具句柄。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   bg = comp.AddTool(“Background”, 1, 1)
   mg = comp.AddTool(“Merge”, -32768, -32768)
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   bg = comp:AddTool(“Background”, 1, 1)
   mg = comp:AddTool(“Merge”, -32768, -32768)
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `id` （***字符串***） – id
   
@@ -154,9 +154,9 @@
   
   `ypos` （*数值*） – ypos
   
-- 返回：tool 工具
+- <b>返回</b>：tool 工具
 
-- 返回类型：`Tool`
+- <b>返回类型</b>：`Tool`
 
 
 ###### Composition.AddToolAction(*id\[, xpos]\[, ypos]*)
@@ -165,7 +165,7 @@
 
 如果没有给出位置，它会使Fusion添加工具，就像您单击其中一个工具栏图标一样。该工具将位于当前所选工具旁边，如果可能，将自动建立连接。如果未选择任何工具，则将使用流程上最后单击的位置。
 
-- 参数：
+- <b>参数</b>：
 
   `id` （***字符串***） – id
 
@@ -173,9 +173,9 @@
 
   `ypos` （*数值*） – ypos
 
-- 返回：tool 工具
+- <b>返回</b>：tool 工具
 
-- 返回类型：`Tool`
+- <b>返回类型</b>：`Tool`
 
 ###### Composition.AskRenderSettings()
 
@@ -219,7 +219,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
   （译注：该表实际上与“Graphical User Interfaces 图形用户界面”一章的完全一致）
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   # 在Python中确保用从1开始的合适索引创建字典
@@ -228,7 +228,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   ret = composition.AskUser(“A sample dialog”, dialog)
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   composition_path = composition:GetAttrs().COMPS_FileName
@@ -257,15 +257,15 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   end
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `title` （***字符串***） – title
 
   `controls` （*表*） – controls
 
-- 返回：results 结果
+- <b>返回</b>：results 结果
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### Composition.ChooseTool(*path*)
 
@@ -273,13 +273,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 如果取消了对话框，则返回所选工具的RegID或nil。
 
-- 参数：
+- <b>参数</b>：
 
   `path` （***字符串***） – path
 
-- 返回：ID
+- <b>返回</b>：ID
 
-- 返回类型：字符串
+- <b>返回类型</b>：字符串
 
 ###### Composition.ClearUndo()
 
@@ -315,13 +315,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 如果成功则返回`true`，否则返回`false`。
 
-- 参数：
+- <b>参数</b>：
 
   `tool` （*Tool*） – tool
 
-- 返回：success 成功
+- <b>返回</b>：success 成功
 
-- 返回类型：布尔
+- <b>返回类型</b>：布尔
 
 ###### Composition.Copy(*toollist*)
 
@@ -333,13 +333,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 如果成功则返回`true`，否则返回`false`。
 
-- 参数：
+- <b>参数</b>：
 
   `toollist` （*table*） – toollist
 
-- 返回：success 成功
+- <b>返回</b>：success 成功
 
-- 返回类型：布尔
+- <b>返回类型</b>：布尔
 
 ###### Composition.CopySettings()
 
@@ -351,8 +351,8 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 将工具列表作为设置表返回。
 
-- 返回：settings 设置
-- 返回类型：表
+- <b>返回</b>：settings 设置
+- <b>返回类型</b>：表
 
 ###### Composition.CopySettings(*tool*)
 
@@ -364,13 +364,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 将工具列表作为设置表返回。
 
-- 参数：
+- <b>参数</b>：
 
   `tool` （*Tool*） – tool
 
-- 返回：settings 设置
+- <b>返回</b>：settings 设置
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### Composition.CopySettings(*toollist*)
 
@@ -382,13 +382,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 将工具列表作为设置表返回。
 
-- 参数：
+- <b>参数</b>：
 
   `toollist` （*table*） – toollist
 
-- 返回：settings 设置
+- <b>返回</b>：settings 设置
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### Composition.DisableSelectedTools()
 
@@ -402,7 +402,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 如果脚本在调用`EndUndo()`之前退出，Fusion将自动关闭撤消事件。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   composition.StartUndo(“Add some tools”)
@@ -412,7 +412,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   composition.EndUndo(True)
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   composition:StartUndo(“Add some tools”)
@@ -422,7 +422,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   composition:EndUndo(true)
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `keep` （*布尔*） – keep
 
@@ -434,7 +434,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 `!Py`：默认Python版本。`!Py2`：Python版本2。`!Py3`：Python版本3.
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   comp.Execute(“print(‘Hello from Lua!’)”)
@@ -443,7 +443,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   comp.Execute(“!Py3: print (‘Hello from Python 3!’)”)
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   comp:Execute(“print(‘Hello from Lua!’)”)
@@ -458,13 +458,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 如果取消了对话框，则返回所选工具的RegID或nil。
 
-- 参数：
+- <b>参数</b>：
 
   `name` （***字符串***） – name
 
-- 返回：tool 工具
+- <b>返回</b>：tool 工具
 
-- 返回类型：`Tool`
+- <b>返回类型</b>：`Tool`
 
 ###### Composition.FindToolByID(*id\[, prev]*)
 
@@ -472,7 +472,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 仅返回找到的第一个工具。
 要查找下一个工具，请使用prev参数提供上一个工具。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   # 创建三个Blur工具
@@ -488,7 +488,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   # 打印: Blur3
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 创建三个Blur工具
@@ -504,13 +504,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   -- 打印: Blur3
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `id` （***字符串***） – id
 
-- 返回：tool 工具
+- <b>返回</b>：tool 工具
 
-- 返回类型：`Tool`
+- <b>返回类型</b>：`Tool`
 
 ###### Composition.GetCompPathMap(*\[built_ins]\[, defaults]*)
 
@@ -520,7 +520,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 `defaults` 如果设置，将返回默认的`PathMaps`，否则排除。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   # 返回自定义PathMaps
@@ -530,7 +530,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   ==comp.GetCompPathMap()
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 返回自定义PathMaps
@@ -540,15 +540,15 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   ==comp:GetCompPathMap()
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `built_ins` （*布尔*） – built_ins
 
   `defaults` （*布尔*） – defaults
 
-- 返回：map 映射
+- <b>返回</b>：map 映射
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### Composition.GetConsoleHistory()
 
@@ -560,7 +560,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 脚本从传递给`startSeq`的变量开始获取所有历史记录。如果省略这两个值，则返回有关控制台历史记录的常规表（行数等）如果未给出参数，则将在`Total`键中返回总行数。
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 获取控制台的总行数
@@ -582,7 +582,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 返回从对象的持久数据中获取的值。它几乎可以是任何类型。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   from datetime import datetime
@@ -596,7 +596,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   print(“Last modified by {0} on {1}”.format(author, dt))
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   tool = tool or comp.ActiveTool
@@ -609,13 +609,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   print(“Last modified by” ..author.. “ on ” ..dt)
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `name` （***字符串***） – name
 
-- 返回：value 值
+- <b>返回</b>：value 值
 
-- 返回类型：(数值|字符串|布尔|表)
+- <b>返回类型</b>：(数值|字符串|布尔|表)
 
 ###### Composition.GetFrameList()
 
@@ -623,7 +623,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 `ChildFrames`是Fusion的窗口工作区。此功能允许用户访问每个可用的`ChildFrame`窗口对象及其视图。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   windowlist = composition.GetFrameList()
@@ -632,7 +632,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
       window.ViewOn(tool, 1)
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   windowlist = composition:GetFrameList()
@@ -653,15 +653,15 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 `tool` 如果仅为工具设置关键帧将返回。
 
-- 参数：
+- <b>参数</b>：
 
   `time` （*数值*） – time
 
   `tool` （*Tool*） – tool
 
-- 返回：time 时间
+- <b>返回</b>：time 时间
 
-- 返回类型：数值
+- <b>返回类型</b>：数值
 
 ###### Composition.GetPrefs(*\[prefname]\[, exclude-defaults]*)
 
@@ -673,7 +673,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 此函数可用于获取合成、子表或特定值的完整偏好设置表。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   from pprint import pprint
@@ -688,7 +688,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   pprint(comp.GetPrefs(None, False))
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 所有偏好设置
@@ -701,15 +701,15 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   dump(comp:GetPrefs(nil, false))
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `prefname` （***字符串***） – prefname
 
   `exclude-defaults` （*布尔*） – exclude-defaults
 
-- 返回：prefs 偏好设置
+- <b>返回</b>：prefs 偏好设置
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### Composition.GetPrevKeyTime(*\[time]\[, tool]*)
 
@@ -721,15 +721,15 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 `tool` 如果仅为工具设置关键帧将返回。
 
-- 参数：
+- <b>参数</b>：
 
   `time` （*数值*） – time
 
   `tool` （*Tool*） – tool
 
-- 返回：time 时间
+- <b>返回</b>：time 时间
 
-- 返回类型：数值
+- <b>返回类型</b>：数值
 
 ###### Composition.GetPreviewList(*\[include_globals]*)
 
@@ -739,13 +739,13 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 返回合成的所有可用视图的表。对于浮动视图，请使用`fusion:GetPreviewList`函数。
 
-- 参数：
+- <b>参数</b>：
 
   `include_globals` （*布尔*） – include_globals
 
-- 返回：previews 预览
+- <b>返回</b>：previews 预览
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### Composition.GetToolList(*\[selected]\[, regid]*)
 
@@ -755,7 +755,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 `regid` 此字符串值将限制GetToolList函数返回特定类型的工具（此类型与`TOOLS_RegID`属性相关）。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   from pprint import pprint
@@ -770,7 +770,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   pprint(comp.GetToolList(False, “Loader”))
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 输出合成中每个工具的名称
@@ -783,15 +783,15 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   dump(comp:GetToolList(false, “Loader”))
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `selected` （*布尔*） – selected
 
   `regid` （***字符串***） – regid
 
-- 返回：tools 工具
+- <b>返回</b>：tools 工具
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### Composition.GetViewList()
 
@@ -809,15 +809,15 @@ Heartbeat。
 
 返回一个具有合成的锁定状态的布尔值。
 
-- 返回：locked 锁定
-- 返回类型：布尔
+- <b>返回</b>：locked 锁定
+- <b>返回类型</b>：布尔
 
 ###### Composition.IsPlaying()
 
 如果正在播放合成，则返回`true`。
 
-- 返回：playing 正在播放
-- 返回类型：布尔
+- <b>返回</b>：playing 正在播放
+- <b>返回类型</b>：布尔
 
 ###### Composition.IsRendering()
 
@@ -827,8 +827,8 @@ Heartbeat。
 
 这等于`COMPB_Rendering`合成属性的状态。
 
-- 返回：rendering 正在渲染
-- 返回类型：布尔
+- <b>返回</b>：rendering 正在渲染
+- <b>返回类型</b>：布尔
 
 ###### Composition.Lock()
 
@@ -838,7 +838,7 @@ Heartbeat。
 
 使用`Lock()`和`Unlock()`包围脚本通常很有用，尤其是在添加工具或修改合成时。这样做可确保Fusion不会弹出一个对话框来询问用户输入，如，添加Loader时，还可以加快脚本的操作，因为在解锁合成之前不会花费任何时间进行渲染。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   comp.Lock()
@@ -848,7 +848,7 @@ Heartbeat。
   comp.Unlock()
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   comp:Lock()
@@ -865,7 +865,7 @@ Heartbeat。
 
 此函数用于打开合成的播放控件中的循环控件。
 
-- 参数：
+- <b>参数</b>：
 
   `enable` （*布尔*） – enable
 
@@ -877,7 +877,7 @@ Heartbeat。
 
 此函数用于打开合成的播放控件中的循环控件。
 
-- 参数：
+- <b>参数</b>：
 
   `mode` （***字符串***） – mode
 
@@ -895,7 +895,7 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
 
 对于多个目录，请使用`MapPathSegments()`。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   print(composition.MapPath(“Comp:footage\\file0000.tga”))
@@ -907,20 +907,20 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
   print(composition:MapPath(“Comp:footage\\file0000.tga”))
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `path` （***字符串***） – path
 
-- 返回：mapped 被映射的
+- <b>返回</b>：mapped 被映射的
 
-- 返回类型：字符串
+- <b>返回类型</b>：字符串
 
 ###### Composition.MapPathSegments(*path*)
 
 扩展多路径中的所有路径映射。
 `MapPathSegments`类似于`MapPath`，但适用于包含多个目录的字符串。返回值是包含所有扩展路径的表，而`MapPath`仅扩展第一个段并丢弃其余段。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   from pprint import pprint
@@ -942,13 +942,13 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
   -- 2 = C:\Program Files\Blackmagic Design\Fusion 8\Settings
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `path` （***字符串***） – path
 
-- 返回：mapped 被映射的
+- <b>返回</b>：mapped 被映射的
 
-- 返回类型：字符串
+- <b>返回类型</b>：字符串
 
 ###### Composition.NetRenderAbort()
 
@@ -972,13 +972,13 @@ NetRenderTime
 
 `settings` 如果没有提供，将使用`Clipboard`。
 
-- 参数：
+- <b>参数</b>：
 
   `settings` （*表*） – settings
 
-- 返回：success 成功
+- <b>返回</b>：success 成功
 
-- 返回类型：布尔
+- <b>返回类型</b>：布尔
 
 ###### Composition.Play(*\[reverse]*)
 
@@ -988,7 +988,7 @@ NetRenderTime
 
 `reverse` 反向播放。
 
-- 参数：
+- <b>参数</b>：
 
   `reverse` （*布尔*） – reverse
 
@@ -998,7 +998,7 @@ NetRenderTime
 
 对于打印到不同合成的控制台很有用。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   new_comp = fu.NewComp()
@@ -1022,7 +1022,7 @@ NetRenderTime
 
 `count` 指定要触发的重做事件数。
 
-- 参数：
+- <b>参数</b>：
 
   `count` （*数值*） – count
 
@@ -1097,7 +1097,7 @@ NetRenderTime
 
 `Wait` 无论脚本命令是等待渲染完成还是立即返回，都默认为`false`。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   # 渲染显式的渲染范围，等待渲染。
@@ -1123,7 +1123,7 @@ NetRenderTime
   comp:Render({Tool = comp.Saver1})
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `wait` （*布尔*） – wait
 
@@ -1137,9 +1137,9 @@ NetRenderTime
 
   `motionblur` （*布尔*） – motionblur
 
-- 返回：success 成功
+- <b>返回</b>：success 成功
 
-- 返回类型：布尔
+- <b>返回类型</b>：布尔
 
 ###### Composition.Render(*settings*)
 
@@ -1212,7 +1212,7 @@ NetRenderTime
 
 `Wait` 无论脚本命令是等待渲染完成还是立即返回，都默认为`false`。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   # 渲染显式的渲染范围，等待渲染。
@@ -1238,13 +1238,13 @@ NetRenderTime
   comp:Render({Tool = comp.Saver1})
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `settings` （*表*） – settings
 
-- 返回：success 成功
+- <b>返回</b>：success 成功
 
-- 返回类型：布尔
+- <b>返回类型</b>：布尔
 
 ###### Composition.ReverseMapPath(*mapped*)
 
@@ -1258,13 +1258,13 @@ NetRenderTime
 
 返回路径，尽可能重新插入Fusion路径映射句柄。
 
-- 参数：
+- <b>参数</b>：
 
   `path` （***字符串***） – path
 
-- 返回：mapped 被映射的
+- <b>返回</b>：mapped 被映射的
 
-- 返回类型：字符串
+- <b>返回类型</b>：字符串
 
 ###### Composition.RunScript(*filename*)
 
@@ -1276,7 +1276,7 @@ NetRenderTime
 
 Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
 
-- 参数：
+- <b>参数</b>：
 
   `filename` （***字符串***） – filename
 
@@ -1288,13 +1288,13 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
 
 `filename` 是要保存的合成的完整路径和名称。
 
-- 参数：
+- <b>参数</b>：
 
   `filename` （***字符串***） – filename
 
-- 返回：success 成功
+- <b>返回</b>：success 成功
 
-- 返回类型：布尔
+- <b>返回类型</b>：布尔
 
 ###### Composition.SaveAs()
 
@@ -1324,7 +1324,7 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
 
 存储方法因对象而异：Fusion应用程序本身调用的`SetData()`会将其数据保存在Fusion.prefs文件中，并且只要Fusion的副本正在运行，它就可以使用。在与`Composition`相关联的任何对象上调用`SetData()`将导致数据保存在.comp文件中，或者保存在可直接从该对象保存的任何设置文件中。一些与任何合成没有关联也没有以任何方式保存的短暂对象可能根本没有永久存储其数据，并且数据只会在对象本身存在的情况下持续存在。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   from pprint import pprint
@@ -1343,7 +1343,7 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
   dump(tool:GetData(“Modified”))
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `name` （***字符串***） – name
   
@@ -1363,21 +1363,21 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
 如果提供给它的任何参数无效，则返回`false`，否则返回`true`。请注意，如果尝试将偏好设置设置为无效值，则该函数仍将返回`true`。例如，尝试将FPS设置为`"Bob"`将失败，但该函数仍将返回`true`。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   comp.SetPrefs({ “Comp.Transport.FrameStep”:5, “Comp.FrameFormat.AspectX”:2 })
   comp.SetPrefs(“Comp.Interactive.BackgroundRender”, True)
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
   comp:SetPrefs({ [“Comp.Unsorted.GlobalStart”]=0, [“Comp.Unsorted.GlobalEnd”]=100 })
   comp:SetPref(“Comp.Interactive.BackgroundRender”, true)
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `prefname` （***字符串***） – prefname
 
@@ -1397,7 +1397,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
 如果提供给它的任何参数无效，则返回`false`，否则返回`true`。请注意，如果尝试将偏好设置设置为无效值，则该函数仍将返回`true`。例如，尝试将FPS设置为`"Bob"`将失败，但该函数仍将返回`true`。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   comp.SetPrefs({ “Comp.Transport.FrameStep”:5, “Comp.FrameFormat.AspectX”:2 })
@@ -1411,7 +1411,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
   comp:SetPref(“Comp.Interactive.BackgroundRender”, true)
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `prefs` （*表*） – prefs
 
@@ -1429,7 +1429,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
 在将撤消添加到堆栈之前，必须对组合进行实际更改（强制“脏”事件）。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   composition.StartUndo(“Add some tools”)
@@ -1449,7 +1449,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
   composition:EndUndo(true)
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `name` （***字符串***） – name
 
@@ -1469,7 +1469,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
 `count` 指定要触发的撤销事件数。
 
-- 参数：
+- <b>参数</b>：
 
   `count` （*数值*） – count
 
@@ -1481,7 +1481,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
 使用`Lock()`和`Unlock()`包围脚本通常很有用，尤其是在添加工具或修改合成时。这样做可确保Fusion不会弹出一个对话框来询问用户输入，如，添加Loader时，还可以加快脚本的操作，因为在解锁合成之前不会花费任何时间进行渲染。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   comp.Lock()
@@ -1490,7 +1490,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
   comp.Unlock()
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   comp:Lock()

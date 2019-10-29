@@ -6,7 +6,7 @@ Directional Light是一种有明确方向但没有明确光源的光。此光照
 
  ![3DL_tile](images/3DL_tile.jpg)
 
-**DirectionalLight.SceneInput** 
+**DirectionalLight.SceneInput 场景输入** 
 
 [橙色，可选的]这个输入需要一个3D场景。如果提供了场景，此工具中的Transform控件将应用于提供的整个场景。
 

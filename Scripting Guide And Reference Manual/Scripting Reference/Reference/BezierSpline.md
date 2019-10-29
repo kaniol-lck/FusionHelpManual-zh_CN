@@ -10,7 +10,7 @@
 
 若需animate点（Points），使用`Path`来代替。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   comp.Merge1.Blend= comp.BezierSpline()
@@ -18,7 +18,7 @@
   comp.Merge1.Blend[50] = 0
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   Merge1.Blend = BezierSpline()
@@ -40,7 +40,7 @@
 
 `pivotx, pivoty` 缩放的可选值。默认为零。
 
-- 参数：
+- <b>参数</b>：
 
   `start` （*数值*） – start
   `end` （*数值*） – end
@@ -55,7 +55,7 @@
 
 删除关键帧。
 
-- 参数：
+- <b>参数</b>：
 
   `start` （*数值*） – start
   `end` （*数值*） – end
@@ -80,7 +80,7 @@
 }
 ```
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   from pprint import pprint
@@ -96,7 +96,7 @@
       pprint(splinedata)
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 获取连接到Blend输入上的样条输出

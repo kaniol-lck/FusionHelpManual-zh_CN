@@ -80,11 +80,11 @@
 
  - [x] FlowView @kaniol-lck 
 
- - [ ] FontList
+ - [x] FontList @kaniol-lck 
 
- - [ ] FuFrame
+ - [x] FuFrame @kaniol-lck 
 
- - [ ] Fusion
+ - [x] Fusion @kaniol-lck 
 
  - [ ] FuView
 

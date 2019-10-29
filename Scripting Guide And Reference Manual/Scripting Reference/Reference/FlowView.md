@@ -8,14 +8,14 @@ FlowView表示带有所有工具的流程。
 
 工具的位置、其选择状态和视图缩放级别由此对象控制。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   # 获取当前FlowView
   flow = composition.CurrentFrame.FlowView
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 获取当前FlowView
@@ -38,23 +38,23 @@ FlowView表示带有所有工具的流程。
 
 此函数返回两个包含工具的X和Y坐标的数值。在Python中使用GetPosTable来代替。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   flow = comp.CurrentFrame.FlowView
   x, y = flow.GetPosTable(comp.Background1).values()
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   flow = comp.CurrentFrame.FlowView
   x, y = flow:GetPos(tool)
   ```
 
-- 返回：x
+- <b>返回</b>：x
 
-- 返回类型：数值
+- <b>返回类型</b>：数值
 
 ###### FlowView.GetPosTable(*tool*)
 
@@ -62,27 +62,27 @@ FlowView表示带有所有工具的流程。
 
 在Python中使用它来获取X和Y值。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   flow = comp.CurrentFrame.FlowView
   x, y = flow.GetPosTable(comp.Background1).values()
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   flow = comp.CurrentFrame.FlowView
   x, y = flow:GetPos(tool)
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `tool` （***对象***） – tool
 
-- 返回：pos 位置
+- <b>返回</b>：pos 位置
 
-- 返回类型：表
+- <b>返回类型</b>：表
 
 ###### FlowView.GetScale()
 
@@ -90,8 +90,8 @@ FlowView表示带有所有工具的流程。
 
 此函数返回一个数值，指示FlowView的当前比例。`1`表示100％，而`0.1`表示默认比例的10％。
 
-- 返回：scale 比例
-- 返回类型：数值
+- <b>返回</b>：scale 比例
+- <b>返回类型</b>：数值
 
 ###### FlowView.QueueSetPos(*tool, x, y*) 
 
@@ -99,7 +99,7 @@ FlowView表示带有所有工具的流程。
 
 一旦调用`FlushSetPosQueue()`，将核算所有队列的移动。
 
-- 参数：
+- <b>参数</b>：
 
   `tool` （***对象***） – tool
 
@@ -119,7 +119,7 @@ FlowView表示带有所有工具的流程。
 
 如果不带参数调用，该函数将清除当前选择中的所有工具。
 
-- 参数：
+- <b>参数</b>：
 
   `tool` （***对象***） – tool
 
@@ -129,7 +129,7 @@ FlowView表示带有所有工具的流程。
 
 将工具移动到新位置。
 
-- Python用法：
+- <b>Python用法</b>：
 
   ```python
   # 将所有选定的工具与ActiveTool的x坐标对齐
@@ -141,7 +141,7 @@ FlowView表示带有所有工具的流程。
   
   ```
 
-- Lua用法：
+- <b>Lua用法</b>：
 
   ```lua
   -- 将所有选定的工具与ActiveTool的x坐标对齐
@@ -153,7 +153,7 @@ FlowView表示带有所有工具的流程。
   end
   ```
 
-- 参数：
+- <b>参数</b>：
 
   `tool` （***对象***） – tool
 
@@ -167,6 +167,6 @@ FlowView表示带有所有工具的流程。
 
 此函数将`FlowView`重新调整为指定的量。 `scale`参数的值为`1`会将`FlowView`设置为100％，而值为`0.1`会将其设置为默认比例的10％。
 
-- 参数：
+- <b>参数</b>：
   
   `scale` （*数值*） – scale

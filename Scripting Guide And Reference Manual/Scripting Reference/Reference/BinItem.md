@@ -14,13 +14,13 @@
 
 ###### 见Composition:GetData()。
 
-- 参数：
+- <b>参数</b>：
 
   `name` （***字符串***） – name
   
-- 返回：value 值
+- <b>返回</b>：value 值
 
-- 返回类型：（数值|字符串|布尔|表）
+- <b>返回类型</b>：（数值|字符串|布尔|表）
 
 ###### BinItem.SetData(*name, value*)
 
@@ -28,7 +28,7 @@
 
 见`Composition:SetData()`。
 
-- 参数：
+- <b>参数</b>：
 
   `name` （***字符串***） – name
 

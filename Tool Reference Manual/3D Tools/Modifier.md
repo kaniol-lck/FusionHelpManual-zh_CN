@@ -8,7 +8,7 @@
 
 要添加Coordinate Transform修饰符，只需右键单击任何工具上的数字输入，并从Controls上下文菜单中选择Modify With/CoordTransform Position。
 
-#### Controls Tab
+#### Controls 控件
 
 ![Modifier_Controls](images/Modifier_Controls.jpg)
 

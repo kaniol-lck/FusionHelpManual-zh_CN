@@ -160,6 +160,10 @@ li p.first {
   display: inline-block;
 }
 
+ul {
+  list-style-image: url("./right-arrow-forward.svg");
+}
+
 ul,
 ol {
   padding-left: 30px;
