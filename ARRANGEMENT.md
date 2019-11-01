@@ -124,7 +124,7 @@
 
  - [x] Object
 
- - [ ] Operator
+ - [x] Operator
 
  - [ ] Parameter
 
