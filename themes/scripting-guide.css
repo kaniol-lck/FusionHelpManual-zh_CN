@@ -244,7 +244,7 @@ table tr td:nth-child(n+2) {
 code,
 tt {
   color: #cb4b16;
-  font-family: "Fira Code Retina", Consolas, "Roboto Mono", "Liberation Mono", Courier, monospace;
+  font-family: Consolas, "Roboto Mono", "Liberation Mono", Courier, monospace;
   padding: 2px 4px 0px 4px;
   font-size: 0.9em;
 }
@@ -477,7 +477,7 @@ tr:hover#!img,th:hover#!img{
 }
 .md-fences{
   background-color:#f4f3f4;
-  font-family: "Fira Code Retina", Consolas,"Courier New",Courier,FreeMono,monospace;
+  font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
 }
 #write code{
   color: #325caa;

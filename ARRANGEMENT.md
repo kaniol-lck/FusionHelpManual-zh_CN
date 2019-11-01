@@ -126,9 +126,9 @@
 
  - [x] Operator
 
- - [ ] Parameter
+ - [x] Parameter
 
- - [ ] PlainInput
+ - [x] PlainInput
 
  - [ ] PlainOutput
 
