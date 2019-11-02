@@ -130,7 +130,7 @@
 
  - [x] PlainInput
 
- - [ ] PlainOutput
+ - [x] PlainOutput
 
  - [ ] PolylineMask
 
