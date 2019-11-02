@@ -132,24 +132,24 @@
 
  - [x] PlainOutput
 
- - [ ] PolylineMask
+ - [x] PolylineMask
 
- - [ ] Preview
+ - [x] Preview
 
- - [ ] QueueManager
+ - [x] QueueManager
 
- - [ ] Registry
+ - [x] Registry
 
- - [ ] RenderJob
+ - [x] RenderJob
 
- - [ ] RenderSlave
+ - [x] RenderSlave
 
- - [ ] ScriptServer
+ - [x] ScriptServer
 
- - [ ] SourceOperator
+ - [x] SourceOperator
 
- - [ ] TimeRegion
+ - [x] TimeRegion
 
- - [ ] TransformMatrix
+ - [x] TransformMatrix
 
  - [ ] ##### Index 索引
