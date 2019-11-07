@@ -30,7 +30,7 @@
 
 ##### 第一步
 
-首先，我们需要通过菜单的Script->Edit->New…创建一个脚本。
+首先，我们需要通过菜单的*Script->Edit->New…*创建一个脚本。
 
 ![NewScript](images/NewScript.jpg)
 
@@ -105,8 +105,8 @@ tools:SetAttrs( { TOOLB_PassThrough = True } )
 ```Lua
 --源文件: 01 禁用未选中的保存器（Saver）
 comp:Lock()
-local selectedSavers = comp:GetToolList(true, “Saver”)
-local allSavers = comp:GetToolList(false, “Saver”)
+local selectedSavers = comp:GetToolList(true, "Saver")
+local allSavers = comp:GetToolList(false, "Saver")
 for i, currentSaver in pairs(allSavers) do
     local isSelected = false
     
@@ -134,8 +134,8 @@ comp:Unlock()
 以下两行简单地返回一个元组包含所有选中的Saver及所有独立的Saver。
 
 ```Lua
-selectedSavers = comp:GetToolList(true, “Saver”)
-allSavers = comp:GetToolList(false, “Saver”)
+selectedSavers = comp:GetToolList(true, "Saver")
+allSavers = comp:GetToolList(false, "Saver")
 ```
 
 第一个循环迭代所有的的Saver。

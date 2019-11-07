@@ -27,7 +27,7 @@
 - <b>参数</b>：
   `start` （*数值*） – start
   `end` （*数值*） – end
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### PlainOutput.EnableDiskCache(*enable*, *path*, *lockCache*, *lockBranch*, *delete*, *preRender*, *useNetwork*)
@@ -62,7 +62,7 @@
   BC1.Output:EnableDiskCache(true,"c:\\temp\\BC.0000.raw")
   ```
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -90,7 +90,7 @@
   `time` （*数值*） – time
   `flags` （*数值*） – flags
   `proxy` （*数值*） – proxy
-- <b>返回</b>：dod
+- <b>返回</b>：dod 定义域
 - <b>返回类型</b>：表
 
 ###### PlainOutput.GetValue(\[*time*\]\[, *flags*\]\[, *proxy*\])
@@ -127,7 +127,7 @@
 
 （译注：这一段的格式有点乱，我也不能保证正确性。）
 
-- <b>返回</b>：value
+- <b>返回</b>：value 值
 - <b>返回类型</b>：`Parameter`
 
 ###### PlainOutput.ShowDiskCacheDlg()
@@ -136,5 +136,5 @@
 
 注意这是一个模态对话框。脚本的执行将等待用户关闭对话框。如果取消，则返回`false`，否则返回`true`。
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔

@@ -70,7 +70,7 @@ https://docs.python.org/3.3/
 
 ##### 安装
 
-###### Windows
+**<b>Windows</b>**
 
 您需要在您的系统上安装最新的Python 2.7或Python 3.3，以便能够在Fusion中使用。为了匹配Fusion，需要64位编译。
 
@@ -82,7 +82,7 @@ https://www.python.org/downloads/windows/
 
 这样，Python库安装完成，Fusion就可以在启动时就能获取它。继续以下的安装。
 
-###### Mac OS X
+**<b>Mac OS X</b>**
 
 您需要在您的系统上安装最新的Python 2.7或Python 3.3，以便能够在Fusion中使用。为了匹配Fusion，需要64位编译。
 
@@ -157,13 +157,13 @@ https://docs.python.org/3.3/library/
 比如像这样的列表：
 
 ```Python
-l = [“a”, “b”, “c”] 
+l = ["a", "b", "c"] 
 ```
 
 需要这样的字典
 
 ```Python
-d = {1: “a”, 2: “b”, 3:”c” }
+d = {1: "a", 2: "b", 3:"c" }
 ```
 
 请注意Lua使用1而不是0作为元组的第一个索引值。Python字典没有特定的顺序。因此，只有键指示它们的顺序。
@@ -217,13 +217,13 @@ l = [item[1] for item in sorted(d.items())]
 控制台设置成Py2并执行：
 
 ```Python
-composition.Execute(“dump(comp:GetAttrs())”)
+composition.Execute("dump(comp:GetAttrs())")
 ```
 
 而在Lua中以字符串执行Python：
 
 ```Lua
-composition:Execute(“!Py: print(comp.GetAttrs())”)
+composition:Execute("!Py: print(comp.GetAttrs())")
 ```
 
 要指定特定的Python版本，使用`!Py2:`或`!Py3:`。

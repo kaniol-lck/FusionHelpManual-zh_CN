@@ -85,7 +85,7 @@
   myblur.Input = nil
   ```
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -135,7 +135,7 @@
   myblur.Input = nil
   ```
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -145,7 +145,7 @@
 
 注意，根据设计，输入只能连接到单个输出，而一个输出可能是分支的并且连接到多个输入。
 
-- <b>返回</b>：ouput
+- <b>返回</b>：ouput 输出
 - <b>返回类型</b>：`Output`
 
 ###### PlainInput.GetExpression()
@@ -160,7 +160,7 @@
 
 `GetKeyFrames()`函数用于确定哪些帧已在样条上对输入进行了关键帧设置。它返回一个显示用户为输入定义关键帧的表。
 
-- <b>返回</b>：keyframes
+- <b>返回</b>：keyframes 关键帧
 - <b>返回类型</b>：表
 
 ###### PlainInput.HideViewControls(*hide*)
@@ -251,12 +251,12 @@
 
 返回此输入的视图控件的可见状态。
 
-- <b>返回</b>：hidden
+- <b>返回</b>：hidden 隐藏
 - <b>返回类型</b>：布尔
 
 ###### PlainInput.WindowControlsVisible()
 
 返回此输入的窗口控件的可见状态。
 
-- <b>返回</b>：hidden
+- <b>返回</b>：hidden 隐藏
 - <b>返回类型</b>：布尔

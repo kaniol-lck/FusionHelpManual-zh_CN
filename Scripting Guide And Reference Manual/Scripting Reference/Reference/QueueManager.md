@@ -57,7 +57,7 @@
   `groups` （***字符串***） – groups
   `frames` （***字符串***） – frames
   `endscript` （***字符串***） – endscript
-- <b>返回</b>：job
+- <b>返回</b>：job 作业
 - <b>返回类型</b>：`Render`
 
 ###### QueueManager.AddJob(*args*)
@@ -80,7 +80,7 @@
 
 - <b>参数</b>：
   `args` （*表*） – args
-- <b>返回</b>：job
+- <b>返回</b>：job 作业
 - <b>返回类型</b>：`Render`
 
 ###### QueueManager.AddSlave(*name*\[, *groups*\]\[, *unused*\])
@@ -99,7 +99,7 @@
   `name` （***字符串***） – name
   `groups` （***字符串***） – groups
   `unused` （*布尔*） – unused
-- <b>返回</b>：slave
+- <b>返回</b>：slave 从属设备
 - <b>返回类型</b>：`RenderSlave`
 
 ###### QueueManager.AddWatch()
@@ -116,7 +116,7 @@
 
 返回此`QueueManager`中从属设备使用的所有各种组的表。
 
-- <b>返回</b>：groups
+- <b>返回</b>：groups 组
 - <b>返回类型</b>：表
 
 ###### QueueManager.GetID()
@@ -205,7 +205,7 @@
   end
   ```
 
-- <b>返回</b>：slaves
+- <b>返回</b>：slaves 从属设备
 
 - <b>返回类型</b>：表
 
@@ -230,7 +230,7 @@
 
 - <b>参数</b>：
   `filename` （***字符串***） – filename
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### QueueManager.Log(*message*)
@@ -334,7 +334,7 @@
 
 - <b>参数</b>：
   `filename` （***字符串***） – filename
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### QueueManager.ScanForSlaves()

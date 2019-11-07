@@ -9,12 +9,18 @@
 ###### TimeRegion.Start
 
 - <b>获取</b>：
-  `val = TimeRegion.Start – (number)`
+  
+  ```lua
+  val = TimeRegion.Start -- (number)
+  ```
 
 ###### TimeRegion.End
 
 - <b>获取</b>：
-  `val = TimeRegion.End – (number)`
+  
+  ```lua
+  val = TimeRegion.End -- (number)
+  ```
 
 ##### 方法
 
@@ -36,12 +42,12 @@
 
 返回字符串描述。
 
-- <b>返回</b>：frames
+- <b>返回</b>：frames 帧
 - <b>返回类型</b>：字符串
 
 ###### TimeRegion.ToTable()
 
 返回`{start, end}`对形式的表。
 
-- <b>返回</b>：frames
+- <b>返回</b>：frames 帧
 - <b>返回类型</b>：表

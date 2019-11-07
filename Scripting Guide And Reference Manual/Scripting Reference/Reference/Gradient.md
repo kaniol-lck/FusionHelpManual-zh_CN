@@ -11,7 +11,16 @@
 表格形式的渐变。
 
 - <b>获取</b>：
-  `gradient = Gradient.Value – (table)`
+  
+  ```lua
+  gradient = Gradient.Value -- (table)
+  ```
+  
 - <b>设置</b>：
-  `Gradient.Value = gradient – (table)`
+  
+  ```lua
+  Gradient.Value = gradient -- (table)
+  ```
+  
+  
 

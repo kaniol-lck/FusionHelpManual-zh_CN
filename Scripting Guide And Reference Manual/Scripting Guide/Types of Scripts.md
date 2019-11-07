@@ -20,7 +20,7 @@ Fusion根据上下文支持不同类型的脚本，例如，你也许有一个�
 
 ##### Tool Script 工具脚本
 
-工具脚本（Tool Script）作用于单个工具。它们被存储于*Scripts:/Tool*文件夹内并可以从工具属性的右键上下文菜单中访问或编辑。当被调用是，Fusin、合成和特定工具对象将作为变量可用。
+工具脚本（Tool Script）作用于单个工具。它们被存储于*Scripts:/Tool*文件夹内并可以从工具属性的右键上下文菜单中访问或编辑。当被调用是，Fusion、合成和特定工具对象将作为变量可用。
 
 ##### Bin Script 工具箱脚本
 
@@ -34,7 +34,7 @@ Fusion根据上下文支持不同类型的脚本，例如，你也许有一个�
 
 ##### Script Libraries 脚本库
 
-scriptlib是一个包含可用于多个脚本的函数库的文件。包含在Fusion默认安装中的是bmd.scriptlib，它含有常见的实用函数。scriptlib中可以附加一些额外的东西，如变量声明（例如添加到全局表）。脚本库被安装到脚本路径（默认为*Scripts:*）的根目录下。在这个路径中，任何有`.scriptlib`扩展名的文件都会在Fusion启动时运行。为了在一个合成创建或打开时执行一个scriptlib，将scriptlib放在Scripts:/Comp来代替。scriptlib所添加的好处是你可以指示Fusion在每次合成创建或打开时运行一些代码。这个的缺点是Fusion将以任意顺序执行脚本目录中的文件。这意味着任何你写的依赖于其他库的脚本库中的代码都有可能无法工作。为了解决这个问题，尝试在scriptlib的顶部插入所需要的函数。
+scriptlib是一个包含可用于多个脚本的函数库的文件。包含在Fusion默认安装中的是bmd.scriptlib，它含有常见的实用函数。scriptlib中可以附加一些额外的东西，如变量声明（例如添加到全局表）。脚本库被安装到脚本路径（默认为*Scripts:*）的根目录下。在这个路径中，任何有`.scriptlib`扩展名的文件都会在Fusion启动时运行。为了在一个合成创建或打开时执行一个scriptlib，将scriptlib放在*Scripts:/Comp*来代替。scriptlib所添加的好处是你可以指示Fusion在每次合成创建或打开时运行一些代码。这个的缺点是Fusion将以任意顺序执行脚本目录中的文件。这意味着任何你写的依赖于其他库的脚本库中的代码都有可能无法工作。为了解决这个问题，尝试在scriptlib的顶部插入所需要的函数。
 
 除了将函数传递到合成的全局环境外，scriptlib还可以设置来对合成完成默认操作。
 
@@ -98,7 +98,7 @@ FuScript <script> [args] -l python3
 事件套件（Event Suites）在Fusion中被安装为某些事件的回调。像普通的scriptlib一样安装它们。在scriptlib中，添加以下变量：
 
 ```lua
-ev = AddEventSuite(“Composition”)
+ev = AddEventSuite("Composition")
 ```
 
 这个变量现在可以在某些事件触发时访问该事件。
@@ -117,11 +117,11 @@ ev = AddEventSuite(“Composition”)
 **比如：**在*Scripts:/Comp*文件夹中创建叫作`PrintSaverPathsOnRender.scriptlib`的文件。输入以下内容：
 
 ```Lua
-globals.ev = AddEventSuite(“Composition”)
+globals.ev = AddEventSuite("Composition")
 function ev:OnStartRender(event)
-    local toollist=comp:GetToolList(“Saver”)
+    local toollist=comp:GetToolList("Saver")
     for i, tool in pairs(toollist) do
-        print(tool:GetInput(“Clip”))
+        print(tool:GetInput("Clip"))
     end
     self:Default(event)
 end
@@ -154,11 +154,11 @@ RemoveEventSuite(ev)
 ```lua
 UserControls = ordered() {
     PrintHello = {
-        LINKID_DataType = “Number”,
+        LINKID_DataType = "Number",
         INP_Default = 0,
-        BTNCS_Execute = “print(\”Hello\”)”,
-        LINKS_Name = “Print Hello”,
-        INPID_InputControl = “ButtonControl”,
+        BTNCS_Execute = "print(\"Hello\")", --译注：这里换成单引号或[[]]显然更好
+        LINKS_Name = "Print Hello",
+        INPID_InputControl = "ButtonControl",
     },
 },
 ```

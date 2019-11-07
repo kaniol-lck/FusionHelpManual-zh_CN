@@ -36,8 +36,8 @@
 
 ###### IOClass.Write()
 
-写。
+写入。
 
 ###### IOClass.WriteLine()
 
-写行。
+写入行。

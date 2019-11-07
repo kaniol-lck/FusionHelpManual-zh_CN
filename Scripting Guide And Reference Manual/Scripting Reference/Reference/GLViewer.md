@@ -40,35 +40,35 @@
 
 如果控件正在视图中显示，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLViewer.AreGuidesShown()
 
 如果在视图上显示图像参考线，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLViewer.GetAlphaOverlayColor()
 
 返回正在使用的Alpha叠加层。
 
-- <b>返回</b>：color
+- <b>返回</b>：color 颜色
 - <b>返回类型</b>：数值
 
 ###### GLViewer.GetAspectCorrection()
 
 如果查看者正在校正图像的宽高比，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLViewer.GetChannel()
 
 返回显示哪个通道。
 
-- <b>返回</b>：channel
+- <b>返回</b>：channel 通道
 - <b>返回类型</b>：数值
 
 ###### GLViewer.GetPos()
@@ -84,7 +84,7 @@
 
 以表的形式获取查看器的位置。
 
-- <b>返回</b>：pos
+- <b>返回</b>：pos 位置
 - <b>返回类型</b>：表
 
 ###### GLViewer.GetRot()
@@ -100,14 +100,14 @@
 
 以表的形式获取视图的旋转角度。
 
-- <b>返回</b>：rot
+- <b>返回</b>：rot 旋转
 - <b>返回类型</b>：表
 
 ###### GLViewer.GetScale()
 
 获取视图的比例（缩放）。
 
-- <b>返回</b>：scale
+- <b>返回</b>：scale 比例
 - <b>返回类型</b>：数值
 
 ###### GLViewer.LoadFile(*filename*)
@@ -167,7 +167,7 @@
   `x` （*数值*） – x
   `y` （*数值*） – y
   `z` （*数值*） – z
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### GLViewer.SetRot(*x*, *y*, *z*)

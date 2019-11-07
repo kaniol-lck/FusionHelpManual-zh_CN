@@ -145,7 +145,7 @@ if(tool ~= nil) then
     while(true) do
         out = (tool:FindMainInput(i))
         if out == nil then break end
-        print(string.format(“\tMainInput %d: %s”, i, out.Name))
+        print(string.format("\tMainInput %d: %s", i, out.Name))
         i = i + 1
     end
     
@@ -153,7 +153,7 @@ if(tool ~= nil) then
     while(true) do
         out = (tool:FindMainOutput(i))
         if out == nil then break end
-        print(string.format(“\tMainOutput %d: %s”, i, out.Name))
+        print(string.format("\tMainOutput %d: %s", i, out.Name))
         i = i + 1
     end
 end     
@@ -163,13 +163,13 @@ end
 
 与主输入和主输出相邻的是其他输入与输出。如果输入没有被隐藏的话，它们会在属性视图中以输入控件显示。而底层数据类型（DataType）也许仍是相同的。比如，数值数据类型可以通过滑块控件、复选框、下拉列表、多按钮等等访问。
 
-要查询输入的数据类型，使用`inp:GetAttrs(“INPS_DataType”)`。
+要查询输入的数据类型，使用`inp:GetAttrs("INPS_DataType")`。
 
-要查询输出的数据类型，使用`outp:GetAttrs(“OUTS_DataType”)`。
+要查询输出的数据类型，使用`outp:GetAttrs("OUTS_DataType")`。
 
 一个控件允许用户在属性视图修改底层数据类型对应的值。一个可选的预览控件允许直接在监视器中修改值。
 
-在写脚本时，输入的值可以用赋值直接修改，通过代表特定时间的索引或通过使用`tool:SetInput(“InputName”, value, [time])`。
+在写脚本时，输入的值可以用赋值直接修改，通过代表特定时间的索引或通过使用`tool:SetInput("InputName", value, [time])`。
 
 如后所示，指定时间只对输入动画有意义。只支持简单的数据类型，如整数、浮点数和字符串。
 
@@ -178,7 +178,7 @@ end
 ```lua
 Merge1.Angle = 10                 -- 将Angle设置为10
 Merge1.Angle[5] = 20              -- 在第5帧将Angle设置为20
-Merge1:SetInput(“Angle”, 20, 5)   -- 同上
+Merge1:SetInput("Angle", 20, 5)   -- 同上
 ```
 
 像这样得到给定输入的值：
@@ -187,7 +187,7 @@ Merge1:SetInput(“Angle”, 20, 5)   -- 同上
 print(Merge1.Angle)                   -- 获取Angle输入句柄
 print(Merge1.Angle[TIME_UNDEFINED])   -- 获取Angle值
 print(Merge1.Angle[5])                -- 获取Angle第五帧时的值
-Merge1:GetInput(“Angle”, 5)           -- 同上
+Merge1:GetInput("Angle", 5)           -- 同上
 ```
 
 请注意你不能使用`Merge1.Angle`来检索值，因为这将返回输入句柄。
@@ -196,7 +196,7 @@ Merge1:GetInput(“Angle”, 5)           -- 同上
 
 与流程上的主输入类似，输入可以连接到别的输出，如已Publish输入，已Animate输入或修改器。虽然没有用流程表示，类似的连接流程对于所有输入来说都是可能的。主要区别在于主输入处理图像数据、遮罩、三维数据、粒子流而常规输入处理数值、点和文本等。
 
-无论是否是主输入，所有输入都可以通过`tool:GetInputList()`列出。所有输出都可以通过`tool:GetOutpuList()`列出。在这两种情况下，都可以指定数据类型的可选滤镜。此外，如果已知名称则输入和输出可以作为工具的属性被直接访问。如果将鼠标悬停在输入上，状态栏将显示其名称。例如， 要访问BrightnessContrast工具的Gain输入，使用：BrightnessContrast1.Gain。
+无论是否是主输入，所有输入都可以通过`tool:GetInputList()`列出。所有输出都可以通过`tool:GetOutpuList()`列出。在这两种情况下，都可以指定数据类型的可选滤镜。此外，如果已知名称则输入和输出可以作为工具的属性被直接访问。如果将鼠标悬停在输入上，状态栏将显示其名称。例如， 要访问BrightnessContrast工具的Gain输入，使用：`BrightnessContrast1.Gain`。
 
 ##### Connections 连接
 
@@ -286,31 +286,86 @@ Merge1.Blend = nil
 ```lua
 ==Merge1:GetAttrs()                 -- 转储所有工具属性
 ==Merge1.Blend:GetAttrs()           -- 输入也拥有属性
-==Merge1:GetAttrs(“TOOLB_Locked”)   -- 只显示锁定状态
+==Merge1:GetAttrs("TOOLB_Locked")   -- 只显示锁定状态
 ```
 
 标签由类型前缀、类型字符、下划线与属性名组成。比如说多数工具内的属性都有`TOOL`前缀，输入`INP`，合成`COMP`等等。
 
 类型字符分别代表：
 
-| 类型字符 | 类型           |
-| -------- | -------------- |
-| S        | String         |
-| B        | Boolean        |
-| N        | Number (float) |
-| I        | Integer        |
-| H        | Handle         |
-| NT       | Number Table   |
-| IT       | Integer Table  |
-| ST       | String Table   |
-| BT       | Boolean Table  |
+<table class = "guide-table">
+  <thead>
+    <tr>
+      <th>
+        类型字符</th>
+      <th>
+        类型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        S</td>
+      <td>
+        String 字符串</td>
+    </tr>
+    <tr>
+      <td>
+        B</td>
+      <td>
+        Boolean 布尔</td>
+    </tr>
+    <tr>
+      <td>
+        N</td>
+      <td>
+        Number (float) 数值（浮点）</td>
+    </tr>
+    <tr>
+      <td>
+        I</td>
+      <td>
+        Integer 整型</td>
+    </tr>
+    <tr>
+      <td>
+        H</td>
+      <td>
+        Handle 句柄</td>
+    </tr>
+    <tr>
+      <td>
+        NT</td>
+      <td>
+        Number Table 数值表</td>
+    </tr>
+    <tr>
+      <td>
+        IT</td>
+      <td>
+        Integer Table 整型表</td>
+    </tr>
+    <tr>
+      <td>
+        ST</td>
+      <td>
+        String Table 字符串表</td>
+    </tr>
+    <tr>
+      <td>
+        BT</td>
+      <td>
+        Boolean Table 布尔表</td>
+    </tr>
+  </tbody>
+</table>
 
 在我们的例子中，`TOOLB_Locked`代表了类型为布尔且名称为`"Locked"`的工具属性。
 
 属性可以通过`SetAttrs({})`设置。所提供的表必须以标签为键而以新值为值。多个属性可以同时修改，但不是所有属性都可以更改。下例在一次调用中重命名`"Merge1"`为`"MyMerge"`并锁定了工具：
 
 ```lua
-Merge1:SetAttrs({TOOLS_Name = “MyMerge”, TOOLB_Locked = true})
+Merge1:SetAttrs({TOOLS_Name = "MyMerge", TOOLB_Locked = true})
 ```
 
 #### Object Data 对象数据
@@ -329,7 +384,7 @@ Merge1:SetAttrs({TOOLS_Name = “MyMerge”, TOOLB_Locked = true})
 if globals.mytool_lastpath then
     path = mytool_lastpath
 else
-    path = “default/path”
+    path = "default/path"
 end
 
 -- ... 带路径的对话框
@@ -342,25 +397,25 @@ globals.mytool_lastpath = path
 但对于我们的场景来说，使用Fusion偏好设置存储每个最新路径可能会更明智一些，即使Fusion被关闭并重新打开。
 
 ```lua
-local last_path = fusion:GetData(“mytool.lastpath”)
+local last_path = fusion:GetData("mytool.lastpath")
 if last_path then
    path = last_path
 else
-   path = “default/path”
+   path = "default/path"
 end
 
 -- ... 带路径的对话框
 
-fusion:SetData(“mytool.lastpath”, path)
+fusion:SetData("mytool.lastpath", path)
 ```
 
 然而，另一种策略也许用合成来存储数据，因此每个合成都可以有自己的路径。简单地用合成或任何其他相应的上下文替换Fusion。
 
-请注意点符号不是随机的。点代表子表。因此，您可以在`“mytool”`中放置多个变量甚至其他嵌套表。利用此优势，如定义代表工作室的域宽根名称、带有工具及其各自的设置的子表：
+请注意点符号不是随机的。点代表子表。因此，您可以在`"mytool"`中放置多个变量甚至其他嵌套表。利用此优势，如定义代表工作室的域宽根名称、带有工具及其各自的设置的子表：
 
 ```lua
-fusion:SetData(“MyStudioInc.MyCompTool.DoMagic”, true)
-fusion:SetData(“MyStudioInc.MyRenderSettings.RemoteNames”, “clients”)
+fusion:SetData("MyStudioInc.MyCompTool.DoMagic", true)
+fusion:SetData("MyStudioInc.MyRenderSettings.RemoteNames", "clients")
 ...
 ```
 

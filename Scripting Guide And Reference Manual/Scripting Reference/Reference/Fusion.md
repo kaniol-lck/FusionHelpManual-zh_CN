@@ -8,24 +8,24 @@
 
 ##### Fusion属性
 
-| 属性名称                                | 类型   | 描述                                                         |
-| --------------------------------------- | ------ | ------------------------------------------------------------ |
-| FUSIONS_FileName                        | 字符串 | Fusion.exe文件的路径。                                       |
-| FUSIONS_Version                         | 字符串 | 所连接FUSION的版本，可以是字符串（FUSION_Version）或数字（FUSIONI_VersionHi，FUSIONI_VersionLo）格式。 |
-| FUSIONI_SerialHi<br/>FUSIONI_SerialLo   | 整型   | 所连接Fusion许可证的序列号。                                 |
-| FUSIONS_MachineType                     | 字符串 | 机器的类型（OS和CPU）。                                      |
-| FUSIONI_NumProcessors                   | 整型   | 运行Fusion的机器中存在的处理器数。                           |
-| FUSIONB_IsManager                       | 布尔   | 表示此Fusion当前是否为渲染主机。                             |
-| FUSIONI_MemoryLoad                      | 整型   | 机器当前的内存负载百分比，从0到100。                         |
-| FUSIONI_PhysicalRAMTotalMB              | 整型   | 物理RAM的总量，以MB为单位。                                  |
-| FUSIONI_PhysicalRAMFreeMB               | 整型   | 可用的物理RAM量，以MB为单位。                                |
-| FUSIONI_VirtualRAMTotalMB               | 整型   | 虚拟RAM的总量，以MB为单位。                                  |
-| FUSIONI_VirtualRAMUsedMB                | 整型   | 正在使用的虚拟RAM总量，以MB为单位。                          |
-| FUSIONB_IsPost                          | 布尔   | 表示此Fusion是否为Post许可证。                               |
-| FUSIONB_IsDemo                          | 布尔   | 表示此Fusion是否为Demo许可证。                               |
-| FUSIONB_IsRenderNode                    | 布尔   | 表示此Fusion是否为Render Node许可证。                        |
-| FUSIONH_CurrentComp                     | 句柄   | 返回Fusion中具有焦点的当前合成的句柄。                       |
-| FUSIONI_VersionHi<br/>FUSIONI_VersionLo | 整型   |                                                              |
+| 属性名称                                    | 类型   | 描述                                                         |
+| ------------------------------------------- | ------ | ------------------------------------------------------------ |
+| `FUSIONS_FileName`                          | 字符串 | Fusion.exe文件的路径。                                       |
+| `FUSIONS_Version`                           | 字符串 | 所连接FUSION的版本，可以是字符串（FUSION_Version）或数字（FUSIONI_VersionHi，FUSIONI_VersionLo）格式。 |
+| `FUSIONI_SerialHi`<br/>`FUSIONI_SerialLo`   | 整型   | 所连接Fusion许可证的序列号。                                 |
+| `FUSIONS_MachineType`                       | 字符串 | 机器的类型（OS和CPU）。                                      |
+| `FUSIONI_NumProcessors`                     | 整型   | 运行Fusion的机器中存在的处理器数。                           |
+| `FUSIONB_IsManager`                         | 布尔   | 表示此Fusion当前是否为渲染主机。                             |
+| `FUSIONI_MemoryLoad`                        | 整型   | 机器当前的内存负载百分比，从0到100。                         |
+| `FUSIONI_PhysicalRAMTotalMB`                | 整型   | 物理RAM的总量，以MB为单位。                                  |
+| `FUSIONI_PhysicalRAMFreeMB`                 | 整型   | 可用的物理RAM量，以MB为单位。                                |
+| `FUSIONI_VirtualRAMTotalMB`                 | 整型   | 虚拟RAM的总量，以MB为单位。                                  |
+| `FUSIONI_VirtualRAMUsedMB`                  | 整型   | 正在使用的虚拟RAM总量，以MB为单位。                          |
+| `FUSIONB_IsPost`                            | 布尔   | 表示此Fusion是否为Post许可证。                               |
+| `FUSIONB_IsDemo`                            | 布尔   | 表示此Fusion是否为Demo许可证。                               |
+| `FUSIONB_IsRenderNode`                      | 布尔   | 表示此Fusion是否为Render Node许可证。                        |
+| `FUSIONH_CurrentComp`                       | 句柄   | 返回Fusion中具有焦点的当前合成的句柄。                       |
+| `FUSIONI_VersionHi`<br/>`FUSIONI_VersionLo` | 整型   |                                                              |
 
 ##### 成员
 
@@ -36,7 +36,7 @@
 - <b>获取</b>：
 
   ```lua
-  bins = Fusion.Bins – (Bins)
+  bins = Fusion.Bins -- (Bins)
   ```
 
 ###### Fusion.Build
@@ -46,7 +46,7 @@
 - <b>获取</b>：
 
   ```lua
-  build = Fusion.Build – (number)
+  build = Fusion.Build -- (number)
   ```
 
 ###### Fusion.CacheManager
@@ -56,7 +56,7 @@
 - <b>获取</b>：
 
   ```lua
-  cm = Fusion.CacheManager – (CacheManager)
+  cm = Fusion.CacheManager -- (CacheManager)
   ```
 
 ###### Fusion.CurrentComp
@@ -66,7 +66,7 @@
 - <b>获取</b>：
 
   ```lua
-  comp = Fusion.CurrentComp – (Composition)
+  comp = Fusion.CurrentComp -- (Composition)
   ```
 
 ###### Fusion.FileLogging()
@@ -82,7 +82,7 @@
 - <b>获取</b>：
 
   ```lua
-  fm = Fusion.FontManager – (FontList)
+  fm = Fusion.FontManager -- (FontList)
   ```
 
 ###### Fusion.HotkeyManager
@@ -92,7 +92,7 @@
 - <b>获取</b>：
 
   ```lua
-  hkm = Fusion.HotkeyManager – (HotkeyManager)
+  hkm = Fusion.HotkeyManager -- (HotkeyManager)
   ```
 
 ###### Fusion.MenuManager
@@ -102,7 +102,7 @@
 - <b>获取</b>：
 
   ```lua
-  mm = Fusion.MenuManager – (MenuManager)
+  mm = Fusion.MenuManager -- (MenuManager)
   ```
 
 ###### Fusion.QueueManager
@@ -112,7 +112,7 @@
 - <b>获取</b>：
 
   ```lua
-  qm = Fusion.QueueManager – (QueueManager)
+  qm = Fusion.QueueManager -- (QueueManager)
   ```
 
 ###### Fusion.RenderManager
@@ -122,7 +122,7 @@
 - <b>获取</b>：
 
   ```lua
-  qm = Fusion.RenderManager – (QueueManager)
+  qm = Fusion.RenderManager -- (QueueManager)
   ```
 
 ###### Fusion.Version
@@ -132,7 +132,7 @@
 - <b>获取</b>：
 
   ```lua
-  ver = Fusion.Version – (number)
+  ver = Fusion.Version -- (number)
   ```
 
 ##### 方法
@@ -147,7 +147,7 @@
 
 ###### Fusion.CreateFloatingView()
 
-创建一个新的`FloatView`。
+创建一个新的FloatView。
 
 ###### Fusion.CreateMail()
 
@@ -158,9 +158,9 @@
   ```Python
   mail = fusion.CreateMail()
   
-  mail.AddRecipients(“vfx@studio.com, myself@studio.com”)
-  mail.SetSubject(“Render Completed”)
-  mail.SetBody(“The job completed.”)
+  mail.AddRecipients("vfx@studio.com, myself@studio.com")
+  mail.SetSubject("Render Completed")
+  mail.SetBody("The job completed.")
   ok, errmsg = mail.SendTable().values()
   print(ok)
   print(errmsg)
@@ -171,15 +171,15 @@
   ```Lua
   mail = fusion:CreateMail()
   
-  mail:AddRecipients(“vfx@studio.com, myself@studio.com”)
-  mail:SetSubject(“Render Completed”)
-  mail:SetBody(“The job completed.”)
+  mail:AddRecipients("vfx@studio.com, myself@studio.com")
+  mail:SetSubject("Render Completed")
+  mail:SetBody("The job completed.")
   ok, errmsg = mail:Send()
   print(ok)
   print(errmsg)
   ```
 
-- <b>返回</b>：mail
+- <b>返回</b>：mail 邮箱
 - <b>返回类型</b>：`MailMessage`
 
 ###### Fusion.DumpCgObjects(*filename*)
@@ -190,7 +190,7 @@
 
   `filename` （***字符串***） – filename
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -202,7 +202,7 @@
 
   `filename` （***字符串***） – filename
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -214,7 +214,7 @@
 
   `filename` （***字符串***） – filename
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -226,7 +226,7 @@
 
   `filename` （***字符串***） – filename
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -254,14 +254,14 @@
 
   ```python
   from pprint import pprint
-  reg = fusion.FindReg(“Loader”)
+  reg = fusion.FindReg("Loader")
   pprint(reg.GetAttrs())
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
-  reg = fusion:FindReg(“Loader”)
+  reg = fusion:FindReg("Loader")
   dump(reg:GetAttrs())
   ```
 
@@ -269,7 +269,7 @@
   `id` （***字符串***） – id
   `type` （*数值*） – type
 
-- <b>返回</b>：reg
+- <b>返回</b>：reg 注册表
 
 - <b>返回类型</b>：`Registry`
 
@@ -283,7 +283,7 @@
 
 将Fusion的命令行参数以表的形式返回。
 
-- <b>返回</b>：args
+- <b>返回</b>：args 参数
 - <b>返回类型</b>：表
 
 ###### Fusion.GetCPULoad()
@@ -294,25 +294,25 @@
 
 ###### Fusion.GetClipboard()
 
-以表格和ASCII文本的形式检索剪贴板上的工具。
+以表和ASCII文本的形式检索剪贴板上的工具。
 
 返回剪贴板当前内容的字符串或表，如果为空则返回nil。
 
-- <b>返回</b>：cliptbl
+- <b>返回</b>：cliptbl 剪贴板
 - <b>返回类型</b>：表
 
 ###### Fusion.GetCompList()
 
-检索当前存在的所有成分的表格。
+检索当前存在的所有成分的表。
 
-- <b>返回</b>：complist
+- <b>返回</b>：complist 合成列表
 - <b>返回类型</b>：表
 
 ###### Fusion.GetCurrentComp()
 
 返回当前活动的合成。
 
-- <b>返回</b>：comp
+- <b>返回</b>：comp 合成
 - <b>返回类型</b>：`compsition`
 
 ###### Fusion.GetData([*name*])
@@ -323,7 +323,7 @@
 
 - <b>参数</b>：
   `name` （***字符串***） – name
-- <b>返回</b>：value
+- <b>返回</b>：value 值
 - <b>返回类型</b>：（数值|字符串|布尔|表）
 
 ###### Fusion.GetEnv(*name*)
@@ -334,7 +334,7 @@
 
 - <b>参数</b>：
   `name`（***字符串***） – name
-- <b>返回</b>：value
+- <b>返回</b>：value 值
 - <b>返回类型</b>：字符串
 
 ###### Fusion.GetGlobalPathMap(\[*built_ins*\]\[, *defaults*\])
@@ -342,9 +342,9 @@
 返回所有全局路径图的表。
 
 - <b>参数</b>：
-  `built_ins` （布尔） – built_ins
-  `defaults` （布尔） – defaults
-- <b>返回</b>：map
+  `built_ins` （*布尔*） – built_ins
+  `defaults` （*布尔*） – defaults
+- <b>返回</b>：map 映射图
 - <b>返回类型</b>：表
 
 ###### Fusion.GetMainWindow()
@@ -365,22 +365,22 @@
 
   ```python
   from pprint import pprint
-  pprint(fusion.GetPrefs(“Global.Paths.Map”))
-  print(fusion.GetPrefs(“Global.Controls.GrabDistance”))
+  pprint(fusion.GetPrefs("Global.Paths.Map"))
+  print(fusion.GetPrefs("Global.Controls.GrabDistance"))
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
   from pprint import pprint
-  dump(fusion:GetPrefs(“Global.Paths.Map”))
-  print(fusion:GetPrefs(“Global.Controls.GrabDistance”))
+  dump(fusion:GetPrefs("Global.Paths.Map"))
+  print(fusion:GetPrefs("Global.Controls.GrabDistance"))
   ```
 
 - <b>参数</b>：
   `prefname` （***字符串***） – prefname
   `exclude-defaults` （布尔） – exclude-defaults
-- <b>返回</b>：prefs
+- <b>返回</b>：prefs 偏好设置
 - <b>返回类型</b>：表
 
 ###### Fusion.GetPreviewList()
@@ -389,7 +389,7 @@
 
 此函数返回Fusion对象当前可用的预览对象的列表。`Composition:GetPreviewList` 函数类似，但不会像此函数一样返回浮动视图。
 
-- <b>返回</b>：previewlist
+- <b>返回</b>：previewlist 预览列表
 - <b>返回类型</b>：表
 
 ###### Fusion.GetRegAttrs(id[, *type*])
@@ -422,7 +422,7 @@
 - <b>参数</b>：
   `id` （***字符串***） – id
   `type`（*数值*） – type
-- <b>返回</b>：attrs
+- <b>返回</b>：attrs 属性
 - <b>返回类型</b>：表
 
 ###### Fusion.GetRegList(*typemask*)
@@ -502,7 +502,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 - <b>参数</b>：
   `typemask` （*数值*） – typemask
 
-- <b>返回</b>：reglist
+- <b>返回</b>：reglist 注册表列表
 
 - <b>返回类型</b>：表
 
@@ -517,7 +517,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 - <b>参数</b>：
   `typemask` （*数值*） – typemask
   `hidden` （*布尔*） – hidden
-- <b>返回</b>：regattrs
+- <b>返回</b>：regattrs 注册表属性
 - <b>返回类型</b>：表
 
 ###### Fusion.LoadComp(*filename*\[, *quiet*\]\[, *autoclose*\]\[, *hidden*\])
@@ -537,7 +537,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
   `quiet` （*布尔*） – quiet
   `autoclose` （*布尔*） – autoclose
   `hidden` （*布尔*） – hidden
-- <b>返回</b>：comp
+- <b>返回</b>：comp 合成
 - <b>返回类型</b>：`Composition`
 
 ###### Fusion.LoadComp(*filename*, *options*)
@@ -553,7 +553,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 - <b>参数</b>：
   `filename` （***字符串***） – filename
   `options` （*表*） – options
-- <b>返回</b>：comp
+- <b>返回</b>：comp 合成
 - <b>返回类型</b>：`Composition`
 
 ###### Fusion.LoadComp(*savedcomp*, *options*)
@@ -567,7 +567,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 - <b>参数</b>：
   `savedcomp` （*MemBlock*） – savedcomp
   `options` （*表*） – options
-- <b>返回</b>：comp
+- <b>返回</b>：comp 合成
 - <b>返回类型</b>：`Composition`
 
 ###### Fusion.LoadPrefs(\[*filename*\]\[, *mastername*\])
@@ -579,7 +579,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 - <b>参数</b>：
   `filename` （***字符串***） – filename
   `mastername` （***字符串***） – mastername
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### Fusion.LoadRecentComp(*index*\[, *quiet*\]\[, *autoclose*\]\[, *hidden*\])
@@ -597,7 +597,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
   `quiet` （*布尔*） – quiet
   `autoclose` （*布尔*） – autoclose
   `hidden` （*布尔*） – hidden
-- <b>返回</b>：comp
+- <b>返回</b>：comp 合成
 - <b>返回类型</b>：`Composition`
 
 ###### Fusion.MapPath(*path*)
@@ -615,12 +615,12 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 - <b>Lua用法</b>：
 
   ```lua
-  print(MapPath(“Fusion:”))
+  print(MapPath("Fusion:"))
   ```
 
 - <b>参数</b>：
   `path` （***字符串***） – path
-- <b>返回</b>：mapped
+- <b>返回</b>：mapped 映射
 - <b>返回类型</b>：字符串
 
 ###### Fusion.MapPathSegments(*path*)
@@ -631,7 +631,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 
 - <b>参数</b>：
   `path` （***字符串***） – path
-- <b>返回</b>：mapped
+- <b>返回</b>：mapped 映射
 - <b>返回类型</b>：字符串
 
 ###### Fusion.NewComp(\[*quiet*]\[, *autoclose*\]\[, *hidden*\])
@@ -646,7 +646,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
   `quiet` （*布尔*） – quiet
   `autoclose` （*布尔*） – autoclose
   `hidden` （*布尔*） – hidden
-- <b>返回</b>：comp
+- <b>返回</b>：comp 合成
 - <b>返回类型</b>：`Composition`
 
 ###### Fusion.OpenFile(*filename*, *mode*)
@@ -679,7 +679,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
   `filename` （***字符串***） – filename
   `mode` （*数值*） – mode
 
-- <b>返回</b>：file
+- <b>返回</b>：file 文件
 
 - <b>返回类型</b>：`File`
 
@@ -773,7 +773,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
   `end` （*数值*） – end
   `group` （***字符串***） – group
 
-- <b>返回</b>：job
+- <b>返回</b>：job 作业
 
 - <b>返回类型</b>：`RenderJob`
 
@@ -852,7 +852,7 @@ Fusion注册表存储有关Fusion的特定安装的配置和功能的信息。�
 - <b>参数</b>：
   `args`（*表*） – args
   
-- <b>返回</b>：job
+- <b>返回</b>：job作业
 
 - <b>返回类型</b>：`RenderJob`
 
@@ -873,7 +873,7 @@ Quit命令将导致Fusion实例对象所引用的Fusion副本退出。之后Fusi
 
 - <b>参数</b>：
   `mapped`（***字符串***） – mapped
-- <b>返回</b>：path
+- <b>返回</b>：path 路径
 - <b>返回类型</b>：字符串
 
 ###### Fusion.RunScript(*filename*)
@@ -918,7 +918,7 @@ Quit命令将导致Fusion实例对象所引用的Fusion副本退出。之后Fusi
 
 将系统剪贴板设置为包含由表指定工具的ASCII字符，或将剪贴板设置为指定的文本。
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### Fusion.SetClipboard([*重载参数未知*])
@@ -929,7 +929,7 @@ Quit命令将导致Fusion实例对象所引用的Fusion副本退出。之后Fusi
 
 将系统剪贴板设置为包含由表指定工具的ASCII字符，或将剪贴板设置为指定的文本。
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### Fusion.SetData(*name*, *value*)

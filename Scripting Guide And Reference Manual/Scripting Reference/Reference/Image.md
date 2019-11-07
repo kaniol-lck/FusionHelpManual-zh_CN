@@ -11,96 +11,140 @@
 有效数据像素的矩形，以表的形式（只读）。
 
 - <b>获取</b>：
-  `rect = Image.DataWindow – (table)`
+  
+  ```lua
+  rect = Image.DataWindow -- (table)
+  ```
 
 ###### Image.Depth
 
 图像深度指示器（不以位的形式）（只读）。
 
 - <b>获取</b>：
-  `val = Image.Depth – (number)`
+  
+  ```lua
+  val = Image.Depth -- (number)
+  ```
 
 ###### Image.Field
 
 字段指示符（只读）。
 
 - <b>获取</b>：
-  `val = Image.Field – (number)`
+  
+  ```lua
+  val = Image.Field -- (number)
+  ```
 
 ###### Image.Height
 
 实际图像高度，以像素为单位（只读）。
 
 - <b>获取</b>：
-  `val = Image.Height – (number)`
+  
+  ```lua
+  val = Image.Height -- (number)
+  ```
 
 ###### Image.OriginalHeight
 
 未代理图像高度，以像素为单位（只读）。
 
 - <b>获取</b>：
-  `val = Image.OriginalHeight – (number)`
+  
+  ```lua
+  val = Image.OriginalHeight -- (number)
+  ```
 
 ###### Image.Width
 
 实际图像宽度，以像素为单位（只读）。
 
 - <b>获取</b>：
-  `val = Image.Width – (number)`
+  
+  ```lua
+  val = Image.Width -- (number)
+  ```
 
 ###### Image.OriginalWidth
 
 未代理图像宽度，以像素为单位（只读）。
 
 - <b>获取</b>：
-  `val = Image.OriginalWidth – (number)`
+  
+  ```lua
+  val = Image.OriginalWidth -- (number)
+  ```
 
 ###### Image.OriginalXScale
 
 未代理的像素X比例（只读）。
 
 - <b>获取</b>：
-  `val = Image.OriginalXScale – (number)`
+  
+  ```lua
+  val = Image.OriginalXScale -- (number)
+  ```
 
 ###### Image.OriginalYScale
 
 未代理的像素Y比例（只读）。
 
 - <b>获取</b>：
-  `val = Image.OriginalYScale – (number)`
+  
+  ```lua
+  val = Image.OriginalYScale -- (number)
+  ```
 
 ###### Image.ProxyScale
 
 图像代理比例乘数（只读）。
 
 - <b>获取</b>：
-  `val = Image.ProxyScale – (number)`
+  
+  ```lua
+  val = Image.ProxyScale -- (number)
+  ```
 
 ###### Image.XOffset
 
 图像X偏移（只读）。
 
 - <b>获取</b>：
-  `val = Image.XOffset – (number)`
+  
+  ```lua
+  val = Image.XOffset -- (number)
+  ```
 
 ###### Image.XScale
 
 像素X比例（只读）。
 
 - <b>获取</b>：
-  `val = Image.XScale – (number)`
+  
+  ```lua
+  val = Image.XScale -- (number)
+  ```
 
 ###### Image.YOffset
 
 图像Y偏移（只读）。
 
 - <b>获取</b>：
-  `val = Image.YOffset – (number)`
+  
+  ```lua
+  val = Image.YOffset -- (number)
+  ```
 
 ###### Image.YScale
 
 像素Y比例（只读）。
 
 - <b>获取</b>：
-  `val = Image.YScale – (number)`
+  
+  ```lua
+  val = Image.YScale -- (number)
+  ```
+  
+  
 

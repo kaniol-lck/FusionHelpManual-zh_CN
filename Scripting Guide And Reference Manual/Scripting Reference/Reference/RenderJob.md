@@ -66,14 +66,14 @@
 
 这些从属设备不再参与作业，但是可以使用`RetrySlave()`重新添加到作业中。
 
-- <b>返回</b>：failedslaves
+- <b>返回</b>：failedslaves 失败的从属设备
 - <b>返回类型</b>：表
 
 ###### RenderJob.GetFrames()
 
 返回要渲染帧的总数。
 
-- <b>返回</b>：frames
+- <b>返回</b>：frames 帧
 - <b>返回类型</b>：字符串
 
 ###### RenderJob.GetRenderReport()
@@ -84,7 +84,7 @@
 
 获取分配给该作业的从属设备表。
 
-- <b>返回</b>：slaves
+- <b>返回</b>：slaves 从属设备
 - <b>返回类型</b>：表
 
 ###### RenderJob.GetUnrenderedFrames()
@@ -93,14 +93,14 @@
 
 返回字符串中的框架以逗号分隔。连续帧以`<first> .. <last>`的形式给出范围。
 
-- <b>返回</b>：frames
+- <b>返回</b>：frames 帧
 - <b>返回类型</b>：字符串
 
 ###### RenderJob.IsRendering()
 
 如果作业当前正在渲染，则返回`true`。
 
-- <b>返回</b>：rendering
+- <b>返回</b>：rendering 渲染中
 - <b>返回类型</b>：布尔
 
 ###### RenderJob.RetrySlave([*slave*])

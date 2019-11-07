@@ -10,105 +10,131 @@
 
 表示此框架窗口的合成（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.Composition = comp – (Composition)`
+  ```lua
+  FuFrame.Composition = comp -- (Composition)
+  ```
 
 ###### FuFrame.ConsoleView
 
 表示此框架窗口的控制台（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.ConsoleView = view – (FuView)`
+  ```lua
+  FuFrame.ConsoleView = view -- (FuView)
+  ```
 
 ###### FuFrame.CurrentView
 
 表示此框架窗口的当前活动视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.CurrentView = view – (FuView)`
+  ```lua
+  FuFrame.CurrentView = view -- (FuView)
+  ```
 
 ###### FuFrame.FlowView
 
 表示此框架窗口的流程视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.FlowView = view – (FuView)`
+  ```lua
+  FuFrame.FlowView = view -- (FuView)
+  ```
 
 ###### FuFrame.InfoView
 
 表示此框架窗口的信息视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.InfoView = view – (FuView)`
+  ```lua
+  FuFrame.InfoView = view -- (FuView)
+  ```
 
 ###### FuFrame.LeftView
 
 表示此框架窗口的左显示视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.LeftView = view – (GLView)`
+  ```lua
+  FuFrame.LeftView = view -- (GLView)
+  ```
 
 ###### FuFrame.ModifierView
 
 表示此框架窗口的修改器（Modifier）控件视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.ModifierView = view – (FuView)`
+  ```lua
+  FuFrame.ModifierView = view -- (FuView)
+  ```
 
 ###### FuFrame.RightView
 
 表示此框架窗口的右显示视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.RightView = view – (GLView)`
+  ```lua
+  FuFrame.RightView = view -- (GLView)
+  ```
 
 ###### FuFrame.SplineView
 
 表示此框架窗口的样条编辑器视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.SplineView = view – (FuView)`
+  ```lua
+  FuFrame.SplineView = view -- (FuView)
+  ```
 
 ###### FuFrame.TimeRulerView
 
 表示此框架窗口的时间标尺视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.TimeRulerView = view – (FuView)`
+  ```lua
+  FuFrame.TimeRulerView = view -- (FuView)
+  ```
 
 ###### FuFrame.TimelineView
 
 表示此框架窗口的时间轴视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.TimelineView = view – (FuView)`
+  ```lua
+  FuFrame.TimelineView = view -- (FuView)
+  ```
 
 ###### FuFrame.ToolView
 
 表示此框架窗口的工具（Tool）控件视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.ToolView = view – (FuView)`
+  ```lua
+  FuFrame.ToolView = view -- (FuView)
+  ```
 
 ###### FuFrame.TransportView
 
 表示此框架窗口的传输控件视图（只读）。
 
-- 设置：
+- <b>设置</b>：
 
-  `FuFrame.TransportView = view – (FuView)`
+  ```lua
+  FuFrame.TransportView = view -- (FuView)
+  ```
 
 ##### 方法
 
@@ -120,7 +146,7 @@
 
   `include_globals` （*布尔*） – include_globals
 
-- <b>返回</b>：previews
+- <b>返回</b>：previews 预览
 
 - <b>返回类型</b>：表
 
@@ -128,10 +154,10 @@
 
 返回此框架内的视图列表。
 
-- <b>返回</b>：views
+- <b>返回</b>：views 视图
 - <b>返回类型</b>：表
 
-###### FuFrame.SwitchView(id)
+###### FuFrame.SwitchView(*id*)
 
 在此框架内显示给定视图。
 
@@ -155,7 +181,7 @@
   comp.CurrentFrame:ViewOn(tool, 1)
   ```
 
-- 参数
+- <b>参数</b>：
 
   `tool` （*Tool*）– tool
 

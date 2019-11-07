@@ -12,7 +12,7 @@
 
   `fontfile` （***字符串***） – fontfile
   
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 
@@ -24,7 +24,7 @@
 
 返回全局字体列表中的所有字体文件。
 
-- <b>返回</b>：fonts
+- <b>返回</b>：fonts 字体
 - <b>返回类型</b>：表
 
 ###### FontList.ScanDir([dirname])

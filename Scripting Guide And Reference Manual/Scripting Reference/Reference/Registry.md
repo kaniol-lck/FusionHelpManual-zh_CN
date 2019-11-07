@@ -62,21 +62,30 @@
 该Registry节点的ID（只读）。
 
 - <b>获取</b>：
-  `id = Registry.ID – (string)`
+  
+  ```lua
+  id = Registry.ID -- (string)
+  ```
 
 ###### Registry.Name
 
 该Registry节点命名友好的名称（只读）。
 
 - <b>获取</b>：
-  `name = Registry.Name – (string)`
+  
+  ```lua
+  name = Registry.Name -- (string)
+  ```
 
 ###### Registry.Parent
 
 此Registry节点的父级（只读）。
 
 - <b>获取</b>：
-  `parent = Registry.Parent – (Registry)`
+  
+  ```lua
+  parent = Registry.Parent -- (Registry)
+  ```
 
 ##### 方法
 
@@ -84,12 +93,12 @@
 
 返回工具的ID或其父级的ID是否是特定的Registry ID。
 
-- <b>返回</b>：matched
+- <b>返回</b>：matched 匹配
 - <b>返回类型</b>：布尔
 
 ###### Registry.IsRegClassType()
 
 返回工具是否为特定的Registry `ClassType`。
 
-- <b>返回</b>：matched
+- <b>返回</b>：matched 匹配
 - <b>返回类型</b>：布尔

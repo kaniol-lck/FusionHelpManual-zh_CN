@@ -6,7 +6,7 @@
 
 代表一个合成。
 
-`Composition`对象的方法和成员可直接在控制台和用Lua编写的合成脚本中使用。这意味着您只需键入`==CurrentTime`或调用`AddTool(“Blur”)`，而无需在命令前加上`comp`。而Python脚本必须使用全名。
+`Composition`对象的方法和成员可直接在控制台和用Lua编写的合成脚本中使用。这意味着您只需键入`==CurrentTime`或调用`AddTool("Blur")`，而无需在命令前加上`comp`。而Python脚本必须使用全名。
 
 ##### Composition属性
 
@@ -38,7 +38,9 @@
 
 - <b>获取</b>：
 
-  `tool = Composition.ActiveTool` – (`Tool`)
+  ```lua
+  tool = Composition.ActiveTool -- (Tool)
+  ```
 
 ###### Composition.AutoPos
 
@@ -46,11 +48,15 @@
 
 - <b>获取</b>：
 
-  `val = Composition.AutoPos` – (布尔)
+  ```lua
+  val = Composition.AutoPos -- (boolean)
+  ```
 
-- 设置：
+- <b>设置</b>：
 
-  `Composition.AutoPos = val` – (布尔)
+  ```lua
+  Composition.AutoPos = val -- (boolean)
+  ```
 
 ###### Composition.CurrentFrame
 
@@ -60,7 +66,9 @@
 
 - <b>获取</b>：
 
-  `frame = Composition.CurrentFrame` – (`FuFrame`)
+  ```lua
+  frame = Composition.CurrentFrame -- (FuFrame)
+  ```
 
 ###### Composition.CurrentTime
 
@@ -68,11 +76,15 @@
 
 - <b>获取</b>：
 
-  `val = Composition.CurrentTime` – (数值)
+  ```lua
+  val = Composition.CurrentTime -- (number)
+  ```
 
-- 设置：
+- <b>设置</b>：
 
-  `Composition.CurrentTime = val` – (数值)
+  ```lua
+  Composition.CurrentTime = val -- (number)
+  ```
 
 ###### Composition.UpdateMode()
 
@@ -86,11 +98,15 @@
 
 - <b>获取</b>：
 
-  `val = Composition.XPos` – (数值)
+  ```lua
+  val = Composition.XPos -- (number)
+  ```
 
-- 设置：
+- <b>设置</b>：
 
-  `Composition.XPos = val` – (数值)
+  ```lua
+  Composition.XPos = val -- (number)
+  ```
 
 ###### Composition.YPos
 
@@ -98,11 +114,15 @@
 
 - <b>获取</b>：
 
-  `val = Composition.YPos` – (数值)
+  ```lua
+  val = Composition.YPos -- (number)
+  ```
 
-- 设置：
+- <b>设置</b>：
 
-  `Composition.YPos = val` – (数值)
+  ```lua
+  Composition.YPos = val -- (number)
+  ```
 
 ##### 方法
 
@@ -114,7 +134,7 @@
 
 在中止渲染之前询问用户。
 
-###### Composition.AddTool(*id\[, defsettings]\[, xpos]\[, ypos]*)
+###### Composition.AddTool(*id*\[, *defsettings*]\[, *xpos*]\[, *ypos*])
 
 在指定位置添加工具类型。
 
@@ -133,15 +153,15 @@
 - <b>Python用法</b>：
 
   ```python
-  bg = comp.AddTool(“Background”, 1, 1)
-  mg = comp.AddTool(“Merge”, -32768, -32768)
+  bg = comp.AddTool("Background", 1, 1)
+  mg = comp.AddTool("Merge", -32768, -32768)
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
-  bg = comp:AddTool(“Background”, 1, 1)
-  mg = comp:AddTool(“Merge”, -32768, -32768)
+  bg = comp:AddTool("Background", 1, 1)
+  mg = comp:AddTool("Merge", -32768, -32768)
   ```
 
 - <b>参数</b>：
@@ -159,7 +179,7 @@
 - <b>返回类型</b>：`Tool`
 
 
-###### Composition.AddToolAction(*id\[, xpos]\[, ypos]*)
+###### Composition.AddToolAction(*id*\[, *xpos*]\[, *ypos*])
 
 在合成中添加工具。
 
@@ -179,9 +199,9 @@
 
 ###### Composition.AskRenderSettings()
 
-显示Render Settings对话框。
+显示渲染设置（Render Settings）对话框。
 
-###### Composition.AskUser(*title, controls*)
+###### Composition.AskUser(*title*, *controls*)
 
 向用户显示自定义对话框，并返回所选值。
 
@@ -217,41 +237,41 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   | <b>Dropdown</b>                                 | 显示标准Fusion用于从列表中选择选项的下拉菜单。此控件展示和选项使用一个包含下拉菜单值的表来调用选项（Options）。请注意，选项（Options）的表索引从`0`开始，而不是像大多数FusionScript表中常见的那样从`1`开始。因此，如果您希望为列表中的第一个条目设置默认值，则使用`Default=0`，让第二个`Default=0`，依此类推。| <b>Default (numeric) 默认（数值）</b><br/>用于指定选项表（见下）中值的索引的数值，来作为创建时下拉框的默认值。<br/><b>Default (table `{string, string, string…}`) 默认（表 `{string, string, string…}`）</b><br/>用于描述描述显示在下拉框内值的字符串表。|
   | <b>Multibutton</b>                              | 显示多按钮，其中每个选项都作为按钮绘制。<br/>相同的选项也被用于如下拉列表中。| <b>Default (numeric) 默认（数值）</b><br/>用于指定选项表（见下）中值的索引的数值，来作为创建时下拉框的默认值。<br/><b>Default (table `{string, string, string…}`) 默认（表 `{string, string, string…}`）</b><br/>用于描述描述显示在下拉框内值的字符串表。|
 
-  （译注：该表实际上与“Graphical User Interfaces 图形用户界面”一章的完全一致）
+  （译注：该表实际上与图形用户界面（Graphical User Interfaces）一章的完全一致）
 
 - <b>Python用法</b>：
 
   ```python
   # 在Python中确保用从1开始的合适索引创建字典
-  dialog = {1: {1: “dlgDir”, “Name”: “Select a Directory”, 2: “PathBrowse”},
-            2: {1: “dlgCheck”, “Name”: “A Check Box”, 2: “Checkbox”, “Default”: 1}}
-  ret = composition.AskUser(“A sample dialog”, dialog)
+  dialog = {1: {1: "dlgDir", "Name": "Select a Directory", 2: "PathBrowse"},
+            2: {1: "dlgCheck", "Name": "A Check Box", 2: "Checkbox", "Default": 1}}
+  ret = composition.AskUser("A sample dialog", dialog)
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
   composition_path = composition:GetAttrs().COMPS_FileName
-  msg = “This dialog is only an example. It does not actually do anything, “..
-      “so you should not expect to see a useful result from running this script.”
+  msg = "This dialog is only an example. It does not actually do anything, "..
+      "so you should not expect to see a useful result from running this script."
   
   d = {}
-  d[1] = {“File”, Name = “Select A Source File”, “FileBrowse”, Default = composition_path}
-  d[2] = {“Path”, Name = “New Destination”, “PathBrowse” }
-  d[3] = {“Copies”,Name = “Number of Copies”, “Slider”, Default = 1.0, Integer = true,
+  d[1] = {"File", Name = "Select A Source File", "FileBrowse", Default = composition_path}
+  d[2] = {"Path", Name = "New Destination", "PathBrowse" }
+  d[3] = {"Copies", Name = "Number of Copies", "Slider", Default = 1.0, Integer = true,
    Min = 1, Max = 5 }
-  d[4] = {“Angle”, Name = “Angle”, “Screw”, Default = 180, Min = 0, Max = 360}
-  d[5] = {“Menu”, Name = “Select One”, “Dropdown”, Options = {“Good”, “Better”, “Best”},
+  d[4] = {"Angle", Name = "Angle", "Screw", Default = 180, Min = 0, Max = 360}
+  d[5] = {"Menu", Name = "Select One", "Dropdown", Options = {"Good", "Better", "Best"},
    Default = 1}
-  d[6] = {“Center”,Name = “Center”, “Position”, Default = {0.5, 0.5} }
-  d[7] = {“Invert”,Name = “Invert”, “Checkbox”, NumAcross = 2 }
-  d[8] = {“Save”, Name = “Save Settings”, “Checkbox”, NumAcross = 2, Default = 1 }
-  d[9] = {“Msg”, Name = “Warning”, “Text”, ReadOnly = true, Lines = 5, Wrap = true,
+  d[6] = {"Center", Name = "Center", "Position", Default = {0.5, 0.5} }
+  d[7] = {"Invert", Name = "Invert", "Checkbox", NumAcross = 2 }
+  d[8] = {"Save", Name = "Save Settings", "Checkbox", NumAcross = 2, Default = 1 }
+  d[9] = {"Msg", Name = "Warning", "Text", ReadOnly = true, Lines = 5, Wrap = true,
    Default = msg}
   
-  dialog = composition:AskUser(“A Sample Dialog”, d)
+  dialog = composition:AskUser("A Sample Dialog", d)
   if dialog == nil then
-      print(“You cancelled the dialog!”)
+      print("You cancelled the dialog!")
   else
       dump(dialog)
   end
@@ -317,7 +337,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>参数</b>：
 
-  `tool` （*Tool*） – tool
+  `tool` （*`Tool`*） – tool
 
 - <b>返回</b>：success 成功
 
@@ -335,7 +355,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>参数</b>：
 
-  `toollist` （*table*） – toollist
+  `toollist` （*表*） – toollist
 
 - <b>返回</b>：success 成功
 
@@ -366,7 +386,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>参数</b>：
 
-  `tool` （*Tool*） – tool
+  `tool` （*`Tool`*） – tool
 
 - <b>返回</b>：settings 设置
 
@@ -405,17 +425,17 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 - <b>Python用法</b>：
 
   ```python
-  composition.StartUndo(“Add some tools”)
+  composition.StartUndo("Add some tools")
   bg1 = comp.Background()
   pl1 = comp.Plasma()
-  mg1 = comp.Merge({ “Background”: bg1, “Foreground”: pl1 })
+  mg1 = comp.Merge({ "Background": bg1, "Foreground": pl1 })
   composition.EndUndo(True)
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
-  composition:StartUndo(“Add some tools”)
+  composition:StartUndo("Add some tools")
   bg1 = Background{}
   pl1 = Plasma{}
   mg1 = Merge{ Background = bg1, Foreground = pl1 }
@@ -428,28 +448,28 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 ###### Composition.Execute()
 
-执行合成的脚本字符串。要在融合使用融合的上下文中执行脚本：执行（...）。
+执行合成的脚本字符串。要在Fusion的上下文中执行脚本则使用`fusion:Execute( ... )`代替。
 
-默认情况下，Lua用作解释器。要使用python，请添加以下前缀：
+默认情况下使用Lua解释器。要使用python，请添加以下前缀：
 
 `!Py`：默认Python版本。`!Py2`：Python版本2。`!Py3`：Python版本3.
 
 - <b>Python用法</b>：
 
   ```python
-  comp.Execute(“print(‘Hello from Lua!’)”)
-  comp.Execute(“!Py: print(‘Hello from default Python!’)”)
-  comp.Execute(“!Py2: print ‘Hello from Python 2!’”)
-  comp.Execute(“!Py3: print (‘Hello from Python 3!’)”)
+  comp.Execute("print('Hello from Lua!')")
+  comp.Execute("!Py: print('Hello from default Python!')")
+  comp.Execute("!Py2: print 'Hello from Python 2!'")
+  comp.Execute("!Py3: print ('Hello from Python 3!')")
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
-  comp:Execute(“print(‘Hello from Lua!’)”)
-  comp:Execute(“!Py: print(‘Hello from default Python!’)”)
-  comp:Execute(“!Py2: print ‘Hello from Python 2!’”)
-  comp:Execute(“!Py3: print (‘Hello from Python 3!’)”)
+  comp:Execute("print('Hello from Lua!')")
+  comp:Execute("!Py: print('Hello from default Python!')")
+  comp:Execute("!Py2: print 'Hello from Python 2!'")
+  comp:Execute("!Py3: print ('Hello from Python 3!')")
   ```
 
 ###### Composition.FindTool(*name*)
@@ -466,10 +486,12 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>返回类型</b>：`Tool`
 
-###### Composition.FindToolByID(*id\[, prev]*)
+###### Composition.FindToolByID(*id*\[, *prev*])
 
 查找给定类型的第一个工具。
+
 仅返回找到的第一个工具。
+
 要查找下一个工具，请使用prev参数提供上一个工具。
 
 - <b>Python用法</b>：
@@ -480,11 +502,11 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   blur2 = comp.Blur()
   blur3 = comp.Blur()
   
-  print (comp.FindToolByID(“Blur”).Name)
+  print (comp.FindToolByID("Blur").Name)
   # 打印: Blur1
-  print (comp.FindToolByID(“Blur”, blur1).Name)
+  print (comp.FindToolByID("Blur", blur1).Name)
   # 打印: Blur2
-  print (comp.FindToolByID(“Blur”, blur2).Name)
+  print (comp.FindToolByID("Blur", blur2).Name)
   # 打印: Blur3
   ```
 
@@ -496,11 +518,11 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   blur2 = Blur
   blur3 = Blur
   
-  print (comp:FindToolByID(“Blur”).Name)
+  print (comp:FindToolByID("Blur").Name)
   -- 打印: Blur1
-  print (comp:FindToolByID(“Blur”, blur1).Name)
+  print (comp:FindToolByID("Blur", blur1).Name)
   -- 打印: Blur2
-  print (comp:FindToolByID(“Blur”, blur2).Name)
+  print (comp:FindToolByID("Blur", blur2).Name)
   -- 打印: Blur3
   ```
 
@@ -512,7 +534,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>返回类型</b>：`Tool`
 
-###### Composition.GetCompPathMap(*\[built_ins]\[, defaults]*)
+###### Composition.GetCompPathMap(\[*built_ins*]\[, *defaults*])
 
 返回所有`Composition`的路径映射表。
 
@@ -570,7 +592,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   dump(composition:GetConsoleHistory(1, 2))
   ```
 
-###### Composition.GetData(*\[name]*)
+###### Composition.GetData(\[*name*])
 
 获取自定义持久数据。
 
@@ -587,26 +609,26 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   ```python
   from datetime import datetime
   tool = comp.ActiveTool
-  tool.SetData(“Modified.Author”, fusion.GetEnv(“USERNAME”))
-  tool.SetData(“Modified.Date”, str(datetime.now()))
+  tool.SetData("Modified.Author", fusion.GetEnv("USERNAME"))
+  tool.SetData("Modified.Date", str(datetime.now()))
   
-  author = tool.GetData(“Modified.Author”)
-  dt = tool.GetData(“Modified.Date”)
+  author = tool.GetData("Modified.Author")
+  dt = tool.GetData("Modified.Date")
   
-  print(“Last modified by {0} on {1}”.format(author, dt))
+  print("Last modified by {0} on {1}".format(author, dt))
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
   tool = tool or comp.ActiveTool
-  tool:SetData(“Modified.Author”, fusion:GetEnv(“USERNAME”))
-  tool:SetData(“Modified.Date”, os.date())
+  tool:SetData("Modified.Author", fusion:GetEnv("USERNAME"))
+  tool:SetData("Modified.Date.", os.date())
   
-  author = tool:GetData(“Modified.Author”)
-  dt = tool:GetData(“Modified.Date”)
+  author = tool:GetData("Modified.Author")
+  dt = tool:GetData("Modified.Date")
   
-  print(“Last modified by” ..author.. “ on ” ..dt)
+  print("Last modified by" ..author.. " on " ..dt)
   ```
 
 - <b>参数</b>：
@@ -615,7 +637,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>返回</b>：value 值
 
-- <b>返回类型</b>：(数值|字符串|布尔|表)
+- <b>返回类型</b>：*(数值|字符串|布尔|表)*
 
 ###### Composition.GetFrameList()
 
@@ -643,7 +665,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   end
   ```
 
-###### Composition.GetNextKeyTime(*\[time]\[, tool]*)
+###### Composition.GetNextKeyTime(\[*time*]\[, *tool*])
 
 返回下一个关键帧的关键帧时间。
 
@@ -663,7 +685,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>返回类型</b>：数值
 
-###### Composition.GetPrefs(*\[prefname]\[, exclude-defaults]*)
+###### Composition.GetPrefs(\[*prefname*]\[, *exclude-defaults*])
 
 检索特定于合成的偏好设置或单个值的表。
 
@@ -682,7 +704,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   pprint(comp.GetPrefs())
   
   # 一个指定的偏好设置
-  pprint(comp.GetPrefs(“Comp.AutoSave.Enabled”))
+  pprint(comp.GetPrefs("Comp.AutoSave.Enabled"))
   
   # 除了默认之外的所有偏好设置
   pprint(comp.GetPrefs(None, False))
@@ -695,7 +717,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   dump(comp:GetPrefs())
   
   -- 一个指定的偏好设置
-  dump(comp:GetPrefs(“Comp.AutoSave.Enabled”))
+  dump(comp:GetPrefs("Comp.AutoSave.Enabled"))
   
   -- 除了默认之外的所有偏好设置
   dump(comp:GetPrefs(nil, false))
@@ -711,7 +733,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>返回类型</b>：表
 
-###### Composition.GetPrevKeyTime(*\[time]\[, tool]*)
+###### Composition.GetPrevKeyTime(\[*time*]\[, *tool*])
 
 返回上一个关键帧的关键帧时间。
 
@@ -731,7 +753,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>返回类型</b>：数值
 
-###### Composition.GetPreviewList(*\[include_globals]*)
+###### Composition.GetPreviewList(\[*include_globals*])
 
 检索预览表。
 
@@ -747,7 +769,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
 
 - <b>返回类型</b>：表
 
-###### Composition.GetToolList(*\[selected]\[, regid]*)
+###### Composition.GetToolList(\[*selected*]\[, *regid*])
 
 返回所有工具或所选工具的表。
 
@@ -767,7 +789,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   pprint(composition.GetToolList(True))
   
   # 获取所有Loader
-  pprint(comp.GetToolList(False, “Loader”))
+  pprint(comp.GetToolList(False, "Loader"))
   ```
 
 - <b>Lua用法</b>：
@@ -780,7 +802,7 @@ AskUser功能向用户显示一个对话框，使用各种常见的Fusion控件�
   dump(composition:GetToolList(true))
   
   -- 获取所有Loader
-  dump(comp:GetToolList(false, “Loader”))
+  dump(comp:GetToolList(false, "Loader"))
   ```
 
 - <b>参数</b>：
@@ -853,6 +875,7 @@ Heartbeat。
   ```lua
   comp:Lock()
   -- 不会打开文件对话框，因为合成被锁定了
+  
   my_loader = Loader()
   comp:Unlock()
   ```
@@ -898,13 +921,13 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
 - <b>Python用法</b>：
 
   ```python
-  print(composition.MapPath(“Comp:footage\\file0000.tga”))
+  print(composition.MapPath("Comp:footage\\file0000.tga"))
   ```
 
 - Lua用法
 
   ```lua
-  print(composition:MapPath(“Comp:footage\\file0000.tga”))
+  print(composition:MapPath("Comp:footage\\file0000.tga"))
   ```
 
 - <b>参数</b>：
@@ -918,6 +941,7 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
 ###### Composition.MapPathSegments(*path*)
 
 扩展多路径中的所有路径映射。
+
 `MapPathSegments`类似于`MapPath`，但适用于包含多个目录的字符串。返回值是包含所有扩展路径的表，而`MapPath`仅扩展第一个段并丢弃其余段。
 
 - <b>Python用法</b>：
@@ -925,17 +949,17 @@ Fusion中有许多默认和用户指定的路径映射，目的是提供访问�
   ```python
   from pprint import pprint
   
-  pprint(comp.MapPathSegments(“AllDocs:Settings;Fusion:Settings”))
+  pprint(comp.MapPathSegments("AllDocs:Settings;Fusion:Settings"))
   
   # 返回
-  # {1.0: ‘C:\\Users\\Public\\Documents\\Blackmagic Design\\Fusion\\Settings’,
-  # 2.0: ‘C:\\Program Files\\Blackmagic Design\\Fusion 8\\Settings’}
+  # {1.0: 'C:\\Users\\Public\\Documents\\Blackmagic Design\\Fusion\\Settings',
+  # 2.0: 'C:\\Program Files\\Blackmagic Design\\Fusion 8\\Settings'}
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
-  dump(comp:MapPathSegments(“AllDocs:Settings;Fusion:Settings”))
+  dump(comp:MapPathSegments("AllDocs:Settings;Fusion:Settings"))
   
   -- 返回 table: 0x03800440
   -- 1 = C:\Users\Public\Documents\Blackmagic Design\Fusion\Settings
@@ -966,7 +990,7 @@ NetRenderStart
 
 NetRenderTime
 
-###### Composition.MapPathSegments(*\[settings]*)
+###### Composition.MapPathSegments(\[*settings*])
 
 从`Clipboard`或设置表中粘贴工具。
 
@@ -980,7 +1004,7 @@ NetRenderTime
 
 - <b>返回类型</b>：布尔
 
-###### Composition.Play(*\[reverse]*)
+###### Composition.Play(\[*reverse*])
 
 开始交互式播放。
 
@@ -1002,14 +1026,14 @@ NetRenderTime
 
   ```python
   new_comp = fu.NewComp()
-  new_comp.Print(“Hello World”)
+  new_comp.Print("Hello World")
   ```
 
 - Lua用法
 
   ```lua
   new_comp = fu:NewComp()
-  new_comp:Print(“Hello World”)
+  new_comp:Print("Hello World")
   ```
 
 ###### Composition.Redo(*count*)
@@ -1026,7 +1050,7 @@ NetRenderTime
 
   `count` （*数值*） – count
 
-###### Composition.Render(*\[wait]\[, start]\[, end]\[, proxy]\[, hiq]\[, motionblur]*)
+###### Composition.Render(\[*wait*]\[, *start*]\[, *end*]\[, *proxy*]\[, *hiq*]\[, *motionblur*])
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -1093,7 +1117,7 @@ NetRenderTime
 
 `Tool` 处理专门渲染的工具。如果指定了此选项，则只会渲染此工具的部分内容。例如，你可以指定`comp.Saver1`只渲染到`Saver1`，忽略它之后的任何工具（包括Savers）。默认为零。
 
-`FrameRange` 描述要渲染的帧。（例如`“1..100`、`150..180”`），默认为`“Start”..“End”`（见上）。
+`FrameRange` 描述要渲染的帧。（例如`"1..100, 150..180”`），默认为`"Start"..End"`（见上）。
 
 `Wait` 无论脚本命令是等待渲染完成还是立即返回，都默认为`false`。
 
@@ -1104,20 +1128,20 @@ NetRenderTime
   composition.Render(True, 1, 100, 1) # 等待，指定渲染范围
   
   # 渲染不连续的帧范围，并再渲染完成时返回。
-  comp.Render({ “FrameRange”: “1..10,20,30,40..50”, “Wait”: True })
+  comp.Render({ "FrameRange": "1..10, 20, 30, 40..50", "Wait": True })
   
   # 渲染至Saver1工具，而不渲染其下游。
-  comp.Render({“Tool”: comp.Saver1})
+  comp.Render({"Tool": comp.Saver1})
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
   -- 渲染显式的渲染范围，等待渲染。
   composition:Render(true, 1, 100, 1) -- 等待，指定渲染范围
   
   -- 渲染不连续的帧范围，并再渲染完成时返回。
-  comp:Render({ FrameRange = “1..10,20,30,40..50”, Wait = true })
+  comp:Render({ FrameRange = "1..10, 20, 30, 40..50", Wait = true })
   
   -- 渲染至Saver1工具，而不渲染其下游。
   comp:Render({Tool = comp.Saver1})
@@ -1208,7 +1232,7 @@ NetRenderTime
 
 `Tool` 处理专门渲染的工具。如果指定了此选项，则只会渲染此工具的部分内容。例如，你可以指定`comp.Saver1`只渲染到`Saver1`，忽略它之后的任何工具（包括Savers）。默认为零。
 
-`FrameRange` 描述要渲染的帧。（例如`“1..100`、`150..180”`），默认为`“Start”..“End”`（见上）。
+`FrameRange` 描述要渲染的帧。（例如`"1..100, 150..180”`），默认为`"Start"..End"`（见上）。
 
 `Wait` 无论脚本命令是等待渲染完成还是立即返回，都默认为`false`。
 
@@ -1219,13 +1243,13 @@ NetRenderTime
   composition.Render(True, 1, 100, 1) # 等待，指定渲染范围
   
   # 渲染不连续的帧范围，并再渲染完成时返回。
-  comp.Render({ “FrameRange”: “1..10,20,30,40..50”, “Wait”: True })
+  comp.Render({ "FrameRange": "1..10, 20, 30, 40..50", "Wait": True })
   
   # 渲染至Saver1工具，而不渲染其下游。
-  comp.Render({“Tool”: comp.Saver1})
+  comp.Render({"Tool": comp.Saver1})
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
   -- 渲染显式的渲染范围，等待渲染。
@@ -1314,7 +1338,7 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
 
 请注意，`ActiveTool`还表示选中了该工具，而选中的工具不会自动激活。一次只能有一个工具处于活动状态。要选中工具，请使用`FlowView:Select()`。
 
-###### Composition.SetData(*name, value*)
+###### Composition.SetData(*name*, *value*)
 
 `name` 数据名称。此名称可以是`table.subtable`格式，以允许持久数据存储在子表中。
 
@@ -1330,17 +1354,17 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
   from pprint import pprint
   from datetime import datetime
   tool = comp.ActiveTool
-  tool.SetData(“Modified.Author”, fusion.GetEnv(“USERNAME”))
-  tool.SetData(“Modified.Date”, str(datetime.now()))
-  pprint(tool.GetData(“Modified”))
+  tool.SetData("Modified.Author", fusion.GetEnv("USERNAME"))
+  tool.SetData("Modified.Date", str(datetime.now()))
+  pprint(tool.GetData("Modified"))
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
-  tool:SetData(“Modified.Author”, fusion:GetEnv(“USERNAME”))
-  tool:SetData(“Modified.Date”, os.date())
-  dump(tool:GetData(“Modified”))
+  tool:SetData("Modified.Author", fusion:GetEnv("USERNAME"))
+  tool:SetData("Modified.Date", os.date())
+  dump(tool:GetData("Modified"))
   ```
 
 - <b>参数</b>：
@@ -1349,7 +1373,7 @@ Fusion支持.py .py2和.py3后缀，以区分python脚本版本。
   
   `value` （*(数值|字符串|布尔|表)*） – value
 
-###### Composition.SetPrefs(*prefname, val*)
+###### Composition.SetPrefs(*prefname*, *val*)
 
 **注意：**此方法已重载并具有备用参数。见其他定义。
 
@@ -1366,15 +1390,15 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 - <b>Python用法</b>：
 
   ```python
-  comp.SetPrefs({ “Comp.Transport.FrameStep”:5, “Comp.FrameFormat.AspectX”:2 })
-  comp.SetPrefs(“Comp.Interactive.BackgroundRender”, True)
+  comp.SetPrefs({ "Comp.Transport.FrameStep":5, "Comp.FrameFormat.AspectX":2 })
+  comp.SetPrefs("Comp.Interactive.BackgroundRender", True)
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
-  comp:SetPrefs({ [“Comp.Unsorted.GlobalStart”]=0, [“Comp.Unsorted.GlobalEnd”]=100 })
-  comp:SetPref(“Comp.Interactive.BackgroundRender”, true)
+  comp:SetPrefs({ ["Comp.Unsorted.GlobalStart"]=0, ["Comp.Unsorted.GlobalEnd"]=100 })
+  comp:SetPref("Comp.Interactive.BackgroundRender", true)
   ```
 
 - <b>参数</b>：
@@ -1400,15 +1424,15 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 - <b>Python用法</b>：
 
   ```python
-  comp.SetPrefs({ “Comp.Transport.FrameStep”:5, “Comp.FrameFormat.AspectX”:2 })
-  comp.SetPrefs(“Comp.Interactive.BackgroundRender”, True)
+  comp.SetPrefs({ "Comp.Transport.FrameStep":5, "Comp.FrameFormat.AspectX":2 })
+  comp.SetPrefs("Comp.Interactive.BackgroundRender", True)
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
-  comp:SetPrefs({ [“Comp.Unsorted.GlobalStart”]=0, [“Comp.Unsorted.GlobalEnd”]=100 })
-  comp:SetPref(“Comp.Interactive.BackgroundRender”, true)
+  comp:SetPrefs({ ["Comp.Unsorted.GlobalStart"]=0, ["Comp.Unsorted.GlobalEnd"]=100 })
+  comp:SetPref("Comp.Interactive.BackgroundRender", true)
   ```
 
 - <b>参数</b>：
@@ -1432,17 +1456,17 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 - <b>Python用法</b>：
 
   ```python
-  composition.StartUndo(“Add some tools”)
+  composition.StartUndo("Add some tools")
   bg1 = comp.Background()
   pl1 = comp.Plasma()
-  mg1 = comp.Merge({ “Background”: bg1, “Foreground”: pl1 })
+  mg1 = comp.Merge({ "Background": bg1, "Foreground": pl1 })
   composition.EndUndo(True)
   ```
 
-- Lua用法
+- <b>Lua用法</b>：
 
   ```lua
-  composition:StartUndo(“Add some tools”)
+  composition:StartUndo("Add some tools")
   bg1 = Background{}
   pl1 = Plasma{}
   mg1 = Merge{ Background = bg1, Foreground = pl1 }
@@ -1463,7 +1487,7 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
 撤销合成的一个或多个更改。
 
-`Undo`函数在Fusion中触发撤消事件。count参数确定触发了多少个撤消事件。
+`Undo`函数在Fusion中触发撤消事件。`count`参数确定触发了多少个撤消事件。
 
 注意`count`的值可以是负数，在这种情况下，`Undo`将表现为`Redo`，其行为与`Redo()`函数完全相同。
 
@@ -1501,4 +1525,4 @@ SetPrefs函数可用于指定Fusion中几乎所有首选项的值。它可以采
 
 ###### Composition.UpdateViews()
 
-UpdateViews
+更新视图。

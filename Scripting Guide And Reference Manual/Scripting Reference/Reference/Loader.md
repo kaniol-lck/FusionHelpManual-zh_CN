@@ -8,7 +8,7 @@
 
 ###### Loader.SetMultiClip(*filename*\[, *startframe*\]\[, *trimin*\]\[, *trimout*\])
 
-为Loader提供一个MultiClip剪辑列表。
+为Loader提供一个MultiClip片段列表。
 
 - <b>参数</b>：
   `startframe` （*数值*） – startframe

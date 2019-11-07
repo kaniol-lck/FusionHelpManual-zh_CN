@@ -27,7 +27,10 @@
 返回当前查看器。
 
 - <b>获取</b>：
-  `viewer = GLView.CurrentViewer – (GLViewer)`
+  
+  ```lua
+  viewer = GLView.CurrentViewer -- (GLViewer)
+  ```
 
 ##### 方法
 
@@ -59,14 +62,14 @@
 
 返回显示哪个缓冲区。
 
-- <b>返回</b>：buffer
+- <b>返回</b>：buffer 缓冲区
 - <b>返回类型</b>：数值
 
 ###### GLView.GetLocked()
 
 如果显示被锁定，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLView.GetPos()
@@ -82,14 +85,14 @@
 
 以表的形式返回显示的位置。
 
-- <b>返回</b>：pos
+- <b>返回</b>：pos 位置
 - <b>返回类型</b>：表
 
 ###### GLView.GetPrefs()
 
 检索此视图的偏好设置表。
 
-- <b>返回</b>：prefs
+- <b>返回</b>：prefs 偏好设置
 - <b>返回类型</b>：表
 
 ###### GLView.GetPreview([*buffer*])
@@ -113,14 +116,14 @@
 
 以表格的形式返回显示的x、y、z旋转度。
 
-- <b>返回</b>：rot
+- <b>返回</b>：rot 旋转
 - <b>返回类型</b>：表
 
 ###### GLView.GetScale()
 
 返回显示的比例。
 
-- <b>返回</b>：scale
+- <b>返回</b>：scale 比例
 - <b>返回类型</b>：数值
 
 ###### GLView.GetSplit()
@@ -136,49 +139,49 @@
 
 以表的形式获取视图的拆分位置。
 
-- <b>返回</b>：split
+- <b>返回</b>：split 拆分
 - <b>返回类型</b>：表
 
 ###### GLView.GetStereoMethod()
 
 返回用于立体声显示的方法和选项。
 
-- <b>返回</b>：method
+- <b>返回</b>：method 方法
 - <b>返回类型</b>：字符串
 
 ###### GLView.GetStereoSource()
 
 返回用于立体声显示的源。
 
-- <b>返回</b>：ABsource
+- <b>返回</b>：ABsource AB源
 - <b>返回类型</b>：布尔
 
 ###### GLView.GetViewerList()
 
 返回可用查看器的列表。
 
-- <b>返回</b>：viewers
+- <b>返回</b>：viewers 查看器
 - <b>返回类型</b>：表
 
 ###### GLView.IsLUTEnabled()
 
 如果启用了当前的Monitor LUT，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLView.IsStereoEnabled()
 
 指示当前是否启用立体声显示。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLView.IsStereoSwapped()
 
 指示当前是否已左&右立体眼交换。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLView.LoadLUTFile(*pathname*)
@@ -189,7 +192,7 @@
 
   `pathname` （***字符串***） – pathname
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### GLView.LoadPrefs()
@@ -393,14 +396,14 @@ SetScale函数用于设置视图的比例。
 
 如果视图分为四个，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLView.ShowingSubView()
 
 如果当前正在显示插入式子视图，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLView.SwapStereo()
@@ -423,5 +426,5 @@ SetScale函数用于设置视图的比例。
 
 将主视图与子视图交换。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔

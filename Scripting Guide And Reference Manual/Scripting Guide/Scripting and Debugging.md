@@ -6,13 +6,13 @@ Fusion有内建的控制台来输出脚本中的print语句。这有助于没有
 
 比如：
 
-- Lua
+- <b>Lua</b>
 
   ```Lua
   print("Hello World.")
   ```
 
-- Python
+- <b>Python</b>
 
   ```Python
   print("Hello World.")
@@ -23,7 +23,7 @@ Fusion有内建的控制台来输出脚本中的print语句。这有助于没有
 
 当使用集合时，打印只会输出集合的引用，为了显示其预格式化的内容，使用：
 
-- Lua
+- <b>Lua</b>
 
   ```Lua
   dump(comp:GetAttrs())
@@ -39,7 +39,7 @@ Fusion有内建的控制台来输出脚本中的print语句。这有助于没有
 
 同样也可以在Python中通过一个叫做`“Data pretty printer”(pprint)`的模块完成。
 
-- Python
+- <b>Python</b>
 
   ```Python
   from pprint import pprint # 需要加载一次

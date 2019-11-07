@@ -1,4 +1,90 @@
-/* Typora theme for Scripting Guide */
+/* Typora theme for Scripting Manual */
+
+.typora-export .footnote-line, .typora-export li, .typora-export p {
+  white-space: normal !important;
+}
+
+b {
+  font-family: "Gotham Medium";
+}
+
+img.no-border {
+  border: none;
+}
+
+hr.toc-splitter {
+  border: none;
+  border-top: 1px dashed #58595b;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.toc>ul>li,
+div.toc>ol>li {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+div.toc li {
+  font-size: 1.0em;
+}
+
+div.toc ul,
+div.toc ol {
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type:none;
+  list-style-image: none;
+  
+  font-family: "Gotham Medium";
+}
+
+div.toc>ol {
+  list-style: decimal outside none;
+}
+
+div.toc>ol>li {
+  color: #f15a22 !important;
+  text-decoration:none !important;
+  margin-top:20px;
+}
+
+div.toc>ul>li>p>a,
+div.toc>ol>li>ul>li>p>a {
+  color: #58595b !important;
+  text-decoration:none !important;
+}
+
+div.toc>ul>li,
+div.toc>ol>li>ul>li {
+  margin-top:20px;
+}
+
+div.toc>ul>li>ul>li>a,
+div.toc>ol>li>ul>li>ul>li>a {
+  color: #f47b44 !important;
+  text-decoration:none !important;
+}
+
+div.toc>ul>li>ul>li,
+div.toc>ol>li>ul>li>ul>li {
+  margin-top:5px;
+  padding-bottom:5px;
+}
+
+div.toc>ol>li>p>a {
+  font-size: 1.5em;
+  /* font-weight: bold; */
+  color: #f15a22 !important;
+  text-decoration:none !important;
+}
+
+div.toc>ol>li::marker {
+  color: #f15a22 !important;
+}
 
 @media screen and (max-width: 800px) {
     html {
@@ -98,11 +184,10 @@ html {
 }
 
 body {
-  font-family: Roboto, 'Segoe UI',Arial,'Microsoft Yahei',sans-serif;
+  font-family: Arial,'Microsoft YaHei',sans-serif;
   color: #3b4549;
   background-color: #ffffff;
   line-height: 1.6;
-  letter-spacing: 1px;
   /*text-shadow: 0 0 1px #ccc;*/
   text-rendering: optimizeLegibility;
 }
@@ -150,7 +235,9 @@ h5 {
 
 h6 {
   font-size: 1em;
-  color: #f15a22;
+  color: #58595b;
+  font-weight: bold;
+  font-family: Consolas,"Roboto Mono", "Liberation Mono", Courier, monospace;
 }
 
 /*list*/
@@ -204,35 +291,65 @@ table {
   padding: 0;
   word-break: initial;
   background-color: #f1f1f2;
-  border: 2px solid #ffffff;
 }
 
 table tr {
+  border-top: 2px solid #ffffff;
   margin: 0;
   padding: 0;
 }
 
-table tr:nth-child(2n) {
+table tr th {
+  font-weight: normal;
+  color:#ffffff;
+  border: 2px solid #ffffff;
+  background-color: #939598;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 2px solid #ffffff;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+/* guide table */
+.guide-table {
+  padding: 0;
+  word-break: initial;
+  background-color: #f1f1f2;
+  border: 2px solid #ffffff;
+}
+
+.guide-table tr {
+  margin: 0;
+  padding: 0;
+}
+
+.guide-table tr:nth-child(2n) {
   background-color: #ffffff;
 }
 
-table tr th {
+.guide-table tr th {
   font-weight: bold;
   border: 2px solid #ffffff;
   background-color: #ffffff;
 }
 
-table tr th, table tr td{
+.guide-table tr th, table tr td{
   align: left;
   padding: 6px 13px;
   vertical-align: top;
 }
 
-table tr th:nth-child(n+2) {
+.guide-table tr th:nth-child(n+2) {
   border-left: 1px solid #9d9fa2;
 }
 
-table tr td:nth-child(n+2) {
+.guide-table tr td:nth-child(n+2) {
   border-left: 1px solid #9d9fa2;
 }
 
@@ -452,7 +569,7 @@ footer {
 }
 
 #write em{
-  border-bottom:1px #ccc dashed
+  font-weight:normal;
 }
 
 .ty-table-edit{

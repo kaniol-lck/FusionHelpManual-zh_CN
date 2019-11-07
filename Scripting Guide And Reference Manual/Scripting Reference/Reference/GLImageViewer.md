@@ -30,14 +30,14 @@
 
 将当前的LUT导出到3D LUT文件。
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### GLImageViewer.IsLUTEnabled()
 
 如果启用了当前的View LUT，则返回`true`。
 
-- <b>返回</b>：enabled
+- <b>返回</b>：enabled 启用
 - <b>返回类型</b>：布尔
 
 ###### GLImageViewer.LoadLUTFile([*pathname*])
@@ -48,7 +48,7 @@
 
   `pathname` （**字符串**） – pathname
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### GLImageViewer.LockRoI([*enable*])
@@ -67,7 +67,7 @@
 
   `pathname` （**字符串**） – pathname
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回类型</b>：布尔
 

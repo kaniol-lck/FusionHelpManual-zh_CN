@@ -28,17 +28,17 @@
 
 ##### 方法
 
-###### BezierSpline.AdjustKeyFrames (*start, end, x, y, operation\[, pivotx]\[, pivoty]*)
+###### BezierSpline.AdjustKeyFrames (*start*, *end*, *x*, *y*, *operation*\[, *pivotx*]\[, *pivoty*])
 
 设置、偏移或缩放关键帧的范围。
 
 `start, end` 要调整的关键点的时间范围（包含的）。
 
-`x, y` 时间和值偏移/因子
+`x, y` 时间和值偏移/因子。
 
 `operation` 可以是`"set"`、`"offset"`或`"scale"`（区分大小写）
 
-`pivotx, pivoty` 缩放的可选值。默认为零。
+`pivotx`、`pivoty` 缩放的可选值，默认为零。
 
 - <b>参数</b>：
 
@@ -51,7 +51,7 @@
   `pivotx` （*数值*） – pivotx
   `pivoty` （*数值*） – pivoty
 
-###### BezierSpline.DeleteKeyFrames(*start\[, end]*)
+###### BezierSpline.DeleteKeyFrames(*start*\[, *end*])
 
 删除关键帧。
 
@@ -115,10 +115,12 @@
 - <b>返回</b>：keyframes 关键帧
 - <b>返回类型</b>：表
 
-###### BezierSpline.SetKeyFrames(*keyframes\[, replace]*)
+###### BezierSpline.SetKeyFrames(*keyframes*\[, *replace*])
 
-设置关键帧表。
-此功能允许你设置样条曲线的关键帧及其曲率。该表应包含一个子表，每个关键帧一个，每个都有一个关键帧时间的键值。子表应包含关键帧值的条目，并且可以选择包含左和/或右手柄的子表，键入`"LH"`和`"RH"`。句柄子表应包含两个条目，用于句柄的X和Y位置。
+设置关键帧的表。
+
+此函数允许你设置样条的关键帧及其曲率。该表应包含一个子表，每个关键帧一个，每个都有一个关键帧时间的键值。子表应包含关键帧值的条目，并且可以选择包含左和/或右手柄的子表，键入`"LH"`和`"RH"`。句柄子表应包含两个条目，用于句柄的X和Y位置。
+
 以下是具有三个关键帧的样条曲线的示例表：
 
 ```lua
@@ -129,5 +131,5 @@
 }
 ```
 
-- <b>返回</b>：关键帧
+- <b>返回</b>：keyframes 关键帧
 - <b>返回类型</b>：表

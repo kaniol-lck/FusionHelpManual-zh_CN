@@ -19,7 +19,7 @@
 
 以表格和ASCII文本的形式检索剪贴板上的工具。
 
-- <b>返回</b>：clipboard
+- <b>返回</b>：clipboard 剪贴板
 - <b>返回类型</b>：表
 
 ###### GraphView.GetGuides(\[start\]\[, end\])
@@ -31,7 +31,7 @@
   `start` （*数值*） – start
   `end` （*数值*） – end
 
-- <b>返回</b>：guides
+- <b>返回</b>：guides 向导
 - <b>返回类型</b>：表
 
 ###### GraphView.GoNextKeyTime()
@@ -53,7 +53,7 @@
   `spline2` （*对象*） – spline2
   `points` （*表*） – points
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### GraphView.SetGuides(\[guides\]\[, rem_prev\])
@@ -83,7 +83,7 @@
 
 用指定的矩形填充视图。
 
-###### GraphView.ZoomRectangle(`x1`, `y1`, `x2`, `y2`)
+###### GraphView.ZoomRectangle(*x1*, *y1*, *x2*, *y2*)
 
 **注意：**此方法被重载，并具有其他参数。另见其他定义。
 

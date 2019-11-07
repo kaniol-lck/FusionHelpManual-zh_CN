@@ -11,4 +11,8 @@
 表示此Preview的显示GLView（只读）。
 
 - <b>获取</b>：
-  `view = GLPreview.View – (GLView)`
+  
+  ```lua
+  view = GLPreview.View -- (GLView)
+  ```
+

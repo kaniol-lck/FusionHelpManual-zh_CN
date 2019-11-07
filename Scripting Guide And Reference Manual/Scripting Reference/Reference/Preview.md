@@ -13,7 +13,7 @@
 - <b>参数</b>：
   `tool` （*`Tool`*） – tool
   `filename` （***字符串***） – filename
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### Preview.DisplayImage(*img*)
@@ -22,14 +22,14 @@
 
 - <b>参数</b>：
   `img` （*`Image`*） – img
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### Preview.IsPlaying()
 
 指示当前是否正在播放预览。
 
-- <b>返回</b>：playing
+- <b>返回</b>：playing 播放中
 - <b>返回类型</b>：布尔
 
 ###### Preview.Open(*filename*)
@@ -38,7 +38,7 @@
 
 - <b>参数</b>：
   `filename` （***字符串***） – filename
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔
 
 ###### Preview.Play([*reverse*])
@@ -66,5 +66,5 @@
 - <b>参数</b>：
   `tool` （*`Tool`*） – tool
   `filename` （***字符串***） – filename
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回类型</b>：布尔

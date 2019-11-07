@@ -71,28 +71,44 @@
 该工具所属的合成（只读）。
 
 - <b>获取</b>：
-  `comp = Operator.Composition – (Composition)`
+  
+  ```lua
+  comp = Operator.Composition -- (Composition)
+  ```
 
 ###### Operator.FillColor
 
 - <b>获取</b>：
-  `color = Operator.FillColor – (table)`
+  
+  ```lua
+  color = Operator.FillColor -- (table)
+  ```
+  
 - <b>设置</b>：
-  `Operator.FillColor = color – (table)`
+  
+  ```lua
+  Operator.FillColor = color -- (table)
+  ```
 
 ###### Operator.ID
 
 该工具的注册表ID（只读）。
 
 - <b>获取</b>：
-  `id = Operator.ID – (string)`
+  
+  ```lua
+  id = Operator.ID -- (string)
+  ```
 
 ###### Operator.Name
 
 该工具命名友好的名称（只读）。
 
 - <b>获取</b>：
-  `name = Operator.Name – (string)`
+  
+  ```lua
+  name = Operator.Name -- (string)
+  ```
 
 ###### Operator.ParentTool
 
@@ -101,34 +117,58 @@
 如果工具在组（group）或宏（macro）内，则为父组。
 
 - <b>获取</b>：
-  `parent = Operator.ParentTool – (Tool)`
+  
+  ```lua
+  parent = Operator.ParentTool -- (Tool)
+  ```
 
 ###### Operator.TextColor
 
 Flow视图中工具图标文字的颜色。
 
 - <b>获取</b>：
-  `color = Operator.TextColor – (table)`
+  
+  ```lua
+  color = Operator.TextColor -- (table)
+  ```
+  
 - <b>设置</b>：
-  `Operator.TextColor = color – (table)`
+  
+  ```lua
+  Operator.TextColor = color -- (table)
+  ```
 
 ###### Operator.TileColor
 
 Flow视图中工具图标的颜色。
 
 - <b>获取</b>：
-  `color = Operator.TileColor – (table)`
+  
+  ```lua
+  color = Operator.TileColor -- (table)
+  ```
+  
 - <b>设置</b>：
-  `Operator.TileColor = color – (table)`
+  
+  ```lua
+  Operator.TileColor = color -- (table)
+  ```
 
 ###### Operator.UserControls
 
 用户控件定义表。
 
 - <b>获取</b>：
-  `controls = Operator.UserControls – (table)`
+  
+  ```lua
+  controls = Operator.UserControls -- (table)
+  ```
+  
 - <b>设置</b>：
-  `Operator.UserControls = controls – (table)`
+  
+  ```lua
+  Operator.UserControls = controls -- (table)
+  ```
 
 ##### 方法
 
@@ -167,7 +207,7 @@ Flow视图中工具图标的颜色。
   `input` （***字符串***） – input 
   `modifier` （***字符串***） – modifier
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回参数</b>：布尔
 
@@ -181,7 +221,7 @@ Flow视图中工具图标的颜色。
 
 `input` 要连接输入的ID
 
-`target` 将输入连接到的输出或Operator对象，或者将其断开的nil
+`target` 将输入连接到的输出或`Operator`对象，或者将其断开的`nil`
 
 - <b>Python用法</b>：
 
@@ -207,7 +247,7 @@ Flow视图中工具图标的颜色。
   `input` （***字符串***） – input 
   `target` （*（`Tool`|`Output`|`nil`）*） – target
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回参数</b>：布尔
 
@@ -257,7 +297,7 @@ Flow视图中工具图标的颜色。
 - <b>参数</b>：
   `index` （*数值*） – index
 
-- <b>返回</b>：inp
+- <b>返回</b>：inp 输入
 
 - <b>返回参数</b>：`Input`
 
@@ -301,7 +341,7 @@ Flow视图中工具图标的颜色。
 - <b>参数</b>：
   `index` （*数值*） – index
 
-- <b>返回</b>：out
+- <b>返回</b>：out 输出
 
 - <b>返回参数</b>：`Output`
 
@@ -338,7 +378,7 @@ Flow视图中工具图标的颜色。
   `selected` （*布尔*） – selected
   `regid` （***字符串***） – regid
 
-- <b>返回</b>：tools
+- <b>返回</b>：tools 工具
 
 - <b>返回参数</b>：表
 
@@ -346,7 +386,7 @@ Flow视图中工具图标的颜色。
 
 返回一个控件页面名称表，按页面编号索引。
 
-- <b>返回</b>：names
+- <b>返回</b>：names 名称
 - <b>返回参数</b>：表
 
 ###### Operator.GetCurrentSettings()
@@ -357,7 +397,7 @@ Flow视图中工具图标的颜色。
 
 返回大于等于1的数字索引。
 
-- <b>返回</b>：index
+- <b>返回</b>：index 索引
 - <b>返回参数</b>：数值
 
 ###### Operator.GetData([*name*])
@@ -368,7 +408,7 @@ Flow视图中工具图标的颜色。
 
 - <b>参数</b>：
   `name` （***字符串***） – name
-- <b>返回</b>：value
+- <b>返回</b>：value 值
 - <b>返回参数</b>：（数值|字符串|布尔|表）
 
 ###### Operator.GetInput(*id*[, *time*])
@@ -405,7 +445,7 @@ Flow视图中工具图标的颜色。
   `id` （***字符串***） – id
   `time` （*数值*） – time
 
-- <b>返回</b>：value
+- <b>返回</b>：value 值
 
 - <b>返回参数</b>：（数值|字符串|布尔|`Parameter`）
 
@@ -494,7 +534,7 @@ Flow视图中工具图标的颜色。
 - <b>参数</b>：
   `type` （***字符串***） – type
 
-- <b>返回</b>：outputs
+- <b>返回</b>：outputs 输出
 
 - <b>返回参数</b>：表
 
@@ -529,7 +569,7 @@ Flow视图中工具图标的颜色。
 - <b>参数</b>：
   `filename` （***字符串***） – filename
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回参数</b>：布尔
 
@@ -564,7 +604,7 @@ Flow视图中工具图标的颜色。
 - <b>参数</b>：
   `settings` （*表*） – settings
 
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 
 - <b>返回参数</b>：布尔
 
@@ -588,7 +628,7 @@ Flow视图中工具图标的颜色。
 
 - <b>参数</b>：
   `filename` （***字符串***） – filename
-- <b>返回</b>：success
+- <b>返回</b>：success 成功
 - <b>返回参数</b>：布尔
 
 ###### Operator.SaveSettings(*customdata*)
@@ -603,7 +643,7 @@ Flow视图中工具图标的颜色。
 
 - <b>参数</b>：
   `customdata` （*布尔*） – customdata
-- <b>返回</b>：settings
+- <b>返回</b>：settings 设置
 - <b>返回参数</b>：表
 
 ###### Operator.SetCurrentSettings()
@@ -666,7 +706,7 @@ Flow视图中工具图标的颜色。
   print(tool.Name .. ": After!")
   ```
 
-- <b>返回</b>：index
+- <b>返回</b>：index 索引
 
 - <b>返回参数</b>：数值
 

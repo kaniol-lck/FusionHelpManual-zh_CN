@@ -8,7 +8,7 @@
 
 删除`BinItem`。
 
-###### BinItem.GetData(*\[name]*)
+###### BinItem.GetData(\[*name*])
 
 获取自定义持久数据。
 
@@ -20,9 +20,9 @@
   
 - <b>返回</b>：value 值
 
-- <b>返回类型</b>：（数值|字符串|布尔|表）
+- <b>返回类型</b>：*（数值|字符串|布尔|表）*
 
-###### BinItem.SetData(*name, value*)
+###### BinItem.SetData(*name*, *value*)
 
 设置自定义持久数据。
 
@@ -32,4 +32,4 @@
 
   `name` （***字符串***） – name
 
-  `value`（（数值|字符串|布尔|表）） – value
+  `value`（*（数值|字符串|布尔|表）*） – value

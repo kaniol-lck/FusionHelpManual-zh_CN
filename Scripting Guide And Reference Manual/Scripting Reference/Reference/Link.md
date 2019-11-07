@@ -13,14 +13,20 @@
 Link的ID（只读）。
 
 - <b>获取</b>：
-  `id = Link.ID – (string)`
+  
+  ```lua
+  id = Link.ID -- (string)
+  ```
 
 ###### Link.Name
 
 此链接的命名友好的名称（只读）。
 
 - <b>获取</b>：
-  `name = Link.Name – (string)`
+  
+  ```lua
+  name = Link.Name -- (string)
+  ```
 
 ##### 方法
 
@@ -32,14 +38,14 @@ Link的ID（只读）。
 
 - <b>参数</b>：
   `name` （***字符串***） – name
-- <b>返回</b>：value
+- <b>返回</b>：value 值
 - <b>返回类型</b>：（数值|字符串|布尔|表）
 
 ###### Link.GetTool()
 
 返回拥有此Link的Tool对象。
 
-- <b>返回</b>：tool
+- <b>返回</b>：tool 工具
 - <b>返回类型</b>：`Tool`
 
 ###### Link.SetData(*name*, *value*)
