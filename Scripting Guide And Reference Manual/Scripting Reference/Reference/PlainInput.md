@@ -235,16 +235,16 @@
 
   ```python
   # 将Lift和Gamma设置为与Gain相关联
-  comp.BrightnessContrast1.Lift.SetExpression(“Gain * 0.7”)
-  comp.BrightnessContrast1.Gamma.SetExpression(“Gain * 0.4”)
+  comp.BrightnessContrast1.Lift.SetExpression("Gain * 0.7")
+  comp.BrightnessContrast1.Gamma.SetExpression("Gain * 0.4")
   ```
 
 - <b>Lua用法</b>：
 
   ```lua
   -- 将Lift和Gamma设置为与Gain相关联
-  BrightnessContrast1.Lift:SetExpression(“Gain * 0.7”)
-  BrightnessContrast1.Gamma:SetExpression(“Gain * 0.4”)
+  BrightnessContrast1.Lift:SetExpression("Gain * 0.7")
+  BrightnessContrast1.Gamma:SetExpression("Gain * 0.4")
   ```
 
 ###### PlainInput.ViewControlsVisible()

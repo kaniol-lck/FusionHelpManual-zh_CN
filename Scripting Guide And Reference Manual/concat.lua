@@ -27,8 +27,8 @@ aboutFile:close()
 for _, filepath in ipairs(filepaths) do
 	local f = assert(io.open(filepath.."output.md", "r"))
 	for l in f:lines() do
-		l = string.gsub(l, "!%[(.*)%]%(images/(.*)%)", "!%[%1%]%("..filepath.."images/%2%)")
 		l = string.gsub(l, [[src="images/(.*)"]], [[src="]]..filepath..[[images/%1"]])
+		l = string.gsub(l, "!%[(.*)%]%(images/(.*)%)", "!%[%1%]%("..filepath.."images/%2%)")
 		outputFile:write(l, "\n")
 	end
 	outputFile:write("\n")

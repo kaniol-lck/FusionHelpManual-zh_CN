@@ -184,7 +184,7 @@ html {
 }
 
 body {
-  font-family: Arial,'Microsoft YaHei',sans-serif;
+  font-family: Arial,'SourceHanSansCN-Regular',sans-serif;
   color: #3b4549;
   background-color: #ffffff;
   line-height: 1.6;
@@ -337,6 +337,7 @@ table tr td {
   font-weight: bold;
   border: 2px solid #ffffff;
   background-color: #ffffff;
+  color: #000000;
 }
 
 .guide-table tr th, table tr td{

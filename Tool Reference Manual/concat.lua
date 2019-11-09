@@ -6,7 +6,7 @@ for line in indexFile:lines() do
 	local name, filename = string.match(line, "%[(.*)%]%((.+%.md)%)")
 	if filename then
 		filepaths[#filepaths + 1] = { name, string.gsub(filename, "README%.md", "") }
-		line = string.gsub(line, "%((.+%.md)%)", "(#"..name..")")
+		line = string.gsub(line, "%((.+%.md)%)", "(#"..string.lower(name)..")")
 	end
 	outputFile:write(line, "\n")
 end
