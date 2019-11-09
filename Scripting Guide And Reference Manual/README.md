@@ -213,13 +213,13 @@
 <div STYLE="page-break-after: always;"></div>
 ### 译者的话
 
-本文档是BMD提供的Fusion8，并同时适用于Fusion9脚本帮助手册的中文翻译版。翻译项目托管于[Github](https://github.com/kaniol-lck/FusionHelpManual-zh_CN)，你可以在这里看到项目的后续修改。
+本文档是BMD提供的Fusion8、并同时适用于Fusion9的脚本帮助手册的中文翻译版。翻译项目托管于[Github](https://github.com/kaniol-lck/FusionHelpManual-zh_CN)，你可以在这里看到项目的后续修改。
 
 Fusion拥有一套强大的脚本系统，由Lua语言构成的脚本系统为Fusion提供了强大的功能，你可以使用它来完成不少功能。举个例子，在翻译这个文档时，我大量地使用Lua脚本来完成文档的拼接及格式修改等工作，节省了许多无意义的劳动，同样地，把脚本运用在Fusion内部，或者用于外部与Fusion通信上也可以大幅地减少工作负担。
 
 我在翻译这篇文档时还在同时交叉着翻译《Fusion工具参考手册》，所以本文档的时间跨度比较大，前后可能有一些不连贯的格式，还望大家谅解。
 
-本pdf使用wkhtmltopdf生成，这是我目前目前能保持完好文档内链及格式的较好方案，但仍有一些不足如字体失效。实际效果建议以Typora编辑器及html网页为准。如有更好的转换方案，或者对于文档内的错误及改进，请使用<a href="mailto:kaniol_lck@163.com">邮箱</a>联系我。如果您是Github的常客，那么使用Pull Request或issue更受欢迎。
+本pdf使用wkhtmltopdf生成，这是我目前目前能保持完好文档内链及格式的较好方案，但仍有一些不足如字体失效。实际效果建议以Typora编辑器及html网页为准。如有更好的转换方案，或者对于文档内的错误及改进，请使用<a href="mailto:kaniol_lck@163.com">邮箱</a>联系我。如果你是Github的常客，那么使用Pull Request或issue更受欢迎。
 
 
 

@@ -15,7 +15,7 @@
 **点击手册名开始阅读：**
 
 - [**《Tool Reference Manual 工具参考手册》**](Tool%20Reference%20Manual/README.md)（翻译中）
-- [**《Scripting Guide And Reference Manual 脚本指南与参考手册》**](Scripting%20Guide%20And%20Reference%20Manual/README.md)（翻译中）
+- [**《Scripting Guide And Reference Manual 脚本指南与参考手册》**](Scripting%20Guide%20And%20Reference%20Manual/README.md)（翻译完成）
 - **《User Manual 用户手册》**（不在翻译计划内）
 
 #### GitPages在线阅读
