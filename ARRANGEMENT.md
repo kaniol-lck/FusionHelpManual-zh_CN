@@ -23,7 +23,7 @@
  - [x] 第十七章 LUT Tools LUT工具 @JUNE3546 （待整理）
  - [x] 第十八章 Mask Tools 遮罩工具 @JUNE3546 （待整理）
  - [x] 第十九章 Matte Tools 蒙版工具 @JUNE3546 （待整理）
- - [ ] 第二十章 Metadata Tools 元数据工具 
+ - [x] 第二十章 Metadata Tools 元数据工具 
  - [ ] 第二十一章 Miscellaneous Tools 杂项工具 
  - [x] 第二十二章 Optical Flow 光流 @JUNE3546 （待整理）
  - [ ] 第二十三章 Paint Tool 绘画工具 
