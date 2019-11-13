@@ -219,7 +219,7 @@ Fusion拥有一套强大的脚本系统，由Lua语言构成的脚本系统为Fu
 
 我在翻译这篇文档时还在同时交叉着翻译《Fusion工具参考手册》，所以本文档的时间跨度比较大，前后可能有一些不连贯的格式，还望大家谅解。
 
-本pdf使用wkhtmltopdf生成，这是我目前目前能保持完好文档内链及格式的较好方案，但仍有一些不足如字体失效。实际效果建议以Typora编辑器及html网页为准。如有更好的转换方案，或者对于文档内的错误及改进，请使用<a href="mailto:kaniol_lck@163.com">邮箱</a>联系我。如果你是Github的常客，那么使用Pull Request或issue更受欢迎。
+本pdf使用wkhtmltopdf生成，这是我目前能找到的保持完好文档内链及格式的较好方案，但仍有一些不足如字体失效等。实际效果建议还是以Typora编辑器及html网页为准。如有更好的转换方案，或者对于文档内的错误及改进，请使用<a href="mailto:kaniol_lck@163.com">邮箱</a>联系我。如果你是Github的常客，那么使用Pull Request或issue更受欢迎。
 
 
 
