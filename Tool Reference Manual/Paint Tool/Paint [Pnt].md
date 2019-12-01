@@ -56,17 +56,9 @@ Fusion的Paint甚至可以用来从头创作新的图像或艺术元素。
 
 当使用Image Source笔刷类型是，选择三种可能的源笔刷图像。
 
-##### Tool 工具
-
-图像源派生自流程上工具的输出时，拖动工具到Source Tool输入来设置源。
-
-##### Clip 片段
-
-图像源派生自磁盘中的图像或序列时，所有Fusion的Loader所支持的文件都可以使用。使用片段浏览器来选择原片段，使用文件名来定位文件。
-
-##### Brush 笔刷
-
-存储在*Fusion>Brushes*中的图像会直接额比用作Paint工具的笔刷。在出现的菜单中选择笔刷。
+- **Tool 工具：**图像源派生自流程上工具的输出时，拖动工具到Source Tool输入来设置源。
+- **Clip 片段：**图像源派生自磁盘中的图像或序列时，所有Fusion的Loader所支持的文件都可以使用。使用片段浏览器来选择原片段，使用文件名来定位文件。
+- **Brush 笔刷：**存储在*Fusion>Brushes*中的图像会直接额比用作Paint工具的笔刷。在出现的菜单中选择笔刷。
 
 #### Apply Controls 应用控件
 
@@ -79,15 +71,23 @@ Fusion的Paint甚至可以用来从头创作新的图像或艺术元素。
 - **Merge 合并：**这一应用模式有效地将笔刷Merge进图像中。这一模式的行为很像Color应用模式但是没有色彩控件。该模式最适合用于Image笔刷类型。
 - **Smear 涂抹：**以笔刷笔画的方向和强度为导向Smear图像。
 - **Stamp 戳记：**将笔刷Stamp进图像中，完全忽略alpha通道或透明度信息。该模式最适合用于向目标图像应用印花。
-- **Wire 威亚：**Wire擦除模式用于通过采样邻近像素并朝着笔画方向绘制来擦除线、骨骼和其他帧内的小元素。
+- **Wire Removal 威亚擦除：**Wire Removal模式用于通过采样邻近像素并朝着笔画方向绘制来擦除线、骨骼和其他帧内的小元素。
 
 #### Stroke Controls 笔画控件
 
-- **Size 尺寸：**当笔刷类型设置Soft或Circle笔刷时，该控件调整笔刷的尺寸。笔刷的直径在查看器中绘制为围绕鼠标指针的小圆圈。尺寸也可交互式地在查看器中通过按住Command或Ctrl键拖动鼠标指针调整。
+##### Size 大小
 
-- **Spacing 间距：**Spacing滑块确定dab（用于沿着构成笔画或折线笔画的基础矢量形状绘制直线的样本）之间的距离。增大此滑块的值会增加笔画的密度，而减小该值很可能会使笔画看起来像虚线。
+当笔刷类型设置Soft或Circle笔刷时，该控件调整笔刷的大小。笔刷的直径在查看器中绘制为围绕鼠标指针的小圆圈。Size也可交互式地在查看器中通过按住Command或Ctrl键拖动鼠标指针调整。
 
-- **Stroke Animation 笔画动画：**Stroke Animation菜单控件提供了多个预建的可以应用至绘画笔刷上的动画效果。该菜单只在Vector笔画时出现。
+##### Spacing 间距
+
+Spacing滑块确定dab（用于沿着构成笔画或折线笔画的基础矢量形状绘制直线的样本）之间的距离。增大此滑块的值会增加笔画的密度，而减小该值很可能会使笔画看起来像虚线。
+
+![Modifers_Spacing](D:/FusionHelpManual-zh_CN/Tool Reference Manual/Paint Tool/images/Modifers_Spacing.png)
+
+##### Stroke Animation 笔画动画
+
+Stroke Animation菜单控件提供了多个预建的可以应用至绘画笔刷上的动画效果。该菜单只在Vector笔画时出现。
 
 - **All Frames 所有帧：**默认显示项目的所有帧的笔画，其中Paint工具可以使用有效的目标图像。
 
@@ -101,13 +101,19 @@ Fusion的Paint甚至可以用来从头创作新的图像或艺术元素。
 
 - **Trail 尾随：**选中Trail模式将使笔触的起点和终点同时进行动画处理，彼此偏移持续时间控件中指定的量。这具有创建笔划的一部分的效果，该部分在笔划之后就像是一条路径。与Write On和Write Off的效果一样，此操作将从选择动画模式时当前的帧开始。可以使用样条（Spline）或时间线编辑器（Timeline Editer）手动调整动画的时间。
 
-- **Duration 持续时间：**Duration以帧为单位设置每个笔画的持续时间。仅在Multistroke或将笔画动画模式设置为Limited Duration时，此控件才会存在。它最常用于在场景中进行逐帧Roto。
+##### Duration 持续时间
 
-  应用于场景的每个矢量笔画在时间轴中都有一个持续时间，该持续时间可以从一个笔画独立地修剪到下一个笔划。持续时间可以设置为0.5，这仅在流程以Fields模式处理时才允许每个笔画持续单个字段。
+Duration以帧为单位设置每个笔画的持续时间。仅在Multistroke或将笔画动画模式设置为Limited Duration时，此控件才会存在。它最常用于在场景中进行逐帧Roto。
 
-- **Write On and Write Off 写开始和写结束：**当Stroke Animation设置为Write On和Write Off方法之一时，将出现此范围滑块。该范围代表笔画的起点和终点。向上拖动低值产生删除笔画的感觉，或将高值从0.0拖动到1.0以产生在屏幕上绘制笔画的感觉。该控件可以添加动画来获得较好的效果。通过使用Stroke Animation菜单的Write On、Write off模式自动设置动画时，它会最有效地工作。
+  > **注意：**每个应用到场景的矢量笔画都会在Timeline（时间线）上有一个持续时间，并可分别地独立修剪每个笔画。持续时间可以设置为0.5，这会允许允许每个笔画只持续单个场，只在流程以Fields模式处理时。
 
-- **Make Editable 设为可编辑：**该按钮只在Vector笔画时出现。单击Make Editable会将当前的笔画变成多边形样条来让图形变得可编辑或可添加动画。
+##### Write On and Write Off 写开始和写结束
+
+当Stroke Animation设置为Write On和Write Off方法之一时，将出现此范围滑块。该范围代表笔画的起点和终点。向上拖动低值产生删除笔画的感觉，或将高值从0.0拖动到1.0以产生在屏幕上绘制笔画的感觉。该控件可以添加动画来获得较好的效果。通过使用Stroke Animation菜单的Write On、Write off模式自动设置动画时，它会最有效地工作。
+
+##### Make Editable 设为可编辑
+
+该按钮只在Vector笔画时出现。单击Make Editable会将当前的笔画变成多边形样条来让图形变得可编辑或可添加动画。
 
 #### Working with Paint Stroke 使用绘画笔画工作
 
@@ -145,7 +151,7 @@ Fusion的Paint甚至可以用来从头创作新的图像或艺术元素。
 
 ##### Multistroke 多笔画
 
-完美胜任那么一帧一百多笔画的像去除跟踪标记一类的润饰绘画作业。比Stroke快很多但不支持后续的编辑。
+完美胜任那么一帧上百笔画的像去除跟踪标记一类的润饰绘画作业。比Stroke快很多但不支持后续的编辑。
 
 ##### Paint Group 绘画组
 
