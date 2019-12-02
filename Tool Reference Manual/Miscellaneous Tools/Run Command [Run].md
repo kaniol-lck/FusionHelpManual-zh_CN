@@ -50,13 +50,13 @@ Process Priority按钮提供了选择运行的进程启动时的优先级的选�
 
 该复选框确定了启动的应用程序是否应该以交互式运行，允许yoghurt输入。
 
-#### Start and End Tabs 启动和结束标签页
+#### Start and End Tabs 启动和结束选项卡
 
 ![Run_StartTab](images/Run_StartTab.png)
 
 ![Run_EndTab](images/Run_EndTab.png)
 
-Start和End标签页包含了用于在合成开始和结束渲染时运行脚本一个文件浏览器
+Start和End选项卡包含了用于在合成开始和结束渲染时运行脚本一个文件浏览器
 
 #### Example 示例
 

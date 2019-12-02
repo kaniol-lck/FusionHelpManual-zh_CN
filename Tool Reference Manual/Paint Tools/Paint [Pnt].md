@@ -16,7 +16,7 @@ Fusion的Paint甚至可以用来从头创作新的图像或艺术元素。
 
 不是所有在这里介绍的控件都会在所有模式中出现。某些控件只在特定的Paint模式中才有用处，并会在它们没有用处时隐藏。另外，一些控件也是不言自明的；Center控件的目的、Angle或Size控件也理解起来相对直白。
 
-从简考虑，这些控件不是全部都介绍一遍。对于Controls标签页上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
+从简考虑，这些控件不是全部都介绍一遍。对于Controls选项卡上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
 
 ##### Color Space 色彩空间
 

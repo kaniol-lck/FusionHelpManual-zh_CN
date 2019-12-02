@@ -41,7 +41,7 @@ CloneMultistroke与Multistroke非常相像，但只用于将区域从一个图�
 
 不是所有在这里介绍的控件都会在所有模式中出现。某些控件只在特定的Paint模式中才有用处，并会在它们没有用处时隐藏。另外，一些控件也是不言自明的；Center控件的目的、Angle或Size控件也理解起来相对直白。
 
-从简考虑，这些控件不是全部都介绍一遍。对于Controls标签页上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
+从简考虑，这些控件不是全部都介绍一遍。对于Controls选项卡上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
 
 ![CloneMultistroke_Controls](images/CloneMultistroke_Controls.jpg)
 
@@ -350,7 +350,7 @@ Multistroke是Paint中的标准笔画。完美胜任那么一帧上百笔画的�
 
 不是所有在这里介绍的控件都会在所有模式中出现。某些控件只在特定的Paint模式中才有用处，并会在它们没有用处时隐藏。另外，一些控件也是不言自明的；Center控件的目的、Angle或Size控件也理解起来相对直白。
 
-从简考虑，这些控件不是全部都介绍一遍。对于Controls标签页上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
+从简考虑，这些控件不是全部都介绍一遍。对于Controls选项卡上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
 
 ![Multistroke_Controls1](images/Multistroke_Controls1.png)![Multistroke_Controls2](images/Multistroke_Controls2.png)
 
@@ -489,7 +489,7 @@ Fusion提供了Polyline Stroke模式这提供了与路径或遮罩相同方式�
 
 不是所有在这里介绍的控件都会在所有模式中出现。某些控件只在特定的Paint模式中才有用处，并会在它们没有用处时隐藏。另外，一些控件也是不言自明的；Center控件的目的、Angle或Size控件也理解起来相对直白。
 
-从简考虑，这些控件不是全部都介绍一遍。对于Controls标签页上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
+从简考虑，这些控件不是全部都介绍一遍。对于Controls选项卡上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
 
 ![PolylineStroke_Controls1](images/PolylineStroke_Controls1.png)![PolylineStroke_Controls2](images/PolylineStroke_Controls2.png)
 
@@ -592,7 +592,7 @@ Paint工具第一次被添加到流程中时，笔刷类型会被设置为白色
 
 释放鼠标按钮以结束笔画的创建。要绘制另一个笔画，只需再次单击并继续。新笔画会使用与上次应用的笔画相同的设置添加到图像。绘画完成后，在Paint工具栏中选择Select按钮，以避免意外添加新笔触。
 
-在Brush或Polyline模式下，Tool标签页中显示的控件会影响下一个创建的笔触，而不影响已经创建的笔触。要调整现有笔画的设置，请使用Paint工具栏切换到Select模式，然后选择笔画。
+在Brush或Polyline模式下，Tool选项卡中显示的控件会影响下一个创建的笔触，而不影响已经创建的笔触。要调整现有笔画的设置，请使用Paint工具栏切换到Select模式，然后选择笔画。
 
 要将笔画添加到流程中，请从Paint工具的Stroke工具栏中选择Polyline按钮，将鼠标或笔放在图像上，单击并按住鼠标左键开始绘制。
 
@@ -600,7 +600,7 @@ Paint工具第一次被添加到流程中时，笔刷类型会被设置为白色
 
 不是所有在这里介绍的控件都会在所有模式中出现。某些控件只在特定的Paint模式中才有用处，并会在它们没有用处时隐藏。另外，一些控件也是不言自明的；Center控件的目的、Angle或Size控件也理解起来相对直白。
 
-从简考虑，这些控件不是全部都介绍一遍。对于Controls标签页上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
+从简考虑，这些控件不是全部都介绍一遍。对于Controls选项卡上功能的更详细解释，请参阅本章的Working with Paint Strokes - Animating Strokes一节。
 
 ![Polyline_Controls](images/Polyline_Controls.png)
 
