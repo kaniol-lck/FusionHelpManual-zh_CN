@@ -1,6 +1,6 @@
 ### Global Align [GA]
 
-与Stereo Align相反，该工具根本不利用光流。它的目的是使用快速且便捷的方法来为X和Y以及旋转做一些简单的立体对齐。立体工具只在Fusion Studio 中可用
+与Stereo Align相反，该工具根本不利用光流。它的目的是使用快速且便捷的方法来为X和Y以及旋转做一些简单的立体对齐。立体工具只在Fusion Studio中可用。
 
 Global Align在工具链的开始时可用于计算Disparity之前在视觉上校正左右眼之间的主要差异。
 

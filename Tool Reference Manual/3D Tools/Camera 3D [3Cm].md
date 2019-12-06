@@ -212,3 +212,4 @@ Aperture Width/Height滑块控制着摄像机的光圈大小，或者说摄像�
 ##### Rendering with Overscan from Fusion’s 3D Space 从Fusion的3D空间渲染超扫描
 
 如果你想渲染一个超扫描的图像，你也必须修改你的场景的Camera3D。由于超扫描设置不会与来自3D应用程序的摄像机数据一起导出，所以对于通过.fbx或.ma文件导入的摄像机来说，这也是必要的。解决的办法是增加胶片背面的宽度和高度，因为每一面都需要额外的像素。
+

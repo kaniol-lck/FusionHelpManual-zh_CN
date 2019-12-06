@@ -7,7 +7,7 @@
 - [Global Align [GA]](./Global%20Align%20[GA].md) 
 - [New Eye [NE]](./New%20Eye%20[NE].md) 
 - [Splitter [Spl]](./Splitter%20[Spl].md) 
-- [Stero Align [SA]](./Stereo%20Align%20[SA].md)
+- [Stereo Align [SA]](./Stereo%20Align%20[SA].md)
 - [Z to Disparity [Z2D]](./Z%20To%20Disparity%20[Z2D].md)  
 
 <table id="img">
