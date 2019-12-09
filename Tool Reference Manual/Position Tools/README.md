@@ -14,6 +14,7 @@
     <td><img src="images/index_VolumeMask.jpg" alt="index_VolumeMask"></td>
   </tr>
   <tr>
-    <td><img src="images/ZToWorldPos.jpg" alt="ZToWorldPos"></td>
+    <td><img src="images/index_ZToWorldPos.jpg" alt="index_ZToWorldPos"></td>
   </tr>
 </table>
+
