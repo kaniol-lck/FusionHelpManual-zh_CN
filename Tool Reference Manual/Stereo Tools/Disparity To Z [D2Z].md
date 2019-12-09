@@ -28,9 +28,9 @@ Disparity To Z接受一个3D Camera和一个包含了Disparity通道的图像作
 
 ![D2Z_Controls](images/D2Z_Controls.png)
 
-除了在Z通道中输出Z值外，该选项还会提升色彩通道为float32并向色彩通道输出Z值为`{z, z, z, 1}`。该选项在想看一下Z通道长啥样的时很有用。注意三维空间中的Z值是负的，离摄像机越远负的越多，因此要正确地查看它们之前需要先浏览Normalization On。
-
 ##### Output Z To RGB 输出Z至RGB
+
+除了在Z通道中输出Z值外，该选项还会提升色彩通道为float32并向色彩通道输出Z值为`{z, z, z, 1}`。该选项在想看一下Z通道长啥样的时很有用。注意三维空间中的Z值是负的，离摄像机越远负的越多，因此要正确地查看它们之前需要先浏览Normalization On。
 
 不仅是将Z输出值相关联的辅助通道中，它们也会被复制至RGB通道以便任何Fusion的工具来做后续修改。
 
@@ -64,7 +64,7 @@ Disparity To Z接受一个3D Camera和一个包含了Disparity通道的图像作
 
 ##### Artistic Mode 艺术性模式
 
-如果你拥有一个摄像机，你可以调整这些控件来产生一个“艺术性的”Z通道，它的值也许是会让牛顿掀棺材板的，但仍会是非常有用的。要重建Disparity的Z曲线，为前景中的一个点和背景中的一个点选择`(D, Z)`值。
+如果你没有摄像机，你可以调整这些控件来产生一个“艺术性的”Z通道，它的值也许是会让牛顿掀棺材板的，但仍会是非常有用的。要重建Disparity的Z曲线，为前景中的一个点和背景中的一个点选择`(D, Z)`值。
 
 ![D2Z_ArtisticMode](images/D2Z_ArtisticMode.png)
 
