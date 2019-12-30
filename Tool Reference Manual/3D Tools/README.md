@@ -28,8 +28,8 @@
 - [Triangulate 3D [3Tri]](./Triangulate%203D%20[3Tri].md) 
 - [UV Map 3D [3UV]](./UV%20Map%203D%20[3UV].md) 
 - [Weld 3D [3We]](./Weld%203D%20[3We].md) 
-- [Modifier](./Modifier.md) 
-  - [Coordinate Transform 3D](./Modifier.md#Coordinate-Transform-3D)
+- [Modifier](./3D%20Modifier.md) 
+  - [Coordinate Transform 3D](./3D%20Modifier.md#Coordinate-Transform-3D)
 
 <table id="img">
   <tr>

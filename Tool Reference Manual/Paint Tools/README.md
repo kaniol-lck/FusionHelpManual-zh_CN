@@ -2,7 +2,7 @@
 
 - [Paint [Pnt]](./Paint%20[Pnt].md)
 - [Hot Keys](./Hot%20Keys.md)
-- [Modifiers](./Modifiers.md)
+- [Modifiers](./Paint%20Modifiers.md)
   - Circle
   - Clone Multistroke
   - Copy Ellipse

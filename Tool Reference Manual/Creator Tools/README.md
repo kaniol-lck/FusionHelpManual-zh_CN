@@ -6,13 +6,13 @@
 - [Mandelbrot [MAN]](./Mandelbrot%20[MAN].md)
 - [Plasma [PLAS]](./Plasma%20[PLAS].md)
 - [Text Plus [TXT+]](./Text%20Plus%20[TXT+].md)
-- [Modifiers](./Modifiers.md)
-  - [Character Level Styling](./Modifiers.md#Character%20Level%20Styling)
-  - [Comp Name](./Modifiers.md#Comp%20Name)
-  - [Follower](./Modifiers.md#Follower)
-  - [Text Scramble](./Modifiers.md#Text%20Scramble)
-  - [Text Timer](./Modifiers.md#Text%20Timer)
-  - [Time Code](./Modifiers.md#Time%20Code)
+- [Modifiers](./Creator%20Modifiers.md)
+  - [Character Level Styling](./Creator%20Modifiers.md#Character%20Level%20Styling)
+  - [Comp Name](./Creator%20Modifiers.md#Comp%20Name)
+  - [Follower](./Creator%20Modifiers.md#Follower)
+  - [Text Scramble](./Creator%20Modifiers.md#Text%20Scramble)
+  - [Text Timer](./Creator%20Modifiers.md#Text%20Timer)
+  - [Time Code](./Creator%20Modifiers.md#Time%20Code)
 
 <table id="img">
   <tr>

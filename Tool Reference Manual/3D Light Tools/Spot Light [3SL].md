@@ -89,7 +89,7 @@ Shadow Map Proxy确定启用Proxy或Auto Proxy模式时使用的阴影贴图的�
 - **None 无：** 阴影会有一个硬边。完全不做阴影贴图的滤镜。这种方法的优点是只需要在阴影贴图中采样一个像素，因此速度很快。
 - **Constant 恒定：** 阴影边缘将有一个恒定的柔和度。当对阴影贴图采样时，使用一个宽度恒定的滤镜。调整Constant Softness滑块控制过滤器的大小。注意滤镜做得越大，渲染阴影的时间就越长。
 - **Variable 可变：:** 阴影边缘的柔和度会随着阴影接收器离阴影投射者变远而增加。
-  通过改变滤滤镜的尺寸，根据接收者和投射者之间的距离来实现可变的柔和度。选择此选项后，会出现Softness Falloff、Min Softness和Max Softness滑块。
+  通过改变滤镜的尺寸，根据接收者和投射者之间的距离来实现可变的柔和度。选择此选项后，会出现Softness Falloff、Min Softness和Max Softness滑块。
 
 ##### Constant Softness 恒定柔度
 
