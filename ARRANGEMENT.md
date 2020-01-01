@@ -30,8 +30,8 @@
  - [x] 第二十四章 Particle Tools 粒子工具 @JUNE3546 （待整理）
  - [x] 第二十五章 Position Tools 位置工具 @kaniol-lck
  - [x] 第二十六章 Stereo Tools 立体工具 @kaniol-lck
- - [ ] 第二十七章 Tracker Tools 跟踪器工具 @kaniol-lck（翻译中）
- - [ ] 第二十八章 Transform Tools 变换工具 
+ - [x] 第二十七章 Tracker Tools 跟踪器工具 @kaniol-lck
+ - [x] 第二十八章 Transform Tools 变换工具 @kaniol-lck（翻译中）
  - [ ] 第二十九章 Warp Tools 变形工具 
  - [ ] 第三十章 Modifiers 修改器工具 
  - [ ] 第三十一章 VR Tools VR工具 
