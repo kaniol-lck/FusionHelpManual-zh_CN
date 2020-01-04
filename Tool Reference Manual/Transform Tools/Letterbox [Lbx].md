@@ -20,16 +20,16 @@
 
 ##### Center X and Y 中心X和Y
 
-该Center控件会在Pan-And-Scan模式中的连接中重新防止图像窗口。当工具设置为Letterbox时它没有效果。
+该Center控件会在Pan-And-Scan模式中的连接中重新放置图像窗口。当工具设置为Letterbox时它没有效果。
 
 ##### Mode 模式
 
 该控件用于确定Letterbox工具的操作模式。
 
-- **Letterbox/Envelope 信箱/信封：**这会校正输入图像的宽高比并将其重新缩放值对应的宽度。
+- **Letterbox/Envelope 信箱/信封：**这会校正输入图像的宽高比并将其调整大小至对应的宽度。
 - **Pan-And-Scan 平移并扫描：**这会校正输入图像的宽高比并将其重新缩放值对应的高度。如果重新缩放的输入图像比指定的宽度宽的化，中心控件可用于为重新缩放输入的可见部分添加动画。
 
-##### Filter Mode 滤镜模式
+##### Filter Method 滤镜方法
 
 - **Nearest Neighbor 最邻近的：**这会根据需要跳过或复制像素。这产生了最快但最粗糙的结果。
 - **Box 盒：**这是一个简单的插值比例的图像。
