@@ -4,9 +4,9 @@ Displace 3D工具用于根据所参考的图像沿物体的法线置换物体的
 
 当使用Displace 3D时，请记住它只会置换现有的顶点，而不会对物体进行细化。为了获得更精细的置换，增加正在被置换的几何物体的细分量。注意，置换图像中的像素可能包含负值。
 
-通过Displace 3D工具传递粒子系统将禁用pEmitter中设置的Always Face Camera选项。粒子不被视为点状物体；这四个粒子顶点中的每一个都是单独置换的，这可能是首选的结果，也可能不是。
+通过Displace 3D工具传递粒子系统将禁用pEmitter中设置的Always Face Camera选项。粒子不被视为点状物体；每四个粒子顶点单独置换的，这可能是也可能不是你需要的。
 
-#### External Inputs 外部输入
+#### External Inputs 外部输入 
 
  ![3Cv_tile](images/3Cv_tile.jpg)
 
