@@ -1,7 +1,7 @@
 ## 第二十八章 Transform Tools 立体工具
 
 - [Camera Shake [CSh]](./Camera%20Shake%20[CSh].md) 
-- [Crop [Crp]](./Crp%20[Crp].md) 
+- [Crop [Crp]](./Crop%20[Crp].md) 
 - [DVE [DVE]](./DVE%20[DVE].md) 
 - [Letterbox [Lbx]](./Letterbox%20[Lbx].md) 
 - [Resize [Rsz]](./Resize%20[Rsz].md) 
