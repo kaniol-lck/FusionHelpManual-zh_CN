@@ -7,7 +7,7 @@
 - [Drip [Drp]](./Drip%20[Drp].md) 
 - [Grid Warp [Grd]](./Grid%20Warp%20[Grd].md) 
 - [Lens Distort [Lens]](./Lens%20Distort%20[Lens].md) 
-- [Positive Positioner [PPn]](./Positive%20Positioner%20[PPn].md)
+- [Perspective Positioner [PPn]](./Perspective%20Positioner%20[PPn].md)
 - [Vector Distortion
    [Dst]](./Vector%20Distortion%20[Dst].md) 
 - [Vortex [Vtx]](./Vortex%20[Vtx].md)
