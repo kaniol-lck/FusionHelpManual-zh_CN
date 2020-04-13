@@ -1,6 +1,6 @@
 ### B-Spline B样条
 
-Bezier Spline使Fusion中的一种动画修改器，一般被用于一些数值的值而不是点的值。它默认在你右键单击一个数值控件并选择Animate时应用。
+B Spline使Fusion中的一种动画修改器，一般被用于一些数值类值而不是点类值。它默认在你右键单击一个数值控件并选择Animate时应用。
 
 它也可以通过右键单击数值控件并选择*Modify with > B-Spline*应用。
 
