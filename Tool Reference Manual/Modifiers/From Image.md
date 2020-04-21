@@ -1,4 +1,4 @@
-### From Image
+### From Image 自图像
 
 From Image仅适用于渐变，如Background工具上的渐变。它沿着用户定义的线在图像上采样，并根据这些样本创建一个渐变。
 
