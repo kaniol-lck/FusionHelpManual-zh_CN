@@ -66,7 +66,7 @@ Offset Position修改器根据位置控件间的关系输出位置（X和Y坐标
 
 #### Time Tab 时间选项卡
 
-![Offset_TimeTab](images/Offset_TimeTab.jpg)****
+![Offset_TimeTab](images/Offset_TimeTab.jpg)
 
 ##### Position Time Scale 位置时间缩放
 
