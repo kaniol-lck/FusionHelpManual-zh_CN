@@ -34,7 +34,7 @@
  - [x] 第二十八章 Transform Tools 变换工具 @kaniol-lck
  - [x] 第二十九章 Warp Tools 变形工具 @kaniol-lck
  - [x] 第三十章 Modifiers 修改器 @kaniol-lck
- - [x] 第三十一章 VR Tools VR工具 @kaniol-lck （翻译中）
+ - [x] 第三十一章 VR Tools VR工具 @kaniol-lck
 
 ### Script Guide and Reference Manual 脚本指南与参考手册
 
