@@ -16,14 +16,16 @@ outputFile:write([[<div STYLE="page-break-after: always;"></div>]], "\n")
 for _, t in ipairs(filepaths) do
 	local name, filepath = t[1], t[2]
 	filepath = string.gsub(filepath, "%%20", " ")
-	f = assert(io.open(filepath.."output.md", "r"))
-	for l in f:lines() do
-		l = string.gsub(l, "!%[(.*)%]%(images/(.*)%)", "!%[%1%]%("..filepath.."images/%2%)")
-		l = string.gsub(l, [[<img src="images/(.*)" alt="(.*)">]], [[<img src="]]..filepath..[[images/%1" alt="%2">]])
-		outputFile:write(l, "\n")
-	end
+	local f = io.open(filepath.."output.md", "r")
+	if f then
+		for l in f:lines() do
+			l = string.gsub(l, "!%[(.*)%]%(images/(.*)%)", "!%[%1%]%("..filepath.."images/%2%)")
+			l = string.gsub(l, [[<img src="images/(.*)" alt="(.*)">]], [[<img src="]]..filepath..[[images/%1" alt="%2">]])
+			outputFile:write(l, "\n")
+		end
 	--outputFile:write([[<div STYLE="page-break-after: always;"></div>]], "\n")
-	f:close()
+		f:close()
 	--os.execute("ROBOCOPY \""..filepath.."images".."\" ./images /E /MT:30")
+	end
 end
 outputFile:close()

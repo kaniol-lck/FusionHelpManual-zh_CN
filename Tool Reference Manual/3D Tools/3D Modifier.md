@@ -10,16 +10,16 @@
 
 #### Controls 控件
 
-![Modifier_Controls](images/Modifier_Controls.jpg)
+![CoordTranform3D_Controls](images/CoordTranform3D_Controls.jpg)
 
-##### Target Object
+##### Target Object 目标物体
 
 此控件应连接到生成要转换的原始坐标的3D工具。要连接一个工具，可以将一个工具块从流程拖放到文本编辑控件中，或者右键单击该控件并从上下文菜单中选择该工具。还可以直接在控件中键入工具名。
 
-##### Sub-ID
+##### Sub-ID 子ID
 
 SubID滑块可用于针对特定几何类型的单个子元素，例如Text 3D工具生成的单个字符或复制3D工具创建的特定副本。
 
-##### Scene Input
+##### Scene Input 场景输入
 
 此控件应连接到包含新位置对象的场景的3D工具。要连接一个工具，可以将一个工具块从流拖放到文本编辑控件中，或者右键单击该控件并从Connect To弹出菜单中选择一个对象。

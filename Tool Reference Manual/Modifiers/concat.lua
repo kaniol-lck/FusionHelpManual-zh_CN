@@ -16,6 +16,7 @@ outputFile:write([[<div STYLE="page-break-after: always;"></div>]], "\n")
 for _, t in ipairs(filenames) do
 	name, filename = t[1], t[2]
 	filename = string.gsub(filename, "%%20", " ")
+	filename = string.gsub(filename, "%%2d", "-")
 	f = assert(io.open(filename, "r"))
 	for l in f:lines() do
 		outputFile:write(l, "\n")

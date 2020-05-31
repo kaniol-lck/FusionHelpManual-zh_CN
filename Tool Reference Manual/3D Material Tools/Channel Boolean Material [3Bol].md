@@ -6,19 +6,19 @@ Channel Boolean Material可用于通过数学运算重新映射和修改3D材质
 
  ![3Bol_tile](images/3Bol_tile.jpg)
 
-**ChannelBooleanMaterial.BackgroundMaterial** 
+**ChannelBooleanMaterial.BackgroundMaterial 背景材质** 
 
 [橙色，可选的]此输入将接受2D图像或3D材质。
 
-**ChannelBooleanMaterial.ForegroundMaterial** 
+**ChannelBooleanMaterial.ForegroundMaterial 前景材质** 
 
 [绿色，可选的]此输入将接受2D图像或3D材质。
 
-#### Controls
+#### Controls 控件
 
 ![3Bol_Controls](images/3Bol_Controls.png)
 
-##### Operand A/B
+##### Operand A/B 运算子A/B
 
 每个输出RGBA通道一个的Operand菜单允许用户为相应的通道设置所需的输入信息。
 
@@ -66,9 +66,9 @@ Channel Boolean Material可用于通过数学运算重新映射和修改3D材质
 
   将通道的值设置为法向量的选定轴。向量在眼空间中返回。
 
-##### Operation
+##### Operation 运算符
 
-确定如何组合操作数的Operation。
+确定如何组合运算子的Operation。
 
 - **A:** 仅对输出通道使用Operand A。
 - **B:** 仅对输出通道使用Operand B。
@@ -82,6 +82,6 @@ Channel Boolean Material可用于通过数学运算重新映射和修改3D材质
 - **max(A,B):** 比较Operand A和B的值并返回较大的值。
 - **avg(A,B):** 返回两个Operand的平均值。
 
-##### Material ID
+##### Material ID 材质ID
 
 此滑块设置分配给此材质的数字标识符。如果渲染器中启用了相应选项，这个值将被渲染到MatID辅助通道中。

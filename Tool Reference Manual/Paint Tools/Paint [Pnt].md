@@ -83,7 +83,7 @@ Fusion的Paint甚至可以用来从头创作新的图像或艺术元素。
 
 Spacing滑块确定dab（用于沿着构成笔画或折线笔画的基础矢量形状绘制直线的样本）之间的距离。增大此滑块的值会增加笔画的密度，而减小该值很可能会使笔画看起来像虚线。
 
-![Modifers_Spacing](D:/FusionHelpManual-zh_CN/Tool Reference Manual/Paint Tool/images/Modifers_Spacing.png)
+![Modifers_Spacing](images/Modifers_Spacing.png)
 
 ##### Stroke Animation 笔画动画
 

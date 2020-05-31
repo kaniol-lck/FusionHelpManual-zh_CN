@@ -12,38 +12,38 @@ Reflect工具用于向材质添加环境贴图反射和折射。提供反射和�
 
  ![3RR_tile](images/3RR_tile.jpg)
 
-**Reflect.BackgroundMaterial** 
+**Reflect.BackgroundMaterial 背景材质** 
 
 [橙色，可选的]此输入需要2D图像或3D材质。
   如果提供了2D图像，该工具会将其视为应用于基本材质的漫反射纹理贴图。
 
-**Reflect.Reflection.ReflectionTex** 
+**Reflect.Reflection.ReflectionTex 反射纹理** 
 
 [绿色，可选的]此输入需要2D图像或3D材质。RGB通道用作反射纹理，并忽略alpha。
 
-**Reflect.Reflection.ReflectionIntensityTex** 
+**Reflect.Reflection.ReflectionIntensityTex 反射强度纹理** 
 
 [洋红色，可选的]此输入需要2D图像或3D材质。纹理的alpha通道乘以反射的强度。
 
-**Reflect.Refraction.RefractionTex** 
+**Reflect.Refraction.RefractionTex 折射纹理** 
 
 [淡蓝色，可选的]此输入需要2D图像或3D材质。RGB通道用作折射纹理。
 
-**Reflect.BumpmapTex** 
+**Reflect.BumpmapTex 凹凸纹理** 
 
 [白色，可选的]此输入将接受2D图像或3D材质，然后将RGB信息用作纹理空间法线。
 
-#### Controls
+#### Controls 控件
 
 ![3RR_Controls](images/3RR_Controls.png)
 
-#### Reflection
+#### Reflection 反射
 
-##### Reflection Strength Variability
+##### Reflection Strength Variability 反射强度变化量
 
 这个多按钮控件可以设置为Constant或By Angle来改变反射强度，根据相对于观察者的表面方向。以下三个控件只有在此控件设置为By Angle时才可见。
 
-##### Glancing Strength
+##### Glancing Strength 
 
 [By Angle]Glancing Strength控制着反射面远离相机的几何物体区域的反射强度。
 
