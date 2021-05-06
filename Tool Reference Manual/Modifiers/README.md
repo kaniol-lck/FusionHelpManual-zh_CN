@@ -13,6 +13,8 @@
 - [Natural Cubic Spline](./Natural%20Cubic%20Spline.md) 
 - [Offset](./Offset.md)
 - [Path](./Path.md)
+- [Perturb](./Perturb.md)
+- [Probe](./Probe.md)
 - [Publish](./Publish.md)
 - [Shake](./Shake.md)
 - [Track](./Track.md)

@@ -18,10 +18,10 @@
  - [x] 第十二章 Filter Tools 滤镜工具 @kaniol-lck
  - [x] 第十三章 Flow Tools 流程工具 @kaniol-lck
  - [x] 第十四章 FlowOrg Tools 流程组织工具 @kaniol-lck
- - [x] 第十五章 Fuses Fuse插件 @JUNE3546 
- - [x] 第十六章 I/O Tools 输入输出工具 @JUNE3546 
- - [x] 第十七章 LUT Tools LUT工具 @JUNE3546 
- - [x] 第十八章 Mask Tools 遮罩工具 @JUNE3546 （待整理）
+ - [x] 第十五章 Fuses Fuse插件 @JUNE3546 @kaniol-lck 
+ - [x] 第十六章 I/O Tools 输入输出工具 @JUNE3546 @kaniol-lck 
+ - [x] 第十七章 LUT Tools LUT工具 @JUNE3546 @kaniol-lck 
+ - [x] 第十八章 Mask Tools 遮罩工具 @JUNE3546 @kaniol-lck 
  - [x] 第十九章 Matte Tools 蒙版工具 @JUNE3546 （待整理）
  - [x] 第二十章 Metadata Tools 元数据工具 @kaniol-lck
  - [x] 第二十一章 Miscellaneous Tools 杂项工具 @kaniol-lck
