@@ -25,7 +25,7 @@
  - [x] 第十九章 Matte Tools 蒙版工具 @JUNE3546 （待整理）
  - [x] 第二十章 Metadata Tools 元数据工具 @kaniol-lck
  - [x] 第二十一章 Miscellaneous Tools 杂项工具 @kaniol-lck
- - [x] 第二十二章 Optical Flow 光流 @JUNE3546 （待整理）
+ - [x] 第二十二章 Optical Flow 光流 @JUNE3546 
  - [x] 第二十三章 Paint Tool 绘画工具 @kaniol-lck
  - [x] 第二十四章 Particle Tools 粒子工具 @JUNE3546 
  - [x] 第二十五章 Position Tools 位置工具 @kaniol-lck
