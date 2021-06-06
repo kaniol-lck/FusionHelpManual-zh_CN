@@ -1,4 +1,4 @@
-### Corner Positioner [CPn]
+### Corner Positioner [CPn] 角落定位器
 
 Corner Positioner使用交互式的方法来定位图像的四个角落。这通常会用于替换告示牌或其他场景中的一块矩形部分。要添加动画的话，连接所有角落至路径或跟踪器。
 

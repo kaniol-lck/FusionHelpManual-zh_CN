@@ -1,4 +1,4 @@
-### Luma Keyer [LKy]
+### Luma Keyer [LKy] 亮度键控
 
 Luma Keyer工具使用图像的整体亮度来创建Alpha通道。当此工具第一次被创建时，它仅在图像的亮度通道上使用，但后来它已经发展到可以从Fusion所掌握的几乎所有通道中获取蒙版。在某些方面，现在将此工具称为“Channel Keyer（通道键控器）”更为准确。
 

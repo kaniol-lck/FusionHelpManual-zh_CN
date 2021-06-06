@@ -1,9 +1,9 @@
 ## 第二十七章 Tracker Tools 跟踪器工具
 
-- [Tracker [Tra]](./Tracker%20[Tra].md) 
-- [Planar Tracker [PTra]](./Planar%20Tracker%20[PTra].md) 
-- [Planar Transform [PXf]](./Planar%20Transform%20[PXf].md) 
-- [Camera Tracker [CTra]](./Camera%20Tracker%20[CTra].md)
+- [Tracker [Tra] 跟踪器](./Tracker%20[Tra].md) 
+- [Planar Tracker [PTra] 平面跟踪器](./Planar%20Tracker%20[PTra].md) 
+- [Planar Transform [PXf] 平面变换](./Planar%20Transform%20[PXf].md) 
+- [Camera Tracker [CTra] 摄像机跟踪器](./Camera%20Tracker%20[CTra].md)
 
 <table id="img">
   <tr>
@@ -17,4 +17,3 @@
     <td><img src="images/index_CameraTracker.jpg" alt="index_CameraTracker"></td>
   </tr>
 </table>
-

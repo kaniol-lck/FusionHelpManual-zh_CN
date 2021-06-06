@@ -1,6 +1,6 @@
-### Erode/Dilate [ErDl]
+### Erode/Dilate [ErDl] 内缩/外扩
 
-这个简单的工具会内蚀（Erode）或外扩（Dilate）图像，具体取决于Amount滑块设置为负值还是正值。
+这个简单的工具会内缩（Erode）或外扩（Dilate）图像，具体取决于Amount滑块设置为负值还是正值。
 
 #### Controls 控件
 

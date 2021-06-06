@@ -1,4 +1,4 @@
-### Hot Spot [Hot]
+### Hot Spot [Hot] 热点
 
 Hot Spot工具用于创建各种类型的镜头光晕、聚光灯和燃烧/减淡效果。
 

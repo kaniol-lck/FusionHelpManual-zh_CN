@@ -1,4 +1,4 @@
-### Material Merge 3D [3MM]
+### Material Merge 3D [3MM] 材质合并3D
 
 Material Merge工具可用于将两个单独的材质组合在一起。 此工具可用于复合材质工具，将多个照明材质（Blinn，Cook Torrance）与纹理工具（Bumpmap，Reflection）组合在一起，以创建复杂的着色器网络。
 

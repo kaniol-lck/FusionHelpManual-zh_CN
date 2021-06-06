@@ -1,4 +1,4 @@
-### OCIO ColorSpace [OCC]
+### OCIO ColorSpace [OCC] OCIO色彩空间
 
 Fusion支持Sony Imageworks指定的Open Color IO工作流程。
 

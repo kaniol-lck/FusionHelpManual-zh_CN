@@ -1,4 +1,4 @@
-### Common Mask Controls
+### Common Mask Controls 通用遮罩控件
 
 通用控制可以在每个遮罩工具中找到。因此，本章适用于所有遮罩工具。
 

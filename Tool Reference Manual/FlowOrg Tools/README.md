@@ -1,8 +1,8 @@
 ## 第十四章 FlowOrg Tools 流程组织工具
 
-- [Group](./Group.md) 
-- [Macro](./Macro.md) 
-- [Pipe Router](./Pipe%20Router.md) 
+- [Group 分组](./Group.md) 
+- [Macro 宏](./Macro.md) 
+- [Pipe Router 管线路由](./Pipe%20Router.md) 
 
 <table id="img">
   <tr>
@@ -15,4 +15,3 @@
     <td><img src="images/index_PipeRouter.jpg" alt="index_PipeRouter"></td>
   </tr>
 </table>
-

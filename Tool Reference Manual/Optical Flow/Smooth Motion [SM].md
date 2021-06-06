@@ -1,4 +1,4 @@
-### Smooth Motion [SM]
+### Smooth Motion [SM] 平滑运动
 
 此工具对图像序列使用光流对其进行平滑处理以查看相邻帧。
 

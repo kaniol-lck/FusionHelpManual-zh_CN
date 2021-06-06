@@ -1,4 +1,4 @@
-### Copy Metadata [Meta]
+### Copy Metadata [Meta] 复制元数据
 
 Copy Metadata结合、置换或清除你图像中的元数据。
 

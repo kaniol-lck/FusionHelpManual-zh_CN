@@ -1,4 +1,4 @@
-### Time Stretcher [TSt]
+### Time Stretcher [TSt] 时间伸缩器
 
 Time Stretcher工具与Time Speed工具类似，但是它允许在效果过程中片段的时间添加动画。它提供了包括平滑在内的完整的样条控制。作为结果，Time Stretcher可以用于添加动画至200，再变回原先的速度，暂停仪表，然后向前播放（类似VCR倒带）。
 

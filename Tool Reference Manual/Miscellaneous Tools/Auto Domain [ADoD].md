@@ -1,4 +1,4 @@
-### Auto Domain [ADoD]
+### Auto Domain [ADoD] 自动定义域
 
 Auto Domain工具会根据输入图像的背景画布颜色边界自动设置图像的定义域（Domain of Definition）。它不会改变图像的物理尺寸。该工具可以通过基于内容而不是尺寸来优化图像的DoD，从而达到加速合成的效果。
 

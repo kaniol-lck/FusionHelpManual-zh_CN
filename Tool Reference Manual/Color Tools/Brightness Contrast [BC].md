@@ -1,4 +1,4 @@
-### Brightness Contrast [BC]
+### Brightness Contrast [BC] 亮度和对比度
 
 Brightness Contrast工具用于调整图像的增益（Gain），亮度（Brightness），对比度（Contrast），伽马（Gamma）和饱和度（Saturation）。控件的顺序表示每个操作的应用顺序（例如，在对比度之前但在增益之后应用伽马）。使用Forward和Reverse按钮，亮度对比度也是可逆的。因此，颜色校正应用后可以在下游进一步逆转。
 为使其工作得最好，请确保以32位浮点处理图像。

@@ -1,4 +1,4 @@
-### Sticky Note [Nte]
+### Sticky Note [Nte] 便笺
 
 Sticky Note是为合成的特定区域提供便笺、注释和历史记录的一种有用方法。通过更改它们的尺寸和颜色，可以根据需要提供简洁的注释或重要提示。Sticky Note是对Comments选项卡的很好补充。
 

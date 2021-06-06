@@ -1,10 +1,10 @@
 ## 第十二章 Filter Tools 滤镜工具
 
-- [CreateBumpmap [CBu]](./CreateBumpmap%20[CBu].md) 
-- [Custom Filter [CFlt]](./Custom%20Filter%20[CFlt].md) 
-- [Erode/Dilate [ErDl]](./ErodeDilate%20[ErDl].md) 
-- [Filter [Fltr]](./Filter%20[Fltr].md) 
-- [Rank Filter [RFlt]](./Rank%20Filter%20[RFlt].md) 
+- [CreateBumpmap [CBu] 创建凹凸贴图](./CreateBumpmap%20[CBu].md) 
+- [Custom Filter [CFlt] 自定义滤镜](./Custom%20Filter%20[CFlt].md) 
+- [Erode/Dilate [ErDl] 内缩/外扩](./ErodeDilate%20[ErDl].md) 
+- [Filter [Fltr] 滤镜](./Filter%20[Fltr].md) 
+- [Rank Filter [RFlt] 分级滤镜](./Rank%20Filter%20[RFlt].md) 
 
 <table id="img">
   <tr>
@@ -24,4 +24,3 @@
     <td><img src="images/index_RankFilter.jpg" alt="index_RankFilter"></td>
   </tr>
 </table>
-

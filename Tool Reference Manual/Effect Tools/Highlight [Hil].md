@@ -1,4 +1,4 @@
-### Highlight [Hil]
+### Highlight [Hil] 高光
 
 Highlight滤镜在图像的明亮区域中创建星形高光，类似于镜头星形滤镜效果。
 

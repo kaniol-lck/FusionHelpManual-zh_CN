@@ -1,4 +1,4 @@
-### Set Metadata [SMeta]
+### Set Metadata [SMeta] 设置元数据
 
 Set Metadata允许用户在元数据中创建新的`Name = Value`对。
 

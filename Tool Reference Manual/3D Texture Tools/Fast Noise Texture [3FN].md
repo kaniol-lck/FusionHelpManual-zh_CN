@@ -1,4 +1,4 @@
-### Fast Noise Texture [3FN]
+### Fast Noise Texture [3FN] 快速噪声纹理
 
 Fast Noise Texture工具是2DFast Noise工具的与程序分辨率无关的版本。它直接创建噪声纹理作为3D工具使用的材质。它提供了一个3D体积模式，可以与提供UVW纹理坐标的工具（如设置为XYZtoUVW或相机的UV Map工具）一起创建无缝纹理。
 

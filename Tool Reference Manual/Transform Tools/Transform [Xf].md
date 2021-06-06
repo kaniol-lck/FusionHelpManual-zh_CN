@@ -1,4 +1,4 @@
-### Transform [Xf]
+### Transform [Xf] 变换
 
 Transform工具可以用于图像的简单2D变换，例如平移、旋转和缩放。图像的宽高比也可通过Transform工具修改。
 

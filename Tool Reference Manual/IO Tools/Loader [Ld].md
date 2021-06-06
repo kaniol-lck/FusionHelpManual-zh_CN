@@ -1,4 +1,4 @@
-### Loader [Ld]
+### Loader [Ld] 加载器
 
 Loader工具用于选择并加载磁盘或网络存储器中的素材。
 

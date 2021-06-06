@@ -1,4 +1,4 @@
-### Polygon Mask [Ply]
+### Polygon Mask [Ply] 多边形遮罩
 
 Polygon遮罩是遮蔽不规则形状物体最有用的工具。向工具添加它时，Polygon在屏上只可见Center和Angle控件。通过在查看器中单击可以向多边线添加点。每个新点都会连接到最后创建的点上。
 

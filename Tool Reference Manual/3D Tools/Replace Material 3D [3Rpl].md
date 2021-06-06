@@ -1,4 +1,4 @@
-### Replace Material 3D [3Rpl]
+### Replace Material 3D [3Rpl] 替换材质3D
 
 Replace Material 3D工具用它自己的材质输入替换应用于输入场景中所有几何物体的材质。输入场景中的所有灯光或摄像机都不会受到影响。
 

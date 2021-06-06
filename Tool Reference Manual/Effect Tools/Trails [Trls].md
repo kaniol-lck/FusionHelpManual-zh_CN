@@ -1,4 +1,4 @@
-### Trails [Trls]
+### Trails [Trls] 尾迹
 
 Trails工具用于创建图像中重影般的尾迹。当它应用在带有alpha通道的运动图像时，这会产生有趣的效果。与Directional Blur不同，只有图像之前的运动才会显示为效果的一部分。
 

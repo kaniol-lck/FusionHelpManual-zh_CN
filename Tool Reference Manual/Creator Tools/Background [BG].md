@@ -1,4 +1,4 @@
-### Background [BG]
+### Background [BG] 背景
 
 Background工具可用于生成从简单的彩色背景到复杂的可循环渐变的任何内容。
 

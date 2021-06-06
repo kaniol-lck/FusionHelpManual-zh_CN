@@ -1,4 +1,4 @@
-### Spherical Stabilizer [SSt]
+### Spherical Stabilizer [SSt] 球形稳定器
 
 VR实景通常是使用手持摄像机拍摄的，因此镜头可能会晃动。Spherical Stabilizer工具将自动识别并跟踪素材中的视觉特征，然后分析它的运动来识别平移、倾斜和横滚旋转。跟踪之后，可以平滑或稳定素材的旋转。该工具需要球形布局的图像，可以是LatLong（2:1经纬投影）、水平/垂直Cross或水平/垂直Strip中的任何一个。
 

@@ -1,4 +1,4 @@
-### Color Curves [CCv]
+### Color Curves [CCv] 色彩曲线
 
 Color Curves工具是一种基于样条曲线的工具，用于执行查找表（LUT）颜色操作。每个颜色通道都有提供单独的样条。效果可以是动画的或溶解的，并且可以使用RGB、YUV、YIQ、CMY或HLS颜色空间应用于图像。
 

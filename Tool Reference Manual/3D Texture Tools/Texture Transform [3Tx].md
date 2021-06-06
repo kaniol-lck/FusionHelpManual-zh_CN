@@ -1,4 +1,4 @@
-### Texture Transform [3Tx]
+### Texture Transform [3Tx] 纹理变换
 
 Texture Transform工具可用于平移，旋转和缩放输入材质上的图像纹理。虽然输入也可以是图像，但始终输出材质。
 

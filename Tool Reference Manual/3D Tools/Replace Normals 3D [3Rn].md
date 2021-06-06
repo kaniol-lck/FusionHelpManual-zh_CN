@@ -1,4 +1,4 @@
-### Replace Normals 3D [3Rn]
+### Replace Normals 3D [3Rn] 替换法线3D
 
 ReplaceNormals用于替换传入几何物体的法线/切线。输入场景中的所有几何物体都会受到影响。Lights/Cameras/PointClouds/Locators/Materials和其他非mesh工具不受影响。受此工具影响的法线/切线是每个顶点的法线/切线，而不是每个面的法线/切线。为了计算切线，输入的几何物体必须有纹理坐标。有时几何物体没有纹理坐标，或者纹理坐标被FBX导入设置为All，因为它们不在FBX上。
 

@@ -1,4 +1,4 @@
-### Renderer 3D [3Rn]
+### Renderer 3D [3Rn] 渲染器3D
 
 Renderer 3D工具使用默认透视摄像机或场景中找到的摄像机将3D环境转换为2D图像。合成中的每个3D场景都应该以至少一个 Renderer 3D工具结束。渲染工具可以使用Softeware或者OpenGL渲染引擎来生成结果图像。也可以通过第三方插件提供额外的渲染引擎。
 

@@ -1,4 +1,4 @@
-### Ultra Keyer [UKy]
+### Ultra Keyer [UKy] 超级键控
 
 Ultra Keyer（超级键控）工具有两个内置键控器，一个“Prematte keyer（预蒙版键控器）”充当垃圾蒙版创建器和色差键控器，可以提取出精致的细节和透明度。这优化了从使用蓝屏或绿屏背景的图像中提取蒙版。
 

@@ -1,4 +1,4 @@
-### Color Gain [Clr]
+### Color Gain [Clr] 色彩增益
 
 Color Gain工具包含用于调整图像的增益、伽马、饱和度和色相的选项。Color Gain工具提供的许多控件也可以在Color Corrector工具中找到，但这个更简单的工具可以更快地渲染。区分Color Gain工具和Color Corrector的一个功能是其平衡控制。这些可用于调整高、中、低的颜色色泽。
 

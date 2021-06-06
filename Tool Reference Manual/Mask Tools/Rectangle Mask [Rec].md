@@ -1,4 +1,4 @@
-### Rectangle Mask [Rec]
+### Rectangle Mask [Rec] 矩形遮罩
 
 Rectangle遮罩创建了一个简单的方形或矩形效果遮罩。
 

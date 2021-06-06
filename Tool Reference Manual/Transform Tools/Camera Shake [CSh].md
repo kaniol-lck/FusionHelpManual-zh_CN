@@ -1,4 +1,4 @@
-### Camera Shake [CSh]
+### Camera Shake [CSh] 摄像机摇晃
 
 该工具可以模拟一些从生理到机械的摄像机抖动样式的运动。它与Shake修改器不一样，那个会为工具空间生成随机数值。有关Shake修改器的更多信息详见“Connections and Modifiers 连接与修改器”一章。
 

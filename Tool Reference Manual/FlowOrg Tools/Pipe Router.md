@@ -1,4 +1,4 @@
-### Pipe Router
+### Pipe Router 管线路由
 
 Pipe Router可通过在管线中创建转折使它们更清晰可见，并帮助您更轻松地理解流程，从而巧妙地组织合成。Pipe Router对渲染时间没有任何影响。
 

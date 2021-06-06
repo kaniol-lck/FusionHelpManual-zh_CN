@@ -1,4 +1,4 @@
-### Stereo Mix [3SMM]
+### Stereo Mix [3SMM] 立体混合
 
 #### External Inputs 外部输入
 

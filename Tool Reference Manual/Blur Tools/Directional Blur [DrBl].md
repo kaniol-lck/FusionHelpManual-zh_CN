@@ -1,4 +1,4 @@
-### Directional Blur [DrBl]
+### Directional Blur [DrBl] 方向性模糊
 
 此工具用于创建方向性（Directional）和径向（Radial）模糊。它对于创建模拟运动模糊和光线类型效果很有用。Directional Blur会影响所有通道（RGBA）。
 

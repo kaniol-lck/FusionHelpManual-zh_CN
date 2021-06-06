@@ -1,8 +1,8 @@
-### Defocus [Dfo]
+### Defocus [Dfo] 失焦
 
 Defocus工具模拟失焦相机镜头的效果，包括晕染和图像眩光。它提供快速但相对不准确的Gaussian模式，以及更逼真但更慢的镜头模式。
 
-#### Controls
+#### Controls 控件
 
 ![Dfo_Controls](images/Dfo_Controls.png)![Dfo_Controls2](images/Dfo_Controls2.png)
 

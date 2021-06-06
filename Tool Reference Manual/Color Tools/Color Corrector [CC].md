@@ -1,4 +1,4 @@
-### Color Corrector [CC]
+### Color Corrector [CC] 色彩矫正
 
 Color Corrector工具是一款综合的色彩工具，具有直方图、匹配和均衡，色调偏移、着色和颜色抑制功能。Color Corrector有两个图像输入。将要校正的图像连接到主输入。辅助输入可用作直方图匹配的参考。
 

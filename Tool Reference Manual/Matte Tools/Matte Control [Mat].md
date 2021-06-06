@@ -1,4 +1,4 @@
-### Matte Control [Mat]
+### Matte Control [Mat] 蒙版控制
 
 键控工具通常用于在尚未有alpha通道的图像上创建Alpha通道。蒙版控制工具用于操作现有的Alpha通道或通过动态遮罩手动创建一个通道。
 

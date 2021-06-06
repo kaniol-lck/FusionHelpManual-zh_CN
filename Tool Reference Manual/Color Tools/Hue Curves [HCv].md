@@ -1,4 +1,4 @@
-### Hue Curves [HCv]
+### Hue Curves [HCv] 色相曲线
 
 Hue Curves工具允许您使用一系列样条曲线调整图像中的色彩。提供样条来控制图像色相（Hue）、饱和度（Saturation）和亮度（Luminance）以及每个单独的色彩通道。另外一组曲线允许您将抑制应用于各个色彩通道。
 

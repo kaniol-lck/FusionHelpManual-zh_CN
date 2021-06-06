@@ -1,4 +1,4 @@
-### Day Sky [DS]
+### Day Sky [DS] 天空图
 
 DaySky发生器是Preetham、Shirley和Smits的研究论文《日光实用分析模型》（*A Practical Analytical Model for Daylight*）的操作实现。原始论文的副本可以在犹他大学视觉模拟小组的网站上找到（http://www.cs.utah.edu/~shirley/papers/sunsky/）。
 

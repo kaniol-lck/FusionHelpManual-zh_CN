@@ -1,4 +1,4 @@
-### Triangle Mask [Tri]
+### Triangle Mask [Tri] 三角遮罩
 
 Triangle遮罩的独特之处在于它没有Center、Size和Angle控件。与其他大多数遮罩类型不同，三角的所有三个点都可以连接到跟踪器或运动路径上。可以通过使用跟踪器和其他工具的路径来操纵三角形状来实现一些复杂的效果遮罩工作。
 

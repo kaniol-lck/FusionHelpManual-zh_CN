@@ -1,4 +1,4 @@
-### Custom Filter [CFlt]
+### Custom Filter [CFlt] 自定义滤镜
 
 Custom Filter工具用于将自定义卷积滤镜应用于图像。自定义卷积滤镜可以提供各种图像效果。例如，压纹、浮雕、锐化、模糊和边缘检测都是卷积滤镜。可以通过右键单击控件标题并从上下文菜单中选择Settings > Load来加载Filter目录中提供的许多自定义滤镜。
 

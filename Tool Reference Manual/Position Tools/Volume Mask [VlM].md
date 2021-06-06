@@ -1,4 +1,4 @@
-### Volume Mask [VlM]
+### Volume Mask [VlM] 体积遮罩
 
 Volume Mask用于从包含XYZ位置通道的图像中创建体积遮罩。
 

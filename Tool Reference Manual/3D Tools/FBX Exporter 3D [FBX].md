@@ -1,4 +1,4 @@
-### FBX Exporter 3D [FBX]
+### FBX Exporter 3D [FBX] FBX导出器3D
 
 FBX Exporter提供了一种方法，可以将Fusion的3D场景导出到FBX场景交换格式。Fusion中的每个节点都是导出文件中的单个对象。对象、灯光和摄像机将使用创建它们的节点的名称。可以将该工具设置为为整个场景一个文件，或每帧一个文件。
 

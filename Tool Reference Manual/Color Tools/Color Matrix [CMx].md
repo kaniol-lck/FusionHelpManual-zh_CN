@@ -1,4 +1,4 @@
-### Color Matrix [CMx]
+### Color Matrix [CMx] 色彩矩阵
 
 ColorMatrix允许大量操作来单独修改不同颜色通道的值。
 

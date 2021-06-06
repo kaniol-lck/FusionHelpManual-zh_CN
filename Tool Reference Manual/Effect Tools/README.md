@@ -1,11 +1,11 @@
 ## 第十章 Effect Tools 效果工具
 
-- [Highlight [Hil]](./Highlight%20[Hil].md) 
-- [Hot Spot [Hot]](./Hot%20Spot%20[Hot].md) 
-- [Pseudo Color [PsCl]](./Pseudo%20Color%20[PsCl].md) 
-- [Shadow [Sh]](./Shadow%20[Sh].md) 
-- [Trails [Trls]](./Trails%20[Trls].md) 
-- [TV [TV]](./TV%20[TV].md) 
+- [Highlight [Hil] 高光](./Highlight%20[Hil].md) 
+- [Hot Spot [Hot] 热点](./Hot%20Spot%20[Hot].md) 
+- [Pseudo Color [PsCl] 伪色](./Pseudo%20Color%20[PsCl].md) 
+- [Shadow [Sh] 阴影](./Shadow%20[Sh].md) 
+- [Trails [Trls] 尾迹](./Trails%20[Trls].md) 
+- [TV [TV] 老电视](./TV%20[TV].md) 
 
 <table id="img">
   <tr>

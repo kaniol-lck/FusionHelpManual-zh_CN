@@ -1,4 +1,4 @@
-### Ambient Occlusion [SSAO]
+### Ambient Occlusion [SSAO] 环境光遮蔽
 
 环境光遮挡（Ambient Occlusion，AO）是当场景被均匀的散射球形光源包围时引起的照明。可以将场景想象成被一个巨大的球体围绕，该球体从其表面均匀地发出光。AO捕获低频照明。它不会捕获锐利的阴影、漫反射（Diffuse）或高光（Specular）照明。因此，AO通常与漫反射和高光照明结合使用以创建完整的照明解决方案。
 

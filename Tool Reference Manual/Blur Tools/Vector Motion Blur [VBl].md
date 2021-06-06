@@ -1,4 +1,4 @@
-### Vector Motion Blur [VBl]
+### Vector Motion Blur [VBl] 矢量运动模糊
 
 此工具用于基于Vector Channel创建方向性模糊。
 此工具将使用由3D应用生成的矢量贴图对图像执行2D模糊。矢量贴图通常是两个浮点图像，一个通道指定像素在X中移动的距离，另一个指定像素在Y中移动的距离。在OpenEXR的情况下，这些通道可以嵌入图像中或RLA/RPF图像、或者也可以使用工具的Vectors输入以单独的图像提供。

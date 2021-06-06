@@ -1,4 +1,4 @@
-### Copy Aux [CpA]
+### Copy Aux [CpA] 复制辅助通道
 
 CopyAux将辅助通道组复制到RGBA通道。CopyAux只在Fusion Studio中可用。
 

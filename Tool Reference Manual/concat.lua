@@ -16,7 +16,8 @@ outputFile:write([[<div STYLE="page-break-after: always;"></div>]], "\n")
 for _, t in ipairs(filepaths) do
 	local name, filepath = t[1], t[2]
 	filepath = string.gsub(filepath, "%%20", " ")
-	local f = io.open(filepath.."output.md", "r")
+	--print("cd \""..filepath.."\"\nlua concat.lua\ncd ..\n")
+	local f = assert(io.open(filepath.."output.md", "r"))
 	if f then
 		for l in f:lines() do
 			l = string.gsub(l, "!%[(.*)%]%(images/(.*)%)", "!%[%1%]%("..filepath.."images/%2%)")

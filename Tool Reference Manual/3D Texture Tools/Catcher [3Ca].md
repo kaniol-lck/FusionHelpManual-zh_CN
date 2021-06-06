@@ -1,4 +1,4 @@
-### Catcher [3Ca]
+### Catcher [3Ca] 捕捉器
 
 Catcher材质是用来“捕捉”从Projector 3D和Camera 3D工具投射的纹理模式投影。截取的投影被转换成纹理贴图，并由Catcher材质应用于其连接的几何物体。
 

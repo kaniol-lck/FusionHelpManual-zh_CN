@@ -1,4 +1,4 @@
-### Merge 3D [3Mg]
+### Merge 3D [3Mg] 合并3D
 
 Merge 3D工具用于将独立的3D元素组合到相同的3D环境中。
 

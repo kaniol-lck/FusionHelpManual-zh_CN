@@ -1,12 +1,12 @@
 ## 第八章 Creator Tools 创建器工具
 
-- [Background [BG]](./Background%20[BG].md)
-- [Day Sky [DS]](./Day%20Sky%20[DS].md)
-- [Fast Noise [FN]](./Fast%20Noise%20[FN].md)
-- [Mandelbrot [MAN]](./Mandelbrot%20[MAN].md)
-- [Plasma [PLAS]](./Plasma%20[PLAS].md)
-- [Text Plus [TXT+]](./Text%20Plus%20[TXT+].md)
-- [Modifiers](./Creator%20Modifiers.md)
+- [Background [BG] 背景](./Background%20[BG].md)
+- [Day Sky [DS] 天空图](./Day%20Sky%20[DS].md)
+- [Fast Noise [FN] 快速噪声](./Fast%20Noise%20[FN].md)
+- [Mandelbrot [MAN] 曼德布罗分形](./Mandelbrot%20[MAN].md)
+- [Plasma [PLAS] 等离子体](./Plasma%20[PLAS].md)
+- [Text Plus [TXT+] 文本+](./Text%20Plus%20[TXT+].md)
+- [Modifiers 修改器](./Creator%20Modifiers.md)
   - [Character Level Styling](./Creator%20Modifiers.md#Character%20Level%20Styling)
   - [Comp Name](./Creator%20Modifiers.md#Comp%20Name)
   - [Follower](./Creator%20Modifiers.md#Follower)
@@ -35,6 +35,5 @@
     <td><img src="images/index_TextPlus.jpg" alt="index_TextPlus"></td>
   </tr>
 </table>
-
 
 

@@ -1,4 +1,4 @@
-### Transform 3D [3Xf]
+### Transform 3D [3Xf] 变换3D
 
 Transform 3D工具可以用来平移、旋转或缩放场景中的所有元素，而不需要Merge 3D工具。这对于层次化变换，或者偏移多次合并到场景中的对象都很有用。它的控件与其他3D工具的Transformation选项卡中的控件相同。
 

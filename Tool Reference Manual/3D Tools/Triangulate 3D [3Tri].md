@@ -1,4 +1,4 @@
-### Triangulate 3D [3Tri]
+### Triangulate 3D [3Tri] 三角剖分3D
 
 这个工具没有控件。它对任何四边形或凸多边形进行三角剖分。
 

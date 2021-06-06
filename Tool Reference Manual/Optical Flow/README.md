@@ -1,9 +1,9 @@
 ## 第二十二章 Optical Flow 光流
 
-- [Optical Flow [OF]](./Optical%20Flow%20[OF].md) 
-- [Repair Frame [Rep]](./Repair%20Frame%20[Rep].md) 
-- [Smooth Motion [SM]](./Smooth%20Motion%20[SM].md) 
-- [Tween [Tw]](./Tween%20[Tw].md)
+- [Optical Flow [OF] 光流](./Optical%20Flow%20[OF].md) 
+- [Repair Frame [Rep] 修复帧](./Repair%20Frame%20[Rep].md) 
+- [Smooth Motion [SM] 平滑运动](./Smooth%20Motion%20[SM].md) 
+- [Tween [Tw] 中间帧](./Tween%20[Tw].md)
 
 <table id="img">
   <tr>
@@ -20,4 +20,3 @@
     <td><img src="images/Tween_index.jpg" alt="Tween_index"></td>
   </tr>
 </table>
-

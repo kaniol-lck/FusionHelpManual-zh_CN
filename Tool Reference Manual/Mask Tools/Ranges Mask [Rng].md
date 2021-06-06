@@ -1,4 +1,4 @@
-### Ranges Mask [Rng]
+### Ranges Mask [Rng] 范围遮罩
 
 与Bitmap遮罩类似，Range Mask允许流程中的图像作为工具或效果的遮罩。但它并不是从给定的通道创建一个简单基于亮度的遮罩，而是允许基于样条选择低、中、高范围，类似于Color Corrector。
 

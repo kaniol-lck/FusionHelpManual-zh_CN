@@ -1,4 +1,4 @@
-### Spherical Camera [3SC]
+### Spherical Camera [3SC] 球形摄像机
 
 Spherical Camera允许3D Renderer输出覆盖所有视角的图像，并使用几种不同的格式布局。该图像可以用于如天空盒材质、反射贴图或在VR头盔中查看。3D Renderer中的Image Width设置用作每个方形立方体面的大小，所以生成的图像会是水平和垂直方向上此大小的倍数。
 

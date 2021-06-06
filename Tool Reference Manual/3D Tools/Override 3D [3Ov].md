@@ -1,4 +1,4 @@
-### Override 3D [3Ov]
+### Override 3D [3Ov] 覆盖3D
 
 Override工具允许您同时为3D场景中的每个物体更改物体特定的选项。这很有用，例如，当您希望将输入场景中的每个对象设置为线框时。此外，该工具是为3D粒子系统和Text 3D工具设置wireframe、visibility、lighting、matte和ID选项的唯一方法。
 

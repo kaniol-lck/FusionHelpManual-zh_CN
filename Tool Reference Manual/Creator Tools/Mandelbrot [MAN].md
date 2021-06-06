@@ -1,6 +1,6 @@
-### Mandelbrot [MAN]
+### Mandelbrot [MAN] 曼德布罗分形
 
-该工具基于Mandelbrot分形理论集创建图像样式。
+该工具基于曼德布罗分形理论集创建图像样式。
 
 #### Generation Tab 生成选项卡
 

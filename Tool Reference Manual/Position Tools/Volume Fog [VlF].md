@@ -1,4 +1,4 @@
-### Volume Fog [VlF]
+### Volume Fog [VlF] 体积雾
 
 Volume Fog工具用于在包含XYZ坐标通道的图像上创建复杂的体积雾。
 

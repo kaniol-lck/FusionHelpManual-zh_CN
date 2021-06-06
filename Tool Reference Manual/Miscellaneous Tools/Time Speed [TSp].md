@@ -1,4 +1,4 @@
-### Time Speed [TSp]
+### Time Speed [TSp] 时间速度
 
 Time Speed 允许图像序列加速、减速、反转或延迟。图像插值提供了平滑、高质量的结果。Time Speed应该用于静态的时间改变或向场景中引入延迟。要向时间应用动画，例如时间加速度或减速度，使用Time Stretcher代替。
 

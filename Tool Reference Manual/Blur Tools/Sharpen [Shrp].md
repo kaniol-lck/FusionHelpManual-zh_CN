@@ -1,4 +1,4 @@
-Sharpen [Shrp]
+### Sharpen [Shrp] 锐化
 
 Sharpen工具使用卷积滤镜来增强图像中的细节。
 

@@ -1,12 +1,12 @@
 ## 第二十八章 Transform Tools 变换工具
 
-- [Camera Shake [CSh]](./Camera%20Shake%20[CSh].md) 
-- [Crop [Crp]](./Crop%20[Crp].md) 
+- [Camera Shake [CSh] 摄像机摇晃](./Camera%20Shake%20[CSh].md) 
+- [Crop [Crp] 裁剪](./Crop%20[Crp].md) 
 - [DVE [DVE]](./DVE%20[DVE].md) 
-- [Letterbox [Lbx]](./Letterbox%20[Lbx].md) 
-- [Resize [Rsz]](./Resize%20[Rsz].md) 
-- [Scale [Scl]](./Scale%20[Scl].md) 
-- [Transform [Xf]](./Transform%20[Xf].md) 
+- [Letterbox [Lbx] 信封](./Letterbox%20[Lbx].md) 
+- [Resize [Rsz] 调整尺寸](./Resize%20[Rsz].md) 
+- [Scale [Scl] 缩放](./Scale%20[Scl].md) 
+- [Transform [Xf] 变换](./Transform%20[Xf].md) 
 
 <table id="img">
   <tr>
@@ -24,4 +24,3 @@
   </tr>
   <tr>
     <td><img src="images/index_Letterbox.jpg" alt="index_Letterbox"></td>
-

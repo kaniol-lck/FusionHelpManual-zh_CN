@@ -1,4 +1,4 @@
-### Delta Keyer [DK]
+### Delta Keyer [DK] 色差键控
 
 Delta Keyer是一款经典的色差键控器，具有很多用于调整蒙版和将主体从蓝屏或绿屏中分离出来的功能和控件。
 

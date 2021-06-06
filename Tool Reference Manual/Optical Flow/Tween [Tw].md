@@ -1,4 +1,4 @@
-### Tween [Tw]
+### Tween [Tw] 中间帧
 
 Tween通过使用光流在两个帧之间进行插值来构造中间帧。Tween在功能上与Time Speed和Time Stretcher几乎相同。主要的区别在于它对两个不成序列的图像也起作用。因此它不能使用存储在图像中的Vector或Back Vector辅助通道，必须手动生成光流。它无需在上游添加Optical Flow工具。生成的光流将被丢弃并不会存储回输出帧中。
 

@@ -1,7 +1,7 @@
 ## 第七章 Composite Tools 合成工具
 
-- [Dissolve [DX]](./Dissolve%20[DX].md) 
-- [Merge [Mrg]](./Merge%20[Mrg].md) 
+- [Dissolve [DX] 溶解](./Dissolve%20[DX].md) 
+- [Merge [Mrg] 合并](./Merge%20[Mrg].md) 
 
 <table id="img">
   <tr>
@@ -12,6 +12,5 @@
     <td><img src="images/index_Merge.jpg" alt="index_Merge"></td>
   </tr>
 </table>
-
 
 

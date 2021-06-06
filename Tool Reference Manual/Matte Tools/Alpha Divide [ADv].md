@@ -1,4 +1,4 @@
-### Alpha Divide [ADV]
+### Alpha Divide [ADV] Alpha自除
 
 如名称所示，Alpha Divide唯一的目的就是使输入图像除以它的Alpha通道。
 

@@ -1,4 +1,4 @@
-### LUT Cube Apply [LCP]
+### LUT Cube Apply [LCP] LUT Cube应用
 
 LUT Cube Apply将由LUT Cube Creator创建的图像作为前景输入并将该LUT应用于连接到背景输入的图像。
 

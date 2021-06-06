@@ -1,4 +1,4 @@
-### Set Domain [DoD]
+### Set Domain [DoD] 设置定义域
 
 Set Domain用于调整或设置图像的活跃区域，或者换言之，图像被认为拥有有效数据的区域。
 

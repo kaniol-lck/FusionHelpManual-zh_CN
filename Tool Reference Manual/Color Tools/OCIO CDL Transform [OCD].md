@@ -1,4 +1,4 @@
-### OCIO CDL Transform [OCD]
+### OCIO CDL Transform [OCD] OCIO CDL变换
 
 Fusion支持Sony Imageworks指定的Open Color IO工作流程。通常，色彩管道由一组由OCIO特定的配置文件定义的颜色转换组成，通常以“.ocio”扩展名命名，它允许用户轻松共享设施内或设施之间的颜色设置。要使用的配置文件的路径通常由用户创建的名为“OCIO”的环境变量指定，尽管有些工具允许覆盖它。如果找不到其他* .ocio配置文件，将使用Fusion的LUTs目录中的DefaultConfig.ocio文件。
 

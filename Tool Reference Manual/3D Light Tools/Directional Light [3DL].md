@@ -1,4 +1,4 @@
-### Directional Light [3DL]
+### Directional Light [3DL] 方向性光照
 
 Directional Light是一种有明确方向但没有明确光源的光。此光照显示屏幕上的小部件，但小部件的位置没有任何意义。
 

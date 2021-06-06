@@ -1,4 +1,4 @@
-### BumpMap [3Bu]
+### BumpMap [3Bu] 凹凸贴图
 
 Bumpmap工具可以将灰阶（高度贴图）图像转换成凹凸贴图，也可以直接使用Create Bumpmap工具创建的凹凸贴图。本工具输出一种材质。
 

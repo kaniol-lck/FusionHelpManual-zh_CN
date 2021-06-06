@@ -1,4 +1,4 @@
-### Scale [Scl]
+### Scale [Scl] 缩放
 
 Scale工具几乎与Resize工具完全相同，差别只有Resize工具会使用确切的尺寸，而Scale工具使用相对的尺寸来描述源图像分辨率的更改。
 

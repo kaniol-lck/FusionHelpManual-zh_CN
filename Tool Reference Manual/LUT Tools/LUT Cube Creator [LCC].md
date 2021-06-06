@@ -1,4 +1,4 @@
-### LUT Cube Creator [LCC]
+### LUT Cube Creator [LCC] LUT Cube创建器
 
 LUT Cube Creator创建一张用于之后提供给LUT Cube Analyzer或LUT Cube Apply使用的图像。输出可以让Fusion内外的任何工具进行调色、色彩校正或修改。如果在Fusion之外工作，请确保将图像保持为32位浮点，来确保色彩的精度。
 

@@ -1,4 +1,4 @@
-### LUT Cube Analyzer [LCA]
+### LUT Cube Analyzer [LCA] LUT Cube分析器
 
 LUT Cube Analyzer将LUT Cube Creator创建的图像作为输入，并允许用户创建ALUT3、ITX或3DL格式的3D LUT文件。
 

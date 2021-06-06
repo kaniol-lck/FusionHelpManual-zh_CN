@@ -1,4 +1,4 @@
-### Depth Blur [DBl]
+### Depth Blur [DBl] 深度模糊
 
 Depth Blur工具主要用于创建焦距或景深效果。它基于所包含的Z通道值对3D渲染的图像进行模糊处理，还可以通过Blur Channel控件将其用于一般的每像素模糊效果。如果连接了Blur Image输入，则使用该图像的通道将用于控制模糊。
 

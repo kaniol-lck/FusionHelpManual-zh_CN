@@ -1,4 +1,4 @@
-### CreateBumpmap [CBu]
+### CreateBumpmap [CBu] 创建凹凸贴图
 
 Create Bumpmap工具可将灰阶（高度图）图像转换为凹凸贴图。查看说明中有关Fusion中使用的命名约定的信息。由于生成的凹凸矢量信息表示为RGB，因此可以使用Fusion中的所有图像处理工具对其进行修改。使用Create Bumpmap工具将其应用于材质。
 

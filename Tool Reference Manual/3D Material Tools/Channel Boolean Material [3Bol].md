@@ -1,4 +1,4 @@
-### Channel Boolean Material [3Bol]
+### Channel Boolean Material [3Bol] 通道布尔材质
 
 Channel Boolean Material可用于通过数学运算重新映射和修改3D材质的通道。 例如，如果要使用材质的红色通道来控制使用alpha通道的照明模型的标量输入（例如，Blinn.SpecularExponent），则可以在此处重新映射通道。 此外，它允许使用几何物体特定的信息，如纹理空间坐标和法线。
 

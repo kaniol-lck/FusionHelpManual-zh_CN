@@ -1,4 +1,4 @@
-### Color Space [CS]
+### Color Space [CS] 色彩空间
 
 Color Space工具提供了以各种其他色彩空间格式处理图像的功能。默认情况下，Fusion使用RGB色彩空间，大多数工具和显示器将图像的主要通道解释为Red、Green和Blue。
 

@@ -1,4 +1,4 @@
-### File LUT [FLUT]
+### File LUT [FLUT] 文件LUT
 
 LUT文件工具将查找表（Look-Up Table, LUT）应用于图像，可以是简单的1D LUT，也可以是支持的3D LUT。与Color Curves工具不同，它不使用基于样条线的LUT。相反，它从存储在系统或网络上的文件加载LUT。
 

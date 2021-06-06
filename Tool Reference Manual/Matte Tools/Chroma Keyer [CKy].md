@@ -1,4 +1,4 @@
-### Chroma Keyer [CKY]
+### Chroma Keyer [CKY] 色度键控
 
 Chroma Keyer通过从场景中移除选定的颜色来为图像创建Alpha通道（蒙版）。与对蓝色和绿色键控特殊优化的Ultra Keyer不同，Chroma Keyer对任何颜色都同样适用。
 

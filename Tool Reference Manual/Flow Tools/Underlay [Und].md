@@ -1,4 +1,4 @@
-### Underlay [Und]
+### Underlay [Und] 衬垫
 
 Underlay是在合成中可视化地组织区域的便捷方法。与Group一样，Underlays通过将合成分成带标签的功能块来提高其可读性。Group的设计是通过将复杂的层折叠为单个工具来简化合成的外观，而Underlay突出显示而不是隐藏，并且不限制外部连接。
 

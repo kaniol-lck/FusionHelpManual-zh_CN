@@ -1,9 +1,9 @@
 ## 第三十一章 VR Tools VR工具
 
-- [VR Tools](./VR%20Tools.md) 
-- [Spherical Stabilizer [SSt]](./Spherical%20Stabilizer%20[SSt].md) 
-- [Spherical Camera [3SC]](./Spherical%20Camera%20[3SC].md) 
-- [LatLong Patcher [LLP]](./LatLong%20Patcher%20[LLP].md) 
+- [VR Tools VR工具](./VR%20Tools.md) 
+- [Spherical Stabilizer [SSt] 球形稳定器](./Spherical%20Stabilizer%20[SSt].md) 
+- [Spherical Camera [3SC] 球形摄像机](./Spherical%20Camera%20[3SC].md) 
+- [LatLong Patcher [LLP] 经纬补丁](./LatLong%20Patcher%20[LLP].md) 
 - [PanoMap [PaM]](./PanoMap%20[PaM].md) 
 
 <table id="img">

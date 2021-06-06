@@ -1,4 +1,4 @@
-### Vector Distortion [Dst]
+### Vector Distortion [Dst] 矢量畸变
 
 Vector Distortion工具基于源图像中矢量通道的数据（或第二张图像或参考图像的通道）来分别对X和Y轴进行畸变。
 

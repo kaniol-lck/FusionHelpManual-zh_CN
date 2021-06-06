@@ -1,4 +1,4 @@
-### **WPP Concept**
+### **WPP Concept WPP概念**
 
 Fusion中的位置工具为包含XYZ位置通道的场景提供了一种使用遮罩和体积工作的新方法。Z to WorldPos提供了从Z通道和3D摄像机信息中创建这些通道的选项。出于概述的原因，我们将使用WPP来指代World Position Pass。
 

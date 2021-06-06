@@ -1,4 +1,4 @@
-### Set Timecode [TCMeta]
+### Set Timecode [TCMeta] 设置时间码
 
 Set Timecode基于FPS设置向元数据表中插入动态的时间码值。
 

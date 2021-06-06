@@ -1,4 +1,4 @@
-### Repair Frame [Rep]
+### Repair Frame [Rep] 修复帧
 
 Repair Frame用于替换损坏或丢失的帧或部分带有划痕及其他短暂伪影的帧。
 

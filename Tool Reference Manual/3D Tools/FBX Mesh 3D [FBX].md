@@ -1,4 +1,4 @@
-### FBX Mesh 3D [FBX]
+### FBX Mesh 3D [FBX] FBX网格3D
 
 FBXMesh3D工具用于以FilmBox（FBX）格式保存的场景文件中导入多边形几何物体。它还可以从OBJ、3DS、DAE和DXF场景文件中导入几何物体。这提供了一种使用比Fusion内建物体更复杂几何体的方法。
 

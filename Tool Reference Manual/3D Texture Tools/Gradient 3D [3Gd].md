@@ -1,4 +1,4 @@
-### Gradient 3D [3Gd]
+### Gradient 3D [3Gd] 渐变3D
 
 使用渐变3D工具，可以使用各种渐变类型对对象进行纹理化。它提供了Background工具的许多控件。
 

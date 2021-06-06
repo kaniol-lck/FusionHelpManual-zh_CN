@@ -1,4 +1,4 @@
-### Custom Tool [CT]
+### Custom Tool [CT] 自定义工具
 
 Custom工具很有可能是Fusion中最复杂且强大的工具。任何对脚本或C++编程有一定经验的用户都应该能在Custom工具中找到类似的结构和术语。
 
