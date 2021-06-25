@@ -1,7 +1,7 @@
 ## 第五章 Blur Tools 模糊工具
 
 - [Blur [Blur] 模糊](./Blur%20[Blur].md) 
-- [Defocus [Dfo] 失焦](./Defocus%20[Dfo].md) 
+- [Defocus [Dfo] 散焦](./Defocus%20[Dfo].md) 
 - [Directional Blur [DrBl] 方向性模糊](./Directional%20Blur%20[DrBl].md) 
 - [Glow [Glo] 发光](./Glow%20[Glo].md) 
 - [Sharpen [Shrp] 锐化](./Sharpen%20[Shrp].md) 

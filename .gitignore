@@ -2,3 +2,8 @@
 *.template.md
 output.md
 *.html
+*txt
+pdf/
+tmp/
+User Manual/
+original images/
