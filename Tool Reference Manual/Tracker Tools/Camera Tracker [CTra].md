@@ -106,7 +106,7 @@ Camera Tracker工具的第二个输出显示了一个3D场景。要查看它，�
 
 ##### Preview AutoTrack Locations 预览自动跟踪位置
 
-开启该复选框会显示自动跟踪会分布在镜头的哪些位置，这会有助于决定是否需要调整Detection Threshold和Minimum Feature Separation来获得均匀分布的跟踪器。
+勾选此复选框会显示自动跟踪会分布在镜头的哪些位置，这会有助于决定是否需要调整Detection Threshold和Minimum Feature Separation来获得均匀分布的跟踪器。
 
 ##### Detection Threshold 检测阈值
 

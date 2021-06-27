@@ -16,7 +16,7 @@ Vector Distortion工具基于源图像中矢量通道的数据（或第二张图
 
 ##### Lock Scale X/Y 锁定缩放X/Y
 
-选中该复选框来将Scale滑块分离成单独的Scale X和Scale Y滑块。
+勾选该复选框来将Scale滑块分离成单独的Scale X和Scale Y滑块。
 
 ##### Scale 缩放
 
@@ -24,7 +24,7 @@ Vector Distortion工具基于源图像中矢量通道的数据（或第二张图
 
 ##### Lock Bias X/Y 锁定偏置X/Y
 
-选中该复选框来将Bias滑块分离成单独的Bias X和Bias Y滑块。
+勾选该复选框来将Bias滑块分离成单独的Bias X和Bias Y滑块。
 
 ##### Center Bias 中心偏置
 

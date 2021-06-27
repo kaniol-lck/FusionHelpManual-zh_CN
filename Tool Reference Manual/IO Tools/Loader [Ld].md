@@ -91,11 +91,11 @@ Trim范围控件用于修剪素材的开头帧和结尾帧。调整Trim In从开
 
 ##### Reverse 反向
 
-选中此复选框让素材反转，首先播放最后一帧，最后播放第一帧。
+勾选此复选框让素材反转，首先播放最后一帧，最后播放第一帧。
 
 ##### Loop 循环
 
-选中此复选框让素材循环播放，直到项目结束。任何使用了Hold First and Last Frame，或Trim In and Out的素材，不管延长还是缩短，都包含在循环素材里。
+勾选此复选框让素材循环播放，直到项目结束。任何使用了Hold First and Last Frame，或Trim In and Out的素材，不管延长还是缩短，都包含在循环素材里。
 
 ##### Missing Frames 丢失帧
 

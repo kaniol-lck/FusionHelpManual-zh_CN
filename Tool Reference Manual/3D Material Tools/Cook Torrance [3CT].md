@@ -74,11 +74,11 @@ Specular Intensity控制高光的强度。如果提供高光强度纹理，则�
 
 ##### Do Fresnel 执行Fresnel
 
-选中此复选框将为材料照明模型添加Fresnel计算。通过考虑材料的折射率，这将提供更逼真的金属表面。
+勾选此复选框将为材料照明模型添加Fresnel计算。通过考虑材料的折射率，这将提供更逼真的金属表面。
 
 ##### Refractive Index 折射系数
 
-选中Do Fresnel复选框时，将显示此滑块。Refractive Index仅适用于高光的计算； 它不会通过透明表面进行实际的光折射。如果提供折射率纹理贴图，则将该值乘以输入的alpha值。
+勾选Do Fresnel复选框时，将显示此滑块。Refractive Index仅适用于高光的计算；它不会通过透明表面进行实际的光折射。如果提供折射率纹理贴图，则将该值乘以输入的alpha值。
 
 #### Transmittance 透光
 

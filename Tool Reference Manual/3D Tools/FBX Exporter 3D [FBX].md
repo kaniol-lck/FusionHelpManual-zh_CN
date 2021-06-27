@@ -55,7 +55,7 @@ FBX格式的默认（Default）选择使用FBX200611。
 
 ##### Set Sequence Start 设置序列起始
 
-通常，Fusion会使用工程文件的渲染范围来确定将文件序列渲染到磁盘时使用的数字序列。启用此复选框以显示Sequence Start Frame控件，以将序列中的第一个帧的数量设置为自定义值。
+通常，Fusion会使用工程文件的渲染范围来确定将文件序列渲染到磁盘时使用的数字序列。勾选此复选框以显示Sequence Start Frame控件，以将序列中的第一个帧的数量设置为自定义值。
 
 ##### Sequence Start Frame 序列起始帧
 

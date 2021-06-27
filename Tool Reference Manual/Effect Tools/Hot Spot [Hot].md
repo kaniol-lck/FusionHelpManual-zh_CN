@@ -84,9 +84,9 @@ Aberration滑块控制镜头像差效果的整体强度。
 
 ![Hot_ColorTab](images/Hot_ColorTab.png)
 
-##### Color Channel and Mix 色彩通道和混合
+##### Color Channel and Mix 颜色通道和混合
 
-选中后，这些复选框控件将允许在下面的LUT中编辑所选的样条线。
+勾选后，这些复选框控件将允许在下面的LUT中编辑所选的样条线。
 
 ##### Red, Green, Blue and Alpha Splines Red、Green、Blue和Alpha样条
 

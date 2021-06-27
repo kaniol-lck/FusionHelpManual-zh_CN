@@ -44,7 +44,7 @@ Custom Filter工具用于将自定义卷积滤镜应用于图像。自定义卷�
 
 ![CFlt_Controls](images/CFlt_Controls.png)
 
-##### Color Channels (RGBA) 色彩通道（RGBA）
+##### Color Channels (RGBA) 颜色通道（RGBA）
 
 颜色校正器默认在R、G、B和A通道上运行。通过单击每个通道旁边的复选框，可以选择通道进行编辑，以使选定的通道处于活动状态或非活动状态。
 

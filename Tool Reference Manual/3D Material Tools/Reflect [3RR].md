@@ -65,7 +65,7 @@ Reflect工具用于向材质添加环境贴图反射和折射。提供反射和�
 
 ##### Separate RGB Refraction Indices
 
-启用此复选框后，将隐藏Refraction Index滑块，并在其位置出现三个调节红、绿、蓝通道折射率的滑块。例如，这允许模拟在厚而不完美的玻璃中常见的光谱折射效应。
+勾选此复选框后，将隐藏Refraction Index滑块，并在其位置出现三个调节红、绿、蓝通道折射率的滑块。例如，这允许模拟在厚而不完美的玻璃中常见的光谱折射效应。
 
 ##### Refraction Index
 

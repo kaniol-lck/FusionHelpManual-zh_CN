@@ -24,7 +24,7 @@
 
 ##### Only Use Filter in HiQ 仅在HiQ下使用滤镜
 
-Resize工具一般会在非HiQ下使用快速的Nearst Neighbor滤镜，它的速度要快于完全准确性。禁用该复选框来强制Resize总是为所有渲染使用所选的滤镜。
+Resize工具一般会在非HiQ下使用快速的Nearst Neighbor滤镜，它的速度要快于完全准确性。取消勾选此复选框来强制Resize总是为所有渲染使用所选的滤镜。
 
 ##### Change Pixel Aspect 更改像素宽高比
 

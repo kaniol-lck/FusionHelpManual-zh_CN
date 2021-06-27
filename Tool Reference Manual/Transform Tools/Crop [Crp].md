@@ -49,9 +49,9 @@ Crop工具可以用于剪去图像中的一部分或将图像偏移至更大的�
 
 ![Crp_AutoCroppingTab](images/Crp_AutoCroppingTab.png)
 
-##### RGBA Color Channels RGBA色彩通道
+##### RGBA Color Channels RGBA颜色通道
 
-选择用于Auto Crop检验的通道。这会在自动裁剪在特定的色彩通道中有非实心背景的图像中起到作用，例如蓝色色彩渐变。将通道取消勾选使Auto Crop在下次核算图像时忽略它。
+选择用于Auto Crop检验的通道。这会在自动裁剪在特定的颜色通道中有非实心背景的图像中起到作用，例如蓝色色彩渐变。将通道取消勾选使Auto Crop在下次核算图像时忽略它。
 
 ##### Auto Crop 自动裁剪
 

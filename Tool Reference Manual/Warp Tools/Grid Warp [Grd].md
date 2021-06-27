@@ -125,7 +125,7 @@ Black Background复选框确定了源图像中网格外部的像素会设置为�
 
 ##### Object ID and Material ID 物体ID和材质ID
 
-启用Object ID或Material ID复选框来使网格再最终渲染时输出合适的ID通道。
+勾选Object ID或Material ID复选框来使网格再最终渲染时输出合适的ID通道。
 
 ##### Set Image Coordinates at Subdivision Level 在细分级别处设置图像坐标
 

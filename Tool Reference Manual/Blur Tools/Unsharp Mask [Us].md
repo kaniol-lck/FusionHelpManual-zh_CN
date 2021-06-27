@@ -7,7 +7,7 @@ Unsharp Mask是一种仅用于锐化图像中边缘的技术。此工具最常�
 
 ![Us_Controls](images/Us_Controls.png)
 
-##### Color Channels (RGBA) 色彩通道（RGBA）
+##### Color Channels (RGBA) 颜色通道（RGBA）
 
 滤镜默认在R、G、B和A通道上运行。通过单击每个通道旁边的复选框可以使它们处于活动或非活动状态，从而实现选择性通道过滤。
 

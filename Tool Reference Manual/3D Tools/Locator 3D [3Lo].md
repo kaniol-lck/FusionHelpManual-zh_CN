@@ -37,8 +37,8 @@ size滑块用于设置Locater在屏幕上的十字准线的大小。
 启用Is Matte选项将对该对象应用一个特殊的纹理，使该对象不仅对摄像机不可见，而且还使直接出现在摄像机后面的所有东西也不可见。此选项将覆盖所有纹理。有关更多信息，请参见3D章节的Matte Objects部分。
 
 - **Is Matte 作为Matte：**当被激活时，像素在Z中的后于matte对象像素的对象不会被渲染。
-- **Opaque Alpha 不透明alpha：**将matte对象的alpha值设置为1。此复选框仅在启用is Matte选项时可见。
-- **Infinite Z 无限Z：**将Z通道中的值设置为无穷大。此复选框仅在启用is Matte选项时可见。
+- **Opaque Alpha 不透明alpha：**将matte对象的alpha值设置为1。此复选框仅在勾选is Matte选项时可见。
+- **Infinite Z 无限Z：**将Z通道中的值设置为无穷大。此复选框仅在勾选is Matte选项时可见。
 
 ##### Sub ID 子ID
 
@@ -50,11 +50,11 @@ Sub ID滑块可用于选择特定物体的单个子元素，如由Text 3D工具�
 
 ##### Unseen by Camera 摄像机不可视
 
-当选中Make Renderable选项时，将出现这个复选框控件。如果选中了Unseen by Camera复选框，那么Locater将在查看器中可见，但不会被Renderer 3D工具渲染成输出图像。
+当选中Make Renderable选项时，将出现这个复选框控件。如果勾选了Unseen by Camera复选框，那么Locater将在查看器中可见，但不会被Renderer 3D工具渲染成输出图像。
 
 ##### Camera Settings 摄像机设置
 
 - **Camera 摄像机：**这个下拉控件用于在场景中选择摄像机，该场景定义用于3D到2D坐标转换的屏幕空间。
-- **Use Frame Format Settings 使用帧格式设置：**选择这个复选框，以覆盖宽度、高度和像素纵横比的控件，并强制它们使用composition的Frame Format首选项中定义的值替代。
+- **Use Frame Format Settings 使用帧格式设置：**勾选这个复选框，以覆盖宽度、高度和像素纵横比的控件，并强制它们使用composition的Frame Format首选项中定义的值替代。
 - **Width, Height and Pixel Aspect 宽度、高度及帧比例：**为了让Locater生成正确的2D转换，它必须知道图像的尺寸和比例。这些控件应该设置为与上面指定的摄像机关联的渲染器生成的图像相同的尺寸。右键单击这些控件将显示包含在composition首选项中配置的Frame Format的上下文菜单。
 

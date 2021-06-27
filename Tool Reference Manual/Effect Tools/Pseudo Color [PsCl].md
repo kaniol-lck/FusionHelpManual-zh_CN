@@ -8,7 +8,7 @@ Pseudo Color工具提供了根据该工具的控件生成的波形产生颜色�
 
 ##### Color Check Box 色彩复选框
 
-选中后，Pseudo Color工具将影响此色彩通道。
+选中后，Pseudo Color工具将影响此颜色通道。
 
 ##### Wrap 交换
 
@@ -16,7 +16,7 @@ Pseudo Color工具提供了根据该工具的控件生成的波形产生颜色�
 
 ##### High and Low 高和低
 
-High and Low用于确定工具在特定色彩通道中的影响范围。
+High and Low用于确定工具在特定颜色通道中的影响范围。
 
 ##### Soft Edge 柔边
 

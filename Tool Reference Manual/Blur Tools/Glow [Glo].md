@@ -20,7 +20,7 @@ Glow工具提供了一种更方便的方式来实现这种效果，以及该方�
 - **Hilight 高光：**Hilight在周围像素中添加发光而不会产生光晕。
 - **Solarize 过曝：**Solarize增添了发光，使图像过曝。
 
-##### Color Channels (RGBA) 色彩通道（RGBA）
+##### Color Channels (RGBA) 颜色通道（RGBA）
 
 滤镜默认在R、G、B和A通道上运行。通过单击每个通道旁边的复选框可以使它们处于活动或非活动状态，从而实现选择性通道过滤。
 

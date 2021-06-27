@@ -4,7 +4,7 @@ Color Corrector工具是一款综合的色彩工具，具有直方图、匹配�
 
 #### Overview 概览
 
-Color Corrector工具中的控件分为四个单独的类别：颜色（Colors）、色阶（Levels）、直方图（Histogram）和颜色抑制（Suppress）。从Correction选项卡顶部的阵列中选择一个类别按钮将导致显示该类别的控件。下面详细描述了每个类别。
+Color Corrector工具中的控件分为四个单独的类别：色彩（Colors）、色阶（Levels）、直方图（Histogram）和颜色抑制（Suppress）。从Correction选项卡顶部的阵列中选择一个类别按钮将导致显示该类别的控件。下面详细描述了每个类别。
 
 #### Colors Mode 色彩模式
 
@@ -190,7 +190,7 @@ L值和RGB控件可以具有累积效果，并且通常它们不会同时设置�
 
 ##### Lock Red/Green/Blue 锁定红/绿/蓝
 
-选中此复选框后，颜色匹配将同等地应用于所有颜色通道。如果未选中该复选框，则会显示每个频道的各个控件。
+勾选此复选框后，颜色匹配将同等地应用于所有颜色通道。如果未勾选该复选框，则会显示每个频道的各个控件。
 
 ##### Equalize/Match Red, Green, Blue 匹配/均衡红、绿、蓝
 
@@ -258,7 +258,7 @@ Ranges选项卡包含用于指定图像中哪些像素被视为阴影以及哪�
 
 ##### Output the Range You See Now as Final Render 输出您现在看到的最终渲染范围
 
-选中此复选框将导致查看器中显示的范围的单色显示输出为最终渲染。通常，颜色工具将输出完整的RGBA图像，即使工具留在显示视图中的一个颜色范围。此控件可以使用Color Corrector工具生成范围的遮罩，以用作其他工具中的效果遮罩。
+勾选此复选框将导致查看器中显示的范围的单色显示输出为最终渲染。通常，颜色工具将输出完整的RGBA图像，即使工具留在显示视图中的一个颜色范围。此控件可以使用Color Corrector工具生成范围的遮罩，以用作其他工具中的效果遮罩。
 
 ##### Preset Simple/Smooth Ranges 预设简单/平滑的范围
 

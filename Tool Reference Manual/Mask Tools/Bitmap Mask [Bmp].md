@@ -70,7 +70,7 @@ Threshold范围控件可用于裁剪位图图像。增加Low控件的值会将�
 
 ##### Use Object/Use Material 使用物体/使用材质
 
-该控件只有在输入图像包含Material ID或Object ID是起作用。当勾选时，选中的Object ID和/或Material ID会用于创建一个基于选择对象或材质的遮罩。当取消勾选时，则使用常规的色彩通道生成遮罩。
+该控件只有在输入图像包含Material ID或Object ID是起作用。当勾选时，选中的Object ID和/或Material ID会用于创建一个基于选择对象或材质的遮罩。当取消勾选时，则使用常规的颜色通道生成遮罩。
 
 #### Image Tab 图像选项卡
 

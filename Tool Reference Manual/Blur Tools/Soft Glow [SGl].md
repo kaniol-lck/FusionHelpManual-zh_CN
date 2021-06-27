@@ -21,7 +21,7 @@ Soft Glow工具类似于Glow工具，但对图像执行额外处理以创建更�
 - **Multi-box 多重盒式：**Multi-box使用多个过程中分层的Box滤镜来近似Gaussian形状。利用适度的通过次数（例如，4次），可以获得高质量的模糊，通常比Gaussian滤镜更快，并且没有任何振铃。
 - **Gaussian 高斯：**Gaussian增加了柔和的光晕，由Gaussian算法模糊。这是默认方法。
 
-##### Color Channels (RGBA) 色彩通道（RGBA）
+##### Color Channels (RGBA) 颜色通道（RGBA）
 
 滤镜默认在R、G、B和A通道上运行。通过单击每个通道旁边的复选框可以使它们处于活动或非活动状态，从而实现选择性通道过滤。
 

@@ -14,7 +14,7 @@ CopyAux还支持静态归一化。静态归一化与Fusion查看器所做的动�
 
 ##### Mode 模式
 
-Mode确定辅助通道是否复制到RGBA色彩通道，反之亦然。使用此选项，您可以使用一个CopyAux将辅助通道变为色彩通道，对其执行一些合成操作，然后使用另一个CopyAux将颜色写回辅助通道。 当Mode设置为“Color> Aux”时，除AuxChannel外的所有输入都被隐藏。
+Mode确定辅助通道是否复制到RGBA颜色通道，反之亦然。使用此选项，您可以使用一个CopyAux将辅助通道变为颜色通道，对其执行一些合成操作，然后使用另一个CopyAux将颜色写回辅助通道。 当Mode设置为“Color> Aux”时，除AuxChannel外的所有输入都被隐藏。
 
 ##### Aux Channel 辅助通道
 

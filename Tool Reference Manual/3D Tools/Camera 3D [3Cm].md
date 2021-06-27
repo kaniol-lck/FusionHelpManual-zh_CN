@@ -188,7 +188,7 @@ Aperture Width/Height滑块控制着摄像机的光圈大小，或者说摄像�
 
 ##### Enable Camera Projection 启用摄像机投影
 
-选择此复选框以启用连接到摄像机工具的2D图像的投影。
+勾选此复选框以启用连接到摄像机工具的2D图像的投影。
 
 ##### Projection Fit Method 投影适配方法
 

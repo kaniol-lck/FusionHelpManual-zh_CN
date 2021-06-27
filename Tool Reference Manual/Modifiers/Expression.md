@@ -42,7 +42,7 @@ Random Seed控件用于为`rand()`函数设置种子。`rand(x, y)`函数生成�
 
 ##### Show Number or Point X 显示数值或点X
 
-18个这样的复选框控件，每个对应了9个数值控件或9个点控件。启用该复选框来在Controls选项卡中显示Number X或Point X的控件。
+18个这样的复选框控件，每个对应了9个数值控件或9个点控件。勾选该复选框来在Controls选项卡中显示Number X或Point X的控件。
 
 ##### Name for Number or Point X 数值或点X的名称
 

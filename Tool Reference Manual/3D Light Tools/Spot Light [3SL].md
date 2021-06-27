@@ -18,7 +18,7 @@ Spot Light 是从一个特定的点发出的光，它有一个清晰的锥形，
 
 ##### Enabled 启用
 
-当选中Enabled复选框时，点光源会影响场景。清除复选框以关闭光照。
+当勾选Enabled复选框时，点光源会影响场景。取消勾选复选框以关闭光照。
 
 ##### Color 颜色
 
@@ -50,7 +50,7 @@ Dropoff控制半影角从全强度到0的下降速度。
 
 ##### Enable Shadows 启用阴影
 
-如果要生成阴影，应选中Enable Shadows复选框。默认为选中。
+如果要生成阴影，应勾选Enable Shadows复选框。默认为勾选。
 
 ##### Shadow Color 阴影颜色
 

@@ -181,11 +181,11 @@ Merge控件确定会对连接至Tracker的前景输入的图像做什么（如�
 
 ##### Position, Rotation and Scaling Checkboxes 位置、旋转和缩放复选框
 
-Position、Rotation和Scaling复选框只在模式设置为Match Move时出现。它们决定了Stabilization会尝试校正图像中运动的哪一部分。举个例子，如果只选中了Position复选框，则不会尝试校正图像中的Rotaion和Scaling。
+Position、Rotation和Scaling复选框只在模式设置为Match Move时出现。它们决定了Stabilization会尝试校正图像中运动的哪一部分。举个例子，如果只勾选了Position复选框，则不会尝试校正图像中的Rotaion和Scaling。
 
 ##### Flatten Transformation 扁平化变换
 
-该复选框只在模式设置为Match Move时出现。就像Fusion中的大多数变换一样，默认情况下Stabilization由其他有序的变换连接起来。选中这个复选框会扁平化变换，中止出现的连接并立即应用变换。
+此复选框只在模式设置为Match Move时出现。就像Fusion中的大多数变换一样，默认情况下Stabilization由其他有序的变换连接起来。勾选这个复选框会扁平化变换，中止出现的连接并立即应用变换。
 
 ##### Mapping Type 映射类型
 

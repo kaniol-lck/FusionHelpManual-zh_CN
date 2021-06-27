@@ -18,6 +18,6 @@ LUT文件工具将查找表（Look-Up Table, LUT）应用于图像，可以是�
 
 ##### Pre-Divide/Post-Multiply 预除/预乘
 
-选中Pre-Divide/Post-Multiply复选框将导致在应用LUT之前先将图像的像素值除以alpha值，并在校正后再乘以alpha值。
+勾选Pre-Divide/Post-Multiply复选框将导致在应用LUT之前先将图像的像素值除以alpha值，并在校正后再乘以alpha值。
 
 这可以防止创建非法的加性图像，尤其是在蓝色/绿色键控的边缘或处理3D渲染对象时。

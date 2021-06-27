@@ -1,6 +1,6 @@
 ### Hue Curves [HCv] 色相曲线
 
-Hue Curves工具允许您使用一系列样条曲线调整图像中的色彩。提供样条来控制图像色相（Hue）、饱和度（Saturation）和亮度（Luminance）以及每个单独的色彩通道。另外一组曲线允许您将抑制应用于各个色彩通道。
+Hue Curves工具允许您使用一系列样条曲线调整图像中的色彩。提供样条来控制图像色相（Hue）、饱和度（Saturation）和亮度（Luminance）以及每个单独的颜色通道。另外一组曲线允许您将抑制应用于各个颜色通道。
 
 Hue Curves工具优于Fusion中其他色彩校正工具的优点是可以通过操纵样条曲线来将工具效果限制在图像的非常窄的部分，或者扩展为包括图像的宽范围部分。此外，可以对这些曲线进行动画处理，以跟踪图像随时间的变化。由于样条曲线的主轴由图像的色相定义，因此更容易将特定颜色与图像隔离以进行调整。
 
@@ -14,7 +14,7 @@ Mode选项可以在Animate和Dissolve模式之间切换。默认模式为Static�
 
 Dissolve式基本上是过时的，仅出于兼容性原因而包含在内。
 
-##### Color Channel Checkboxes 色彩通道复选框
+##### Color Channel Checkboxes 颜色通道复选框
 
 这些复选框定义哪些样条线可编辑并包含在Pick Color过程中。
 
@@ -42,4 +42,4 @@ Dissolve式基本上是过时的，仅出于兼容性原因而包含在内。
 
 ##### Pre-Divide/Post-Multiply 预除/后乘
 
-选择Pre-Divide/Post-Multiply复选框将使图像像素值除以颜色校正之前的alpha值，然后在校正后重新乘以alpha值。这有助于防止创建非法加性图像，特别是蓝/绿键的边缘或在使用3D渲染对象时。
+勾选Pre-Divide/Post-Multiply复选框将使图像像素值除以颜色校正之前的alpha值，然后在校正后重新乘以alpha值。这有助于防止创建非法加性图像，特别是蓝/绿键的边缘或在使用3D渲染对象时。

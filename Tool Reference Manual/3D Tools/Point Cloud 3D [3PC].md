@@ -16,7 +16,7 @@ Point Cloud通常是由3D跟踪或建模软件创建的大量空位置（点）�
 
 ##### Lock X/Y/Z 锁定X/Y/Z
 
-取消选中此复选框，以提供对云中各点的X、Y和Z十字准线长度的单独控制。
+取消勾选此复选框，以提供对云中各点的X、Y和Z十字准线长度的单独控制。
 
 ##### Size 大小
 
@@ -47,7 +47,7 @@ Import Point Cloud按钮显示一个对话框，用于从另一个应用程序�
 
 ##### Unseen by Camera 摄像机不可视
 
-当选择Make Renderable选项时，将出现这个复选框控件。如果选中了Unseen by Camera复选框，则可以在查看器中看到点云，但不能通过Renderer 3D工具将其渲染到输出图像中。
+当选择Make Renderable选项时，将出现这个复选框控件。如果勾选了Unseen by Camera复选框，则可以在查看器中看到点云，但不能通过Renderer 3D工具将其渲染到输出图像中。
 
 #### Onscreen Contextual Menu 屏幕上的上下文菜单
 

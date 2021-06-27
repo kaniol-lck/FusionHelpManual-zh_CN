@@ -24,7 +24,7 @@ Fusion的Paint甚至可以用来从头创作新的图像或艺术元素。
 
 ##### R, G, B and Alpha R、G、B和Alpha
 
-选中后，这些复选框反映了要绘制的色彩通道。举个例子，关闭R、G、B而开启Alpha后，绘制只会出现在Alpha通道上。
+选中后，这些复选框反映了要绘制的颜色通道。举个例子，关闭R、G、B而开启Alpha后，绘制只会出现在Alpha通道上。
 
 #### Brush Controls 笔刷控件
 
